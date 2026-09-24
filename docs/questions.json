@@ -1,0 +1,698 @@
+{
+  "version": 1,
+  "updated": "2026-09-24",
+  "modules": [
+    {
+      "id": "networking",
+      "name": "Computer Networking",
+      "questions": [
+        {
+          "id": "networking-w1-001",
+          "week": 1,
+          "prompt": "Which description best defines a computer network?",
+          "options": [
+            "A collection of offline documents",
+            "A single application running without communication",
+            "A processor with several cores",
+            "Interconnected devices that communicate and share resources"
+          ],
+          "answer": 3,
+          "explanation": "A network connects devices so that they can communicate and share resources. Multiple files or processor cores alone do not establish a computer network.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 4
+          }
+        },
+        {
+          "id": "networking-w1-002",
+          "week": 1,
+          "prompt": "An office lets several staff use one network printer. Which benefit does this illustrate?",
+          "options": [
+            "Processor scheduling",
+            "File encryption",
+            "Resource sharing",
+            "Data compression"
+          ],
+          "answer": 2,
+          "explanation": "Resource sharing lets connected users access equipment such as printers and servers. Compression and encryption concern data representation or protection, not shared access to a printer.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 4
+          }
+        },
+        {
+          "id": "networking-w1-003",
+          "week": 1,
+          "prompt": "In a client-server exchange, which role normally initiates a service request?",
+          "options": [
+            "The load balancer in every case",
+            "The client",
+            "The server",
+            "The transmission cable"
+          ],
+          "answer": 1,
+          "explanation": "The client initiates the request and the server provides the requested service or response. These roles describe the particular communication.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 6
+          }
+        },
+        {
+          "id": "networking-w1-004",
+          "week": 1,
+          "prompt": "What is the main purpose of a repeater?",
+          "options": [
+            "Regenerate or amplify a signal",
+            "Choose routes between different networks",
+            "Store shared documents",
+            "Assign application permissions"
+          ],
+          "answer": 0,
+          "explanation": "Signals can weaken as they travel. A repeater regenerates or amplifies the signal; routing between networks is a router function.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 8
+          }
+        },
+        {
+          "id": "networking-w1-005",
+          "week": 1,
+          "prompt": "How does a basic Ethernet hub handle incoming traffic?",
+          "options": [
+            "Learns a route across the internet",
+            "Inspects it against firewall rules",
+            "Caches web pages for later use",
+            "Broadcasts it to connected devices"
+          ],
+          "answer": 3,
+          "explanation": "A hub is a multi-port repeater and broadcasts incoming traffic. It does not make the learned forwarding decisions associated with a switch.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 8
+          }
+        },
+        {
+          "id": "networking-w1-006",
+          "week": 1,
+          "prompt": "You need to connect 30 wired PCs within one departmental LAN. Which device best fits?",
+          "options": [
+            "A repeater with one port",
+            "A web server",
+            "A switch",
+            "A proxy server"
+          ],
+          "answer": 2,
+          "explanation": "A switch provides multiple ports for hosts within a LAN and learns which hosts are on which ports. A web server provides a service rather than the physical LAN connections.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 10
+          }
+        },
+        {
+          "id": "networking-w1-007",
+          "week": 1,
+          "prompt": "Two separate office networks need to communicate. Which device routes traffic between them?",
+          "options": [
+            "A passive cable splitter",
+            "A router",
+            "A hub",
+            "A printer"
+          ],
+          "answer": 1,
+          "explanation": "Routers move traffic from one network to another. Switches chiefly connect hosts within a LAN; a hub repeats traffic rather than routing it between networks.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 10
+          }
+        },
+        {
+          "id": "networking-w1-008",
+          "week": 1,
+          "prompt": "Which component connects Wi-Fi devices to a wired network?",
+          "options": [
+            "A wireless access point",
+            "A proxy cache",
+            "A load balancer",
+            "A file server"
+          ],
+          "answer": 0,
+          "explanation": "A wireless access point provides wireless devices with connectivity into the wired network. A file server supplies files but is not itself the Wi-Fi access function.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 11
+          }
+        },
+        {
+          "id": "networking-w1-009",
+          "week": 1,
+          "prompt": "Which component filters incoming and outgoing traffic using security rules?",
+          "options": [
+            "A hub",
+            "A repeater",
+            "A load balancer",
+            "A firewall"
+          ],
+          "answer": 3,
+          "explanation": "A firewall checks traffic against security rules. A repeater regenerates signals and a load balancer distributes work; neither is the filtering role described here.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 11
+          }
+        },
+        {
+          "id": "networking-w1-010",
+          "week": 1,
+          "prompt": "A service spreads requests across several servers to avoid overloading one. What is doing this?",
+          "options": [
+            "A wireless repeater",
+            "A client keyboard",
+            "A load balancer",
+            "A bridge"
+          ],
+          "answer": 2,
+          "explanation": "A load balancer distributes traffic or application work across servers to improve availability and avoid a single server becoming overloaded.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 11
+          }
+        },
+        {
+          "id": "networking-w1-011",
+          "week": 1,
+          "prompt": "A browser request goes through an intermediary that can cache or filter web content. What is it?",
+          "options": [
+            "A network cable",
+            "A proxy",
+            "A hub",
+            "A physical-layer repeater"
+          ],
+          "answer": 1,
+          "explanation": "A proxy sits between a client and another server. It can forward requests, cache content or filter access.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 11
+          }
+        },
+        {
+          "id": "networking-w1-012",
+          "week": 1,
+          "prompt": "Which feature distinguishes peer-to-peer architecture from the client-server architecture shown?",
+          "options": [
+            "Peers communicate without a central server organising the exchange",
+            "Every exchange requires a dedicated central server",
+            "Only one device can ever send data",
+            "The devices cannot share resources"
+          ],
+          "answer": 0,
+          "explanation": "Peer-to-peer is decentralised. The distinguishing feature is the lack of a central server organising communication, not a ban on resource sharing.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 12
+          }
+        },
+        {
+          "id": "networking-w1-013",
+          "week": 1,
+          "prompt": "A network covering one office building is most naturally classified as which type?",
+          "options": [
+            "WAN",
+            "MAN",
+            "PAN",
+            "LAN"
+          ],
+          "answer": 3,
+          "explanation": "A local area network covers a small geographical area such as a building. A MAN covers a city or large campus, a WAN spans larger areas, and a PAN is centred on a person.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 14
+          }
+        },
+        {
+          "id": "networking-w1-014",
+          "week": 1,
+          "prompt": "A company links branches in different countries. Which network type best describes that scale?",
+          "options": [
+            "A single-building LAN",
+            "A processor bus",
+            "WAN",
+            "PAN"
+          ],
+          "answer": 2,
+          "explanation": "A wide area network links networks over large geographical distances, such as between countries. A PAN or single-building LAN has much smaller scope.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 14
+          }
+        },
+        {
+          "id": "networking-w1-015",
+          "week": 1,
+          "prompt": "What does a network protocol define?",
+          "options": [
+            "The price of internet access",
+            "Message formats, their order and actions on sending or receipt",
+            "Only the colour of a network cable",
+            "Only the physical size of a server"
+          ],
+          "answer": 1,
+          "explanation": "Protocols specify how communication proceeds: message formats, sequencing and the actions taken when messages are transmitted or received.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 15
+          }
+        },
+        {
+          "id": "networking-w1-016",
+          "week": 1,
+          "prompt": "Why divide network communication into layers?",
+          "options": [
+            "To reduce complexity by separating responsibilities",
+            "To make every layer perform exactly the same task",
+            "To remove the need for protocols",
+            "To ensure only one device can communicate"
+          ],
+          "answer": 0,
+          "explanation": "Layering uses abstraction: each layer has a defined role and interfaces with neighbouring layers. Separating responsibilities makes the system easier to understand and manage.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 17
+          }
+        },
+        {
+          "id": "networking-w1-017",
+          "week": 1,
+          "prompt": "Which is the correct OSI order from the physical medium towards the user application?",
+          "options": [
+            "Application, Presentation, Session, Transport, Network, Data Link, Physical",
+            "Physical, Network, Data Link, Session, Transport, Application, Presentation",
+            "Link, Internet, Transport, Application",
+            "Physical, Data Link, Network, Transport, Session, Presentation, Application"
+          ],
+          "answer": 3,
+          "explanation": "The OSI model has seven layers. The reverse order starts at the application, while Link/Internet/Transport/Application is the four-layer TCP/IP model.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 18
+          }
+        },
+        {
+          "id": "networking-w1-018",
+          "week": 1,
+          "prompt": "What is encapsulation when data moves down the protocol stack?",
+          "options": [
+            "The application removes the physical connection",
+            "The sender deletes the payload to save space",
+            "A layer adds control information to data from the layer above",
+            "Every layer discards all headers before transmission"
+          ],
+          "answer": 2,
+          "explanation": "As data moves down the stack, layers add their own control information, such as headers. The receiver processes and removes this information in the reverse direction.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 19
+          }
+        },
+        {
+          "id": "networking-w1-019",
+          "week": 1,
+          "prompt": "Which OSI layer moves individual bits over the physical medium?",
+          "options": [
+            "Presentation",
+            "Physical",
+            "Session",
+            "Application"
+          ],
+          "answer": 1,
+          "explanation": "The physical layer deals with transmitting bits over media such as cables or fibre. Session and presentation functions operate at higher levels.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 20
+          }
+        },
+        {
+          "id": "networking-w1-020",
+          "week": 1,
+          "prompt": "Frames and MAC addresses are most closely associated with which OSI layer?",
+          "options": [
+            "Data Link",
+            "Application",
+            "Session",
+            "Presentation"
+          ],
+          "answer": 0,
+          "explanation": "The data-link layer handles node-to-node frame transfer and is associated with Ethernet and MAC addresses. It is distinct from network-layer packet routing.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 21
+          }
+        },
+        {
+          "id": "networking-w1-021",
+          "week": 1,
+          "prompt": "IP-based packet delivery and routing are associated with which OSI layer?",
+          "options": [
+            "Presentation",
+            "Session",
+            "Physical",
+            "Network"
+          ],
+          "answer": 3,
+          "explanation": "The network layer provides packet delivery from source host to destination host using addressing and routing. The equivalent layer in the four-layer TCP/IP model is Internet.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 22
+          }
+        },
+        {
+          "id": "networking-w1-022",
+          "week": 1,
+          "prompt": "Which pair of protocols belongs to the transport layer?",
+          "options": [
+            "HTTP and FTP",
+            "MAC and fibre optic cable",
+            "TCP and UDP",
+            "IP and Ethernet"
+          ],
+          "answer": 2,
+          "explanation": "TCP and UDP are transport protocols. The transport layer delivers data between processes; IP is associated with the Internet/network layer.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 23
+          }
+        },
+        {
+          "id": "networking-w1-023",
+          "week": 1,
+          "prompt": "Which OSI layer manages the establishment and termination of logical sessions?",
+          "options": [
+            "Network",
+            "Session",
+            "Physical",
+            "Data Link"
+          ],
+          "answer": 1,
+          "explanation": "The session layer manages sessions and synchronisation. Physical and data-link layers focus on transmission over the medium and between adjacent nodes.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 24
+          }
+        },
+        {
+          "id": "networking-w1-024",
+          "week": 1,
+          "prompt": "Which OSI layer is associated with data-format translation, compression and encryption?",
+          "options": [
+            "Presentation",
+            "Physical",
+            "Network",
+            "Data Link"
+          ],
+          "answer": 0,
+          "explanation": "The presentation layer deals with representation of data, including translation, encoding, compression and encryption in the OSI model.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 25
+          }
+        },
+        {
+          "id": "networking-w1-025",
+          "week": 1,
+          "prompt": "Which OSI layer provides user-facing network services such as file transfer and email?",
+          "options": [
+            "Physical",
+            "Data Link",
+            "Network",
+            "Application"
+          ],
+          "answer": 3,
+          "explanation": "The application layer supports network services used by applications, such as file transfer and email. Lower layers handle transport and delivery.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 26
+          }
+        },
+        {
+          "id": "networking-w1-026",
+          "week": 1,
+          "prompt": "In the four-layer TCP/IP model shown, which layer corresponds to the OSI Network layer?",
+          "options": [
+            "Link",
+            "Transport",
+            "Internet",
+            "Application"
+          ],
+          "answer": 2,
+          "explanation": "The TCP/IP Internet layer corresponds to the OSI Network layer. It handles IP packets and routing rather than application services or local link functions.",
+          "source": {
+            "title": "Lecture-Introduction to Network Protocols",
+            "page": 19
+          }
+        }
+      ]
+    },
+    {
+      "id": "pps",
+      "name": "Project and Professional Skills",
+      "questions": [
+        {
+          "id": "pps-w1-001",
+          "week": 1,
+          "prompt": "Which description best matches the lecture definition of research?",
+          "options": [
+            "Copying an existing report without further investigation",
+            "Memorising facts without asking questions",
+            "Choosing a conclusion before examining evidence",
+            "Original investigation to gain knowledge and understanding"
+          ],
+          "answer": 3,
+          "explanation": "Research combines original investigation with gaining knowledge and understanding. Copying or memorising alone lacks the investigative contribution described in the lecture.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 15
+          }
+        },
+        {
+          "id": "pps-w1-002",
+          "week": 1,
+          "prompt": "Which sequence best represents the structured research process in the lecture?",
+          "options": [
+            "Data collection, conclusion, then invent a question to match",
+            "Choose a result, skip the design, write the conclusion",
+            "Aim, research question, design, data collection and analysis, conclusion",
+            "Conclusion, data disposal, aim, design"
+          ],
+          "answer": 2,
+          "explanation": "The example begins with an aim and a research question, plans a design, collects and analyses evidence, then presents findings. The conclusion should follow the investigation.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 16
+          }
+        },
+        {
+          "id": "pps-w1-003",
+          "week": 1,
+          "prompt": "Which is a research question rather than a broad aim?",
+          "options": [
+            "Learn more about teaching",
+            "Does increased online teaching correlate with changes in grades?",
+            "Identify effective teaching methods",
+            "Improve education generally"
+          ],
+          "answer": 1,
+          "explanation": "The question asks about a specific relationship that can be investigated. The other options are broader intentions or aims.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 16
+          }
+        },
+        {
+          "id": "pps-w1-004",
+          "week": 1,
+          "prompt": "In the teaching-method example, why control other relevant variables?",
+          "options": [
+            "To reduce alternative explanations for differences between the groups",
+            "To guarantee the preferred result",
+            "To avoid collecting any data",
+            "To make the research question unnecessary"
+          ],
+          "answer": 0,
+          "explanation": "Controlling other variables helps make a comparison of teaching modes more interpretable. It does not guarantee a result or replace data collection.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 16
+          }
+        },
+        {
+          "id": "pps-w1-005",
+          "week": 1,
+          "prompt": "Which project can show originality even when it studies an existing problem?",
+          "options": [
+            "One that only copies the original results",
+            "One that changes the title but nothing else",
+            "One that hides the sources it reused",
+            "One that applies a different approach or technique"
+          ],
+          "answer": 3,
+          "explanation": "The lecture recognises using a different approach or technique as a way to be original. Merely renaming or copying work does not introduce that difference.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 18
+          }
+        },
+        {
+          "id": "pps-w1-006",
+          "week": 1,
+          "prompt": "An experiment fails to achieve its intended outcome. Can it still contribute something original?",
+          "options": [
+            "Only if the failure is concealed",
+            "No, a failed experiment cannot produce findings",
+            "Yes, investigating why it failed may produce new understanding",
+            "No, only a successful product can be original"
+          ],
+          "answer": 2,
+          "explanation": "The lecture notes that by-products can be original, including understanding why an experiment or technique did not work. A failed intended outcome is not automatically the absence of a contribution.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 18
+          }
+        },
+        {
+          "id": "pps-w1-007",
+          "week": 1,
+          "prompt": "A student applies a new analytical tool to an existing problem. Which route to originality fits best?",
+          "options": [
+            "Changing the project filename",
+            "Tools, techniques, procedures and methods",
+            "Copying an existing conclusion",
+            "Avoiding investigation"
+          ],
+          "answer": 1,
+          "explanation": "Using new tools or procedures in a context is one of the routes to originality listed in the lecture.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 19
+          }
+        },
+        {
+          "id": "pps-w1-008",
+          "week": 1,
+          "prompt": "Unexpected results lead a researcher to investigate a new direction. Which route to originality is this?",
+          "options": [
+            "Exploring the unanticipated",
+            "Repeating the expected without analysis",
+            "Ignoring the evidence",
+            "Replacing all data with assumptions"
+          ],
+          "answer": 0,
+          "explanation": "Exploring unexpected findings and the new directions they suggest is described as exploring the unanticipated.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 19
+          }
+        },
+        {
+          "id": "pps-w1-009",
+          "week": 1,
+          "prompt": "Which activity illustrates originality through the use of data?",
+          "options": [
+            "Copying the same interpretation word for word",
+            "Deleting data that challenges an assumption",
+            "Changing a chart colour without changing the analysis",
+            "Interpreting existing data in a new way"
+          ],
+          "answer": 3,
+          "explanation": "The lecture identifies interpreting or using data in new ways as a source of originality. Cosmetic changes alone do not change the interpretation.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 19
+          }
+        },
+        {
+          "id": "pps-w1-010",
+          "week": 1,
+          "prompt": "How does the lecture distinguish information from knowledge?",
+          "options": [
+            "They are defined as completely unrelated",
+            "Knowledge is simply the number of downloaded files",
+            "Information tells you what; knowledge helps explain how and why",
+            "Information explains why; knowledge is only a list of facts"
+          ],
+          "answer": 2,
+          "explanation": "The lecture contrasts knowing what with a higher-level understanding of how and why. Collecting facts alone is not the same as explaining them.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 20
+          }
+        },
+        {
+          "id": "pps-w1-011",
+          "week": 1,
+          "prompt": "What does a research contribution aim to add to?",
+          "options": [
+            "Only the number of files collected",
+            "The wider body of knowledge and understanding",
+            "Only the researcher's personal familiarity",
+            "Only the number of pages in a report"
+          ],
+          "answer": 1,
+          "explanation": "A contribution goes beyond the researcher learning something personally: it aims to add to the wider body of knowledge and understanding.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 21
+          }
+        },
+        {
+          "id": "pps-w1-012",
+          "week": 1,
+          "prompt": "When searching for a definition of research, which approach matches the lecture activity?",
+          "options": [
+            "Identify search terms, find sources and evaluate their validity",
+            "Use the first result without evaluating it",
+            "Choose whichever definition is shortest regardless of source",
+            "Avoid comparing sources"
+          ],
+          "answer": 0,
+          "explanation": "The activity asks students to identify terms, use search resources, and analyse valid and current definitions. Finding a result and judging its usefulness are separate steps.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 13
+          }
+        },
+        {
+          "id": "pps-w1-013",
+          "week": 1,
+          "prompt": "Which set contains examples of original outcomes listed in the lecture?",
+          "options": [
+            "Only a new physical product",
+            "Only a longer bibliography",
+            "Only an unchanged copy of a prior report",
+            "A new product, theory, model or method"
+          ],
+          "answer": 3,
+          "explanation": "Originality is not restricted to physical products: the lecture also names theories, models and methods as possible outcomes.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 18
+          }
+        },
+        {
+          "id": "pps-w1-014",
+          "week": 1,
+          "prompt": "After collecting experimental data, what should the researcher do before presenting conclusions?",
+          "options": [
+            "Discard all unexpected observations automatically",
+            "Rewrite the aim to guarantee success",
+            "Analyse the collected evidence",
+            "Choose the most appealing result without analysis"
+          ],
+          "answer": 2,
+          "explanation": "The process includes data collection and analysis before the conclusion. Conclusions should be informed by the evidence rather than selected in advance.",
+          "source": {
+            "title": "Week 1 - Introduction",
+            "page": 16
+          }
+        }
+      ]
+    }
+  ]
+}

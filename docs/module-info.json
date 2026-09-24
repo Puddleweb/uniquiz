@@ -1,0 +1,38 @@
+{
+  "updated": "2026-09-24",
+  "modules": [
+    {
+      "id": "pps",
+      "name": "Project and Professional Skills",
+      "code": "U19953",
+      "credits": 20,
+      "leader": "Tim Jackson",
+      "assessments": [
+        {"title":"Critical Review: Literature Review & Data Analysis","due":"2026-11-12T14:00:00Z","weight":40,"length":"1,600 words","submit":"Blackboard","feedback":"2026-12-03","source":"Module Handbook 2026/27, p.5; Week 1 Introduction slides, p.11"},
+        {"title":"Research Proposal & Ethics Application","due":"2026-12-21T14:00:00Z","weight":60,"length":"2,400 words","submit":"Blackboard","feedback":"2027-01-18","source":"Module Handbook 2026/27, p.5; Week 1 Introduction slides, p.11"}
+      ],
+      "notes":["Use Harvard referencing throughout your work.","Both assessments are AIAS Level 2: AI planning. Follow the individual brief and include the required AI-use declaration.","Download assessment briefs from the module's Blackboard Assessments folder.","The handbook lists 150 independent-study hours and one four-hour teaching session each week for 12 weeks. Check your personal timetable for class times and rooms."],
+      "notesSource":"Module Handbook 2026/27, pp.1, 5–7",
+      "reassessment":"Week commencing 19 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
+      "reassessmentSource":"Module Handbook 2026/27, p.8",
+      "teaching":[[1,"2026-09-21","Introduction to research"],[2,"2026-09-28","Good research, critical thinking and research design"],[3,"2026-10-05","Literature reviews, academic writing and referencing"],[4,"2026-10-12","Research methodology and design; Assessment 1 issued"],[5,"2026-10-19","Introduction to R / R basics"],[6,"2026-10-26","Study / Academic Development Week"],[7,"2026-11-02","Data analysis and visualisation in R"],[8,"2026-11-09","Qualitative research methods"],[9,"2026-11-16","Proposing research"],[10,"2026-11-23","Project planning and risk; Assessment 2"],[11,"2026-11-30","Research ethics"],[12,"2026-12-07","Revision, assignment lab and module review"]],
+      "teachingSource":"Week 1 Introduction slides, p.10. Indicative dates and topics, subject to change; not a confirmed class timetable."
+    },
+    {
+      "id":"networking",
+      "name":"Computer Networking",
+      "code":"U19956",
+      "credits":20,
+      "leader":"Dr Victor Obarafor",
+      "assessments":[
+        {"title":"Computer Based Local Exam","due":null,"weight":50,"length":"2,000-word equivalent (exam, not a written word count)","submit":"To be confirmed","feedback":null,"source":"Computer Networking Module Handbook 2026/27, summative assessment table"},
+        {"title":"Laboratory Report","due":null,"weight":50,"length":"2,000 words","submit":"To be confirmed","feedback":null,"source":"Computer Networking Module Handbook 2026/27, assessment section"}
+      ],
+      "notes":["Exam date, time, room and report deadline are still TBC in the supplied handbook.","Check Blackboard for assessment briefs and new announcements.","Save your lab configurations, results and explanations as you work.","The handbook leaves the assessment-specific AI-use levels blank. Confirm these with the module team before using AI for assessed work.","Teaching includes lectures and practical labs. Your personal teaching timetable was not supplied."],
+      "notesSource":"Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit.",
+      "reassessment":"Week commencing 12 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
+      "reassessmentSource":"Computer Networking Module Handbook 2026/27, reassessment table",
+      "teaching":[]
+    }
+  ]
+}
