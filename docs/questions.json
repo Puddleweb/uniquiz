@@ -196,7 +196,7 @@
         {
           "id": "networking-w1-012",
           "week": 1,
-          "prompt": "Which feature distinguishes peer-to-peer architecture from the client-server architecture shown?",
+          "prompt": "Which feature distinguishes peer-to-peer architecture from client-server architecture?",
           "options": [
             "Peers communicate without a central server organising the exchange",
             "Every exchange requires a dedicated central server",
@@ -434,7 +434,7 @@
         {
           "id": "networking-w1-026",
           "week": 1,
-          "prompt": "In the four-layer TCP/IP model shown, which layer corresponds to the OSI Network layer?",
+          "prompt": "In the four-layer TCP/IP model, which layer corresponds to the OSI Network layer?",
           "options": [
             "Link",
             "Transport",
@@ -508,7 +508,7 @@
         {
           "id": "pps-w1-004",
           "week": 1,
-          "prompt": "In the teaching-method example, why control other relevant variables?",
+          "prompt": "A researcher compares two teaching methods. Why should they control other relevant variables?",
           "options": [
             "To reduce alternative explanations for differences between the groups",
             "To guarantee the preferred result",
@@ -939,7 +939,7 @@
         {
           "id": "db-w1-015",
           "week": 1,
-          "prompt": "Under the illustrated manager-experience rule, should an employee hired 40 days ago qualify as a line manager?",
+          "prompt": "A shop requires line managers to have at least 90 days of service. Should an employee hired 40 days ago qualify?",
           "options": [
             "Yes, because 40 is below the threshold",
             "Only the employee surname determines this",
@@ -1092,7 +1092,7 @@
         {
           "id": "db-w1-024",
           "week": 1,
-          "prompt": "How should the example creation scripts be treated before reuse?",
+          "prompt": "A lecture provides incomplete SQL creation scripts and warns that a trigger does not work. What should you do before reusing the scripts?",
           "options": [
             "Assume every example is a complete working solution",
             "Run them against important data without checking",
