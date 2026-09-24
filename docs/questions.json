@@ -693,6 +693,556 @@
           }
         }
       ]
+    },
+    {
+      "id": "database",
+      "name": "Database Design",
+      "questions": [
+        {
+          "id": "db-w1-001",
+          "week": 1,
+          "prompt": "What is the main purpose of a primary key?",
+          "options": [
+            "Identify each row uniquely",
+            "Store every relationship in one text field",
+            "Choose the display order of all rows",
+            "Allow identical identifiers for different rows"
+          ],
+          "answer": 0,
+          "explanation": "A primary key identifies a row uniquely. It may contain one column or a combination of columns.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w1-002",
+          "week": 1,
+          "prompt": "An enrolment is identified by StudentID and ModuleID together. What kind of key is this?",
+          "options": [
+            "A datatype",
+            "A composite key",
+            "A default value",
+            "A single-column foreign key only"
+          ],
+          "answer": 1,
+          "explanation": "A composite key uses two or more columns together to identify a row. Neither column has to be unique on its own.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w1-003",
+          "week": 1,
+          "prompt": "An employee table stores ShopID to identify the shop where the employee works. Which constraint links that value to a valid shop?",
+          "options": [
+            "A display format",
+            "An increment value",
+            "A foreign key",
+            "A default string"
+          ],
+          "answer": 2,
+          "explanation": "The foreign key references the shop identifier, keeping the relationship tied to an existing shop.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w1-004",
+          "week": 1,
+          "prompt": "Which example illustrates data validation?",
+          "options": [
+            "Changing the colour of the query editor",
+            "Sorting employee names alphabetically",
+            "Renaming a database file",
+            "Rejecting an implausible employee age"
+          ],
+          "answer": 3,
+          "explanation": "Validation checks whether entered data satisfies the intended rules. The lecture uses an implausibly old employee as an example.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w1-005",
+          "week": 1,
+          "prompt": "Which datatype is most suitable for a count of whole items in stock?",
+          "options": [
+            "Integer",
+            "Boolean",
+            "BLOB",
+            "Date"
+          ],
+          "answer": 0,
+          "explanation": "An integer stores whole numbers. Stock counts also need suitable constraints, such as a non-negative range.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w1-006",
+          "week": 1,
+          "prompt": "Which datatype represents a true-or-false value?",
+          "options": [
+            "BLOB",
+            "Boolean",
+            "Integer array",
+            "Date"
+          ],
+          "answer": 1,
+          "explanation": "A Boolean represents a logical true-or-false state, rather than an image or a calendar date.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w1-007",
+          "week": 1,
+          "prompt": "Why can a numeric datatype alone be insufficient for an employee age column?",
+          "options": [
+            "It prevents any positive number being entered",
+            "It automatically creates a relationship to another table",
+            "It can still accept values outside the permitted age range",
+            "It automatically verifies every business rule"
+          ],
+          "answer": 2,
+          "explanation": "A datatype restricts the kind of value. A separate validation rule is needed to restrict which numeric values are acceptable.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w1-008",
+          "week": 1,
+          "prompt": "Why should database planning consider relationships as well as columns?",
+          "options": [
+            "Relationships only affect the colour of a diagram",
+            "Every database must contain exactly one table",
+            "Column names alone enforce all business rules",
+            "Tables must represent how the stored entities connect"
+          ],
+          "answer": 3,
+          "explanation": "Planning includes tables, columns, rules and relationships. Choosing columns alone does not describe the links between entities.",
+          "source": {
+            "title": "1 - Intro to dbs",
+            "page": 4
+          }
+        },
+        {
+          "id": "db-w1-009",
+          "week": 1,
+          "prompt": "The shop specification says every employee must have a line manager. What is this?",
+          "options": [
+            "A business rule the database design must account for",
+            "A requirement to use a particular screen colour",
+            "A reason to remove employee identifiers",
+            "A rule that all employees have the same name"
+          ],
+          "answer": 0,
+          "explanation": "The specification supplies rules that guide relationships and validation. Mandatory manager assignment needs to be considered in the design.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 4
+          }
+        },
+        {
+          "id": "db-w1-010",
+          "week": 1,
+          "prompt": "Why does the line-manager relationship refer back to the employee table?",
+          "options": [
+            "The shop table stores no identifiers",
+            "A line manager is also an employee",
+            "Managers are necessarily stock items",
+            "Every employee must manage themselves"
+          ],
+          "answer": 1,
+          "explanation": "This is a self-referencing relationship: one employee row can identify another employee as its manager. It does not mean an employee should be their own manager.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 8
+          }
+        },
+        {
+          "id": "db-w1-011",
+          "week": 1,
+          "prompt": "Why is a phone number commonly stored as text even when it contains digits?",
+          "options": [
+            "Text automatically proves that the number exists",
+            "Text prevents any spaces from being stored",
+            "It is an identifier whose formatting and leading zeros may matter",
+            "Its digits must always be added together"
+          ],
+          "answer": 2,
+          "explanation": "Phone numbers are labels rather than quantities used for arithmetic. Text can preserve leading zeros and formatting, with additional validation as needed.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w1-012",
+          "week": 1,
+          "prompt": "The stock design limits price to the range 0 through 1000. Which value violates that rule?",
+          "options": [
+            "0.00",
+            "24.50",
+            "1000.00",
+            "-1.00"
+          ],
+          "answer": 3,
+          "explanation": "The lower bound is zero and the upper bound is inclusive. A negative price falls outside the specified range.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 9
+          }
+        },
+        {
+          "id": "db-w1-013",
+          "week": 1,
+          "prompt": "What does a default product title of pending provide?",
+          "options": [
+            "An initial value when that column is omitted from an insert",
+            "A guarantee that the final title is correct",
+            "A foreign key to every product",
+            "A rule rejecting all later changes"
+          ],
+          "answer": 0,
+          "explanation": "A default supplies a value when an insert omits the column. It does not guarantee that the placeholder is meaningful or final.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 9
+          }
+        },
+        {
+          "id": "db-w1-014",
+          "week": 1,
+          "prompt": "Which stock-table column connects an item to its shop?",
+          "options": [
+            "Description",
+            "Shop ID",
+            "Product title",
+            "Item picture"
+          ],
+          "answer": 1,
+          "explanation": "Shop ID is the foreign key to the shop table. The descriptive columns describe the item itself.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 9
+          }
+        },
+        {
+          "id": "db-w1-015",
+          "week": 1,
+          "prompt": "Under the illustrated manager-experience rule, should an employee hired 40 days ago qualify as a line manager?",
+          "options": [
+            "Yes, because 40 is below the threshold",
+            "Only the employee surname determines this",
+            "No, the example requires at least 90 days",
+            "Yes, any positive service length qualifies"
+          ],
+          "answer": 2,
+          "explanation": "The example rejects a proposed manager when their service is less than 90 days. Forty days does not meet that illustrated threshold.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 10
+          }
+        },
+        {
+          "id": "db-w1-016",
+          "week": 1,
+          "prompt": "Why should a designer consider what happens when a referenced employee leaves?",
+          "options": [
+            "All stock prices must become zero",
+            "Every table will automatically be removed",
+            "Primary keys must always become text",
+            "Other records may still refer to that employee"
+          ],
+          "answer": 3,
+          "explanation": "Dependent records can retain references to a removed employee. The design must decide how to handle those relationships and avoid invalid references.",
+          "source": {
+            "title": "2 - The Shop Db",
+            "page": 11
+          }
+        },
+        {
+          "id": "db-w1-017",
+          "week": 1,
+          "prompt": "What does DROP TABLE do?",
+          "options": [
+            "Removes the table, including its stored rows",
+            "Adds one new row",
+            "Changes only a selected row value",
+            "Displays all rows"
+          ],
+          "answer": 0,
+          "explanation": "DROP TABLE removes a database object and its data. This is why the lecture warns that dropping objects is destructive.",
+          "source": {
+            "title": "3 - Create",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w1-018",
+          "week": 1,
+          "prompt": "What does INCREMENT BY specify for a sequence?",
+          "options": [
+            "The number of tables to delete",
+            "The step between generated values",
+            "The number of columns in a table",
+            "The maximum length of a surname"
+          ],
+          "answer": 1,
+          "explanation": "The increment controls the sequence step. A positive step of 1 advances values one at a time.",
+          "source": {
+            "title": "3 - Create",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w1-019",
+          "week": 1,
+          "prompt": "A sequence starts at 10 and increments by 2. What are its first three values?",
+          "options": [
+            "10, 11, 12",
+            "10, 20, 30",
+            "10, 12, 14",
+            "2, 4, 6"
+          ],
+          "answer": 2,
+          "explanation": "START WITH sets the initial value. Adding the increment of 2 twice gives 10, 12 and 14.",
+          "source": {
+            "title": "3 - Create",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w1-020",
+          "week": 1,
+          "prompt": "Which sequence setting gives its upper bound?",
+          "options": [
+            "START WITH",
+            "INCREMENT BY",
+            "MINVALUE",
+            "MAXVALUE"
+          ],
+          "answer": 3,
+          "explanation": "MAXVALUE sets the upper bound, while MINVALUE sets the lower bound and START WITH chooses the initial value.",
+          "source": {
+            "title": "3 - Create",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w1-021",
+          "week": 1,
+          "prompt": "What is the purpose of a sequence CYCLE option?",
+          "options": [
+            "Allow generated values to wrap around at the limit",
+            "Encrypt every generated value",
+            "Automatically remove a table",
+            "Guarantee that an identifier can never repeat"
+          ],
+          "answer": 0,
+          "explanation": "Cycling permits values to wrap around. If a sequence is used for identifiers, reuse can conflict with values still present in a table.",
+          "source": {
+            "title": "3 - Create",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w1-022",
+          "week": 1,
+          "prompt": "What is a database trigger intended to do?",
+          "options": [
+            "Make every column optional",
+            "Run specified logic when a defined database event occurs",
+            "Replace every table with a spreadsheet",
+            "Generate an ERD from a photograph"
+          ],
+          "answer": 1,
+          "explanation": "A trigger associates executable logic with an event and timing, such as an insert on a table. Exact trigger syntax depends on the database system.",
+          "source": {
+            "title": "3 - Create",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w1-023",
+          "week": 1,
+          "prompt": "Which information belongs in a CREATE TABLE definition?",
+          "options": [
+            "Only the final report title",
+            "The browser history of each employee",
+            "Column names, datatypes and constraints",
+            "Only the name of the database user"
+          ],
+          "answer": 2,
+          "explanation": "CREATE TABLE defines the structure, including columns and their datatypes, with column or table constraints where required.",
+          "source": {
+            "title": "3 - Create",
+            "page": 8
+          }
+        },
+        {
+          "id": "db-w1-024",
+          "week": 1,
+          "prompt": "How should the example creation scripts be treated before reuse?",
+          "options": [
+            "Assume every example is a complete working solution",
+            "Run them against important data without checking",
+            "Remove all constraints to avoid reading the code",
+            "Review and test them because the lecture identifies incomplete code and a non-working trigger"
+          ],
+          "answer": 3,
+          "explanation": "The final review explicitly notes missing elements and a trigger that does not work. Examples need checking against the scenario and the chosen SQL dialect.",
+          "source": {
+            "title": "3 - Create",
+            "page": 15
+          }
+        },
+        {
+          "id": "db-w1-025",
+          "week": 1,
+          "prompt": "Which operation changes a table structure by adding a column?",
+          "options": [
+            "ALTER TABLE",
+            "INSERT INTO",
+            "UPDATE with SET",
+            "A SELECT query"
+          ],
+          "answer": 0,
+          "explanation": "ALTER TABLE changes structure, such as columns or constraints. INSERT and UPDATE change row data.",
+          "source": {
+            "title": "4  - Update",
+            "page": 4
+          }
+        },
+        {
+          "id": "db-w1-026",
+          "week": 1,
+          "prompt": "Which SQL operation adds a new row to a table?",
+          "options": [
+            "ALTER TABLE DROP COLUMN",
+            "INSERT INTO",
+            "DROP TABLE",
+            "CREATE SEQUENCE"
+          ],
+          "answer": 1,
+          "explanation": "INSERT INTO adds data rows to an existing table. It does not create the table structure itself.",
+          "source": {
+            "title": "4  - Update",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w1-027",
+          "week": 1,
+          "prompt": "In an UPDATE statement, what does SET specify?",
+          "options": [
+            "The database connection password",
+            "The maximum number of tables",
+            "The columns and new values to assign",
+            "The table to remove completely"
+          ],
+          "answer": 2,
+          "explanation": "SET lists the changes to apply to rows selected by the UPDATE statement.",
+          "source": {
+            "title": "4  - Update",
+            "page": 8
+          }
+        },
+        {
+          "id": "db-w1-028",
+          "week": 1,
+          "prompt": "In an UPDATE statement, what is the purpose of WHERE?",
+          "options": [
+            "Define a new datatype",
+            "Create a new table",
+            "Rename the database server",
+            "Choose which rows satisfy the update condition"
+          ],
+          "answer": 3,
+          "explanation": "WHERE filters the rows to be changed. This allows a targeted update, such as selecting one employee by identifier.",
+          "source": {
+            "title": "4  - Update",
+            "page": 8
+          }
+        },
+        {
+          "id": "db-w1-029",
+          "week": 1,
+          "prompt": "What is the usual effect of omitting WHERE from an UPDATE statement?",
+          "options": [
+            "Every row in the target table is eligible for the update",
+            "The statement only updates the first row",
+            "The statement automatically adds one new row",
+            "The statement always removes the table"
+          ],
+          "answer": 0,
+          "explanation": "Without a WHERE condition, UPDATE targets all rows. Check the intended scope before executing a change.",
+          "source": {
+            "title": "4  - Update",
+            "page": 8
+          }
+        },
+        {
+          "id": "db-w1-030",
+          "week": 1,
+          "prompt": "What does UPDATE emp SET lastName = 'Pitt' WHERE empID = 3 target?",
+          "options": [
+            "All rows except empID 3",
+            "The employee row whose empID is 3",
+            "Every employee whose surname is already Pitt",
+            "The third column of every row"
+          ],
+          "answer": 1,
+          "explanation": "The WHERE clause tests the identifier value, not the physical position of the row. SET changes the surname in the matching row.",
+          "source": {
+            "title": "4  - Update",
+            "page": 12
+          }
+        },
+        {
+          "id": "db-w1-031",
+          "week": 1,
+          "prompt": "What is the role of NOT NULL on an added name column?",
+          "options": [
+            "Automatically supply a real name",
+            "Link the name to another table",
+            "Reject SQL NULL values in that column",
+            "Guarantee that the name is unique"
+          ],
+          "answer": 2,
+          "explanation": "NOT NULL rejects SQL NULL. It does not enforce uniqueness or prove that entered text is a meaningful name.",
+          "source": {
+            "title": "4  - Update",
+            "page": 10
+          }
+        },
+        {
+          "id": "db-w1-032",
+          "week": 1,
+          "prompt": "An existing employee has changed their surname. Which operation fits that task?",
+          "options": [
+            "INSERT a second employee row for the same person",
+            "DROP the employee table",
+            "CREATE a new sequence",
+            "UPDATE the existing row"
+          ],
+          "answer": 3,
+          "explanation": "UPDATE changes stored values in an existing row. Adding another row would create a second record rather than correct the original one.",
+          "source": {
+            "title": "4  - Update",
+            "page": 4
+          }
+        }
+      ]
     }
   ]
 }
