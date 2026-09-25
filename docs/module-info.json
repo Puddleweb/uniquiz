@@ -35,8 +35,8 @@
         "Download assessment briefs from the module's Blackboard Assessments folder.",
         "The handbook lists 150 independent-study hours and one four-hour teaching session each week for 12 weeks. Check your personal timetable for class times and rooms."
       ],
-      "notesSource": "Module Handbook 2026/27, pp.1, 5-7",
-      "reassessment": "Week commencing 19 July 2027 - only if you are assigned reassessment. Individual deadlines are not confirmed.",
+      "notesSource": "Module Handbook 2026/27, pp.1, 5–7",
+      "reassessment": "Week commencing 19 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
       "reassessmentSource": "Module Handbook 2026/27, p.8",
       "teaching": [
         [
@@ -136,7 +136,7 @@
         "Teaching includes lectures and practical labs. Your personal teaching timetable was not supplied."
       ],
       "notesSource": "Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit.",
-      "reassessment": "Week commencing 12 July 2027 - only if you are assigned reassessment. Individual deadlines are not confirmed.",
+      "reassessment": "Week commencing 12 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
       "reassessmentSource": "Computer Networking Module Handbook 2026/27, reassessment table",
       "teaching": []
     },
@@ -177,7 +177,7 @@
         "Groups of 5-6 students are to be assigned by Week 3. You can begin reviewing requirements before your group is allocated.",
         "Complete all six SQL workbooks before starting Assessment 2. Assessment 2 requires a personal reflection on how the workbooks supported your implementation."
       ],
-      "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3-6; Week_1_Introduction slides, pp.9, 14-16",
+      "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3–6; Week_1_Introduction slides, pp.9, 14-16",
       "teaching": [
         [
           1,
@@ -246,4 +246,3 @@
     }
   ]
 }
-
