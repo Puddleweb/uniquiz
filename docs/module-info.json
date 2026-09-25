@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "modules": [
     {
       "id": "pps",
@@ -154,7 +154,7 @@
           "length": "Not specified in handbook",
           "submit": "To be confirmed",
           "feedback": "2026-12-02",
-          "source": "Database Design Module Handbook 2026/27, p.4"
+          "source": "Database Design Module Handbook 2026/27, p.4; Week_1_Introduction slides, p.8"
         },
         {
           "title": "Digital Artefact",
@@ -163,7 +163,7 @@
           "length": "Not specified in handbook",
           "submit": "To be confirmed",
           "feedback": "2027-01-27",
-          "source": "Database Design Module Handbook 2026/27, p.4"
+          "source": "Database Design Module Handbook 2026/27, p.4; Week_1_Introduction slides, p.8"
         }
       ],
       "notes": [
@@ -171,12 +171,78 @@
         "Use Harvard referencing throughout your work.",
         "Both assessments are AIAS Level 2: AI planning. Include the required declaration and follow the individual assessment brief.",
         "The handbook lists one four-hour session per week for 12 weeks and 150 hours of independent study. Check your personal timetable for teaching times.",
-        "Teaching combines lectures and practical workshops. The indicative sequence covers entity relationships, logical modelling, the relational model, normalisation and RDBMS architecture."
+        "Teaching combines lectures and practical workshops. The indicative sequence covers entity relationships, logical modelling, the relational model, normalisation and RDBMS architecture.",
+        "Arrange a meeting with the module lead between 26 and 30 October 2026 to review your draft logical data model (LDM). Contact the module lead when you have a viable draft. The meeting time must be arranged individually.",
+        "Everyone must submit a peer review for each assessment by the same deadline as the main group submission: 11 November 2026 and 6 January 2027. The introduction slides state that non-submission of a peer review results in a mark of zero. Submission times are still TBC.",
+        "Groups of 5-6 students are to be assigned by Week 3. You can begin reviewing requirements before your group is allocated.",
+        "Complete all six SQL workbooks before starting Assessment 2. Assessment 2 requires a personal reflection on how the workbooks supported your implementation."
       ],
-      "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3–6",
-      "teaching": [],
+      "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3–6; Week_1_Introduction slides, pp.9, 14-16",
+      "teaching": [
+        [
+          1,
+          null,
+          "Introduction to the module"
+        ],
+        [
+          2,
+          null,
+          "Entity relationships; SQL Workbook 1"
+        ],
+        [
+          3,
+          null,
+          "Logical data modelling part 1; SQL Workbook 2"
+        ],
+        [
+          4,
+          null,
+          "Logical data modelling part 2; SQL Workbook 3"
+        ],
+        [
+          5,
+          null,
+          "The relational model; SQL Workbook 5"
+        ],
+        [
+          6,
+          null,
+          "Study week; SQL Workbook 4"
+        ],
+        [
+          7,
+          null,
+          "Normalisation part 1; SQL Workbook 6"
+        ],
+        [
+          8,
+          null,
+          "Normalisation part 2"
+        ],
+        [
+          9,
+          null,
+          "RDBMS architecture"
+        ],
+        [
+          10,
+          null,
+          "Group assessment workshop"
+        ],
+        [
+          11,
+          null,
+          "Database-related careers; group assessment"
+        ],
+        [
+          12,
+          null,
+          "End-of-module review; group assessment"
+        ]
+      ],
       "reassessment": "July reassessment week, only if assigned. Exact dates are not provided. Group coursework becomes individual coursework; the digital artefact remains a digital artefact.",
-      "reassessmentSource": "Database Design Module Handbook 2026/27, p.7"
+      "reassessmentSource": "Database Design Module Handbook 2026/27, p.7",
+      "teachingSource": "Week_1_Introduction slides, p.7. Indicative sequence; calendar dates are not provided. Workbook order follows the slide (Workbook 5 in Week 5, Workbook 4 in Week 6)."
     }
   ]
 }
