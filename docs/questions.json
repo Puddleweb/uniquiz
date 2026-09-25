@@ -1581,8 +1581,77 @@
             "title": "4  - Update",
             "page": 4
           }
+        },
+        {
+          "id": "db-w1-033",
+          "week": 1,
+          "prompt": "What does SQL stand for?",
+          "options": [
+            "Structured Query Language",
+            "Sequential Question Logic",
+            "Standard Queue Library",
+            "System Quality Layer"
+          ],
+          "answer": 0,
+          "explanation": "SQL stands for Structured Query Language. It is a language used to work with data in databases, rather than the name of one database product.",
+          "source": {
+            "title": "Week_1_Introduction",
+            "page": 4
+          }
+        },
+        {
+          "id": "db-w1-034",
+          "week": 1,
+          "prompt": "Which list contains four commonly recognised NoSQL database models?",
+          "options": [
+            "Key-value, document, graph and column-family",
+            "Primary key, foreign key, composite key and candidate key",
+            "Integer, Boolean, text and date",
+            "SELECT, INSERT, UPDATE and DELETE"
+          ],
+          "answer": 0,
+          "explanation": "Key-value, document, graph and column-family are NoSQL database models. Keys are identifiers, datatypes describe values, and SQL commands are operations. NoSQL systems vary: avoid assuming that none can represent relationships.",
+          "source": {
+            "title": "Week_1_Introduction",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w1-035",
+          "week": 1,
+          "prompt": "A client gives a database designer a short initial requirements list. What is the best next step before treating it as a complete specification?",
+          "options": [
+            "Clarify the requirements with the client and identify missing needs",
+            "Assume every unstated requirement is unnecessary",
+            "Choose column names and begin implementation immediately",
+            "Copy the requirements from an unrelated organisation"
+          ],
+          "answer": 0,
+          "explanation": "An initial list may be incomplete. Discussion and clarification help establish what the organisation actually needs before the design is implemented.",
+          "source": {
+            "title": "Week_1_Introduction",
+            "page": 11
+          }
+        },
+        {
+          "id": "db-w1-036",
+          "week": 1,
+          "prompt": "Why is communication with clients an important part of database design?",
+          "options": [
+            "It helps translate organisational needs into a suitable design",
+            "It removes the need to validate the database",
+            "It guarantees the first requirements list is complete",
+            "It allows technical constraints to be ignored"
+          ],
+          "answer": 0,
+          "explanation": "Designers need to understand and refine client requirements. Clear communication helps distinguish an initial request from the underlying organisational need and supports a suitable solution.",
+          "source": {
+            "title": "Week_1_Introduction",
+            "page": 12
+          }
         }
       ]
     }
   ]
 }
+
