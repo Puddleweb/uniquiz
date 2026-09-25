@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "modules": [
     {
       "id": "networking",
@@ -690,6 +690,346 @@
           "source": {
             "title": "Week 1 - Introduction",
             "page": 16
+          }
+        },
+        {
+          "id": "pps-w2-001",
+          "week": 2,
+          "prompt": "Which approach goes beyond merely describing a research topic?",
+          "options": [
+            "Comparing explanations and testing predictions",
+            "Listing facts without examining connections",
+            "Repeating the first source found",
+            "Presenting a conclusion before gathering evidence"
+          ],
+          "answer": 0,
+          "explanation": "Research develops explanations of how and why. Comparing, analysing and testing help build an argument beyond a description.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 17
+          }
+        },
+        {
+          "id": "pps-w2-002",
+          "week": 2,
+          "prompt": "A finding contradicts a researcher's preferred explanation. Which response best demonstrates an open mind?",
+          "options": [
+            "Stop considering alternative explanations",
+            "Examine the finding and reconsider the explanation",
+            "Exclude the finding because it is inconvenient",
+            "Keep the explanation regardless of the evidence"
+          ],
+          "answer": 1,
+          "explanation": "Open-minded research allows existing ideas to be questioned. Unexpected evidence should be assessed rather than rejected simply because it challenges a preference.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 18
+          }
+        },
+        {
+          "id": "pps-w2-003",
+          "week": 2,
+          "prompt": "What does generalisation concern in research?",
+          "options": [
+            "Whether a report avoids specific evidence",
+            "Whether a researcher can omit the method",
+            "Whether findings may apply beyond the situation studied",
+            "Whether all participants give identical answers"
+          ],
+          "answer": 2,
+          "explanation": "Generalisation considers application to other situations. The scope of a conclusion must still be justified by the research.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 18
+          }
+        },
+        {
+          "id": "pps-w2-004",
+          "week": 2,
+          "prompt": "Two credible sources appear to disagree. What is the strongest next step?",
+          "options": [
+            "Choose whichever agrees with your initial view",
+            "Assume both are useless because they disagree",
+            "Average their conclusions without examining their methods",
+            "Examine their evidence, context and alternative interpretations"
+          ],
+          "answer": 3,
+          "explanation": "Critical analysis questions the evidence and its interpretation. Differences may arise from context, methods or the data used.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 19
+          }
+        },
+        {
+          "id": "pps-w2-005",
+          "week": 2,
+          "prompt": "A report describes a rapidly changing technology using only very old evidence. Which source-quality concern is most directly raised?",
+          "options": [
+            "Currency",
+            "Font choice",
+            "Paragraph length",
+            "Alphabetical ordering"
+          ],
+          "answer": 0,
+          "explanation": "Currency concerns how up to date evidence is. Older work can remain useful, but its relevance to a changing context needs assessment.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 19
+          }
+        },
+        {
+          "id": "pps-w2-006",
+          "week": 2,
+          "prompt": "Which addition most strengthens a position that already states a conclusion and supporting evidence?",
+          "options": [
+            "State that disagreement is impossible",
+            "Consider serious objections and respond to them",
+            "Repeat the conclusion in larger type",
+            "Remove every source that disagrees"
+          ],
+          "answer": 1,
+          "explanation": "Considering objections tests the reasoning and helps address weaknesses instead of simply asserting that the conclusion is correct.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 21
+          }
+        },
+        {
+          "id": "pps-w2-007",
+          "week": 2,
+          "prompt": "In academic research, what does critical thinking primarily involve?",
+          "options": [
+            "Accepting an argument because its author is confident",
+            "Choosing a view on impulse",
+            "Making reasoned judgements by weighing evidence and alternatives",
+            "Finding something negative to say about every source"
+          ],
+          "answer": 2,
+          "explanation": "Critical thinking involves fair evaluation with grounds for judgement. It is more than criticism or personal dislike.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 23
+          }
+        },
+        {
+          "id": "pps-w2-008",
+          "week": 2,
+          "prompt": "Which action best demonstrates reflective judgement?",
+          "options": [
+            "Selecting the first explanation that comes to mind",
+            "Avoiding evidence that complicates the decision",
+            "Treating personal preference as sufficient proof",
+            "Considering alternatives and consequences before concluding"
+          ],
+          "answer": 3,
+          "explanation": "Reflection involves careful consideration of alternatives, consequences and available evidence before drawing conclusions.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 23
+          }
+        },
+        {
+          "id": "pps-w2-009",
+          "week": 2,
+          "prompt": "Which sentence makes a claim or assertion?",
+          "options": [
+            "The new interface reduces task completion time.",
+            "Does the new interface reduce task completion time?",
+            "Please open the new interface.",
+            "How should we measure completion time?"
+          ],
+          "answer": 0,
+          "explanation": "A claim states something as true. A question requests information, and an instruction asks someone to act.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 24
+          }
+        },
+        {
+          "id": "pps-w2-010",
+          "week": 2,
+          "prompt": "Does describing a statement as a claim establish that it is true?",
+          "options": [
+            "No; all claims are necessarily false",
+            "No; a claim still needs evaluation",
+            "Yes; every declarative sentence is a verified fact",
+            "Yes; using a technical term makes it true"
+          ],
+          "answer": 1,
+          "explanation": "Claim describes the role of a statement, not its evidential strength. Claims may express facts, beliefs or opinions and must be assessed.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 24
+          }
+        },
+        {
+          "id": "pps-w2-011",
+          "week": 2,
+          "prompt": "What distinguishes an argument from an unsupported assertion?",
+          "options": [
+            "The conclusion uses more technical vocabulary",
+            "The speaker avoids giving any evidence",
+            "Reasons are offered to support a conclusion",
+            "The assertion is repeated several times"
+          ],
+          "answer": 2,
+          "explanation": "An argument connects supporting reasons to a conclusion. Repetition or technical language alone does not supply that support.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 29
+          }
+        },
+        {
+          "id": "pps-w2-012",
+          "week": 2,
+          "prompt": "In Toulmin's model, what is the claim?",
+          "options": [
+            "The evidence collected for the argument",
+            "The assumption connecting evidence to a conclusion",
+            "An exception that limits the conclusion",
+            "The conclusion the argument seeks to establish"
+          ],
+          "answer": 3,
+          "explanation": "The claim is the point or conclusion being advanced. Other parts of the argument support or qualify it.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 31
+          }
+        },
+        {
+          "id": "pps-w2-013",
+          "week": 2,
+          "prompt": "A report recommends extending library opening hours and cites usage records showing heavy demand at closing time. What role do those records play in Toulmin's model?",
+          "options": [
+            "Grounds",
+            "Qualifier",
+            "Rebuttal",
+            "Claim"
+          ],
+          "answer": 0,
+          "explanation": "The usage records supply evidence for the recommendation, so they function as grounds.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 32
+          }
+        },
+        {
+          "id": "pps-w2-014",
+          "week": 2,
+          "prompt": "What is the role of a warrant in Toulmin's model?",
+          "options": [
+            "Replace evidence with the conclusion",
+            "Connect the grounds to the claim through an underlying assumption or principle",
+            "State how certain the author is",
+            "List exceptions to the conclusion"
+          ],
+          "answer": 1,
+          "explanation": "A warrant supplies the bridge between the evidence and what the writer concludes from it. That link may be implicit and should be examined.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 33
+          }
+        },
+        {
+          "id": "pps-w2-015",
+          "week": 2,
+          "prompt": "How does backing differ from grounds in Toulmin's model?",
+          "options": [
+            "Backing states uncertainty; grounds give exceptions",
+            "Backing and grounds both mean the final paragraph",
+            "Backing supports the warrant; grounds supply evidence for the claim",
+            "Backing is always the conclusion; grounds are always objections"
+          ],
+          "answer": 2,
+          "explanation": "Backing strengthens the reasoning behind the warrant. Grounds provide the evidence on which the argument's claim rests.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 34
+          }
+        },
+        {
+          "id": "pps-w2-016",
+          "week": 2,
+          "prompt": "In the claim that a change will probably improve performance, what role does probably play?",
+          "options": [
+            "Grounds",
+            "Backing",
+            "Rebuttal",
+            "Qualifier"
+          ],
+          "answer": 3,
+          "explanation": "A qualifier expresses the strength or limits of a claim. Here it indicates uncertainty rather than an absolute guarantee.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 35
+          }
+        },
+        {
+          "id": "pps-w2-017",
+          "week": 2,
+          "prompt": "Which part of Toulmin's model addresses counterarguments or circumstances that limit the claim?",
+          "options": [
+            "Rebuttal",
+            "Grounds",
+            "Claim",
+            "Backing"
+          ],
+          "answer": 0,
+          "explanation": "A rebuttal considers objections, exceptions or limits that the argument needs to address.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 36
+          }
+        },
+        {
+          "id": "pps-w2-018",
+          "week": 2,
+          "prompt": "An argument moves from higher test scores to a claim of better understanding. Which question most directly examines its warrant?",
+          "options": [
+            "Is the report title printed in bold?",
+            "Do these test scores provide a reliable indicator of understanding?",
+            "How many paragraphs does the report contain?",
+            "Which font was used to display the scores?"
+          ],
+          "answer": 1,
+          "explanation": "The warrant links the scores to the conclusion about understanding. Examining whether that link is justified tests the reasoning.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 33
+          }
+        },
+        {
+          "id": "pps-w2-019",
+          "week": 2,
+          "prompt": "A small study reports positive results in one setting. Which conclusion is most appropriately qualified?",
+          "options": [
+            "The approach cannot fail under any circumstances",
+            "The study proves that further research is unnecessary",
+            "The approach may help in similar settings, subject to further testing",
+            "The approach will work for everyone in every setting"
+          ],
+          "answer": 2,
+          "explanation": "A qualified conclusion limits its scope and strength to what the evidence can support. One setting does not establish a universal result.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 35
+          }
+        },
+        {
+          "id": "pps-w2-020",
+          "week": 2,
+          "prompt": "How can Toulmin's model help when reviewing a draft argument?",
+          "options": [
+            "Guarantee the conclusion is true without checking evidence",
+            "Remove the need to explain the connection between ideas",
+            "Replace every source with the writer's personal view",
+            "Identify its evidence, reasoning, limits and responses to objections"
+          ],
+          "answer": 3,
+          "explanation": "The model helps examine how an argument is constructed and where it needs support. It does not itself guarantee that the evidence or conclusion is correct.",
+          "source": {
+            "title": "Week 2 - Good Research and Critical Thinking",
+            "page": 37
           }
         }
       ]
