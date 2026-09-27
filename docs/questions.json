@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "modules": [
     {
       "id": "networking",
@@ -1031,6 +1031,414 @@
             "title": "Week 2 - Good Research and Critical Thinking",
             "page": 37
           }
+        },
+        {
+          "id": "pps-w3-001",
+          "week": 3,
+          "prompt": "A review topic is too broad to cover meaningfully. Which change best narrows its scope?",
+          "options": [
+            "Choose sources only by their length",
+            "Specify a particular process and geographical context",
+            "Add every related topic",
+            "Remove the research question"
+          ],
+          "answer": 1,
+          "explanation": "A clear focus makes the review manageable. Boundaries such as process and location should be justified by the research question.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 3
+          }
+        },
+        {
+          "id": "pps-w3-002",
+          "week": 3,
+          "prompt": "Which research-note entry most helps later critical comparison?",
+          "options": [
+            "Only a link with no explanation",
+            "Only whether the conclusion agrees with your opinion",
+            "Methods, findings and limitations alongside the full reference",
+            "Only a copied title"
+          ],
+          "answer": 2,
+          "explanation": "Recording methods and limitations alongside findings helps you compare the strength and relevance of different studies.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 15
+          }
+        },
+        {
+          "id": "pps-w3-003",
+          "week": 3,
+          "prompt": "A literature review groups studies under usability, accessibility and trust. Which structure is it using?",
+          "options": [
+            "Chronological",
+            "Alphabetical",
+            "Random",
+            "Thematic"
+          ],
+          "answer": 3,
+          "explanation": "A thematic structure groups work by aspects of the topic so that related findings can be compared.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 21
+          }
+        },
+        {
+          "id": "pps-w3-004",
+          "week": 3,
+          "prompt": "A review compares what interviews and controlled experiments reveal about the same issue. Which structure best fits?",
+          "options": [
+            "Methodological",
+            "Alphabetical by author",
+            "By article length",
+            "By publisher logo"
+          ],
+          "answer": 0,
+          "explanation": "A methodological review examines how different research approaches influence the findings and conclusions.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 21
+          }
+        },
+        {
+          "id": "pps-w3-005",
+          "week": 3,
+          "prompt": "Which action demonstrates synthesis in a literature review?",
+          "options": [
+            "Replace all conflicting findings with one preferred view",
+            "Combine related findings to explain agreement and disagreement across studies",
+            "List each abstract without connecting the studies",
+            "Count citations without reading the sources"
+          ],
+          "answer": 1,
+          "explanation": "Synthesis connects sources into an account of the topic. It requires more than isolated summaries and should preserve relevant disagreement.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 25
+          }
+        },
+        {
+          "id": "pps-w3-006",
+          "week": 3,
+          "prompt": "What should a literature-review conclusion connect its findings to?",
+          "options": [
+            "A new unrelated topic",
+            "The number of pages printed",
+            "The research question and the need for further research",
+            "Only the order in which articles were downloaded"
+          ],
+          "answer": 2,
+          "explanation": "The conclusion draws the review together, explains its significance and relates the evidence and gaps to the proposed research.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 29
+          }
+        },
+        {
+          "id": "pps-w3-007",
+          "week": 3,
+          "prompt": "What is the relationship between an in-text citation and a reference-list entry?",
+          "options": [
+            "The citation replaces the reference list entirely",
+            "Only direct quotations need any source details",
+            "The reference list contains only the writer's opinions",
+            "The citation identifies a source briefly; the reference supplies full bibliographic details"
+          ],
+          "answer": 3,
+          "explanation": "A short citation connects a claim to a source, while the full reference gives readers the information needed to locate it.",
+          "source": {
+            "title": "How to Write a Literature Review - Practical Steps",
+            "page": 35
+          }
+        },
+        {
+          "id": "pps-w3-008",
+          "week": 3,
+          "prompt": "Before searching for articles, which step is most useful?",
+          "options": [
+            "Define the information need and key concepts",
+            "Download the first hundred results",
+            "Choose a conclusion before looking for evidence",
+            "Avoid deciding what information is needed"
+          ],
+          "answer": 0,
+          "explanation": "A search plan starts from the research problem, identifies key terms and considers suitable sources.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 9
+          }
+        },
+        {
+          "id": "pps-w3-009",
+          "week": 3,
+          "prompt": "Why include alternative spellings and related terms in a search plan?",
+          "options": [
+            "They make a reference list unnecessary",
+            "Relevant authors may describe the same concept differently",
+            "They guarantee every result is relevant",
+            "They eliminate the need to evaluate sources"
+          ],
+          "answer": 1,
+          "explanation": "Alternative terminology can retrieve relevant material that one phrasing misses. Results still need to be checked for relevance and quality.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 18
+          }
+        },
+        {
+          "id": "pps-w3-010",
+          "week": 3,
+          "prompt": "An article appears in Google Scholar. What can you safely infer from that alone?",
+          "options": [
+            "Its full text must be free",
+            "Its conclusions must be correct",
+            "It still needs checks for quality, relevance and publication status",
+            "It must have been peer reviewed"
+          ],
+          "answer": 2,
+          "explanation": "The lecture cautions that Scholar includes material that is not peer reviewed and may not provide free full text. Search visibility is not a quality guarantee.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 26
+          }
+        },
+        {
+          "id": "pps-w3-011",
+          "week": 3,
+          "prompt": "Which part of a journal article is usually useful for an initial relevance check?",
+          "options": [
+            "The file size alone",
+            "The publisher colour scheme",
+            "The number of letters in the title",
+            "The abstract"
+          ],
+          "answer": 3,
+          "explanation": "The abstract summarises the work and helps decide whether a closer reading is worthwhile.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 29
+          }
+        },
+        {
+          "id": "pps-w3-012",
+          "week": 3,
+          "prompt": "You find a highly relevant article. What is a useful way to expand the search?",
+          "options": [
+            "Inspect its references for related work and recurring authors",
+            "Assume it contains everything needed",
+            "Search only sources that cite your own opinion",
+            "Discard papers with different conclusions"
+          ],
+          "answer": 0,
+          "explanation": "Following relevant references can reveal connected research and key contributors. Those sources still need independent evaluation.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 37
+          }
+        },
+        {
+          "id": "pps-w3-013",
+          "week": 3,
+          "prompt": "In a search system that supports phrase searching, what is the purpose of quotation marks around \"digital inclusion\"?",
+          "options": [
+            "Prove that each result is peer reviewed",
+            "Request the words together as a phrase",
+            "Exclude the phrase from all results",
+            "Limit every result to a particular year"
+          ],
+          "answer": 1,
+          "explanation": "Phrase searching helps find the specified words together. Supported search syntax varies by platform, so check its guidance.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 38
+          }
+        },
+        {
+          "id": "pps-w3-014",
+          "week": 3,
+          "prompt": "When is a publication-date limit most defensible?",
+          "options": [
+            "Only when the oldest article has a short title",
+            "When it replaces all source-quality checks",
+            "When it follows a justified boundary in the research question",
+            "Whenever it removes studies with inconvenient findings"
+          ],
+          "answer": 2,
+          "explanation": "Search limits should reflect a justified scope rather than selectively hide evidence. Foundational older work may still be relevant.",
+          "source": {
+            "title": "Intro to research and lit reviews",
+            "page": 39
+          }
+        },
+        {
+          "id": "pps-w3-015",
+          "week": 3,
+          "prompt": "What is the main purpose of the first pass in Keshav's reading method?",
+          "options": [
+            "Reproduce every experiment immediately",
+            "Check every proof line by line",
+            "Memorise all references",
+            "Gain an overview and decide whether deeper reading is worthwhile"
+          ],
+          "answer": 3,
+          "explanation": "The first pass is a quick overview of the title, abstract, introduction, headings, conclusion and references to judge relevance and direction.",
+          "source": {
+            "title": "keshav-how-to-readPaper",
+            "page": 1
+          }
+        },
+        {
+          "id": "pps-w3-016",
+          "week": 3,
+          "prompt": "In the five Cs of the first pass, which question concerns context?",
+          "options": [
+            "How does the paper relate to other work and theoretical foundations?",
+            "How many pages does the PDF contain?",
+            "Which font is used?",
+            "What is the download speed?"
+          ],
+          "answer": 0,
+          "explanation": "Context concerns the surrounding research and theoretical basis. It helps position a contribution within an existing field.",
+          "source": {
+            "title": "keshav-how-to-readPaper",
+            "page": 1
+          }
+        },
+        {
+          "id": "pps-w3-017",
+          "week": 3,
+          "prompt": "What receives particular attention in the second pass?",
+          "options": [
+            "Reformatting the bibliography",
+            "Figures, supporting evidence and relevant unread references",
+            "Only the paper title",
+            "Only the author's email address"
+          ],
+          "answer": 1,
+          "explanation": "The second pass develops understanding of the content, including figures and evidence, without necessarily working through every detailed proof.",
+          "source": {
+            "title": "keshav-how-to-readPaper",
+            "page": 1
+          }
+        },
+        {
+          "id": "pps-w3-018",
+          "week": 3,
+          "prompt": "What distinguishes the third pass in Keshav's method?",
+          "options": [
+            "Ignore any missing citations",
+            "Accept the authors' assumptions without examining them",
+            "Reconstruct the reasoning or work and challenge its assumptions",
+            "Read only the conclusion again"
+          ],
+          "answer": 2,
+          "explanation": "The deepest pass attempts to reconstruct the work, making hidden assumptions and potential weaknesses easier to identify.",
+          "source": {
+            "title": "keshav-how-to-readPaper",
+            "page": 2
+          }
+        },
+        {
+          "id": "pps-w3-019",
+          "week": 3,
+          "prompt": "What does a concept map help you do when planning a review?",
+          "options": [
+            "Guarantee that every source is reliable",
+            "Replace the need to read the literature",
+            "Determine an official assessment grade",
+            "Connect a broad topic to more specific concepts and subtopics"
+          ],
+          "answer": 3,
+          "explanation": "Mapping helps organise the topic and its relationships, supporting decisions about scope and subtopics.",
+          "source": {
+            "title": "Week 3 - Academic Writing and Referencing(1)",
+            "page": 11
+          }
+        },
+        {
+          "id": "pps-w3-020",
+          "week": 3,
+          "prompt": "A paragraph has accurate grammar but jumps between unrelated ideas. Which writing quality most needs attention?",
+          "options": [
+            "Coherence",
+            "Correct spelling alone",
+            "Longer sentences",
+            "More abbreviations"
+          ],
+          "answer": 0,
+          "explanation": "Coherence is the logical flow and connection between ideas. Correct grammar alone does not make an argument easy to follow.",
+          "source": {
+            "title": "Week 3 - Academic Writing and Referencing(1)",
+            "page": 14
+          }
+        },
+        {
+          "id": "pps-w3-021",
+          "week": 3,
+          "prompt": "Which tense fits a sentence describing data collected in a completed experiment?",
+          "options": [
+            "Any tense chosen randomly",
+            "Past tense",
+            "Future tense only",
+            "An imperative command"
+          ],
+          "answer": 1,
+          "explanation": "Completed methods and reported past work generally use past tense. Proposed future work and established knowledge have different tense needs.",
+          "source": {
+            "title": "Week 3 - Academic Writing and Referencing(1)",
+            "page": 20
+          }
+        },
+        {
+          "id": "pps-w3-022",
+          "week": 3,
+          "prompt": "A small study suggests a benefit but cannot establish a universal result. Which wording is most appropriate?",
+          "options": [
+            "The result proves every alternative is useless",
+            "Obviously no further evidence is needed",
+            "The findings suggest a benefit in this sample",
+            "The method always works for everyone"
+          ],
+          "answer": 2,
+          "explanation": "Cautious wording should match the scope and strength of the evidence. A limited sample does not justify universal certainty.",
+          "source": {
+            "title": "Week 3 - Academic Writing and Referencing(1)",
+            "page": 22
+          }
+        },
+        {
+          "id": "pps-w3-023",
+          "week": 3,
+          "prompt": "How should an unfamiliar acronym normally be introduced in formal academic writing?",
+          "options": [
+            "Assume all readers know it",
+            "Use a different expansion each time",
+            "Avoid mentioning the full term anywhere",
+            "Give the full term at first use, followed by the acronym"
+          ],
+          "answer": 3,
+          "explanation": "Introducing the full term makes the writing accessible and lets the abbreviation be used consistently later.",
+          "source": {
+            "title": "Week 3 - Academic Writing and Referencing(1)",
+            "page": 23
+          }
+        },
+        {
+          "id": "pps-w3-024",
+          "week": 3,
+          "prompt": "What is the best response when two sentences have no clear logical connection?",
+          "options": [
+            "Clarify how their ideas relate, using an appropriate transition if needed",
+            "Insert however regardless of meaning",
+            "Add more technical vocabulary",
+            "Join them into one longer sentence without revision"
+          ],
+          "answer": 0,
+          "explanation": "Signposting should express a real logical relationship. A transition word cannot repair unrelated reasoning by itself.",
+          "source": {
+            "title": "Week 3 - Academic Writing and Referencing(1)",
+            "page": 25
+          }
         }
       ]
     },
@@ -1654,4 +2062,3 @@
     }
   ]
 }
-
