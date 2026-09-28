@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "modules": [
     {
       "id": "networking",
@@ -446,6 +446,414 @@
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 19
+          }
+        },
+        {
+          "id": "net-w2-001",
+          "week": 2,
+          "prompt": "What should a network design primarily connect technical decisions to?",
+          "options": [
+            "The personal preferences of one vendor",
+            "Business and technical requirements",
+            "The newest equipment regardless of need",
+            "Only the number of ports on one switch"
+          ],
+          "answer": 1,
+          "explanation": "Network design plans connectivity, hardware, security and growth around the services and constraints the organisation actually needs.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 2
+          }
+        },
+        {
+          "id": "net-w2-002",
+          "week": 2,
+          "prompt": "A company introduces live video meetings. Which requirement deserves particular attention for interactive conversation?",
+          "options": [
+            "Maximum backup-file size only",
+            "The number of printed diagrams",
+            "Low latency",
+            "The colour of the network racks"
+          ],
+          "answer": 2,
+          "explanation": "Low latency reduces delay in interactive communication. Capacity and reliability also matter, but bandwidth alone does not describe delay.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 4
+          }
+        },
+        {
+          "id": "net-w2-003",
+          "week": 2,
+          "prompt": "An organisation expects more users next year. Which design best supports scalability?",
+          "options": [
+            "Use every port and all capacity immediately",
+            "Prevent new devices from joining permanently",
+            "Avoid documenting expansion options",
+            "Allow planned capacity and access-point expansion without replacing the whole network"
+          ],
+          "answer": 3,
+          "explanation": "Scalability is the ability to accommodate growth without a complete redesign. It requires planning for the expected load rather than assuming capacity is unlimited.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 5
+          }
+        },
+        {
+          "id": "net-w2-004",
+          "week": 2,
+          "prompt": "A service must remain reachable if its primary internet link fails. Which design measure most directly supports this?",
+          "options": [
+            "A redundant connection with tested failover",
+            "A longer password alone",
+            "A larger monitor for administrators",
+            "A different naming convention only"
+          ],
+          "answer": 0,
+          "explanation": "A redundant path and working failover reduce dependence on one link. The backup must be tested rather than assumed to work.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 6
+          }
+        },
+        {
+          "id": "net-w2-005",
+          "week": 2,
+          "prompt": "Why separate visitor network access from internal administrative systems?",
+          "options": [
+            "To make all traffic public",
+            "To control which resources visitors can reach",
+            "To guarantee visitors can access every server",
+            "To remove the need for access rules"
+          ],
+          "answer": 1,
+          "explanation": "Segmentation supports security by separating groups and enforcing appropriate access between them. Separation needs suitable rules to be effective.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 7
+          }
+        },
+        {
+          "id": "net-w2-006",
+          "week": 2,
+          "prompt": "A support team needs faster fault detection and clearer troubleshooting. Which combination best supports manageability?",
+          "options": [
+            "One shared password and no logs",
+            "Adding capacity without monitoring",
+            "Monitoring, useful alerts and accurate documentation",
+            "Unrecorded configuration changes"
+          ],
+          "answer": 2,
+          "explanation": "Manageability includes monitoring, configuration and troubleshooting. Alerts and documentation help staff understand and diagnose the network.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 8
+          }
+        },
+        {
+          "id": "net-w2-007",
+          "week": 2,
+          "prompt": "Which item is most clearly a business constraint during requirement gathering?",
+          "options": [
+            "The chosen IP address of a printer",
+            "The measured size of one packet",
+            "A switch port number",
+            "The available budget for the project"
+          ],
+          "answer": 3,
+          "explanation": "Budget and growth plans constrain the design at the business level; technical choices should be made within those constraints.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 10
+          }
+        },
+        {
+          "id": "net-w2-008",
+          "week": 2,
+          "prompt": "A designer checks building layouts, wiring restrictions and areas with poor wireless coverage. What is this part of?",
+          "options": [
+            "Site analysis",
+            "Final stakeholder sign-off only",
+            "Replacing the requirements stage",
+            "Writing user passwords"
+          ],
+          "answer": 0,
+          "explanation": "A site survey establishes physical conditions and coverage needs before detailed equipment placement decisions.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 11
+          }
+        },
+        {
+          "id": "net-w2-009",
+          "week": 2,
+          "prompt": "Why examine peak traffic rather than only average usage?",
+          "options": [
+            "Traffic patterns have no design relevance",
+            "Short busy periods may expose bottlenecks that averages hide",
+            "Averages always prove the network can handle every load",
+            "Peak measurements replace all security checks"
+          ],
+          "answer": 1,
+          "explanation": "Traffic analysis should identify demanding periods and application usage, because acceptable average performance can conceal peak-time problems.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 11
+          }
+        },
+        {
+          "id": "net-w2-010",
+          "week": 2,
+          "prompt": "A design states that employees need secure remote access but does not yet specify addresses or hardware. Which design level is this?",
+          "options": [
+            "Cable installation",
+            "Device inventory only",
+            "Conceptual",
+            "Physical"
+          ],
+          "answer": 2,
+          "explanation": "Conceptual design describes needed services at a high level. Logical and physical design then develop how they will be delivered.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 12
+          }
+        },
+        {
+          "id": "net-w2-011",
+          "week": 2,
+          "prompt": "Which decision belongs most directly to logical network design?",
+          "options": [
+            "The physical rack position",
+            "The length of a purchased cable",
+            "The mounting height of an access point",
+            "The IP addressing scheme and security zones"
+          ],
+          "answer": 3,
+          "explanation": "Addressing, VLAN structure, routing and security zones describe logical organisation rather than the physical placement of equipment.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 12
+          }
+        },
+        {
+          "id": "net-w2-012",
+          "week": 2,
+          "prompt": "Which item belongs most directly to physical network design?",
+          "options": [
+            "The switches, access-point locations and cabling",
+            "Only the business reason for remote access",
+            "Only a statement that growth is expected",
+            "A list of desired services without implementation detail"
+          ],
+          "answer": 0,
+          "explanation": "Physical design specifies the actual equipment and physical infrastructure used to realise the network.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 12
+          }
+        },
+        {
+          "id": "net-w2-013",
+          "week": 2,
+          "prompt": "Why pilot a new design in one area before a full rollout?",
+          "options": [
+            "To replace stakeholder requirements with guesses",
+            "To test assumptions and performance on a limited deployment",
+            "To avoid any testing after installation",
+            "To guarantee there can never be an outage"
+          ],
+          "answer": 1,
+          "explanation": "A pilot helps identify practical issues and validate performance before expanding the deployment. It does not guarantee perfect future operation.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 14
+          }
+        },
+        {
+          "id": "net-w2-014",
+          "week": 2,
+          "prompt": "What should network handover documentation include?",
+          "options": [
+            "Only the equipment purchase price",
+            "Unlabelled screenshots without context",
+            "Logical and physical diagrams, configurations and maintenance procedures",
+            "Only a photograph of the building"
+          ],
+          "answer": 2,
+          "explanation": "Useful documentation explains both the design and its operation, enabling ongoing maintenance and troubleshooting.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 15
+          }
+        },
+        {
+          "id": "net-w2-015",
+          "week": 2,
+          "prompt": "What makes acceptance testing different from simply powering on the equipment?",
+          "options": [
+            "It only checks that power LEDs are lit",
+            "It deliberately avoids realistic workloads",
+            "It happens before requirements are identified",
+            "It checks agreed requirements with stakeholders before handover"
+          ],
+          "answer": 3,
+          "explanation": "Acceptance testing confirms that the deployed system meets agreed needs, such as service and capacity targets, rather than merely turning on.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 16
+          }
+        },
+        {
+          "id": "net-w2-016",
+          "week": 2,
+          "prompt": "Which tool is suited to inspecting captured packets during troubleshooting?",
+          "options": [
+            "Wireshark",
+            "A word processor",
+            "A rack diagram alone",
+            "A spreadsheet with equipment prices only"
+          ],
+          "answer": 0,
+          "explanation": "Wireshark is used for packet capture and inspection. Diagrams and inventories provide other kinds of useful information.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 17
+          }
+        },
+        {
+          "id": "net-w2-017",
+          "week": 2,
+          "prompt": "A designer starts by identifying application needs and then chooses supporting technologies. Which approach is this?",
+          "options": [
+            "Hardware-only procurement",
+            "Top-down",
+            "Bottom-up",
+            "Random selection"
+          ],
+          "answer": 1,
+          "explanation": "Top-down design begins with business and application requirements and derives technology choices from them.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 20
+          }
+        },
+        {
+          "id": "net-w2-018",
+          "week": 2,
+          "prompt": "A team first selects equipment and then adapts its application plans to fit that technology. Which approach is this?",
+          "options": [
+            "Acceptance testing",
+            "Traffic monitoring",
+            "Bottom-up",
+            "Top-down"
+          ],
+          "answer": 2,
+          "explanation": "Bottom-up design starts with available technology and works upward towards the application and business needs.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 21
+          }
+        },
+        {
+          "id": "net-w2-019",
+          "week": 2,
+          "prompt": "Which description best captures a hybrid design approach?",
+          "options": [
+            "Ignore requirements and use only the cheapest device",
+            "Select equipment without considering applications",
+            "Assume all existing equipment must be replaced",
+            "Use business goals while also evaluating existing technology and budget constraints"
+          ],
+          "answer": 3,
+          "explanation": "A hybrid approach combines requirements-led thinking with the practical opportunities and limits of available technology.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 22
+          }
+        },
+        {
+          "id": "net-w2-020",
+          "week": 2,
+          "prompt": "In the three-layer hierarchical model, what is the primary role of the core?",
+          "options": [
+            "Fast and reliable interconnection between distribution switches",
+            "Providing each end-user socket directly",
+            "Writing the organisation's acceptable-use policy",
+            "Storing every user document"
+          ],
+          "answer": 0,
+          "explanation": "The core is the high-speed backbone, prioritising reliable and stable interconnection.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 31
+          }
+        },
+        {
+          "id": "net-w2-021",
+          "week": 2,
+          "prompt": "Which layer typically aggregates access traffic and applies routing and policy controls in the three-layer model?",
+          "options": [
+            "The physical cable sheath",
+            "Distribution",
+            "Access only",
+            "An application-layer web browser"
+          ],
+          "answer": 1,
+          "explanation": "Distribution connects access networks to the core and commonly performs routing, filtering and policy enforcement.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 32
+          }
+        },
+        {
+          "id": "net-w2-022",
+          "week": 2,
+          "prompt": "In a hierarchical network, where do end-user devices connect through switch ports or wireless access points?",
+          "options": [
+            "Only an off-site data archive",
+            "The documentation system",
+            "The access layer",
+            "Only the core backbone"
+          ],
+          "answer": 2,
+          "explanation": "The access layer provides device connectivity and related access controls, before traffic moves toward distribution and core layers.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 33
+          }
+        },
+        {
+          "id": "net-w2-023",
+          "week": 2,
+          "prompt": "Under Zero Trust, does being inside the network automatically make a device trusted?",
+          "options": [
+            "Yes; internal location grants unrestricted access",
+            "Yes; only visitors need verification",
+            "Yes; a firewall removes all internal risk",
+            "No; access still requires appropriate verification and controls"
+          ],
+          "answer": 3,
+          "explanation": "Zero Trust does not grant implicit trust based solely on network location. Identity and access decisions still matter for internal devices.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 34
+          }
+        },
+        {
+          "id": "net-w2-024",
+          "week": 2,
+          "prompt": "What is the purpose of restricting connections between individual workloads?",
+          "options": [
+            "To limit unnecessary access and reduce the reach of a compromise",
+            "To make every workload accessible to every user",
+            "To replace all identity checks with network location",
+            "To stop administrators from monitoring events"
+          ],
+          "answer": 0,
+          "explanation": "Fine-grained segmentation controls communication between workloads. It complements identity checks and monitoring rather than replacing them.",
+          "source": {
+            "title": "Lecture 2_Networking",
+            "page": 36
           }
         }
       ]
