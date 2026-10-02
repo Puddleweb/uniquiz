@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-28",
+  "updated": "2026-10-02",
   "modules": [
     {
       "id": "networking",
@@ -9,15 +9,15 @@
         {
           "id": "networking-w1-001",
           "week": 1,
-          "prompt": "Which description best defines a computer network?",
+          "prompt": "Two computers exchange files directly over Ethernet, with no internet connection. Which description is most accurate?",
           "options": [
-            "A collection of offline documents",
-            "A single application running without communication",
-            "A processor with several cores",
-            "Interconnected devices that communicate and share resources"
+            "They form a network only after a router supplies internet access.",
+            "They form a network only after a dedicated server is installed.",
+            "They form a network only when a third device is connected.",
+            "They form a network because interconnected devices communicate."
           ],
           "answer": 3,
-          "explanation": "A network connects devices so that they can communicate and share resources. Multiple files or processor cores alone do not establish a computer network.",
+          "explanation": "A network requires interconnected communicating devices; internet access, a dedicated server and a third device are not prerequisites.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 4
@@ -43,15 +43,15 @@
         {
           "id": "networking-w1-003",
           "week": 1,
-          "prompt": "In a client-server exchange, which role normally initiates a service request?",
+          "prompt": "A web server calls a separate authentication service to verify a login. In that particular exchange, what role does the web server take?",
           "options": [
-            "The load balancer in every case",
-            "The client",
-            "The server",
-            "The transmission cable"
+            "Proxy, because every service-to-service request uses that role.",
+            "Client, because it initiates the request to the authentication service.",
+            "Server, because its role is fixed by the service it offers browsers.",
+            "Peer, because both machines can respond to other requests."
           ],
           "answer": 1,
-          "explanation": "The client initiates the request and the server provides the requested service or response. These roles describe the particular communication.",
+          "explanation": "Client and server describe roles in an exchange. A machine serving browsers can act as a client when requesting another service.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 6
@@ -77,15 +77,15 @@
         {
           "id": "networking-w1-005",
           "week": 1,
-          "prompt": "How does a basic Ethernet hub handle incoming traffic?",
+          "prompt": "An Ethernet hub receives a signal from one attached computer. Which forwarding behaviour distinguishes it from a learning switch?",
           "options": [
-            "Learns a route across the internet",
-            "Inspects it against firewall rules",
-            "Caches web pages for later use",
-            "Broadcasts it to connected devices"
+            "It sends the frame to the destination port using a learned MAC-address table.",
+            "It selects the next network using the destination IP address.",
+            "It sends the frame only to ports with a matching security policy.",
+            "It repeats the signal to other ports without selecting a learned destination port."
           ],
           "answer": 3,
-          "explanation": "A hub is a multi-port repeater and broadcasts incoming traffic. It does not make the learned forwarding decisions associated with a switch.",
+          "explanation": "A hub is a multi-port repeater. A learning switch uses MAC-to-port information; IP routing and policy filtering are different functions.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 8
@@ -94,15 +94,15 @@
         {
           "id": "networking-w1-006",
           "week": 1,
-          "prompt": "You need to connect 30 wired PCs within one departmental LAN. Which device best fits?",
+          "prompt": "Thirty wired PCs share one LAN. You want frames for known destinations forwarded to the appropriate ports rather than repeated to every PC. Which device fits?",
           "options": [
-            "A repeater with one port",
-            "A web server",
-            "A switch",
-            "A proxy server"
+            "Physical-layer repeater",
+            "Wireless access point",
+            "Ethernet switch",
+            "Ethernet hub"
           ],
           "answer": 2,
-          "explanation": "A switch provides multiple ports for hosts within a LAN and learns which hosts are on which ports. A web server provides a service rather than the physical LAN connections.",
+          "explanation": "An Ethernet switch learns destination-port associations. Hubs and repeaters do not make those forwarding decisions; an access point principally provides wireless access.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 10
@@ -111,15 +111,15 @@
         {
           "id": "networking-w1-007",
           "week": 1,
-          "prompt": "Two separate office networks need to communicate. Which device routes traffic between them?",
+          "prompt": "Two IP networks must exchange packets. Which function is required at their boundary?",
           "options": [
-            "A passive cable splitter",
-            "A router",
-            "A hub",
-            "A printer"
+            "Caching repeated application requests",
+            "Routing using network-layer destination addresses",
+            "Repeating signals to compensate for cable attenuation",
+            "Switching frames within a single local network"
           ],
           "answer": 1,
-          "explanation": "Routers move traffic from one network to another. Switches chiefly connect hosts within a LAN; a hub repeats traffic rather than routing it between networks.",
+          "explanation": "Routing provides delivery between networks. Repeating, local switching and application caching address different needs.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 10
@@ -162,15 +162,15 @@
         {
           "id": "networking-w1-010",
           "week": 1,
-          "prompt": "A service spreads requests across several servers to avoid overloading one. What is doing this?",
+          "prompt": "Several identical web servers should share incoming requests so one server does not carry the entire workload. Which function directly addresses this requirement?",
           "options": [
-            "A wireless repeater",
-            "A client keyboard",
-            "A load balancer",
-            "A bridge"
+            "Packet filtering",
+            "Signal regeneration",
+            "Load balancing",
+            "Web-content caching"
           ],
           "answer": 2,
-          "explanation": "A load balancer distributes traffic or application work across servers to improve availability and avoid a single server becoming overloaded.",
+          "explanation": "Load balancing distributes requests among servers. Caching may reduce repeated work but does not by itself distribute requests across the server pool.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 11
@@ -179,15 +179,15 @@
         {
           "id": "networking-w1-011",
           "week": 1,
-          "prompt": "A browser request goes through an intermediary that can cache or filter web content. What is it?",
+          "prompt": "A browser sends a request to an intermediary that may return a cached response or forward the request to the origin server. Which role is illustrated?",
           "options": [
-            "A network cable",
-            "A proxy",
-            "A hub",
-            "A physical-layer repeater"
+            "Wireless access point",
+            "Proxy",
+            "Router",
+            "Ethernet switch"
           ],
           "answer": 1,
-          "explanation": "A proxy sits between a client and another server. It can forward requests, cache content or filter access.",
+          "explanation": "The proxy mediates application requests and may cache content. The other devices provide connectivity or forwarding rather than the described application intermediary role.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 11
@@ -196,15 +196,15 @@
         {
           "id": "networking-w1-012",
           "week": 1,
-          "prompt": "Which feature distinguishes peer-to-peer architecture from client-server architecture?",
+          "prompt": "Which observation most strongly supports classifying a file-sharing exchange as peer-to-peer?",
           "options": [
-            "Peers communicate without a central server organising the exchange",
-            "Every exchange requires a dedicated central server",
-            "Only one device can ever send data",
-            "The devices cannot share resources"
+            "Participants both request and supply files without a central server organising the exchange.",
+            "Several clients request files from the same dedicated file server.",
+            "Clients reach a dedicated file server through a wireless access point.",
+            "Requests to one service address are distributed across several dedicated servers."
           ],
           "answer": 0,
-          "explanation": "Peer-to-peer is decentralised. The distinguishing feature is the lack of a central server organising communication, not a ban on resource sharing.",
+          "explanation": "In the decentralised peer exchange participants supply and request resources. Multiple servers or wireless connectivity do not alone make the architecture peer-to-peer.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 12
@@ -230,15 +230,15 @@
         {
           "id": "networking-w1-014",
           "week": 1,
-          "prompt": "A company links branches in different countries. Which network type best describes that scale?",
+          "prompt": "Branches in three countries each have a local office network. What best describes the network connecting those branch networks?",
           "options": [
-            "A single-building LAN",
-            "A processor bus",
+            "LAN",
+            "PAN",
             "WAN",
-            "PAN"
+            "MAN"
           ],
           "answer": 2,
-          "explanation": "A wide area network links networks over large geographical distances, such as between countries. A PAN or single-building LAN has much smaller scope.",
+          "explanation": "A WAN spans a large geographical area and can interconnect branch LANs. A MAN is metropolitan in scale; LAN and PAN have smaller scopes.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 14
@@ -247,15 +247,15 @@
         {
           "id": "networking-w1-015",
           "week": 1,
-          "prompt": "What does a network protocol define?",
+          "prompt": "Two systems agree on a message format but disagree on whether an acknowledgement must be sent before the next message. What is missing from their protocol agreement?",
           "options": [
-            "The price of internet access",
-            "Message formats, their order and actions on sending or receipt",
-            "Only the colour of a network cable",
-            "Only the physical size of a server"
+            "The same physical transmission medium end to end",
+            "Compatible sequencing and actions on receipt",
+            "A common file format for stored documents",
+            "Matching hardware from the same manufacturer"
           ],
           "answer": 1,
-          "explanation": "Protocols specify how communication proceeds: message formats, sequencing and the actions taken when messages are transmitted or received.",
+          "explanation": "Protocols specify formats, sequence and actions on sending or receipt. Agreeing only on the format leaves communication behaviour underspecified.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 15
@@ -264,15 +264,15 @@
         {
           "id": "networking-w1-016",
           "week": 1,
-          "prompt": "Why divide network communication into layers?",
+          "prompt": "A team replaces a network technology while keeping the service offered to the layer above stable. Which benefit of layering does this illustrate?",
           "options": [
-            "To reduce complexity by separating responsibilities",
-            "To make every layer perform exactly the same task",
-            "To remove the need for protocols",
-            "To ensure only one device can communicate"
+            "Changes can be contained behind a defined interface.",
+            "Every layer can interpret the same header in the same way.",
+            "Higher layers no longer depend on any lower-layer service.",
+            "All end-to-end functions can move into the physical layer."
           ],
           "answer": 0,
-          "explanation": "Layering uses abstraction: each layer has a defined role and interfaces with neighbouring layers. Separating responsibilities makes the system easier to understand and manage.",
+          "explanation": "Layering separates responsibilities through interfaces. It reduces the impact of changes, without removing dependencies or making layer functions identical.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 17
@@ -298,15 +298,15 @@
         {
           "id": "networking-w1-018",
           "week": 1,
-          "prompt": "What is encapsulation when data moves down the protocol stack?",
+          "prompt": "A transport layer passes its data unit to the next lower layer on the sending host. What normally happens during encapsulation?",
           "options": [
-            "The application removes the physical connection",
-            "The sender deletes the payload to save space",
-            "A layer adds control information to data from the layer above",
-            "Every layer discards all headers before transmission"
+            "The lower layer replaces the transport payload with its own header.",
+            "The lower layer waits for the receiver to add all remaining headers.",
+            "The lower layer adds its own control information around the supplied data.",
+            "The lower layer removes the transport header before transmission."
           ],
           "answer": 2,
-          "explanation": "As data moves down the stack, layers add their own control information, such as headers. The receiver processes and removes this information in the reverse direction.",
+          "explanation": "Each sending layer adds the control information needed for its own role. Corresponding information is processed and removed on reception rather than discarded before sending.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
             "page": 19
@@ -1993,15 +1993,15 @@
         {
           "id": "db-w1-009",
           "week": 1,
-          "prompt": "The shop specification says every employee must have a line manager. What is this?",
+          "prompt": "A specification says every employee must have a line manager. Which design issue does this requirement directly raise?",
           "options": [
-            "A business rule the database design must account for",
-            "A requirement to use a particular screen colour",
-            "A reason to remove employee identifiers",
-            "A rule that all employees have the same name"
+            "How to enforce mandatory manager assignment for employee records",
+            "How to make manager names unique across employee records",
+            "How to give every manager a separate database login",
+            "How to make employee identifiers consecutive without gaps"
           ],
           "answer": 0,
-          "explanation": "The specification supplies rules that guide relationships and validation. Mandatory manager assignment needs to be considered in the design.",
+          "explanation": "The requirement is about mandatory assignment, not name uniqueness, login accounts or the numerical sequence of identifiers.",
           "source": {
             "title": "2 - The Shop Db",
             "page": 4
@@ -2027,15 +2027,15 @@
         {
           "id": "db-w1-011",
           "week": 1,
-          "prompt": "Why is a phone number commonly stored as text even when it contains digits?",
+          "prompt": "A contact number can begin with zero and include a country-code prefix. Which choice best preserves its intended meaning?",
           "options": [
-            "Text automatically proves that the number exists",
-            "Text prevents any spaces from being stored",
-            "It is an identifier whose formatting and leading zeros may matter",
-            "Its digits must always be added together"
+            "Floating-point number with rounding disabled",
+            "Date with a custom display format",
+            "Text with suitable format validation",
+            "Integer with a fixed display width"
           ],
           "answer": 2,
-          "explanation": "Phone numbers are labels rather than quantities used for arithmetic. Text can preserve leading zeros and formatting, with additional validation as needed.",
+          "explanation": "A phone number is an identifier, not a quantity. Text preserves meaningful characters and leading zeros; validation remains a separate requirement.",
           "source": {
             "title": "2 - The Shop Db",
             "page": 7
@@ -2044,15 +2044,15 @@
         {
           "id": "db-w1-012",
           "week": 1,
-          "prompt": "The stock design limits price to the range 0 through 1000. Which value violates that rule?",
+          "prompt": "A stock-price rule allows values from 0 through 1000 inclusive. Which set best tests both boundaries and the immediately adjacent invalid values?",
           "options": [
-            "0.00",
-            "24.50",
-            "1000.00",
-            "-1.00"
+            "0, 0.01, 999.99, 1000",
+            "1, 250, 500, 999",
+            "-10, -1, 1001, 1010",
+            "-0.01, 0, 1000, 1000.01"
           ],
           "answer": 3,
-          "explanation": "The lower bound is zero and the upper bound is inclusive. A negative price falls outside the specified range.",
+          "explanation": "The first set tests the two valid boundary values and a value just outside each. Interior-only and invalid-only sets do not establish both boundary decisions.",
           "source": {
             "title": "2 - The Shop Db",
             "page": 9
@@ -2061,15 +2061,15 @@
         {
           "id": "db-w1-013",
           "week": 1,
-          "prompt": "What does a default product title of pending provide?",
+          "prompt": "A title column has a default of pending. An INSERT omits that column. Which conclusion follows from the default alone?",
           "options": [
-            "An initial value when that column is omitted from an insert",
-            "A guarantee that the final title is correct",
-            "A foreign key to every product",
-            "A rule rejecting all later changes"
+            "The omitted column receives pending, but the title may still need review.",
+            "The row is rejected until a non-placeholder title is supplied.",
+            "The value pending becomes unique across the table.",
+            "The placeholder is replaced automatically when another row is inserted."
           ],
           "answer": 0,
-          "explanation": "A default supplies a value when an insert omits the column. It does not guarantee that the placeholder is meaningful or final.",
+          "explanation": "A default supplies an omitted value. It does not validate its business meaning, impose uniqueness or schedule a later replacement.",
           "source": {
             "title": "2 - The Shop Db",
             "page": 9
@@ -2095,15 +2095,15 @@
         {
           "id": "db-w1-015",
           "week": 1,
-          "prompt": "A shop requires line managers to have at least 90 days of service. Should an employee hired 40 days ago qualify?",
+          "prompt": "A rule permits line managers with at least 90 days of service. Which expected outcomes correctly test the threshold?",
           "options": [
-            "Yes, because 40 is below the threshold",
-            "Only the employee surname determines this",
-            "No, the example requires at least 90 days",
-            "Yes, any positive service length qualifies"
+            "89 days: accept; 90 days: accept; 91 days: reject",
+            "89 days: accept; 90 days: reject; 91 days: reject",
+            "89 days: reject; 90 days: accept; 91 days: accept",
+            "89 days: reject; 90 days: reject; 91 days: accept"
           ],
           "answer": 2,
-          "explanation": "The example rejects a proposed manager when their service is less than 90 days. Forty days does not meet that illustrated threshold.",
+          "explanation": "At least 90 includes the boundary. Testing 89, 90 and 91 distinguishes an inclusive threshold from an erroneous strictly-greater-than check.",
           "source": {
             "title": "2 - The Shop Db",
             "page": 10
@@ -2146,15 +2146,15 @@
         {
           "id": "db-w1-018",
           "week": 1,
-          "prompt": "What does INCREMENT BY specify for a sequence?",
+          "prompt": "A sequence starts at 20 and uses INCREMENT BY 5. Which interpretation of the increment is correct?",
           "options": [
-            "The number of tables to delete",
-            "The step between generated values",
-            "The number of columns in a table",
-            "The maximum length of a surname"
+            "Values repeat after every 5 requests.",
+            "Successive generated values differ by 5.",
+            "Exactly 5 values can be generated.",
+            "The largest generated value is 5."
           ],
           "answer": 1,
-          "explanation": "The increment controls the sequence step. A positive step of 1 advances values one at a time.",
+          "explanation": "The increment is the step between sequence values. Limits and cycling are separate settings.",
           "source": {
             "title": "3 - Create",
             "page": 6
@@ -2197,15 +2197,15 @@
         {
           "id": "db-w1-021",
           "week": 1,
-          "prompt": "What is the purpose of a sequence CYCLE option?",
+          "prompt": "A sequence used for record IDs reaches its upper limit and is configured to CYCLE. What must the designer consider?",
           "options": [
-            "Allow generated values to wrap around at the limit",
-            "Encrypt every generated value",
-            "Automatically remove a table",
-            "Guarantee that an identifier can never repeat"
+            "Wrapped values may collide with identifiers still stored.",
+            "Cycling automatically deletes rows with reused identifiers.",
+            "Cycling raises the sequence upper limit on each pass.",
+            "Cycling reserves a new unique prefix for each pass."
           ],
           "answer": 0,
-          "explanation": "Cycling permits values to wrap around. If a sequence is used for identifiers, reuse can conflict with values still present in a table.",
+          "explanation": "CYCLE allows reuse of values after a limit. It does not remove existing rows or guarantee uniqueness of a key populated from that sequence.",
           "source": {
             "title": "3 - Create",
             "page": 6
@@ -2214,15 +2214,15 @@
         {
           "id": "db-w1-022",
           "week": 1,
-          "prompt": "What is a database trigger intended to do?",
+          "prompt": "A validation rule must run when a specified database insert event occurs. Which mechanism directly associates logic with that event?",
           "options": [
-            "Make every column optional",
-            "Run specified logic when a defined database event occurs",
-            "Replace every table with a spreadsheet",
-            "Generate an ERD from a photograph"
+            "A stored query result",
+            "A database trigger",
+            "A column default",
+            "A sequence increment"
           ],
           "answer": 1,
-          "explanation": "A trigger associates executable logic with an event and timing, such as an insert on a table. Exact trigger syntax depends on the database system.",
+          "explanation": "A trigger executes logic in response to a defined event and timing. Defaults supply omitted values and sequences generate values; neither is a general event handler.",
           "source": {
             "title": "3 - Create",
             "page": 7
@@ -2464,6 +2464,346 @@
           "source": {
             "title": "Week_1_Introduction",
             "page": 12
+          }
+        },
+        {
+          "id": "db-w2-001",
+          "week": 2,
+          "prompt": "A museum stores records for its collection. Which pair correctly distinguishes an entity type from one entity occurrence?",
+          "options": [
+            "Catalogue ID A217; Artwork",
+            "Artwork; the catalogue-number attribute",
+            "Catalogue number; the set of all artworks",
+            "Artwork; the artwork with catalogue ID A217"
+          ],
+          "answer": 3,
+          "explanation": "An entity type describes a collection of similar things; one identified artwork is an occurrence. An attribute is a property of the type.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 15
+          }
+        },
+        {
+          "id": "db-w2-002",
+          "week": 2,
+          "prompt": "A repair service records each repair visit separately, with a date and outcome. A customer can have many visits. How should Visit be treated in a conceptual model?",
+          "options": [
+            "As the relationship name replacing Customer",
+            "As one customer-name attribute of Visit",
+            "As an entity type related to Customer",
+            "As one date attribute of Customer"
+          ],
+          "answer": 2,
+          "explanation": "Visits have their own occurrences and properties. Collapsing them into a single date loses multiple visits and their outcomes.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 19
+          }
+        },
+        {
+          "id": "db-w2-003",
+          "week": 2,
+          "prompt": "Stakeholders are agreeing which things exist in a booking system and how they relate, before selecting columns and SQL types. Which model best supports that discussion?",
+          "options": [
+            "Index and query-execution plan",
+            "Conceptual ER model",
+            "Physical storage layout",
+            "SQL table-creation script"
+          ],
+          "answer": 1,
+          "explanation": "A conceptual model establishes business entities and relationships before more implementation-specific decisions.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w2-004",
+          "week": 2,
+          "prompt": "A publisher releases many editions. Each edition has exactly one publisher. Where does the publisher reference normally belong in a relational implementation?",
+          "options": [
+            "In Edition, referencing Publisher",
+            "In Publisher, referencing one Edition",
+            "In both tables, with both references required to be unique",
+            "In Edition, replacing the edition identifier"
+          ],
+          "answer": 0,
+          "explanation": "The foreign key belongs on the many side. A reference in Publisher to only one Edition cannot represent all its editions.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 23
+          }
+        },
+        {
+          "id": "db-w2-005",
+          "week": 2,
+          "prompt": "A Member may make no bookings or several bookings. Every Booking belongs to exactly one Member. Which participation rules follow?",
+          "options": [
+            "Member mandatory in booking; Booking optional in membership",
+            "Both sides mandatory",
+            "Both sides optional",
+            "Member optional in booking; Booking mandatory in membership"
+          ],
+          "answer": 3,
+          "explanation": "Members can exist without bookings, while a booking cannot lack its member. Maximum cardinality and minimum participation are distinct decisions.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 31
+          }
+        },
+        {
+          "id": "db-w2-006",
+          "week": 2,
+          "prompt": "Volunteers attend many events and events have many volunteers. Attendance stores the hours contributed by each volunteer at each event. Where should hours be stored?",
+          "options": [
+            "On Event as one hours value for all volunteers",
+            "On both Volunteer and Event as duplicated totals",
+            "On Attendance linking Volunteer and Event",
+            "On Volunteer as one hours value for all events"
+          ],
+          "answer": 2,
+          "explanation": "Hours depend on the particular volunteer-event pairing. An intermediate entity records each pairing and its properties.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 25
+          }
+        },
+        {
+          "id": "db-w2-007",
+          "week": 2,
+          "prompt": "An ER model contains a many-to-many relationship. Which statement about relational implementation is most accurate?",
+          "options": [
+            "Make the identifier on each side identical for every related pair.",
+            "Represent the associations using an intermediate table and related foreign keys.",
+            "Discard the relationship because relational systems cannot represent it.",
+            "Put a comma-separated list of related keys into a single field."
+          ],
+          "answer": 1,
+          "explanation": "Relational databases can represent many-to-many associations using a linking table. The slide warning concerns direct implementation, not a ban on the business relationship.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 25
+          }
+        },
+        {
+          "id": "db-w2-008",
+          "week": 2,
+          "prompt": "Each locker is assigned to at most one member, and each member has at most one locker. No assignment is required. What relationship is specified?",
+          "options": [
+            "One-to-one with optional participation on both sides",
+            "One-to-many with mandatory participation on both sides",
+            "Many-to-many with optional participation on both sides",
+            "One-to-one with mandatory participation on both sides"
+          ],
+          "answer": 0,
+          "explanation": "Maximum one on both sides gives one-to-one. The permission to have no assignment makes participation optional.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 23
+          }
+        },
+        {
+          "id": "db-w2-009",
+          "week": 2,
+          "prompt": "Which name best follows the lecture convention for a conceptual entity type representing individual loans?",
+          "options": [
+            "Loans",
+            "tbl_Loan_PostgreSQL",
+            "LoanDate",
+            "Loan"
+          ],
+          "answer": 3,
+          "explanation": "Loan is singular, meaningful and independent of physical implementation. LoanDate describes a property rather than the loan entity type.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 18
+          }
+        },
+        {
+          "id": "db-w2-010",
+          "week": 2,
+          "prompt": "For the simplified conceptual ER notation used in this lecture, which deliverable fits the requested level of detail?",
+          "options": [
+            "Only attribute names without relationships",
+            "Physical disk locations and access paths",
+            "Entity types and their relationships",
+            "Tables with all SQL types and indexes"
+          ],
+          "answer": 2,
+          "explanation": "This lecture uses a simplified conceptual diagram of entity types and relationships, postponing attribute detail to logical modelling. Other ER notations may include attributes.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 19
+          }
+        },
+        {
+          "id": "db-w2-011",
+          "week": 2,
+          "prompt": "A draft says each tutor supervises many projects. Which follow-up is needed to establish minimum participation?",
+          "options": [
+            "Which SQL type stores a project identifier?",
+            "Can a tutor exist with no assigned projects?",
+            "What is the maximum length of a tutor surname?",
+            "Which index speeds up a project-title search?"
+          ],
+          "answer": 1,
+          "explanation": "Maximum cardinality does not determine whether zero related instances are allowed. Minimum participation must be elicited from requirements.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 31
+          }
+        },
+        {
+          "id": "db-w2-012",
+          "week": 2,
+          "prompt": "A booking design assumes every customer has already made a booking. The requirement allows customers to register before booking. What is the most direct correction?",
+          "options": [
+            "Make Customer participation in the booking relationship optional.",
+            "Change Customer to an attribute of Booking.",
+            "Make the relationship many-to-many instead of one-to-many.",
+            "Remove the relationship and store bookings independently."
+          ],
+          "answer": 0,
+          "explanation": "The discrepancy concerns minimum participation, not whether customers and bookings are entities or the maximum number of bookings.",
+          "source": {
+            "title": "Week_2_ERModelling_Students",
+            "page": 33
+          }
+        },
+        {
+          "id": "db-w2-013",
+          "week": 2,
+          "prompt": "Table parcel has columns parcel_id, destination and status. Which query returns only destination values for rows whose status is held?",
+          "options": [
+            "SELECT status FROM parcel WHERE destination = 'held';",
+            "SELECT destination, status FROM parcel;",
+            "SELECT destination FROM parcel WHERE 'status' = 'held';",
+            "SELECT destination FROM parcel WHERE status = 'held';"
+          ],
+          "answer": 3,
+          "explanation": "SELECT chooses the output column; WHERE filters rows. Quoting status as a string tests two string literals instead of the status column.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w2-014",
+          "week": 2,
+          "prompt": "A case-sensitive surname filter must match names beginning with Mar. Which condition fits?",
+          "options": [
+            "surname = 'Mar%'",
+            "surname LIKE '%Mar%'",
+            "surname LIKE 'Mar%'",
+            "surname LIKE '%Mar'"
+          ],
+          "answer": 2,
+          "explanation": "The trailing percent permits any suffix after Mar. A leading percent permits a prefix; percent on both sides permits a substring anywhere. Equality does not interpret the wildcard.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w2-015",
+          "week": 2,
+          "prompt": "Rows (id, city, surname) are (1, York, Marsh), (2, Bath, Marsh), (3, York, Mason), (4, York, Shaw). Which IDs satisfy city = 'York' AND surname LIKE 'Ma%'?",
+          "options": [
+            "2 and 3",
+            "1 and 3",
+            "1, 2 and 3",
+            "1 and 4"
+          ],
+          "answer": 1,
+          "explanation": "AND requires both conditions. Rows 1 and 3 meet both; row 2 fails the city condition and row 4 fails the surname prefix.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w2-016",
+          "week": 2,
+          "prompt": "A query should return Bath residents whose surname starts with H. It uses city = 'Bath' OR surname LIKE 'H%'. Which error can result?",
+          "options": [
+            "Residents of other cities with H surnames can be included.",
+            "Bath residents with H surnames are always excluded.",
+            "Only surnames exactly equal to H can be included.",
+            "The result necessarily contains only one row."
+          ],
+          "answer": 0,
+          "explanation": "OR accepts either condition. The requirement needs AND, so both the location and prefix must match.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w2-017",
+          "week": 2,
+          "prompt": "In PostgreSQL a column was created with the exact mixed-case identifier \"homeCity\". Which expression compares its value with the text York?",
+          "options": [
+            "'homeCity' = 'York'",
+            "\"homeCity\" = \"York\"",
+            "'homeCity' = \"York\"",
+            "\"homeCity\" = 'York'"
+          ],
+          "answer": 3,
+          "explanation": "Double quotes preserve the identifier; single quotes delimit the text value. Quoting York as an identifier asks for a column of that name.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w2-018",
+          "week": 2,
+          "prompt": "A report needs parcel_id and destination for every parcel. Why prefer SELECT parcel_id, destination FROM parcel over SELECT * FROM parcel?",
+          "options": [
+            "It automatically orders parcels by parcel_id.",
+            "It guarantees the query returns fewer rows.",
+            "It states the required columns and avoids returning unrelated fields.",
+            "It automatically filters out duplicate parcels."
+          ],
+          "answer": 2,
+          "explanation": "Projection controls columns, not row filtering, distinctness or ordering. Explicit columns also keep the output focused on the report requirement.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 5
+          }
+        },
+        {
+          "id": "db-w2-019",
+          "week": 2,
+          "prompt": "Which values match code LIKE 'B%' under case-sensitive matching? Values: B, B7, AB7, b7.",
+          "options": [
+            "B, B7 and b7",
+            "B and B7",
+            "B7 only",
+            "B7 and AB7"
+          ],
+          "answer": 1,
+          "explanation": "Percent can match zero or more characters, so B itself matches. AB7 has the wrong start and b7 differs in case under the stated assumption.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 6
+          }
+        },
+        {
+          "id": "db-w2-020",
+          "week": 2,
+          "prompt": "A field must preserve a variable-length external reference of at most eight characters, including possible leading zeros. Which declared type best expresses this requirement?",
+          "options": [
+            "varchar(8)",
+            "integer",
+            "date",
+            "Boolean"
+          ],
+          "answer": 0,
+          "explanation": "varchar(8) expresses variable-length text with a length limit. A numeric type changes the representation of leading zeros; date and Boolean describe different kinds of values.",
+          "source": {
+            "title": "Database_Lvl_5___Workbook_1",
+            "page": 3
           }
         }
       ]

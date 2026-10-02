@@ -1,7 +1,9 @@
-import {workshopActivities,normaliseDraft} from './writing-activities.js?v=20260928';
-const moduleId=new URLSearchParams(location.search).get('module')==='networking'?'networking':'pps';
+import {workshopActivities,normaliseDraft} from './writing-activities.js?v=20261002';
+const requestedModule=new URLSearchParams(location.search).get('module');
+const moduleId=['networking','database'].includes(requestedModule)?requestedModule:'pps';
 const activities=workshopActivities(moduleId);
 if(moduleId==='networking'){document.title='Network design workshop | UniQuiz';document.querySelector('#workshop-module').textContent='Computer Networking · Week 2';document.querySelector('h1').textContent='Network design workshop';document.querySelector('#workshop-intro').textContent='Practise explaining network design decisions using fictional scenarios. Write an attempt, then compare it with a checklist and example reasoning. This supports design and report skills; it is self-review, not an official mark or a prediction of the exam format.';}
+if(moduleId==='database'){document.title='Database design workshop | UniQuiz';document.querySelector('#workshop-module').textContent='Database Design - Week 2';document.querySelector('h1').textContent='Database design workshop';document.querySelector('#workshop-intro').textContent='Practise modelling requirements and writing SQL with synthetic scenarios. Write an attempt before opening the guidance. These exercises support design and implementation skills; review is your own assessment, not an automated mark. SQL is not executed here.';}
 const key='uniquiz-writing-v1',host=document.querySelector('#exercise'),nav=document.querySelector('.workshop-nav');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let drafts={},current=activities[0],canSave=true;

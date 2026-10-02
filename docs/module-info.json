@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-27",
+  "updated": "2026-10-02",
   "modules": [
     {
       "id": "pps",
@@ -135,9 +135,10 @@
         "Check Blackboard for assessment briefs and new announcements.",
         "Save your lab configurations, results and explanations as you work.",
         "The handbook leaves the assessment-specific AI-use levels blank. Confirm these with the module team before using AI for assessed work.",
-        "Teaching includes lectures and practical labs. Your personal teaching timetable was not supplied."
+        "Teaching includes lectures and practical labs. Your personal teaching timetable was not supplied.",
+        "The supplied Example TCA questions show fill-in-the-blank, true/false and select-two formats. These are examples, not confirmation of the complete exam structure, question count, duration or marking scheme. Practise recall and evaluating several statements, as well as single-answer MCQs."
       ],
-      "notesSource": "Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit.",
+      "notesSource": "Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit. Example TCA questions, embedded screenshots for questions 1-3, 7, 12 and 14 (document page numbers unverified).",
       "reassessment": "Week commencing 12 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
       "reassessmentSource": "Computer Networking Module Handbook 2026/27, reassessment table",
       "teaching": []
