@@ -17,4 +17,4 @@ test('workshops keep modules separate and preserve existing activity IDs',()=>{
  assert.deepEqual(workshopActivities('unknown'),workshopActivities('pps'));
 });
 
-test('database workshop exposes only its own original exercises',()=>{assert.equal(workshopActivities('database').length,3);assert.ok(workshopActivities('database').every(a=>a.module==='database'));});
+test('database workshop exposes only its own original exercises',()=>{assert.equal(workshopActivities('database').length,4);assert.ok(workshopActivities('database').every(a=>a.module==='database'));});

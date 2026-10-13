@@ -3213,6 +3213,278 @@
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
             "page": 2
           }
+        },
+        {
+          "id": "db-w3-011",
+          "week": 3,
+          "prompt": "An ERD identifies Workshop and Booking with their relationship. Which addition most directly makes the design ready for a logical-model review?",
+          "options": [
+            "Estimated query timings and index storage sizes",
+            "Column types, key definitions and nullability rules",
+            "Screen layouts and validation messages for users",
+            "Backup intervals and server recovery settings"
+          ],
+          "answer": 1,
+          "explanation": "A logical model specifies tables and columns with their keys, types, nullability and constraints. Performance estimates and operational settings address different design concerns.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w3-012",
+          "week": 3,
+          "prompt": "A depot can store many vehicles. Each vehicle belongs to exactly one depot. Which mapping represents this relationship without storing lists in a column?",
+          "options": [
+            "Vehicle has depot_id referencing Depot, with depot_id allowed to repeat",
+            "Depot has vehicle_id referencing Vehicle, with vehicle_id allowed to repeat",
+            "Vehicle uses depot_id as its sole primary key",
+            "Depot stores a unique vehicle_id for each depot"
+          ],
+          "answer": 0,
+          "explanation": "The foreign key belongs on the many side: Vehicle. Several vehicles may reference the same depot. Making depot_id the Vehicle primary key would restrict the depot to one vehicle row.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 20
+          }
+        },
+        {
+          "id": "db-w3-013",
+          "week": 3,
+          "prompt": "Each inspection must identify the vehicle inspected. A vehicle may exist before any inspection. Which column rule implements the inspection-to-vehicle requirement?",
+          "options": [
+            "Inspection.vehicle_id is nullable because vehicles can have no inspections",
+            "Vehicle.inspection_id is NOT NULL because inspections require a vehicle",
+            "Inspection.vehicle_id is a NOT NULL foreign key to Vehicle",
+            "Vehicle.inspection_id is nullable because inspections occur later"
+          ],
+          "answer": 2,
+          "explanation": "Every inspection requires a vehicle, so its foreign key is NOT NULL. Allowing a vehicle to have no inspections is a separate participation rule and does not make the inspection foreign key optional.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 23
+          }
+        },
+        {
+          "id": "db-w3-014",
+          "week": 3,
+          "prompt": "A support ticket may initially be unassigned; each assigned ticket has one technician. A technician can handle many tickets. Which definition fits?",
+          "options": [
+            "Technician.ticket_id is a nullable foreign key",
+            "Ticket.technician_id is a NOT NULL foreign key",
+            "Ticket.technician_id is a nullable primary key",
+            "Ticket.technician_id is a nullable foreign key"
+          ],
+          "answer": 3,
+          "explanation": "A nullable foreign key in Ticket permits an unassigned ticket and references a technician when supplied. Many tickets may reference the same technician; the technician identifier is not the ticket primary key.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 23
+          }
+        },
+        {
+          "id": "db-w3-015",
+          "week": 3,
+          "prompt": "A visitor table contains first_name, last_name and date_of_birth. No rule guarantees that their combination is unique. What is the strongest reason to reject that combination as the primary key?",
+          "options": [
+            "A primary key must use a generated integer",
+            "Different visitors could share all three values",
+            "A primary key cannot contain a date column",
+            "Names cannot be included in any candidate key"
+          ],
+          "answer": 1,
+          "explanation": "A primary key must uniquely identify each row. Without a uniqueness guarantee, the proposed combination is unsafe. Composite and natural keys are possible when the requirements support them; generation is not compulsory.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 9
+          }
+        },
+        {
+          "id": "db-w3-016",
+          "week": 3,
+          "prompt": "Each product has a generated product_id primary key and a required catalogue_code that must also identify products uniquely. Which additional rule preserves the second identifier?",
+          "options": [
+            "Make catalogue_code a foreign key to product_id",
+            "Set catalogue_code to a non-NULL default value",
+            "Require catalogue_code to be NOT NULL and UNIQUE",
+            "Replace product_id with catalogue_code in every display"
+          ],
+          "answer": 2,
+          "explanation": "The catalogue code is an alternative candidate identifier. NOT NULL and UNIQUE preserve its required uniqueness even when product_id is selected as the primary key. Display choices and defaults do not enforce that rule.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 7
+          }
+        },
+        {
+          "id": "db-w3-017",
+          "week": 3,
+          "prompt": "Locker codes such as 0042 and 0198 are identifiers, never quantities. Leading zeros matter. Which datatype choice best preserves their meaning?",
+          "options": [
+            "An integer, with zeros added only during arithmetic",
+            "A date, with the code stored as its year",
+            "A Boolean, with a separate display label",
+            "A character type with the required length"
+          ],
+          "answer": 3,
+          "explanation": "Character data preserves the identifier exactly, including leading zeros. The appearance of digits does not make a value a quantity. The length and allowed characters should also be documented.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 15
+          }
+        },
+        {
+          "id": "db-w3-018",
+          "week": 3,
+          "prompt": "A booking reference must be supplied, may contain up to 12 characters, and must be unique. Which column specification captures all three requirements?",
+          "options": [
+            "VARCHAR(12), NOT NULL, UNIQUE",
+            "VARCHAR(12), NULL allowed, UNIQUE",
+            "VARCHAR(12), NOT NULL, default empty string",
+            "VARCHAR(20), NOT NULL, UNIQUE"
+          ],
+          "answer": 0,
+          "explanation": "The length limit, required presence and uniqueness are separate constraints. A default empty string does not enforce uniqueness, and allowing 20 characters fails the stated maximum.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 8
+          }
+        },
+        {
+          "id": "db-w3-019",
+          "week": 3,
+          "prompt": "A PostgreSQL column priority is NOT NULL with DEFAULT 2. An INSERT omits priority entirely. Assuming no other rule blocks the row, which outcome follows?",
+          "options": [
+            "The insert fails because NOT NULL requires an explicit value",
+            "The column receives 2 from its default",
+            "The column receives NULL because it was omitted",
+            "The column receives the most recently inserted priority"
+          ],
+          "answer": 1,
+          "explanation": "Omitting a column allows its default to supply the value. NOT NULL is satisfied by the default 2. A default is a specified fallback, not a copy of the previous row.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 37
+          }
+        },
+        {
+          "id": "db-w3-020",
+          "week": 3,
+          "prompt": "In PostgreSQL, priority is NOT NULL with DEFAULT 2. An INSERT explicitly supplies NULL for priority. What happens when these are the only relevant column rules?",
+          "options": [
+            "NULL is replaced by 2 before constraint checking",
+            "The row is stored with NULL because it was explicit",
+            "The row violates the NOT NULL constraint",
+            "The row is stored with 0 as the numeric fallback"
+          ],
+          "answer": 2,
+          "explanation": "An explicit NULL does not request the default. It violates NOT NULL. To use the default, omit the column or request DEFAULT; this distinction matters when testing a logical design.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 35
+          }
+        },
+        {
+          "id": "db-w3-021",
+          "week": 3,
+          "prompt": "In a logical model, Allocation connects Volunteer and Event. Each allocation names exactly one volunteer and one event; either can appear in many allocations. Where do the two foreign keys belong?",
+          "options": [
+            "Both in Volunteer, referencing Allocation and Event",
+            "One in Volunteer and one in Event, each referencing Allocation",
+            "Both in Event, referencing Volunteer and Allocation",
+            "Both in Allocation, referencing Volunteer and Event"
+          ],
+          "answer": 3,
+          "explanation": "Allocation is on the many side of each of its two relationships. It therefore carries both references. This supports multiple allocations without storing a list of identifiers in Volunteer or Event.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 21
+          }
+        },
+        {
+          "id": "db-w3-022",
+          "week": 3,
+          "prompt": "A model labels Venue.venue_id as a primary key and Session.venue_id as a foreign key, but says nothing about whether a session may be created before its venue is chosen. What must the designer resolve next?",
+          "options": [
+            "The relationship participation rule and corresponding foreign-key nullability",
+            "Whether both columns should have different names to prevent confusion",
+            "Whether every venue should be copied into Session before use",
+            "Whether the foreign key should replace Session's own primary key"
+          ],
+          "answer": 0,
+          "explanation": "The missing business rule determines whether the foreign key can be NULL. Naming alone does not settle participation, and a foreign key need not replace the row identifier.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 25
+          }
+        },
+        {
+          "id": "db-w3-023",
+          "week": 3,
+          "prompt": "A room has a required integer capacity, and the business rule permits values from 1 to 120 inclusive. Which specification is sufficient to capture the value rule as well as presence?",
+          "options": [
+            "Integer, NOT NULL, DEFAULT 1",
+            "Integer, NOT NULL, UNIQUE",
+            "Integer, NOT NULL, CHECK capacity BETWEEN 1 AND 120",
+            "Integer, nullable, CHECK capacity BETWEEN 1 AND 120"
+          ],
+          "answer": 2,
+          "explanation": "The datatype and NOT NULL enforce type and presence, while a range check enforces the permitted values. A default does not constrain later values; uniqueness would impose an unrelated restriction.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 39
+          }
+        },
+        {
+          "id": "db-w3-024",
+          "week": 3,
+          "prompt": "A reviewer finds that Session.venue_id is both a foreign key and UNIQUE. The requirement allows several sessions at the same venue. Which change addresses the mismatch while preserving the relationship?",
+          "options": [
+            "Keep UNIQUE but remove the foreign-key constraint",
+            "Remove UNIQUE but keep the foreign-key constraint",
+            "Move Session's primary key into Venue as a mandatory column",
+            "Keep both constraints and permit NULL for every session"
+          ],
+          "answer": 1,
+          "explanation": "A UNIQUE constraint on the foreign key prevents repeated non-NULL venue references. Removing that restriction permits several sessions at a venue, while retaining the foreign key preserves reference validity.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 33
+          }
+        },
+        {
+          "id": "db-w3-025",
+          "week": 3,
+          "prompt": "A conceptual model has an entity Equipment with attributes asset_tag, description and purchased_on. asset_tag is its verified unique identifier. Which initial mapping follows the lecture's entity-to-table step?",
+          "options": [
+            "Three tables named asset_tag, description and purchased_on",
+            "One row per attribute, with Equipment stored as a column value",
+            "A table containing only asset_tag until relationships are added",
+            "An Equipment table with three columns and asset_tag as primary key"
+          ],
+          "answer": 3,
+          "explanation": "The initial mapping turns the entity type into a table, its attributes into columns and its identifying attribute into the primary key. Later steps document types, constraints and relationships.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 18
+          }
+        },
+        {
+          "id": "db-w3-026",
+          "week": 3,
+          "prompt": "Ticket.agent_id is a nullable foreign key to Agent. Agent currently contains IDs 10 and 20. Which proposed ticket value distinguishes an optional relationship from unrestricted data?",
+          "options": [
+            "NULL is allowed, but a non-NULL reference to 30 is not",
+            "Both NULL and 30 are allowed because the key is optional",
+            "30 is allowed, but NULL is not because a foreign key is present",
+            "Neither NULL nor 10 is allowed until Agent references Ticket"
+          ],
+          "answer": 0,
+          "explanation": "Optional participation allows absence of a reference through NULL. A supplied non-NULL value must still reference an existing agent. Nullability and referential integrity enforce different rules.",
+          "source": {
+            "title": "Week_3_LogicalDataModelling",
+            "page": 23
+          }
         }
       ]
     }
