@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-02",
+  "updated": "2026-10-13",
   "modules": [
     {
       "id": "networking",
@@ -854,6 +854,244 @@
           "source": {
             "title": "Lecture 2_Networking",
             "page": 36
+          }
+        },
+        {
+          "id": "net-w3-001",
+          "week": 3,
+          "prompt": "A fault investigation separates a damaged cable from an incorrectly configured route. What benefit of the OSI model is being used?",
+          "options": [
+            "Requiring every fault to be repaired at the application layer",
+            "Replacing protocol tests with a device-layer label",
+            "Proving that a working lower layer guarantees all higher layers work",
+            "Isolating responsibilities to narrow the investigation"
+          ],
+          "answer": 3,
+          "explanation": "Layering helps separate physical connectivity from routing. A healthy lower layer does not establish that all higher-layer configuration is correct.",
+          "source": {
+            "title": "Lecture3",
+            "page": 3
+          }
+        },
+        {
+          "id": "net-w3-002",
+          "week": 3,
+          "prompt": "A fibre link loses its optical signal after a connector is damaged. Which OSI responsibility is most directly affected?",
+          "options": [
+            "Reassembling transport data",
+            "Translating application data formats",
+            "Transmitting bits over the medium",
+            "Forwarding packets between IP networks"
+          ],
+          "answer": 2,
+          "explanation": "The immediate fault concerns physical signalling. It can affect higher-layer services, but that does not change the location of the observed fault.",
+          "source": {
+            "title": "Lecture3",
+            "page": 5
+          }
+        },
+        {
+          "id": "net-w3-003",
+          "week": 3,
+          "prompt": "A local Ethernet investigation examines frames and destination MAC addresses. Which OSI layer is the primary focus?",
+          "options": [
+            "Session",
+            "Data Link",
+            "Network",
+            "Transport"
+          ],
+          "answer": 1,
+          "explanation": "Frames and MAC addressing belong to the data-link role. IP routing is a network-layer responsibility; end-to-end transport is a separate role.",
+          "source": {
+            "title": "Lecture3",
+            "page": 6
+          }
+        },
+        {
+          "id": "net-w3-004",
+          "week": 3,
+          "prompt": "A packet must move from a local subnet to a remote subnet. Which information primarily supports the network-layer forwarding decision?",
+          "options": [
+            "Destination IP address",
+            "Destination application file format",
+            "Destination Ethernet frame checksum",
+            "Destination application session name"
+          ],
+          "answer": 0,
+          "explanation": "Routing between networks uses logical addressing. Local link addressing and checksums have other roles.",
+          "source": {
+            "title": "Lecture3",
+            "page": 7
+          }
+        },
+        {
+          "id": "net-w3-005",
+          "week": 3,
+          "prompt": "A file-transfer application needs the transport service to recover lost data and deliver bytes in order. Which choice meets that requirement most directly?",
+          "options": [
+            "UDP with its lower per-datagram overhead",
+            "IP with its inter-network forwarding service",
+            "Ethernet with its local frame-delivery service",
+            "TCP with its reliable ordered byte-stream service"
+          ],
+          "answer": 3,
+          "explanation": "TCP supplies reliable ordered transport. UDP does not itself provide retransmission and ordering; IP and Ethernet do not replace that end-to-end service.",
+          "source": {
+            "title": "Lecture3",
+            "page": 9
+          }
+        },
+        {
+          "id": "net-w3-006",
+          "week": 3,
+          "prompt": "A live sensor display can discard stale updates and tolerate occasional loss. Why might its designer consider UDP?",
+          "options": [
+            "It removes the need to handle any lost data in the application.",
+            "It guarantees a lower network delay on every possible path.",
+            "It avoids transport-level ordered retransmission when late data has little value.",
+            "It guarantees every update arrives before the next update."
+          ],
+          "answer": 2,
+          "explanation": "UDP can suit a loss-tolerant design because it does not impose TCP-style reliable ordered delivery. It does not guarantee speed or eliminate application design responsibilities.",
+          "source": {
+            "title": "Lecture3",
+            "page": 9
+          }
+        },
+        {
+          "id": "net-w3-007",
+          "week": 3,
+          "prompt": "A developer says every transport-layer protocol provides reliable ordered delivery because TCP does. Which evaluation is correct?",
+          "options": [
+            "The claim is incorrect because reliability belongs exclusively to the session layer.",
+            "The claim overgeneralises: UDP is also a transport protocol and lacks those guarantees.",
+            "The claim is correct because UDP operates only at the Internet layer.",
+            "The claim is correct whenever the physical link uses Ethernet."
+          ],
+          "answer": 1,
+          "explanation": "Transport protocols differ. Interpret the lecture reliability statements in light of its TCP-versus-UDP comparison rather than attributing TCP guarantees to all transport.",
+          "source": {
+            "title": "Lecture3",
+            "page": 8
+          }
+        },
+        {
+          "id": "net-w3-008",
+          "week": 3,
+          "prompt": "Two applications agree on a common representation for exchanged data. In the OSI teaching model, which role does representation translation illustrate?",
+          "options": [
+            "Presentation",
+            "Session",
+            "Network",
+            "Data Link"
+          ],
+          "answer": 0,
+          "explanation": "The presentation role concerns representation, including translation and compression. This conceptual mapping does not mean each implementation has a separate presentation-layer component.",
+          "source": {
+            "title": "Lecture3",
+            "page": 11
+          }
+        },
+        {
+          "id": "net-w3-009",
+          "week": 3,
+          "prompt": "A host already has valid IP configuration but cannot translate service names to addresses. Which service and conventional port are most directly relevant?",
+          "options": [
+            "DHCP, 67",
+            "HTTPS, 443",
+            "NTP, 123",
+            "DNS, 53"
+          ],
+          "answer": 3,
+          "explanation": "DNS resolves names; DHCP configures hosts, HTTPS serves secure web traffic, and NTP supports clock synchronisation. A symptom suggests a test, not a definitive diagnosis.",
+          "source": {
+            "title": "Lecture3",
+            "page": 14
+          }
+        },
+        {
+          "id": "net-w3-010",
+          "week": 3,
+          "prompt": "A capture of conventional DHCP traffic identifies client and server roles. Which port pairing matches the lecture?",
+          "options": [
+            "Server 53; client 53",
+            "Server 123; client 123",
+            "Server 67; client 68",
+            "Server 68; client 67"
+          ],
+          "answer": 2,
+          "explanation": "The listed DHCP server and client ports are 67 and 68 respectively. DNS and NTP use different conventional ports.",
+          "source": {
+            "title": "Lecture3",
+            "page": 14
+          }
+        },
+        {
+          "id": "net-w3-011",
+          "week": 3,
+          "prompt": "A requirement specifies file transfer over SSH rather than FTP control/data connections. Which conventional service-port pair fits?",
+          "options": [
+            "SMB, 445",
+            "SFTP, 22",
+            "FTP control, 21",
+            "TFTP, 69"
+          ],
+          "answer": 1,
+          "explanation": "SFTP runs over SSH, conventionally on port 22. It is distinct from FTP and TFTP; service names and actual configuration should also be checked.",
+          "source": {
+            "title": "Lecture3",
+            "page": 15
+          }
+        },
+        {
+          "id": "net-w3-012",
+          "week": 3,
+          "prompt": "A mail client needs to retrieve and synchronise messages rather than send them. Which protocol role best fits?",
+          "options": [
+            "IMAP retrieval and mailbox access",
+            "SMTP message transfer",
+            "NTP time synchronisation",
+            "DHCP address allocation"
+          ],
+          "answer": 0,
+          "explanation": "IMAP supports access to a mailbox; SMTP concerns sending and transferring mail. The other protocols address unrelated network services.",
+          "source": {
+            "title": "Lecture3",
+            "page": 16
+          }
+        },
+        {
+          "id": "net-w3-013",
+          "week": 3,
+          "prompt": "A four-layer TCP/IP model groups several upper OSI responsibilities together. Which set is grouped into its Application layer?",
+          "options": [
+            "OSI Presentation, Session and Transport",
+            "OSI Session, Transport and Network",
+            "OSI Network, Data Link and Physical",
+            "OSI Application, Presentation and Session"
+          ],
+          "answer": 3,
+          "explanation": "The four-layer mapping combines the three upper OSI layers into Application, retaining Transport and mapping Network to Internet.",
+          "source": {
+            "title": "Lecture3",
+            "page": 26
+          }
+        },
+        {
+          "id": "net-w3-014",
+          "week": 3,
+          "prompt": "A team moves between OSI and four-layer TCP/IP descriptions of local Ethernet communication. Which mapping is appropriate?",
+          "options": [
+            "OSI Network and Transport map to TCP/IP Transport.",
+            "OSI Physical alone maps to TCP/IP Application.",
+            "OSI Physical and Data Link map to TCP/IP Network Access (Link).",
+            "OSI Data Link and Network map to TCP/IP Internet."
+          ],
+          "answer": 2,
+          "explanation": "The Link or Network Access layer covers physical and local data-link responsibilities in this four-layer model. Names vary, so use the stated model.",
+          "source": {
+            "title": "Lecture3",
+            "page": 21
           }
         }
       ]
@@ -2804,6 +3042,176 @@
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
             "page": 3
+          }
+        },
+        {
+          "id": "db-w3-001",
+          "week": 3,
+          "prompt": "Rows (id, priority, cost) are (1, 2, 10), (2, 1, 30), (3, 1, 20). What ID order follows ORDER BY priority, cost DESC?",
+          "options": [
+            "1, 2, 3",
+            "3, 2, 1",
+            "1, 3, 2",
+            "2, 3, 1"
+          ],
+          "answer": 3,
+          "explanation": "Priority is ascending by default; cost is descending only within ties on priority. Therefore the priority-1 rows come first, with cost 30 before 20.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 2
+          }
+        },
+        {
+          "id": "db-w3-002",
+          "week": 3,
+          "prompt": "Two items have the same price. A report uses ORDER BY price only. What should you do if their relative order must be reproducible?",
+          "options": [
+            "Change ASC to DESC without adding a key.",
+            "Remove ORDER BY so the primary key is used automatically.",
+            "Add a unique secondary sort key such as item_id.",
+            "Assume insertion order breaks the tie."
+          ],
+          "answer": 2,
+          "explanation": "A price tie is not resolved by that sort key. An explicit unique tiebreaker gives a deterministic ordering.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 2
+          }
+        },
+        {
+          "id": "db-w3-003",
+          "week": 3,
+          "prompt": "PostgreSQL sorts nullable completion dates with ORDER BY completed_on ASC. No explicit NULLS option is given. Where do NULL values appear?",
+          "options": [
+            "They are removed from the result",
+            "After the non-NULL dates",
+            "Before the non-NULL dates",
+            "Between dates according to insertion order"
+          ],
+          "answer": 1,
+          "explanation": "PostgreSQL defaults to NULLS LAST for ascending order. Sorting does not filter rows. Descending order has a different default, so the workbook example is not a universal rule.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 2
+          }
+        },
+        {
+          "id": "db-w3-004",
+          "week": 3,
+          "prompt": "Which query retrieves York items ordered from greatest to least cost?",
+          "options": [
+            "SELECT * FROM item WHERE city = 'York' ORDER BY cost DESC;",
+            "SELECT * FROM item ORDER BY cost DESC WHERE city = 'York';",
+            "SELECT * FROM item WHERE city = 'York' ORDER BY cost;",
+            "SELECT * FROM item WHERE city = 'York' AND cost DESC;"
+          ],
+          "answer": 0,
+          "explanation": "In this query WHERE filters rows and ORDER BY specifies their presentation order. DESC belongs to the sort expression, not a WHERE condition.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 3
+          }
+        },
+        {
+          "id": "db-w3-005",
+          "week": 3,
+          "prompt": "A table has four rows with optional phone values: NULL, 01234, NULL, 05678. What does COUNT(phone) return?",
+          "options": [
+            "4",
+            "1",
+            "NULL",
+            "2"
+          ],
+          "answer": 3,
+          "explanation": "COUNT(expression) counts non-NULL values, whereas COUNT(*) counts rows. Counting an identifier that is never NULL can hide this distinction.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 3
+          }
+        },
+        {
+          "id": "db-w3-006",
+          "week": 3,
+          "prompt": "Which condition is equivalent to city IN ('York', 'Bath') for these non-NULL values?",
+          "options": [
+            "city LIKE 'YorkBath%'",
+            "city BETWEEN 'York' AND 'Bath'",
+            "city = 'York' OR city = 'Bath'",
+            "city = 'York' AND city = 'Bath'"
+          ],
+          "answer": 2,
+          "explanation": "IN tests membership in the listed alternatives. AND would require the same value to equal two different cities; BETWEEN is a range test.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 3
+          }
+        },
+        {
+          "id": "db-w3-007",
+          "week": 3,
+          "prompt": "A DATE column is filtered with BETWEEN DATE '2026-01-01' AND DATE '2026-12-31'. Which endpoints are included?",
+          "options": [
+            "Neither endpoint",
+            "Both 1 January and 31 December",
+            "1 January only",
+            "31 December only"
+          ],
+          "answer": 1,
+          "explanation": "BETWEEN includes both endpoints. The question uses DATE values; a timestamp ending at midnight would require separate attention to times within the final day.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 4
+          }
+        },
+        {
+          "id": "db-w3-008",
+          "week": 3,
+          "prompt": "Rows (id, city) are (1, York), (2, Bath), (3, York), (4, Leeds). What does SELECT COUNT(id) FROM item WHERE city IN ('York','Bath') return when id is NOT NULL?",
+          "options": [
+            "One row containing 3",
+            "Three rows containing 1",
+            "One row containing 2",
+            "One row containing 4"
+          ],
+          "answer": 0,
+          "explanation": "WHERE retains three rows, then COUNT returns their number as a single aggregate result. The number of different cities is not what COUNT(id) measures.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 3
+          }
+        },
+        {
+          "id": "db-w3-009",
+          "week": 3,
+          "prompt": "Values in a non-NULL numeric column are 9, 10, 15, 20, 21. Which set satisfies value BETWEEN 10 AND 20?",
+          "options": [
+            "15",
+            "9, 10, 15, 20",
+            "10, 15, 20, 21",
+            "10, 15, 20"
+          ],
+          "answer": 3,
+          "explanation": "BETWEEN includes values equal to either bound and the values in between, excluding values outside the range.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 4
+          }
+        },
+        {
+          "id": "db-w3-010",
+          "week": 3,
+          "prompt": "A query returns the same records in different orders on two runs. It has no ORDER BY clause. Which conclusion is justified?",
+          "options": [
+            "The second result necessarily contains corrupted values.",
+            "The WHERE predicate must have been evaluated backwards.",
+            "The query did not request a guaranteed result order.",
+            "The table must have lost its primary key."
+          ],
+          "answer": 2,
+          "explanation": "Without an explicit sort, row order is unspecified. Different plans or storage access can change presentation order without changing the selected records.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_2__OrderBy",
+            "page": 2
           }
         }
       ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02",
+  "updated": "2026-10-13",
   "modules": [
     {
       "id": "pps",
@@ -12,10 +12,10 @@
           "title": "Critical Review: Literature Review & Data Analysis",
           "due": "2026-11-12T14:00:00Z",
           "weight": 40,
-          "length": "1,600 words",
-          "submit": "Blackboard",
-          "feedback": "2026-12-03",
-          "source": "Module Handbook 2026/27, p.5; Week 1 Introduction slides, p.11",
+          "length": "1,100-word literature review plus 500-word-equivalent PowerPoint data analysis (1,600 total)",
+          "submit": "Turnitin via the module Blackboard page; confirm how the report and PowerPoint should be packaged",
+          "feedback": null,
+          "source": "U19953 Assignment 1 2026-27, cover table, Parts A/B and Submission Guidelines; Module Handbook p.5 (feedback date conflict)",
           "feedbackVia": "Turnitin"
         },
         {
@@ -35,9 +35,14 @@
         "Download assessment briefs from the module's Blackboard Assessments folder.",
         "The handbook lists 150 independent-study hours and one four-hour teaching session each week for 12 weeks. Check your personal timetable for class times and rooms.",
         "The supplied Assignment 2 proposal template provides sections for the problem, purpose, assumptions/hypotheses, collection and analysis methods, validation and ethics. It includes an ethics application; approval is required before approaching participants or collecting data.",
-        "Week 3 independent study: complete Introduction to Referencing plus three other Learning Skills Hub modules; record why you chose them and what you learned. The slides say for next week without an exact submission date."
+        "Week 3 independent study: complete Introduction to Referencing plus three other Learning Skills Hub modules; record why you chose them and what you learned. The slides say for next week without an exact submission date.",
+        "Assessment 1 feedback dates conflict: the new brief says 7 December 2026, while the handbook says 3 December. Confirm with the module team. The submission deadline remains 12 November 2026 at 14:00 UK time.",
+        "Assessment 1 Part A: 1,100-word literature review of a chosen computing topic; evaluate qualitative, quantitative and mixed methods. The brief asks for 4-6 academic articles plus relevant reputable sources and synthesis rather than article-by-article summaries.",
+        "Assessment 1 Part B: 500-word-equivalent analysis using the supplied dataset in R, presented in at most 15 PowerPoint slides with scripted speaker notes. Tasks cover means/standard deviations, histograms and separate box plots for the under-four-hour variables, and time trends for over-four-hour waiting.",
+        "Assessment 1 packaging needs clarification: the task specifies a report plus PowerPoint, but Submission Guidelines also call for a single 1,600-word critical review report. Confirm the required file arrangement before submission.",
+        "Assessment 1 rubric: academic practice 30%; information gathering/processing 15%; evaluation of process and information/data 15%; analysis 10%; conclusions 10%; visual presentation 10%; referencing 10%. Use the brief and its AIAS Level 2 declaration requirements."
       ],
-      "notesSource": "Module Handbook 2026/27, pp.1, 5–7; Research Proposal Template 2026-27, section headings and ethics application instructions; Week 3 Academic Writing and Referencing, slides 30-31",
+      "notesSource": "Module Handbook 2026/27, pp.1, 5–7; Research Proposal Template 2026-27, section headings and ethics application instructions; Week 3 Academic Writing and Referencing, slides 30-31; U19953 Assignment 1 2026-27, cover table, Parts A/B, Submission Guidelines and Appendix A (section citations; document page numbers not verified)",
       "reassessment": "Week commencing 19 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
       "reassessmentSource": "Module Handbook 2026/27, p.8",
       "teaching": [
@@ -183,9 +188,10 @@
         "Each assessment requires an individual peer review/reflection form as well as the group submission. Missing the individual form counts as non-submission for that student. Confirm the Assessment 1 deadline because the sources disagree.",
         "Assessment 1 practises requirements analysis, an annotated logical data model and evidence of normalisation to at least 3NF, with a report evaluating the design against client needs. Rubric: requirements 20%, modelling 30%, approach 25%, evaluation 15%, presentation 10%.",
         "Assessment 2 assesses implementation scripts, data/report queries, planning, testing and evaluation. Rubric: database creation 25%, user reports 20%, planning 20%, testing 15%, evaluation 20%.",
-        "Brief wording needs clarification: the cover tables refer to individual reports (and website files in Assessment 2), while the main instructions describe group database work. Follow the module team's clarification. Assessment 1 also describes the review meeting as weeks beginning 26 and 30 October; the introduction slides say between those dates. Confirm the appointment window."
+        "Brief wording needs clarification: the cover tables refer to individual reports (and website files in Assessment 2), while the main instructions describe group database work. Follow the module team's clarification. Assessment 1 also describes the review meeting as weeks beginning 26 and 30 October; the introduction slides say between those dates. Confirm the appointment window.",
+        "The supplied blank Group Contract Template asks the team to agree participation, communication, meetings, conduct, conflict handling and deadlines. Agree these together; no submission date is stated in the template."
       ],
-      "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3–6; Week_1_Introduction slides, pp.9, 14-16; U19955 Assignments 1 and 2 2026-27, Assignment Instructions, Submission Guidelines and Appendix A rubrics",
+      "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3–6; Week_1_Introduction slides, pp.9, 14-16; U19955 Assignments 1 and 2 2026-27, Assignment Instructions, Submission Guidelines and Appendix A rubrics; Group Contract Template, section headings",
       "teaching": [
         [
           1,
