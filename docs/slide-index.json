@@ -1,0 +1,1010 @@
+{
+  "7534f98899b9e426-4": {
+    "image": "slides/7534f98899b9e426-4.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 4,
+    "label": "Page",
+    "text": "Introduction to Networks\n• What is a Network? \n• A Collection of interconnected hosts (devices) that communicate \nand share \nresources.\n• The uses of a network \n1.Simultaneous  Access  to  Data: Multiple  users  can  access  shared \nfiles and information at the same time, increasing efficiency and \ncollaboration.\n2.Resource Sharing: Networks enable devices to share resources like \nprinters, file servers  (that manages and provides access to files), and \ninternet connections.\n3.Communication: Networks allow communication through various \nchannels, such as email, video calls, and messaging.\n4.Easier  Data  Backup: It  allows  for  simpler  and  more  effective  data \nbackup and recovery processes.\n5.Working  Remotely: Networks  provide  the  infrastructure  for  remote \nwork, enabling users to connect to their organization's resources from \nany location."
+  },
+  "7534f98899b9e426-6": {
+    "image": "slides/7534f98899b9e426-6.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 6,
+    "label": "Page",
+    "text": "Network Components\n• Hosts are any devices on the network that send or receive data. \nThese can include client hosts, network devices, or servers.\n• A server is a device that provides functions or services for clients.\n• Clients are PC, laptop, mobile, printer, IoT devices that request a \nservice from a server.\n• Client initiate requests, Server responds\n- Relative to specific communication\nRequest\nRespond\nClient\nServer\nwww.google.com\nFile Server\nRequest \nupdate \nfile\ns\nRespond\nServer\nClient"
+  },
+  "7534f98899b9e426-8": {
+    "image": "slides/7534f98899b9e426-8.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 8,
+    "label": "Page",
+    "text": "Network \nComponents\n•Repeaters: Devices used to regenerate or amplify signals, because data crossing a wire decays as it travels.\n•Wireless Repeaters: Similar to standard repeaters but designed specifically to extend the range of a wireless \nnetwork by amplifying and rebroadcasting signals.\n•Hubs: Basic devices that connect multiple Ethernet devices, allowing them to act as a single network segment.   \nAre simply multi-port repeaters, but they broadcast incoming traffic to all connected devices.\nHub PC4\nPC1\nPC3PC2"
+  },
+  "7534f98899b9e426-10": {
+    "image": "slides/7534f98899b9e426-10.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 10,
+    "label": "Page",
+    "text": "Network Components\n• Switches provide connectivity to hosts connected together in a \nsame LAN network. As they have many ports for end hosts.\n• Learn which hosts are on each \nport.\nWhat if I want to connect these switches directly into the internet, Is that possible ?\nNo, I need a router which will exchange the data between the LANs via the internet. \nSW2SW1\nPC1\nPC2\nPC3\nSRV1\nSRV2\nSRV3\nNew Zealand BranchJordan Branch\nR1 R2\n•    Routers: Devices that route traffic from one network to another.\n- Have IP addresses in the network they are attached \nto"
+  },
+  "7534f98899b9e426-11": {
+    "image": "slides/7534f98899b9e426-11.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 11,
+    "label": "Page",
+    "text": "Other Network Components\n•Wireless Access Points (WAPs): Devices that allow wireless devices to connect to a wired network using Wi -Fi.\n•Firewalls: Security devices (hardware or software) that monitor and control incoming and outgoing network traffic \nbased on predetermined security rules, protecting networks from unauthorized access.\n•Proxies: proxy is an intermediate server that sits between a client and another server. When you connect to a \nwebsite or online service, your request can go through a proxy server first, which then forwards your request to \nthe actual server. Proxies are used for security, filtering, caching. For example, a proxy can block access to certain \nwebsites, cache frequently accessed data to speed up browsing.\n•Load Balancers: Devices or software used to distribute network or application traffic across multiple servers to \nensure no single server is overwhelmed, improving availability and reliability."
+  },
+  "7534f98899b9e426-12": {
+    "image": "slides/7534f98899b9e426-12.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 12,
+    "label": "Page",
+    "text": "Network Architecture\n1. Peer to Peer (P2P) is a decentralized network architecture. \n• It  has  no  server  or  device  that  organizes  communications \nbetween devices. \n•\n All devices are connected one to one. \nPeer to Peer (P2P) "
+  },
+  "7534f98899b9e426-14": {
+    "image": "slides/7534f98899b9e426-14.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 14,
+    "label": "Page",
+    "text": "Network Types\n• Personal Area Networks (PAN), any device that \ncommunicate over the range of a \nperson.\n• Local Area Network (LAN) standards for devices in small \ngeographic area (e.g., within a building).\n• Metropolitan  Area  Network  (MAN) is  a  type  of  network \nthat connects a city or a large campus\n• Wide  Area  Network  (WAN) connecting  user  networks \nover large geographic areas (e.g., across cities, \ncountries).\n"
+  },
+  "7534f98899b9e426-15": {
+    "image": "slides/7534f98899b9e426-15.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 15,
+    "label": "Page",
+    "text": "What is a protocol?\nHuman protocols:                              \n‹ Class starts at 09 AM                      \n‹ Switch off your phones                    \n‹ If you have a question,                    \nWait for your turn!  \nNetwork protocols: \n‹ Machines rather than humans \n‹ All communication activity in Internet governed by protocols \nProtoco\nlA protocol defines the format, and the order of messages \nexchanged between two or more communicating entities, \nas well as the actions taken on message transmission and \nreceipt\n."
+  },
+  "7534f98899b9e426-17": {
+    "image": "slides/7534f98899b9e426-17.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 17,
+    "label": "Page",
+    "text": "• Abstraction\n• Protocol\n• Interface\n• Physical \nMedium\n• T o minimise errors and complexity. Layered architecture with \neach layer having their protocols and algorithms hidden from \nother layers.\n• Each layer has a specific communication \nlanguage/protocol.\n• Communications between each layer is done via a interface. The \ninterface defines which primitive operations and services the \nlower layer makes available to the  upper \none.\n• At the bottom of all layers a physical layer connects devices \ntogether. It is the layer where the true data transmission from one \nlocation to another \nhappens.\nProtocol Layering"
+  },
+  "7534f98899b9e426-18": {
+    "image": "slides/7534f98899b9e426-18.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 18,
+    "label": "Page",
+    "text": "Open System Interconnection (OSI) Protocol \narchitecture\n• The  OSI model  consists of  seven  separate  and distinct layers, each \ndescribing a particular set of functions and behaviours. \n• The OSI 7 layers model has clear characteristics at each layer. Basically, \nlayers  7  through  4  deal  with  end-to-end  communications  between  data \nsource  and  destinations,  while  layers  3  to  1  deal  with  communications \nbetween network devices. On the other hand, the seven layers of the OSI \nmodel can be divided into two groups: upper layers (layers 7, 6 & 5) and \nlower layers (layers 4, 3, 2, 1). The upper layers of the OSI model deal with \napplication  issues  and  generally  are  implemented  only  in  software.  The \nhighest  layer,  the  application  layer,  is  closest  to  the  end  user.  The  lower \nlayers  of  the  OSI  model  handle  data  transport  issues.  The  physical  layer \nand  the  data  link  layer  are  implemented  in  hardware  and  software.  The \nlowest layer, the physical layer, is closest to the physical network medium \n(the wires, for example) and is responsible for placing data on the \nmedium.\nOpen System Interconnection (OSI) model\nUpper layers\nLower layers\n1\n2\n3\n4\n5\n6\n7"
+  },
+  "7534f98899b9e426-19": {
+    "image": "slides/7534f98899b9e426-19.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 19,
+    "label": "Page",
+    "text": "TCP/IP Model\n• TCP/P architecture does not exactly follow the OSl model\n• TCP/IP  architecture  omits  some  features  found  under  the  OS  model, \ncombines  the  features  of  some  adjacent  OSI  layers  and  Splits  other \nlayers apart. \n• The  4-layer  structure  of  TCP/IP  is  built  as  information  is  passed  down \nfrom applications to the physical network layer. When data is sent, each \nlayer treats all of the information it receives from the upper layer as data, \nadds control information (header) to the front of that data and then pass it \nto the lower layer. When data is received, the opposite procedure takes \nplace  as  each  layer  processes  and  removes  its  header  before  passing \nthe data to the upper layer. Physical\nData link\nNetwork\nTransport\nSession\nPresentation\nApplicatio\nn\nN/A\nLin\nk\nInternet\nTransport\nN/A\nN/A\nApplicatio\nn\nOSI Model       vs      TCP/IP Model"
+  },
+  "7534f98899b9e426-20": {
+    "image": "slides/7534f98899b9e426-20.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 20,
+    "label": "Page",
+    "text": "Physical layer (OSI)\nThe physical layer is responsible for movements of individual \nbits  (1  and  0)  from  one  node  to  the  next  over  a  physical \nmedium (e.g., cables, fibre optics). \n20"
+  },
+  "7534f98899b9e426-21": {
+    "image": "slides/7534f98899b9e426-21.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 21,
+    "label": "Page",
+    "text": "Data link (OSI and \nTCP/IP)\nThe data Link layer is responsible for node -to-node frames \ntransfer and error detection and correction (e.g., Ethernet, \nMAC addresses). "
+  },
+  "7534f98899b9e426-22": {
+    "image": "slides/7534f98899b9e426-22.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 22,
+    "label": "Page",
+    "text": "Network layer (OSI)\nInternet layer \n(TCP/IP)\nThe network layer is responsible for the delivery of individual packets \nfrom the source host to the destination host. \n• Internet Protocols is used in this layer\n• Determines how data are transferred between network \ndevices\n• Routes packets according to unique network device addresses\n• Provides flow and congestion control to prevent network resource \ndepletion"
+  },
+  "7534f98899b9e426-23": {
+    "image": "slides/7534f98899b9e426-23.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 23,
+    "label": "Page",
+    "text": "Transport Layer (OSI and TCP/IP)\nThe transport layer is responsible for the delivery of a \nmessage from one process to another. \n• Manages end-to-end message delivery in network\n• Provides reliable and sequential packet delivery \nthrough recovery and flow control mechanisms \n• Provides connectionless-oriented packet delivery\n• Two Protocols are used in this layer \nTCP (Transmission Control Protocol)\nUDP (User Datagram Protocol)"
+  },
+  "7534f98899b9e426-24": {
+    "image": "slides/7534f98899b9e426-24.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 24,
+    "label": "Page",
+    "text": "Session Layer \n(OSI)\nThe session layer is responsible for session control and synchronization. \n• Manages user sessions \n• Controls establishment and termination of logic links between users \n•\n Reports upper layer \nerrors"
+  },
+  "7534f98899b9e426-25": {
+    "image": "slides/7534f98899b9e426-25.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 25,
+    "label": "Page",
+    "text": "Presentation layer \n(OSI)\nThe presentation layer is responsible for translation of data formats.\n• Masks the differences of data formats between dissimilar systems \n• Specifies architecture-independent data transfer format \n• Encodes and decodes data; encrypts and decrypts data; compresses and \ndecompresses data"
+  },
+  "7534f98899b9e426-26": {
+    "image": "slides/7534f98899b9e426-26.webp",
+    "title": "Lecture-Introduction to Network Protocols",
+    "page": 26,
+    "label": "Page",
+    "text": "Application Layer (OSI and \nTCP/IP)\nThis is the layer that most users interact with and will recognise.\n• It  facilitates  data  transfer  between  user  processes  and  the \nnetwork, making sure that communication happens smoothly.\n• Provides network services to the end user such as \ntransferring files, sending emails, and accessing remote \nsystems. \n•\n Examples of protocols in this layer"
+  },
+  "2d4f37918597e476-2": {
+    "image": "slides/2d4f37918597e476-2.webp",
+    "title": "Lecture 2_Networking",
+    "page": 2,
+    "label": "Page",
+    "text": "Introduction To Network Design\nNetwork design is the process of planning, structuring, and \ndocumenting a computer network that will meet business and \ntechnical requirements. It involves making decisions about \nhardware, software, connectivity, topology, security, and \nscalability.\nNetwork design is like drawing the blueprint of a building before \nconstruction.\n"
+  },
+  "2d4f37918597e476-4": {
+    "image": "slides/2d4f37918597e476-4.webp",
+    "title": "Lecture 2_Networking",
+    "page": 4,
+    "label": "Page",
+    "text": "The Role of Network Design in IT\n• Supports Business Goals\nA bank needs 24/7 uptime, while a small office may accept occasional \ndowntime.\n The network must be designed based on business priorities.\n• Supports Applications\n• Video conferencing requires low latency.\n• File backups require high bandwidth.\n• Security systems require reliable uptime.\n• Reduces Costs\nGood design avoids overbuying equipment while ensuring future growth."
+  },
+  "2d4f37918597e476-5": {
+    "image": "slides/2d4f37918597e476-5.webp",
+    "title": "Lecture 2_Networking",
+    "page": 5,
+    "label": "Page",
+    "text": "Network Design Goals\nScalability\nThe ability of the network to grow (more users, devices, applications, or sites) \nwithout performance degradation or a complete redesign.\n \n• Current: 15,000 students, multiple campuses in Canterbury, Medway, and \nTunbridge Wells.\n• Future: Expansion to support 20% more students and new online learning \nservices.\n• Scalable design: Adding extra access points, VLANs, or cloud resources without \nreplacing the entire network."
+  },
+  "2d4f37918597e476-6": {
+    "image": "slides/2d4f37918597e476-6.webp",
+    "title": "Lecture 2_Networking",
+    "page": 6,
+    "label": "Page",
+    "text": "Network Design Goals Cont’d\nAvailability\nThe ability of the network to deliver consistent, reliable service \n24/7, even when components fail.\n• Online library system and student portals must be available day \nand night.\n• Redundant internet connections ensure services keep running \neven if one ISP link fails.\n• Failover routing keeps critical systems (e.g., Blackboard, Moodle, \nemail) accessible during outages."
+  },
+  "2d4f37918597e476-7": {
+    "image": "slides/2d4f37918597e476-7.webp",
+    "title": "Lecture 2_Networking",
+    "page": 7,
+    "label": "Page",
+    "text": "Network Design Goals Cont’d\nSecurity\nProtecting the network from unauthorized access, attacks, and \ndata breaches.\n• Secure logins for staff and students (multi-factor \nauthentication).\n• Firewalls protect research databases and student records.\n• Segmentation: student Wi-Fi is isolated from administrative \nsystems."
+  },
+  "2d4f37918597e476-8": {
+    "image": "slides/2d4f37918597e476-8.webp",
+    "title": "Lecture 2_Networking",
+    "page": 8,
+    "label": "Page",
+    "text": "Network Design Goals Cont’d\nManageability\nThe ability of IT staff to efficiently monitor, configure, and troubleshoot \nthe network.\n• Centralized monitoring dashboards show traffic, device status, and \npotential issues.\n• Automated alerts notify IT when a switch or Wi-Fi AP fails.\n• Well-documented design helps new staff quickly understand and \nmanage the network."
+  },
+  "2d4f37918597e476-10": {
+    "image": "slides/2d4f37918597e476-10.webp",
+    "title": "Lecture 2_Networking",
+    "page": 10,
+    "label": "Page",
+    "text": "Requirement Gathering\nUnderstand what the network must achieve.\n• Business requirements\n• Growth plans (e.g., Christ Church University adding new \ncampuses)\n• Budget limits\n• Compliance/regulation (GDPR, research data security)\n• Technical requirements\n• Applications (Blackboard, email, research databases)\n• Bandwidth & latency targets\n• Security levels (VPN, firewall policies)"
+  },
+  "2d4f37918597e476-11": {
+    "image": "slides/2d4f37918597e476-11.webp",
+    "title": "Lecture 2_Networking",
+    "page": 11,
+    "label": "Page",
+    "text": "Site and Traffic Analysis\nStudy how the current network is used.\n• Site survey\n• Number of users per campus/building\n• Wi-Fi coverage mapping\n• Physical constraints (old buildings, wiring limitations)\n• Traffic analysis\n• Identify peak loads (e.g., start of term logins)\n• Measure application usage (video streaming, online exams)\n• Detect bottlenecks"
+  },
+  "2d4f37918597e476-12": {
+    "image": "slides/2d4f37918597e476-12.webp",
+    "title": "Lecture 2_Networking",
+    "page": 12,
+    "label": "Page",
+    "text": "Conceptual, Logical, and Physical Design\n(Three Layers of Design)\nConceptual Design\nHigh-level view: “What services do we need?”\nInternet access, secure VPN, online learning.\nLogical Design\nIP addressing schemes\nVLANs, routing protocols\nSecurity zones\nPhysical Design\nActual hardware: switches, routers, Wi-Fi access points\nCabling, racks, and data centers"
+  },
+  "2d4f37918597e476-14": {
+    "image": "slides/2d4f37918597e476-14.webp",
+    "title": "Lecture 2_Networking",
+    "page": 14,
+    "label": "Page",
+    "text": "Validation & Documentation\nValidation\n• Simulate/test the design before going live\n• Pilot installations in one building/campus\n• Performance testing (latency, throughput, failover)"
+  },
+  "2d4f37918597e476-15": {
+    "image": "slides/2d4f37918597e476-15.webp",
+    "title": "Lecture 2_Networking",
+    "page": 15,
+    "label": "Page",
+    "text": "Validation & Documentation\nDocumentation\n• Network diagrams (logical + physical)\n• Configuration details\n• Maintenance procedures"
+  },
+  "2d4f37918597e476-16": {
+    "image": "slides/2d4f37918597e476-16.webp",
+    "title": "Lecture 2_Networking",
+    "page": 16,
+    "label": "Page",
+    "text": "Deployment and Acceptance Testing\nDeployment:\n• Step-by-step introduction of devices & services\n• Educating users (staff/students get login guides)\nAcceptance testing:\n• Final check with business stakeholders\n• Confirm requirements are met (e.g., “Wi-Fi works for 1000 users \nsimultaneously”)\n• Handover to IT operations"
+  },
+  "2d4f37918597e476-17": {
+    "image": "slides/2d4f37918597e476-17.webp",
+    "title": "Lecture 2_Networking",
+    "page": 17,
+    "label": "Page",
+    "text": "Tools for Design and Testing\n• Packet Tracer: simulation of Cisco networks\n• GNS3: emulate real routers, switches, firewalls\n• NetFlow analysers: analyse traffic patterns\n• Wireshark: packet capture for troubleshooting"
+  },
+  "2d4f37918597e476-20": {
+    "image": "slides/2d4f37918597e476-20.webp",
+    "title": "Lecture 2_Networking",
+    "page": 20,
+    "label": "Page",
+    "text": "Network Design Approaches\nTop-Down Approach:\nStart with business and application requirements, then decide on \ntechnologies.\n• Identify business goals\n• Define application needs\n• Translate into network requirements\n• Select hardware/software to support them"
+  },
+  "2d4f37918597e476-21": {
+    "image": "slides/2d4f37918597e476-21.webp",
+    "title": "Lecture 2_Networking",
+    "page": 21,
+    "label": "Page",
+    "text": "Network Design Approaches\nBottom-Up Approach\nStart with available technologies and build upward to \napplications.\n• Choose hardware/protocols first (switches, routers, Wi-Fi).\n• Then adapt to meet applications and business needs."
+  },
+  "2d4f37918597e476-22": {
+    "image": "slides/2d4f37918597e476-22.webp",
+    "title": "Lecture 2_Networking",
+    "page": 22,
+    "label": "Page",
+    "text": "Network Design Approaches\nHybrid Approach\nCombines Top-Down and Bottom-Up.\n• Start with business/application goals.\n• Consider available technology and budget limits.\n• Adjust design accordingly."
+  },
+  "2d4f37918597e476-31": {
+    "image": "slides/2d4f37918597e476-31.webp",
+    "title": "Lecture 2_Networking",
+    "page": 31,
+    "label": "Page",
+    "text": "Core Layer\n• Provides fast, reliable interconnection \nbetween distribution switches.\n• Prioritizes speed, redundancy, and \nstability.\n \nExample:\nFiber backbone links Canterbury, \nMedway, and Tunbridge Wells campuses.\n"
+  },
+  "2d4f37918597e476-32": {
+    "image": "slides/2d4f37918597e476-32.webp",
+    "title": "Lecture 2_Networking",
+    "page": 32,
+    "label": "Page",
+    "text": "Distribution Layer\n• Aggregates access layer traffic.\n• Implements routing, filtering, VLANs, \nand security policies.\n• Provides backup paths to the core.\nExample:\nBuilding-level distribution switches \nenforce VLAN separation (staff Wi-Fi vs \nstudent Wi-Fi).\n"
+  },
+  "2d4f37918597e476-33": {
+    "image": "slides/2d4f37918597e476-33.webp",
+    "title": "Lecture 2_Networking",
+    "page": 33,
+    "label": "Page",
+    "text": "Access Layer\n• Where end-users connect.\n• Provides switch ports, Wi-Fi access points, and authentication.\n Example:\nStudents and staff connect laptops and phones via APs in lecture halls and libraries."
+  },
+  "2d4f37918597e476-34": {
+    "image": "slides/2d4f37918597e476-34.webp",
+    "title": "Lecture 2_Networking",
+    "page": 34,
+    "label": "Page",
+    "text": "Zero Trust Model in Network Design\nA security model that assumes \nno user, device, or network is \ntrusted by default, even if inside \nthe network perimeter.\n• Based on the principle:\n “Never trust, always verify.”\n"
+  },
+  "2d4f37918597e476-36": {
+    "image": "slides/2d4f37918597e476-36.webp",
+    "title": "Lecture 2_Networking",
+    "page": 36,
+    "label": "Page",
+    "text": "Zero Trust in Practice\n• Identity & Access Management (IAM): \nMulti-factor authentication (MFA).\n• Network Segmentation: Divide traffic \ninto smaller, controlled zones.\n• Micro segmentation: Restrict access \nbetween workloads (e.g., labs vs admin).\n• Continuous Monitoring: Use tools to \nanalyse user/device behaviour.\n"
+  },
+  "5bde622d5611128e-3": {
+    "image": "slides/5bde622d5611128e-3.webp",
+    "title": "Lecture3",
+    "page": 3,
+    "label": "Page",
+    "text": "Why is the OSI Model Important?•Standardization:Itprovidesastandardizedframeworkthatensuresdifferentnetworkhardwareandsoftwarecanworktogether.•Troubleshooting:Thelayeredapproachhelpsidentifyandresolvenetworkissuesbyisolatingproblemsatspecificlayers.•Modularity:Eachlayercanevolveindependently,allowingflexibilityandinnovationinnetworkingtechnologies.\n"
+  },
+  "5bde622d5611128e-5": {
+    "image": "slides/5bde622d5611128e-5.webp",
+    "title": "Lecture3",
+    "page": 5,
+    "label": "Page",
+    "text": "Physical LayerManages the physical connection between devices.•Transmission and reception of raw bitstreams over a physical medium (e.g., cables, wireless signals).•Defines hardware specifications like cables, hubs, and network interface cards (NICs).The Ethernet cables, optical fibers, Wi-Fi signals, operates at this layer"
+  },
+  "5bde622d5611128e-6": {
+    "image": "slides/5bde622d5611128e-6.webp",
+    "title": "Lecture3",
+    "page": 6,
+    "label": "Page",
+    "text": "Data Link LayerHandles error detection, error correction, and framing of data.•Organizes data into frames and manages reliable node-to-node delivery.•Ensures error-free data transfer using techniques like error detection and correction.•Provides addressing at the physical level using MAC (Media Access Control) addresses.•Devices: Switches, Bridges, Access Points (for wireless LANs)•Protocols: Ethernet (IEEE 802.3), Wi-Fi (IEEE 802.11), Point-to-Point Protocol (PPP)"
+  },
+  "5bde622d5611128e-7": {
+    "image": "slides/5bde622d5611128e-7.webp",
+    "title": "Lecture3",
+    "page": 7,
+    "label": "Page",
+    "text": "Network LayerDetermines the best path for data transfer and handles logical addressing.•Handles routing of packets across networks.•Assigns IP addresses for source and destination devices.•Manages congestion control and fragmentation of packets if necessary.•Protocols: IP (Internet Protocol), ICMP (Internet Control Message Protocol).•Devices: Routers, Layer 3 switches, Gateways"
+  },
+  "5bde622d5611128e-8": {
+    "image": "slides/5bde622d5611128e-8.webp",
+    "title": "Lecture3",
+    "page": 8,
+    "label": "Page",
+    "text": "Transport Layer\nExamples: TCP (Transmission Control Protocol), UDP (User Datagram Protocol).\nFunctions:Provides end-to-end communication control.Implements error recovery and flow control.Manages segmentation and reassembly of data.\nPurpose: Ensures reliable data (segments) transfer between devices."
+  },
+  "5bde622d5611128e-9": {
+    "image": "slides/5bde622d5611128e-9.webp",
+    "title": "Lecture3",
+    "page": 9,
+    "label": "Page",
+    "text": "TCP VS UDP\nTCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable and ordered delivery of data, complete with error checking and flow control mechanisms. UDP (User Datagram Protocol) is a connectionless protocol favoured for its speed and efficiency, sacrificing reliability and order to reduce overhead and enhance performance in applications where occasional data loss is acceptable."
+  },
+  "5bde622d5611128e-11": {
+    "image": "slides/5bde622d5611128e-11.webp",
+    "title": "Lecture3",
+    "page": 11,
+    "label": "Page",
+    "text": "Presentation Layer\nEnsures data is in a usable format and handles data translation.Translates data between the application layer and the network format (e.g., encryption, compression).Ensures data interoperability between different systems.\nExamples: SSL/TLS (encryption), JPEG, MPEG."
+  },
+  "5bde622d5611128e-14": {
+    "image": "slides/5bde622d5611128e-14.webp",
+    "title": "Lecture3",
+    "page": 14,
+    "label": "Page",
+    "text": "Application Layer Protocols and Their Port Numbers•Web and Internet Protocols\nProtocolDescriptionPort Number(s)HTTPWeb browsing80HTTPSSecure web browsing (with encryption)443DNSDomain name resolution53 (TCP/UDP)DHCPDynamic IP address allocation67 (server), 68 (client)NTPNetwork time synchronization123 (UDP)"
+  },
+  "5bde622d5611128e-15": {
+    "image": "slides/5bde622d5611128e-15.webp",
+    "title": "Lecture3",
+    "page": 15,
+    "label": "Page",
+    "text": "File Transfer Protocols\nProtocolDescriptionPort Number(s)FTPFile transfer between systems20 (data), 21 (control)SFTPSecure file transfer over SSH22TFTPTrivial file transfer (simplified FTP)69 (UDP)SMBFile sharing in Windows environments445NFSNetwork File System2049"
+  },
+  "5bde622d5611128e-16": {
+    "image": "slides/5bde622d5611128e-16.webp",
+    "title": "Lecture3",
+    "page": 16,
+    "label": "Page",
+    "text": "Email Protocols\nProtocolDescriptionPort Number(s)SMTPSending email25 (unencrypted), 587 (with STARTTLS), 465 (SSL)POP3Retrieving email (older protocol)110, 995 (SSL/TLS)\nIMAPRetrieving email (modern, more features)143, 993 (SSL/TLS)"
+  },
+  "5bde622d5611128e-21": {
+    "image": "slides/5bde622d5611128e-21.webp",
+    "title": "Lecture3",
+    "page": 21,
+    "label": "Page",
+    "text": "Network Interface Layer (Link Layer)This is the bottom layer of the TCP/IP model, combining the functions of the Physicaland Data Link layers in the OSI model.Manages communication between devices on the same physical network (local network). Defines how data packets are transmitted across physical media like cables or wireless signals.Devices: Hubs, Switches, Network Interface Cards (NICs)Cables (Ethernet, fiber optics, coaxial)"
+  },
+  "5bde622d5611128e-26": {
+    "image": "slides/5bde622d5611128e-26.webp",
+    "title": "Lecture3",
+    "page": 26,
+    "label": "Page",
+    "text": "Comparison: OSI vs TCP/IP\nOSI Model LayerTCP/IP Model LayerExample Protocols7. Application4. ApplicationHTTP , FTP , SMTP , DNS6. Presentation4. ApplicationSSL/TLS, JPEG, MPEG5. Session4. ApplicationNetBIOS, SMB4. Transport3. TransportTCP , UDP , SCTP3. Network2. InternetIP , ICMP , OSPF, BGP2. Data Link1. Network InterfaceEthernet, Wi-Fi, PPP1. Physical1. Network InterfaceCables, NICs, Hubs, Wireless transmitters"
+  },
+  "89d921dde6f90594-13": {
+    "image": "slides/89d921dde6f90594-13.webp",
+    "title": "Week 1 - Introduction",
+    "page": 13,
+    "label": "Page",
+    "text": "Paired activity, 15 minutes\n1. Using the resources available to you, search to define “what is research?”\n2. Write down your answer\n3. Share with the study group when prompted\n4. Think about what steps you took when undertaking this simple research\n• Identifying key terms to use as search criteria,\n• Using online search portals, \n• Analysing and selecting valid and current definitions, \n• Methods of presenting information,\n• What other techniques could you have used?\nActivity"
+  },
+  "89d921dde6f90594-15": {
+    "image": "slides/89d921dde6f90594-15.webp",
+    "title": "Week 1 - Introduction",
+    "page": 15,
+    "label": "Page",
+    "text": "What is Research?\nOriginal investigation undertakenin order to \ngain knowledge and understanding.\nResearch: Definition of research by Higher Education Funding Council for England (HEFCE)"
+  },
+  "89d921dde6f90594-16": {
+    "image": "slides/89d921dde6f90594-16.webp",
+    "title": "Week 1 - Introduction",
+    "page": 16,
+    "label": "Page",
+    "text": "Research is a Process\n• Research must be a considerate activity\n• It should follow a planned and structured process, e.g.\n• Aim: identify effective teaching methods\n• Research Question: does the rise in online teaching \ncorrelate with any changes in grades?\n• Experimental design: gather a sample of students and \nthen randomly assign half of them to be taught online \nand the other half to be taught in person, while \ncontrolling all other relevant variables.\n• Data Collection & Analysis: collect the data from the \nexperiments and analyse the data\n• Conclusion: present the result & findings\n"
+  },
+  "89d921dde6f90594-18": {
+    "image": "slides/89d921dde6f90594-18.webp",
+    "title": "Week 1 - Introduction",
+    "page": 18,
+    "label": "Page",
+    "text": "Originality\n• Do something that has not been done before\n• no point to repeat work of others or produce what is already known\n• Youcan be original in two ways\n• do something someone has done before with a differentapproach/technique\n• produce or develop something that has not being produced before\n• Outcome of Originality\n• can be a new product, a new theory,a new model or a new method\n• where intended outcomes are not achieved, by-product might still present originality\n• E.g. understanding of why a particular experiment failed or why a particular technique\ndid not work\nOriginal investigation undertaken in order to \ngain knowledge and understanding.\nResearch: Definition of research by Higher Education Funding Council for England (HEFCE)"
+  },
+  "89d921dde6f90594-19": {
+    "image": "slides/89d921dde6f90594-19.webp",
+    "title": "Week 1 - Introduction",
+    "page": 19,
+    "label": "Page",
+    "text": "Be Original\nAreas in which your project can be original (Cryer 2006)\n• Exploring the unknown\n• Investigate a field that no one has thought to investigate before\n• Explore the unanticipated\n• Obtain unexpected results and investigate new directions in an existing field\n• The use of data\n• Interpret data in different ways or use data in new ways\n• Tools, techniques, procedures and methods\n• Apply new tools/tech to existing problem\n• Try new procedures/methods in context"
+  },
+  "89d921dde6f90594-20": {
+    "image": "slides/89d921dde6f90594-20.webp",
+    "title": "Week 1 - Introduction",
+    "page": 20,
+    "label": "Page",
+    "text": "Knowledge and Understanding\nOriginal investigation undertaken in order to \ngain knowledge and understanding.\n• knowledge: high level understanding of things\n• Information tells you what\n• Knowledge tells you how and why\nResearch: Definition of research by Higher Education Funding Council for England (HEFCE)"
+  },
+  "89d921dde6f90594-21": {
+    "image": "slides/89d921dde6f90594-21.webp",
+    "title": "Week 1 - Introduction",
+    "page": 21,
+    "label": "Page",
+    "text": "Gain – Contribution to Knowledge\n• Contribution: Research is\nsupposed to add to the \nworld’s body of knowledge \nand understanding (in \ncontrast to adding to the\nresearcher’s own knowledge\nand understanding)\nResearch: Definition of research by Higher Education Funding Council for England (HEFCE)\nCopyright @ Christian Dawson (2015)\nOriginal investigation undertaken in order to \ngain knowledge and understanding."
+  },
+  "f58e89d6c1f9c421-17": {
+    "image": "slides/f58e89d6c1f9c421-17.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 17,
+    "label": "Page",
+    "text": "Mainly it comes down to how and why\n• It’s not about just describing something and stating facts\n• More about\n• Analysing information\n• Finding relationships\n• Comparing and contrasting\n• Predicting and then testing\n• Producing theories\n• But in the end, it is using all of this, answering why and how in a\nconvincing way…"
+  },
+  "f58e89d6c1f9c421-18": {
+    "image": "slides/f58e89d6c1f9c421-18.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 18,
+    "label": "Page",
+    "text": "What is good research?\nThree Characteristics of good research (Phillips & Paugh 2020)\n• Open minds\n• Do not allow yourself to be limited by pre-existing thinking\n• Critical analysis\n• Examine data critically\n• Generalisations\n• Allow research to be interpreted and applied to a wide variety of situations"
+  },
+  "f58e89d6c1f9c421-19": {
+    "image": "slides/f58e89d6c1f9c421-19.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 19,
+    "label": "Page",
+    "text": "Good research is….\n…based on an open system of thoughts where “everything is up for \ngrabs” (testing, reviewing and criticising)\n• Researchers may not know the right answers, but they would struggle to \nfind out what the right questions might be!\n• In research you need to examine data and sources of data critically\n• Ask yourself: “have I got the facts right?”; “can I get better data?”; “can the results \nbe interpreted differently?”\n• Researchers’ aim is to understand and interpret (Phillips et al, 2015)\n• Key words here include: \n• Validity, Currency, Accessibility, Purposeful"
+  },
+  "f58e89d6c1f9c421-21": {
+    "image": "slides/f58e89d6c1f9c421-21.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 21,
+    "label": "Page",
+    "text": "Activity 2 – context and structure\n• Let us put a bit of structure to your argument.\n• State what you conclude; for example: “This group believes that\nrobots will take all the jobs because…”, or “This group doesn’t\nbelieve that robots will take all the jobs because…”, or “This group\nbelieves that robots will lead to some job losses because…”\n• Support your reasoning about why you [the group] think it is true with any \nevidence you could find [referencing, etc.]\n• Now for the strange one; what are the objections to your argument \nand how do you counter them?\n• This process is referred to as critical thinking and giving arguments"
+  },
+  "f58e89d6c1f9c421-23": {
+    "image": "slides/f58e89d6c1f9c421-23.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 23,
+    "label": "Page",
+    "text": "Thinking Critically, Thinking Deeply, Thinking Reflectively\n• Critical thinking is an integral part of the research process\n• ‘Critical’ in this sense does not merely mean finding fault or expressing dislike\n• It means giving a fair and unbiased opinion of something\n• Must have grounds for judgements (Butterworth et al., 2013)\n• In reflection we don’t just make up our minds on impulse, but carefully \nconsider\n• alternatives\n• think about consequences\n• weigh up available evidence\n• draw conclusions etc. judgements (Butterworth et al., 2013)"
+  },
+  "f58e89d6c1f9c421-24": {
+    "image": "slides/f58e89d6c1f9c421-24.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 24,
+    "label": "Page",
+    "text": "Critical Thinking\n• There is a lot of jargon in this area, but critical thinking is at the core of any \nresearch\n• Claims are one of the ‘pillars’ of critical thinking\n• What is a claim or assertion? It is an expression that is been stated as being \ntrue! Just like the last sentence. Jargon warning – a declarative sentence\n• Claim is a fact, belief or an opinion – in other words not every claim is \nalways universally true"
+  },
+  "f58e89d6c1f9c421-29": {
+    "image": "slides/f58e89d6c1f9c421-29.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 29,
+    "label": "Page",
+    "text": "Arguments\n• Arguments are composed of two or more claims, one is the conclusion and \nthe others the reasons for the conclusion\n• So “People have been to the moon” is not convincing, it is just a claim\n• “People have been to the moon, because it is the simplest explanation for \nseeing the images and having the rock samples is that people went there.\n A conspiracy to fake this involves too much complexity for so many people \nto keep secret for so long…” is more convincing"
+  },
+  "f58e89d6c1f9c421-31": {
+    "image": "slides/f58e89d6c1f9c421-31.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 31,
+    "label": "Page",
+    "text": "Claim\n• The point being made\n• The statement\n• The conclusion that the evidence supports\n"
+  },
+  "f58e89d6c1f9c421-32": {
+    "image": "slides/f58e89d6c1f9c421-32.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 32,
+    "label": "Page",
+    "text": "Grounds\n• Evidence that supports the claim\n• The data that is crucial to the argument\n• The reasoning that provides the foundation for the claim\n"
+  },
+  "f58e89d6c1f9c421-33": {
+    "image": "slides/f58e89d6c1f9c421-33.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 33,
+    "label": "Page",
+    "text": "Warrant\n• The implicit knowledge that connects the grounds to the claim\n• The “common knowledge” that serves as a bridge between the\nevidence and the claim\n"
+  },
+  "f58e89d6c1f9c421-34": {
+    "image": "slides/f58e89d6c1f9c421-34.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 34,
+    "label": "Page",
+    "text": "Backing\n• Additional evidence that \nbacks up the warrant\n• More data to support the \nchain of logic"
+  },
+  "f58e89d6c1f9c421-35": {
+    "image": "slides/f58e89d6c1f9c421-35.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 35,
+    "label": "Page",
+    "text": "Qualifier\n• The level that the claim \nis being asserted\n• Indicates the limit of the \nclaim, the warrant and \nthe backing\n• Often found in the \nspecific confidence of the \nlanguage that the claim \nuses\n"
+  },
+  "f58e89d6c1f9c421-36": {
+    "image": "slides/f58e89d6c1f9c421-36.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 36,
+    "label": "Page",
+    "text": "Rebuttal\n• Addresses the limit of \nthe claim\n• Considers any \ncounter arguments \nagainst the claim"
+  },
+  "f58e89d6c1f9c421-37": {
+    "image": "slides/f58e89d6c1f9c421-37.webp",
+    "title": "Week 2 - Good Research and Critical Thinking",
+    "page": 37,
+    "label": "Page",
+    "text": "Toulmin Model of Argumentation\n• When you read \nother’s work try to \nidentify the above\n• Also use T oulmin’s \nmethod to analyse \nand improve your \nown arguments you \nmake/write\n"
+  },
+  "7293089aa7a76ad3-3": {
+    "image": "slides/7293089aa7a76ad3-3.webp",
+    "title": "How to Write a Literature Review - Practical Steps",
+    "page": 3,
+    "label": "Page",
+    "text": "SCOPING YOUR TOPIC\nRecycling\nRecycling \nprocess\nUK"
+  },
+  "7293089aa7a76ad3-15": {
+    "image": "slides/7293089aa7a76ad3-15.webp",
+    "title": "How to Write a Literature Review - Practical Steps",
+    "page": 15,
+    "label": "Page",
+    "text": "RECORD YOUR RESEARCH\nReference Title Purpose/ \nrationale/ \nresearch \nquestion\nTheory/ idea/ \nopinion\nResearch \nmethod\nMajor findings/ \ncontributions/ \nconclusions\nStudy limitation/ \ngaps that remain"
+  },
+  "7293089aa7a76ad3-21": {
+    "image": "slides/7293089aa7a76ad3-21.webp",
+    "title": "How to Write a Literature Review - Practical Steps",
+    "page": 21,
+    "label": "Page",
+    "text": "ORGANISATION\nChronological\nIn order of time\nAnalyses \npatterns, key debates \netc.\nThematic\nSub sectioned into \ndifferent aspects of \na topic\nMethodological\nLooks at different \nresearch \nmethods/approaches\nCompares results \nand conclusions\nTheoretical\nIdentifies and \nevaluates the \ndifferent theories"
+  },
+  "7293089aa7a76ad3-25": {
+    "image": "slides/7293089aa7a76ad3-25.webp",
+    "title": "How to Write a Literature Review - Practical Steps",
+    "page": 25,
+    "label": "Page",
+    "text": "MAIN BODY\nSummarise and \nsynthesize\nAnalyse and interpret\n Critically evaluate"
+  },
+  "7293089aa7a76ad3-29": {
+    "image": "slides/7293089aa7a76ad3-29.webp",
+    "title": "How to Write a Literature Review - Practical Steps",
+    "page": 29,
+    "label": "Page",
+    "text": "CONCLUSION\nSummarise\nyour review\nRelate\nto your \nproject/research \nquestion\nEmphasize\nthe significance\nJustify\nthe need for \nyour research"
+  },
+  "7293089aa7a76ad3-35": {
+    "image": "slides/7293089aa7a76ad3-35.webp",
+    "title": "How to Write a Literature Review - Practical Steps",
+    "page": 35,
+    "label": "Page",
+    "text": "REFERENCING FORMATS\nCitation is the in-text indicator of your source.\nAccording to Bell (2014, p.48), the most important part ofthe research process is …\nOne important aspect of research is “the ability to gather informationand…” \n(Bell 2014, p.22)\nA reference is the full bibliographicinformation of your source\nBell, J. (2014) Doing your research project. Maidenhead: OpenUniversity Press."
+  },
+  "dc9ec706be169621-9": {
+    "image": "slides/dc9ec706be169621-9.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 9,
+    "label": "Page",
+    "text": "PLANNING YOUR RESEARCH\nDefine the problem: What do I need to find out?\nIdentify key words/terms to search for\nDecide what types of information you need\nDecide where to search for this information"
+  },
+  "dc9ec706be169621-18": {
+    "image": "slides/dc9ec706be169621-18.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 18,
+    "label": "Page",
+    "text": "ALTERNATIVE \nKEYWORDS\nhttps://www.thesaurus.com/ \nUse your own knowledge\nAsk tutors, friends and family\nThesaurus, Wikipedia or \nGoogle  e.g., https://www.thesaurus.com/\nBroader and narrower terms e.g., social media - \nonline, twitter\nAlternative spellings/abbreviations\ne.g., behaviour / behavior"
+  },
+  "dc9ec706be169621-26": {
+    "image": "slides/dc9ec706be169621-26.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 26,
+    "label": "Page",
+    "text": "Limits Google to scholarly content\nCross-disciplinary & searches Open Access content\nCan link to CCCU library to see where we provide access\nDefinition of ‘scholarly content’ unclear\nNot all peer-reviewed. Some unpublished.\nNot all full-text – may encounter paywalls\n"
+  },
+  "dc9ec706be169621-29": {
+    "image": "slides/dc9ec706be169621-29.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 29,
+    "label": "Page",
+    "text": "Library Search for articles\n• 'Digital Resources' tab\n• Academic journals, \nnewspapers, magazines​\n• Use abstracts to decide \nwhat's useful\n• Use limits on the right \nto refine e.g., by type, \ndate, subject...\n"
+  },
+  "dc9ec706be169621-37": {
+    "image": "slides/dc9ec706be169621-37.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 37,
+    "label": "Page",
+    "text": "JOURNAL ARTICLES ARE GREAT!\nCheck reference lists \nfor other relevant \narticles, and then \nuse LibrarySearch or\nGoogleScholar to\nfind​\nLook out for \nkey authors!​"
+  },
+  "dc9ec706be169621-38": {
+    "image": "slides/dc9ec706be169621-38.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 38,
+    "label": "Page",
+    "text": "SEARCH  TIPS\nPhrase searching to find terms together\n“artificial intelligence\"  ethics “cyber security”\nTruncation to find all forms of the word\ncomput* will find computer, computing, compute, computers \nbehavio*r will find behaviour and behavior"
+  },
+  "dc9ec706be169621-39": {
+    "image": "slides/dc9ec706be169621-39.webp",
+    "title": "Intro to research and lit reviews",
+    "page": 39,
+    "label": "Page",
+    "text": "SEARCH LIMITS\n• You might limit results by:\n• Publication date\n• Age\n• Geographical location\netc ..."
+  },
+  "e3d97831bc19b60a-1": {
+    "image": "slides/e3d97831bc19b60a-1.webp",
+    "title": "keshav-how-to-readPaper",
+    "page": 1,
+    "label": "Page",
+    "text": "How to Read a Paper\nS. Keshav\nDavid R. Cheriton School of Computer Science, University of Waterloo\nWaterloo, ON, Canada\nkeshav@uwaterloo.ca\nABSTRACT\nResearchers spend a great deal of time reading research pa-\npers. However, this skill is rarely taught, leading to much\nwasted eﬀort. This article outlines a practical and eﬃcient\nthree-pass method for reading research papers. I also de-\nscribe how to use this method to do a literature survey.\nCategories and Subject Descriptors: A.1 [Introductory\nand Survey]\nGeneral Terms: Documentation.\nKeywords: Paper, Reading, Hints.\n1. INTRODUCTION\nResearchers must read papers for several reasons: to re-\nview them for a conference or a class, to keep current in\ntheir ﬁeld, or for a literature survey of a new ﬁeld. A typi-\ncal researcher will likely spend hundreds of hours every yea r\nreading papers.\nLearning to eﬃciently read a paper is a critical but rarely\ntaught skill. Beginning graduate students, therefore, mus t\nlearn on their own using trial and error. Students waste\nmuch eﬀort in the process and are frequently driven to frus-\ntration.\nFor many years I have used a simple approach to eﬃciently\nread papers. This paper describes the ‘three-pass’ approac h\nand its use in doing a literature survey.\n2. THE THREE-PASS APPROACH\nThe key idea is that you should read the paper in up to\nthree passes, instead of starting at the beginning and plow-\ning your way to the end. Each pass accomplishes speciﬁc\ngoals and builds upon the previous pass: The f irst pass\ngives you a general idea about the paper. The second pass\nlets you grasp the paper’s content, but not its details. The\nthird pass helps you understand the paper in depth.\n2.1 The ﬁrst pass\nThe ﬁrst pass is a quick scan to get a bird’s-eye view of\nthe paper. You can also decide whether you need to do any\nmore passes. This pass should take about ﬁve to ten minutes\nand consists of the following steps:\n1. Carefully read the title, abstract, and introduction\n2. Read the section and sub-section headings, but ignore\neverything else\n3. Read the conclusions\n4. Glance over the references, mentally ticking oﬀ the\nones you’ve already read\nAt the end of the ﬁrst pass, you should be able to answer\nthe ﬁve Cs :\n1. Category : What type of paper is this? A measure-\nment paper? An analysis of an existing system? A\ndescription of a research prototype?\n2. Context: Which other papers is it related to? Which\ntheoretical bases were used to analyze the problem?\n3. Correctness : Do the assumptions appear to be valid?\n4. Contributions: What are the paper’s main contribu-\ntions?\n5. Clarity : Is the paper well written?\nUsing this information, you may choose not to read fur-\nther. This could be because the paper doesn’t interest you,\nor you don’t know enough about the area to understand the\npaper, or that the authors make invalid assumptions. The\nﬁrst pass is adequate for papers that aren’t in your research\narea, but may someday prove relevant.\nIncidentally, when you write a paper, you can expect most\nreviewers (and readers) to make only one pass over it. Take\ncare to choose coherent section and sub-section titles and\nto write concise and comprehensive abstracts. If a reviewer\ncannot understand the gist after one pass, the paper will\nlikely be rejected; if a reader cannot understand the high-\nlights of the paper after ﬁve minutes, the paper will likely\nnever be read.\n2.2 The second pass\nIn the second pass, read the paper with greater care, but\nignore details such as proofs. It helps to jot down the key\npoints, or to make comments in the margins, as you read.\n1. Look carefully at the ﬁgures, diagrams and other illus-\ntrations in the paper. Pay special attention to graphs.\nAre the axes properly labeled? Are results shown with\nerror bars, so that conclusions are statistically sig-\nniﬁcant? Common mistakes like these will separate\nrushed, shoddy work from the truly excellent.\n2. Remember to mark relevant unread references for fur-\nther reading (this is a good way to learn more about\nthe background of the paper).\nACM SIGCOMM Computer Communication Review 83 Volume 37, Number 3, July 2007"
+  },
+  "e3d97831bc19b60a-2": {
+    "image": "slides/e3d97831bc19b60a-2.webp",
+    "title": "keshav-how-to-readPaper",
+    "page": 2,
+    "label": "Page",
+    "text": "The second pass should take up to an hour. After this\npass, you should be able to grasp the content of the paper.\nYou should be able to summarize the main thrust of the pa-\nper, with supporting evidence, to someone else. This level o f\ndetail is appropriate for a paper in which you are interested ,\nbut does not lie in your research speciality.\nSometimes you won’t understand a paper even at the end\nof the second pass. This may be because the subject matter\nis new to you, with unfamiliar terminology and acronyms.\nOr the authors may use a proof or experimental technique\nthat you don’t understand, so that the bulk of the pa-\nper is incomprehensible. The paper may be poorly written\nwith unsubstantiated assertions and numerous forward ref-\nerences. Or it could just be that it’s late at night and you’re\ntired. You can now choose to: (a) set the paper aside, hoping\nyou don’t need to understand the material to be successful\nin your career, (b) return to the paper later, perhaps after\nreading background material or (c) persevere and go on to\nthe third pass.\n2.3 The third pass\nTo fully understand a paper, particularly if you are re-\nviewer, requires a third pass. The key to the third pass\nis to attempt to virtually re-implement the paper: that is,\nmaking the same assumptions as the authors, re-create the\nwork. By comparing this re-creation with the actual paper,\nyou can easily identify not only a paper’s innovations, but\nalso its hidden failings and assumptions.\nThis pass requires great attention to detail. You should\nidentify and challenge every assumption in every statement .\nMoreover, you should think about how you yourself would\npresent a particular idea. This comparison of the actual\nwith the virtual lends a sharp insight into the proof and\npresentation techniques in the paper and you can very likely\nadd this to your repertoire of tools. During this pass, you\nshould also jot down ideas for future work.\nThis pass can take about four or ﬁve hours for beginners,\nand about an hour for an experienced reader. At the end\nof this pass, you should be able to reconstruct the entire\nstructure of the paper from memory, as well as be able to\nidentify its strong and weak points. In particular, you shou ld\nbe able to pinpoint implicit assumptions, missing citation s\nto relevant work, and potential issues with experimental or\nanalytical techniques.\n3. DOING A LITERATURE SURVEY\nPaper reading skills are put to the test in doing a literature\nsurvey. This will require you to read tens of papers, perhaps\nin an unfamiliar ﬁeld. What papers should you read? Here\nis how you can use the three-pass approach to help.\nFirst, use an academic search engine such as Google Scholar\nor CiteSeer and some well-chosen keywords to ﬁnd three to\nﬁve recent papers in the area. Do one pass on each pa-\nper to get a sense of the work, then read their related work\nsections. You will ﬁnd a thumbnail summary of the recent\nwork, and perhaps, if you are lucky, a pointer to a recent\nsurvey paper. If you can ﬁnd such a survey, you are done.\nRead the survey, congratulating yourself on your good luck.\nOtherwise, in the second step, ﬁnd shared citations and\nrepeated author names in the bibliography. These are the\nkey papers and researchers in that area. Download the key\npapers and set them aside. Then go to the websites of the\nkey researchers and see where they’ve published recently.\nThat will help you identify the top conferences in that ﬁeld\nbecause the best researchers usually publish in the top con-\nferences.\nThe third step is to go to the website for these top con-\nferences and look through their recent proceedings. A quick\nscan will usually identify recent high-quality related wor k.\nThese papers, along with the ones you set aside earlier, con-\nstitute the ﬁrst version of your survey. Make two passes\nthrough these papers. If they all cite a key paper that you\ndid not ﬁnd earlier, obtain and read it, iterating as neces-\nsary.\n4. EXPERIENCE\nI’ve used this approach for the last 15 years to read con-\nference proceedings, write reviews, do background researc h,\nand to quickly review papers before a discussion. This dis-\nciplined approach prevents me from drowning in the details\nbefore getting a bird’s-eye-view. It allows me to estimate t he\namount of time required to review a set of papers. More-\nover, I can adjust the depth of paper evaluation depending\non my needs and how much time I have.\n5. RELATED WORK\nIf you are reading a paper to do a review, you should also\nread Timothy Roscoe’s paper on “Writing reviews for sys-\ntems conferences” [1]. If you’re planning to write a technic al\npaper, you should refer both to Henning Schulzrinne’s com-\nprehensive web site [2] and George Whitesides’s excellent\noverview of the process [3].\n6. A REQUEST\nI would like to make this a living document, updating it\nas I receive comments. Please take a moment to email me\nany comments or suggestions for improvement. You can also\nadd comments at CCRo, the online edition of CCR [4].\n7. ACKNOWLEDGMENTS\nThe ﬁrst version of this document was drafted by my stu-\ndents: Hossein Falaki, Earl Oliver, and Sumair Ur Rahman.\nMy thanks to them. I also beneﬁted from Christophe Diot’s\nperceptive comments and Nicole Keshav’s eagle-eyed copy-\nediting.\nThis work was supported by grants from the National\nScience and Engineering Council of Canada, the Canada\nResearch Chair Program, Nortel Networks, Microsoft, Intel\nCorporation, and Sprint Corporation.\n8. REFERENCES\n[1] T. Roscoe, “Writing Reviews for Systems\nConferences,”\nhttp://people.inf.ethz.ch/troscoe/pubs/review-\nwriting.pdf.\n[2] H. Schulzrinne, “Writing Technical Articles,”\nhttp://www.cs.columbia.edu/ hgs/etc/writing-\nstyle.html.\n[3] G.M. Whitesides, “Whitesides’ Group: Writing a\nPaper,”\nhttp://www.che.iitm.ac.in/misc/dd/writepaper.pdf.\n[4] ACM SIGCOMM Computer Communication Review\nOnline, http://www.sigcomm.org/ccr/drupal/.\nACM SIGCOMM Computer Communication Review 84 Volume 37, Number 3, July 2007"
+  },
+  "7c0b118782abbede-11": {
+    "image": "slides/7c0b118782abbede-11.webp",
+    "title": "Week 3 - Academic Writing and Referencing(1)",
+    "page": 11,
+    "label": "Page",
+    "text": "Concept Mapping\nConcept map starts with a \ngeneral concept at the top \nof the map and then works \nits way down through a \nhierarchical structure to \nmore specific concepts. \nNovak, J. (1977). A Theory \nof Education. Ithaca, NY, \nCornell University Press."
+  },
+  "7c0b118782abbede-14": {
+    "image": "slides/7c0b118782abbede-14.webp",
+    "title": "Week 3 - Academic Writing and Referencing(1)",
+    "page": 14,
+    "label": "Page",
+    "text": "The 4 C’s in Writing\nThere’s many ways to write based on the expectations of the audience. For \nacademic writing we use the 4 C’s.\nClear - Avoid over-long sentences\nCoherence - Ideas logically flow from one sentence to another\nConcise - One idea per sentence, avoid repetitions\nCorrect - Correct grammar, academic styles followed"
+  },
+  "7c0b118782abbede-20": {
+    "image": "slides/7c0b118782abbede-20.webp",
+    "title": "Week 3 - Academic Writing and Referencing(1)",
+    "page": 20,
+    "label": "Page",
+    "text": "Correct Use of Tenses\nUse the present tense when you are writing about established knowledge.\n• “Smoking increases the risk of coronary heart disease..” or Timeless facts.. “This \npaper presents the results of . . .” “Section 5.1 explains the difference between . . .”\nUse the past tense when writing about a work reported or an experiment you carried \nout or a method you used in the past. \n• “In 2009, David published an alternative method to…” “Blood samples were \ncollected..”\nWhen writing about figures and tables use present tense. \n• “This figure shows that…”\nFuture tense indicates the study which will be conducted in the future; often used in \nresearch proposals, as proposals are written about the research that will be \noccurring in the near future."
+  },
+  "7c0b118782abbede-22": {
+    "image": "slides/7c0b118782abbede-22.webp",
+    "title": "Week 3 - Academic Writing and Referencing(1)",
+    "page": 22,
+    "label": "Page",
+    "text": "Academic Style: Be Cautious\nAvoid assertive language:  \n• should, must or ought to \n• Always back up your point with evidence/argument \nInstead, be Cautious:\n• probably, likely, seems, appears,  \n• suggests, tend to..\n• Don’t use absolute phrases such as “cats are cleverer than dogs”. Instead use \nmore cautious phrases such as “cats tend to be cleverer than dogs”\n• Avoid saying “obviously…” and “Of course…” as well “It can be seen…” "
+  },
+  "7c0b118782abbede-23": {
+    "image": "slides/7c0b118782abbede-23.webp",
+    "title": "Week 3 - Academic Writing and Referencing(1)",
+    "page": 23,
+    "label": "Page",
+    "text": "Academic Style: Formal Language\nAvoid informal languages \n• Contractions (Shortened words, with missing letters from the original)\n• Don’t ->  use “Do not..” \nSlang words (used in casual conversations) \n• no  stuff  or things\nAbbreviations (Shortened forms of words and phrases)\n• ASAP -> As soon as possible \nClichés (Overused expressions whose original meaning is lost)\n• the cream of the crop -> the best \nAvoid irony, sarcasm, or humour \nSpell out abbreviations or acronyms on first use \n• Canterbury Christ Church University (CCCU)\n• Secure Messaging Applications (SMA)"
+  },
+  "7c0b118782abbede-25": {
+    "image": "slides/7c0b118782abbede-25.webp",
+    "title": "Week 3 - Academic Writing and Referencing(1)",
+    "page": 25,
+    "label": "Page",
+    "text": "Academic Style: Coherence\nKey idea from one sentence should connect to next sentence.\nIf the sentences do not connect, then transition words are missing that need to be \ninserted.\nTransition words help to create a sense of coherence and provide signposting for \nthe reader to follow the writer’s thread of thought. \nWhen such a connection cannot be made, the written passage lacks coherence, \nthe ideas and topics shift."
+  },
+  "603fdf3207de1c88-4": {
+    "image": "slides/603fdf3207de1c88-4.webp",
+    "title": "1 - Intro to dbs",
+    "page": 4,
+    "label": "Slide",
+    "text": "DEFINITION\nTables\nRules\nRelationships\nColumns\nDatatypes\nRelationships\nRequires \nextensive\n planning\nN\no redundancy\nDBMS\nSingle-user\nMicrosoft Access et al\nRDBMS\nOracle SQL\nPopular but != cheap\nMicrosoft SQL\nAlso popular but != cheap\nMay already installed\nMySQL\nFree + open source\nQuick and easy\nNoSQL\nPostgre SQL"
+  },
+  "603fdf3207de1c88-5": {
+    "image": "slides/603fdf3207de1c88-5.webp",
+    "title": "1 - Intro to dbs",
+    "page": 5,
+    "label": "Slide",
+    "text": "Planning the Table\nKeys\nPrimary keys \nUnique\nunderlined\nComposite keys \n*\nMake a unique identifier using two or more columns\nForeign key (a column linked to a column in a different table\n*\nValidation\nEnsuring that appropriate data is inserted\nThat a new employee  is not 200+ years old\nDatatypes\nConstraints/Rules"
+  },
+  "603fdf3207de1c88-7": {
+    "image": "slides/603fdf3207de1c88-7.webp",
+    "title": "1 - Intro to dbs",
+    "page": 7,
+    "label": "Slide",
+    "text": "datatypes & constraints\nDatatypes\nNumbers\nIntegers\nDouble\nFloat\n*\nOther\nCharacters\nArray of characters (strings)\nBoolean\nBLOBS\n*\nConstraints\nNot null\nKeys\nPrimary\nComposite\nforeign\nIn\nnot\n<\n>\n<=\n>-=\n&&\n||\n*"
+  },
+  "9a7a4535a9c16fb2-4": {
+    "image": "slides/9a7a4535a9c16fb2-4.webp",
+    "title": "2 - The Shop Db",
+    "page": 4,
+    "label": "Slide",
+    "text": "The overview/specification\n‘The Cupboard’\n has 1 \nshop\n that has  \nat least one\n \nemployee\n and \nat least one\n  item in \nstock\n.\nAll employees \nmust\n be of an \nemployable age\n and have a \nline-manager.\nThe shop has \nat least one item\n in \nstock\n, which must cost \nat least £0.00.\nThe shop, stock and employees \nmust\n \nhave an identifying photo\n."
+  },
+  "9a7a4535a9c16fb2-7": {
+    "image": "slides/9a7a4535a9c16fb2-7.webp",
+    "title": "2 - The Shop Db",
+    "page": 7,
+    "label": "Slide",
+    "text": "Planning – tables – datatypes (1/3)\nShop table  - “shop”\nColumn Name\nDatatype\nDefault\nConstraints/Description\nConstraints\nShop ID\ninteger\nSequence\nAutomatically incrementing number – starting with a ‘1’ \n Primary key\naddress\nstring\n“123 Fake Street”\nNo invalid characters\nNot null\nPostcode\nstring\nNo invalid characters\nMust be in “XX0 0XX” format\nPhone #\nstring\nOnly contains characters 0-9\n5 numbers, space, 6 numbers format\nwebsite\nString\nMust start with http://www.” and end with “.com”\nNot null\nStore pic\nBLOB\nBlank.jpg\nOnly pictures of appropriate size and format\nNot null\nemail\nstring\nMust be <x>@<business name>.com\nNot null\nshop_mgr\nstring\nforeign key to “emp” table\nNot null"
+  },
+  "9a7a4535a9c16fb2-8": {
+    "image": "slides/9a7a4535a9c16fb2-8.webp",
+    "title": "2 - The Shop Db",
+    "page": 8,
+    "label": "Slide",
+    "text": "Planning – tables – datatypes (2/3)\nEmployee table  - “emp”\nColumn\nDatatype\nDefault\nConstraints/Description\nEmp_id\ninteger\nSequence\nAutomatically incrementing number – starting with a ‘2’  for the Primary key\nFirst name\nString\nNot null\nLast name\nString\nNot null\nDOB\nDate\nNow() + 18 years\nNot null and not less than the current date 0 120 years\naddress\nString\nNot null and in an  appropriate format\nPostcode\nString\nFollow a certain format e.g. CT1 1QU)\nPhoto_ID\nBLOB\nBlank.jpg\nOf appropriate size and resolution\nRole\nString\nList of values – “manager”, “cashier”, “goods-in”, “stock control”\nHire date\nDate\nNow()\n!<now() & > now() + 30 days\nLine manager\nString\nPig’s-ear foreign key to ’emp’ table\nShop ID\nNumber\nForeign key to the shop that this employee works at"
+  },
+  "9a7a4535a9c16fb2-9": {
+    "image": "slides/9a7a4535a9c16fb2-9.webp",
+    "title": "2 - The Shop Db",
+    "page": 9,
+    "label": "Slide",
+    "text": "Planning – tables – datatypes (3/3)\nStock table  - “stock”\nColumn\nDatatype\nDefault\nConstraints/Description\nItem ID\nnumber\nSequence\nAutomatically incrementing number – starting with a ‘3’  for the Primary key\nProduct Title\nstring\n“pending”\nNot null\nDescription\nstring\n“an item’s description”\nNot null\nprice\ndouble\n0.00\n>= £0.00, <= £1,000.00 (or any appropriate sensible number,) and to 2 decimal places \nOn shelf\nInteger\n0\n>=0 and <=1000\nIn warehouse\ninteger\n0\n>= 0 and <=1000\nItem picture\nBLOB\n“picture not available”\nPicture needs to be an appropriate size and resolution\nShop ID\nnumber\nForeign key to ‘shop’ table that this stock is in"
+  },
+  "9a7a4535a9c16fb2-10": {
+    "image": "slides/9a7a4535a9c16fb2-10.webp",
+    "title": "2 - The Shop Db",
+    "page": 10,
+    "label": "Slide",
+    "text": "Table constraint\nTable name(s)\nemp\nColumn name(s)\nLine manager ID\nDate hired\nCondition to test:\nToday’s date - Line-manager’s hire date < 3 months (90 days)\nIf true: \nDisplay message “this employee cannot be a line-manager due to insufficient experience”\nIf false:\n commit data to database"
+  },
+  "9a7a4535a9c16fb2-11": {
+    "image": "slides/9a7a4535a9c16fb2-11.webp",
+    "title": "2 - The Shop Db",
+    "page": 11,
+    "label": "Slide",
+    "text": "What if…………………………….?\nThis isn’t perfect\nMissing tables/constraints?\n> 1 shop?\nFinance/Banking/Payroll et al\nEmployee leaves?\nOrphaned records?\nCustomers\n3NF et al?\nRedundant columns/constraints?"
+  },
+  "cfe9fcab40d82b71-5": {
+    "image": "slides/cfe9fcab40d82b71-5.webp",
+    "title": "3 - Create",
+    "page": 5,
+    "label": "Slide",
+    "text": "drop *\nDROP SEQUENCE <sequence name>\nDROP TABLE <table \nname\n>;"
+  },
+  "cfe9fcab40d82b71-6": {
+    "image": "slides/cfe9fcab40d82b71-6.webp",
+    "title": "3 - Create",
+    "page": 6,
+    "label": "Slide",
+    "text": "creating sequences\nCREATE SEQUENCE <name>\nINCREMENT BY  <amount>\nMINVALUE  <value>\nMAXVALUE <value>\nSTART WITH <value>\nCYCLE/NOCYCLE\n<options e.g. NOCACHE>;"
+  },
+  "cfe9fcab40d82b71-7": {
+    "image": "slides/cfe9fcab40d82b71-7.webp",
+    "title": "3 - Create",
+    "page": 7,
+    "label": "Slide",
+    "text": "triggers\n<method/options> <trigger name>\n    <when the trigger is performed> ON <table name>\n\t\t<where it is executed>\n\t\tBEGIN\n\t\t\t<code to execute>\n\t\tEND;\n/"
+  },
+  "cfe9fcab40d82b71-8": {
+    "image": "slides/cfe9fcab40d82b71-8.webp",
+    "title": "3 - Create",
+    "page": 8,
+    "label": "Slide",
+    "text": "Structure – create a table\nCREATE TABLE <name> <options>\n(\n\t<column name> <datatype> <size>\n\t\t<column constraint>\n\t<(optional) table constraint)>\n);"
+  },
+  "cfe9fcab40d82b71-15": {
+    "image": "slides/cfe9fcab40d82b71-15.webp",
+    "title": "3 - Create",
+    "page": 15,
+    "label": "Slide",
+    "text": "What?!\nNot complete\n!= ‘shop’ scenario \nTables\nRelationships\nConstraints\nTable\ncolumn\nTrigger doesn’t work"
+  },
+  "7a69a3c2a699a378-4": {
+    "image": "slides/7a69a3c2a699a378-4.webp",
+    "title": "4  - Update",
+    "page": 4,
+    "label": "Slide",
+    "text": "Altering, Updating, inserting, and deleting\nFirst\nEmpty tables*\nTesting\nAdding/removing\nColumns\nConstraints\nAltering\n+/- Columns\n+/- Constraints*\nMay need to do this \nbefore\n dropping a table\nInserting\nAdding data to tables\nUpdating\nAltering data using a query\nChanging columns where \nX\n is <value>"
+  },
+  "7a69a3c2a699a378-7": {
+    "image": "slides/7a69a3c2a699a378-7.webp",
+    "title": "4  - Update",
+    "page": 7,
+    "label": "Slide",
+    "text": "inserting\nINSERT INTO <table name> VALUES(<value#1>, <value#2>, <valule#3>, <value#4>);\nINSERT INTO <table name> VALUES(<value#1>, <value#2>, <valule#3>, <value#4>);"
+  },
+  "7a69a3c2a699a378-8": {
+    "image": "slides/7a69a3c2a699a378-8.webp",
+    "title": "4  - Update",
+    "page": 8,
+    "label": "Slide",
+    "text": "update\nUPDATE\t<table name>\nSET\t\t<column name> = <value>,\n\t\t <column name> = <value>\nWHERE\t<table name>. <column name> = <value>;"
+  },
+  "7a69a3c2a699a378-10": {
+    "image": "slides/7a69a3c2a699a378-10.webp",
+    "title": "4  - Update",
+    "page": 10,
+    "label": "Slide",
+    "text": "Code - ALTER\nALTER TABLE emp ADD\n(\n\tfirstName\tVARCHAR(20)\n\t\tCONSTRAINT firstNameNN NOT NULL,\n\tlastName\tVARCHAR(20)\n\t\tCONSTRAINT lastNameNN NOT NULL\n);"
+  },
+  "7a69a3c2a699a378-12": {
+    "image": "slides/7a69a3c2a699a378-12.webp",
+    "title": "4  - Update",
+    "page": 12,
+    "label": "Slide",
+    "text": "update\nUPDATE\temp\nSET\t\tlastName = 'Pitt',\n\t\tdatefBirth = '15-FEB-87'\nWHERE\temp.empID = '3';"
+  },
+  "12f385f48d9c8e9a-4": {
+    "image": "slides/12f385f48d9c8e9a-4.webp",
+    "title": "Week_1_Introduction",
+    "page": 4,
+    "label": "Slide",
+    "text": "What will you be learning?\nThis is a module relevant to the majority of computing graduates as databases are used to store data for myriad of purposes.\nYou will be learning how to use:\nDatabase design techniques\nSQL (Structured Query Language)\nThe Relational Model\nDDL (Data Definition Language)\nAlongside developing your interpersonal and professional skills."
+  },
+  "12f385f48d9c8e9a-6": {
+    "image": "slides/12f385f48d9c8e9a-6.webp",
+    "title": "Week_1_Introduction",
+    "page": 6,
+    "label": "Slide",
+    "text": "Activity: SQL vs NoSQL\nSQL is a type of query language supported by a range of databases, but all databases that use SQL support relationships.\nNoSQL databases tend to not support complex relationships. There are broadly four types of NoSQL database types:\nKey:Value\nColumn-Family\nGraph\nDocument\nLook at the following website. \nhttps://db-engines.com/en/ranking \nDiscuss in small groups what you can see and learn from these statistics."
+  },
+  "12f385f48d9c8e9a-11": {
+    "image": "slides/12f385f48d9c8e9a-11.webp",
+    "title": "Week_1_Introduction",
+    "page": 11,
+    "label": "Slide",
+    "text": "Assessment 1: Requirements Gathering\nThe first assessment provides you with an initial set of requirements that must be processed and arranged in the recommended format.\nThis is not the full set of requirements.\nSome words of advice:\nYou will need to contact the company representative to identify the full set of requirements for the system.\nYou will need to communicate with them via email.\nYour emails need to be clear and professional and will have an impact on your final group mark.\nIf you fail to be polite and professional with your communications, the company representative may choose to not respond.\nFinally, your success in A2 is directly dependent on how well you do in A1."
+  },
+  "12f385f48d9c8e9a-12": {
+    "image": "slides/12f385f48d9c8e9a-12.webp",
+    "title": "Week_1_Introduction",
+    "page": 12,
+    "label": "Slide",
+    "text": "Why this approach?\nBoth assessments follow the CDIO method and intended to model real life situations.\nYour future modules and final year individual project may be sourced from real-world clients working at external businesses and organisations.\nFor example, the Web Programming and the Enterprise Management Systems modules may have projects sourced from industry where you will have a direct impact on their operations.\nWorking with technology in the real world involves communicating with a diverse range and number of people and a large amount of time will be spent narrowing down their requirements.\nRemember, clients often only know what they think they want. They don’t know what they actually need.\nUpon completion of this module, you will be well versed in database design and be able to inform and guide clients to what they need to support their organisation(s)."
+  },
+  "3861d6a349aadf23-7": {
+    "image": "slides/3861d6a349aadf23-7.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 7,
+    "label": "Slide",
+    "text": "Data Models\nConceptual Data Model\nA conceptual data model provides a ‘’high-level’’ description of the data items with their characteristics and relationships.\nWe are going to look at Entity-Relationship Modelling, which is a type of conceptual data modelling.\nLogical Data Model\nA logical data model is a translation or mapping of the conceptual data model towards a specific implementation environment.\nIn our case, the implementation environment is PostgreSQL; a type of relational DBMS (or RDBMS for short)."
+  },
+  "3861d6a349aadf23-15": {
+    "image": "slides/3861d6a349aadf23-15.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 15,
+    "label": "Slide",
+    "text": "Entity Type\nAn entity type is anything of significance about which information needs to be known or held, that is within our area of interest.\nIn an ER Model, entity types or depicted using a rectangle.\nNote: \nA lot of people will use Entity Type and Entity interchangeably for the same thing; they mean Entity Type.\nDefinition-wise, an entity is a single occurrence of an entity type.\nExample:\nEntity = A single employee, a single product\nEntity Type = A set (collection) of these that share characteristics. All employees, all products."
+  },
+  "3861d6a349aadf23-18": {
+    "image": "slides/3861d6a349aadf23-18.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 18,
+    "label": "Slide",
+    "text": "Naming of Entity Types\nEntity Type names should be:\nUnique\nMeaningful\nSingular, not plural\nConceptual, not physical\nYou will need to refer to this to check any entity type names you use from this point forward."
+  },
+  "3861d6a349aadf23-19": {
+    "image": "slides/3861d6a349aadf23-19.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 19,
+    "label": "Slide",
+    "text": "Attribute Types\nDefinition\nAn attribute type represents a property of an entity type.\nFor example, name and address are attribute types of the entity type Employee or Customer.\nA single entity will have values for each of these attributes.\nWe tend to simply call attribute types attributes.\nAdvice\nSome versions of ER models will show attribute types alongside the entity types.\nFor our model we will not be following this method.\nWe will be following the traditional, simpler, ER model that only shows entity types and their relations.\nWe will come back to Attribute Types and their importance later on when looking at Logical Data Modelling."
+  },
+  "3861d6a349aadf23-23": {
+    "image": "slides/3861d6a349aadf23-23.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 23,
+    "label": "Slide",
+    "text": "Cardinality Definitions\nOne-to-One\nA row in table A can only have one matching row in table B, and vice-versa.\nNot a common relationship type.\nMay be used for security purposes or to divide larger tables.\nOne-to-Many\nThe most common relationship type.\nA row in table A can have many matching rows in table B, \nbut\n a row in table B can only have one matching row in table A.\nE.g. A Customer can make many Orders, but a single Order is associated with only one Customer."
+  },
+  "3861d6a349aadf23-25": {
+    "image": "slides/3861d6a349aadf23-25.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 25,
+    "label": "Slide",
+    "text": "Cardinality: Many-to-Many\nMany-to-Many\nThese are not allowed in relational databases.\nWe must break (or decompose) many-to-many relationships down to two or more one-to-many relationships.\nAnother option is to introduce an intermediate table.\nE.g. when many employees work on many projects, we can introduce an ‘Allocation’ table to match employees to projects."
+  },
+  "3861d6a349aadf23-31": {
+    "image": "slides/3861d6a349aadf23-31.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 31,
+    "label": "Slide",
+    "text": "Relationship Participation\nRelationships will fall into the following categories:\nMandatory\nOptional\nMandatory means that every instance in table 1 \nmust\n correspond to an instance in table 2.\nOptional means that instances in table 1 \nmay\n have a corresponding instance in table 2.\nMandatory Relationship\nOptional Relationship"
+  },
+  "3861d6a349aadf23-33": {
+    "image": "slides/3861d6a349aadf23-33.webp",
+    "title": "Week_2_ERModelling_Students",
+    "page": 33,
+    "label": "Slide",
+    "text": "Summary\nIn using these techniques, we can deduce that:\nER Diagrams are created from a set of requirements intended to meet the data storage needs of a business process.\nER Diagrams provide a Conceptual Design, or Conceptual Model for data storage.\nThe Conceptual Model is used as the basis of a Logical Data Model."
+  },
+  "0a87e1b15fe5448c-3": {
+    "image": "slides/0a87e1b15fe5448c-3.webp",
+    "title": "Database_Lvl_5___Workbook_1",
+    "page": 3,
+    "label": "Page",
+    "text": "2 PostgreSQL Data Types\nEach of the tables created hold a range of values which are defined by attributes. Each attribute\nis assigned a data type to describe the type of data that can be stored against each attribute.\nThe following table includes details of the data types that PostgreSQL supports:\nName Aliases Description\nbigint int8 Signed eight-byte integer\nbigserial serial8 autoincrement eight-byte integer\nbool Boolean Logical Boolean (true/false)\nchar [(n)] Fixed-length character string\nvarchar [(n)] Variable-length character string\ndate Calendar date (year, month, day)\nfloat8 double, precision Double precision floating-point number\nint, int4 integer Signed four-byte integer\ninterval [fields] [(p)] Time span\nmoney Currency amount\nfloat4 real Single precision floating-point number (4 bytes)\nsmallint int2 Signed two-byte integer\nsmallserial serial2 Autoincrement four-byte integer\ntext Variable length character string\ntime [(p)] [without time zone] Time of day (no time zone)\ntime [(p)] with time zone timetz Time of day, including time zone\ntimestamp [(p)] [without time zone] Date and time (no time zone\ntimestamp [(p)] with time zone timestamptz date and time, including time zone\nxml XML data\nNotes:\n• This is not an exhaustive list. PostgreSQL is an Open Source database which is constantly\nadapting and adding new ways of storing data.\n• For storing characters or texts, varchar is the recommended data type.\n• For certain fields it is a good idea to limit the length, i.e. Post Codes tend to not exceed\n8 characters (including the space), therefore if we were storing a Post Code the data type\nwould be defined as varchar(8) (depending on if you allow the space to be held).\nPage 2 of 6"
+  },
+  "0a87e1b15fe5448c-5": {
+    "image": "slides/0a87e1b15fe5448c-5.webp",
+    "title": "Database_Lvl_5___Workbook_1",
+    "page": 5,
+    "label": "Page",
+    "text": "• The SELECT clause declares the columns (or attributes) of the data that we want to display,\n• The FROM clause declares the table which we want to retrieve data from. In this query\nwe are selecting from one table, however we can select from multiple at the same time if\nneeded.\nThere are additional clauses that will be introduced in future workbooks.\nSometimes we want to select everything in the table. This is useful for understanding the nature\nof the data that has been stored and can help with the creation of queries. For this we can use\nthe star wildcard: *\nIn SQL we read ‘*’ as ‘all’, or ‘everything’.\nConsider the following query:\nSELECT *\nFROM student;\nThis can be read as, “SELECT everything FROM THE TABLE student”.\nExperiment with the SELECT clause to understand the format of the tables.\nQUESTION:\n How many columns does the ‘programme’ table have?\n3.3 WHERE clause\nOften the SELECT clause is not enough for our queries; we rarely want to just get all the data\nback, we want specifics. This is where the WHERE clause comes in.\nType the following query carefully into the console and run it.\nNote: Pay attention to the types of apostrophes around the different parts of the query.\nSELECT \"firstName\", \"lastName\"\nFROM student\nWHERE \"homeCounty\" = 'Kent';\nWhat is the query doing? Here’s how it can be broken down:\n• As before, the SELECT clause is selecting the “firstName” column and the “lastName”\ncolumn,\n• The FROM clause declares the table from which we are selecting the data; student,\n• The WHERE clause is providing the conditions for our data; therefore only the rows that\nsatisfy this condition will be displayed.\nThe query returns the following data, did you also get this?\nPage 4 of 6"
+  },
+  "0a87e1b15fe5448c-6": {
+    "image": "slides/0a87e1b15fe5448c-6.webp",
+    "title": "Database_Lvl_5___Workbook_1",
+    "page": 6,
+    "label": "Page",
+    "text": "firstName lastName\nAleshia Tomkiewicz\nFernanda Writer\nBrittani Thurm\nPaola Dease\nLuke Crete\nCheryll Yurich\nGalen Wendorf\nThad Puskarich\nGabriele Geschke\nJordan Handsaker\nMadalyn Dubberly\nMaia Shadd\nChristoper Sheneman\nMelda Colamarino\nElden Mercik\nPearlie Flori\nDusti Maricle\nGerald Kernagis\nStefania Leadbeater\nPaul Farrin\nViki Humeniuk\nAltha Tischner\nWHERE clauses can be incredibly complex, and we can continue to narrow data down. For\nexample, let’s say we want to retrieve all students who have a surname beginning with ‘T’ and\nlive in ‘Greater Manchester’. Let’s build the query.\nAs we want students, lets stick with the identifying attributes; studentId, firstName and last-\nName should be enough. Remember, we always want to bring back relevant information. Re-\ntrieving more information than necessary can be counterproductive; if we are dealing with large\ndata sets it can slow queries down heavily.\nKnowing what we want to retrieve we have the first line:\nSELECT \"studentId\", \"firstName\", \"lastName\"\nWe are querying the student table, so our FROM clause remains as before:\nFROM student\nOur WHERE clause is going to be bit different, first we want surnames that start with a T. For\nthis we can use the keyword LIKE and the wildcard ‘%’. LIKE is fairly self-explanatory, we\nwant to retrieve data where something is LIKE the value we give it. The wildcard ‘%’ acts in a\nsimilar way to the ‘*’ wildcard in the SELECT clause, only the % works in WHERE clauses.\nNote: ‘%’ and ‘*’ are not interchangeable.\nThe % sign acts as a ‘anything’ placeholder. So when we write:\nWHERE \"lastName\" LIKE 'T%'\nThis translates to “last names start with T”. The % sign tells SQL we are only interested in the\nfirst part, and it must be T, it can be anything after that point.\nWe also want to find those whose Home County is Greater Manchester but we cannot use\nWHERE multiple times in a query (without brackets, we will look at that later). So, we need\nto make use of the keyword AND. We can use AND to combine conditions (if you have study\nlogic, we can also use OR). So, combining with our first part we get:\nPage 5 of 6"
+  },
+  "0a87e1b15fe5448c-7": {
+    "image": "slides/0a87e1b15fe5448c-7.webp",
+    "title": "Database_Lvl_5___Workbook_1",
+    "page": 7,
+    "label": "Page",
+    "text": "WHERE \"lastName\" LIKE 'T%'\nAND \"homeCounty\" = 'Greater Manchester';\nOnce these clauses are combined, the final WHERE query is as follows:\nSELECT \"studentId\", \"firstName\", \"lastName\"\nFROM student\nWHERE \"lastName\" LIKE 'T%'\nAND \"homeCounty\" = 'Greater Manchester';\n4 Developing Your Knowledge\nThe following questions build on the concepts that have been introduced in this workbook. By\nanswering these questions you will develop your ability to write basic SQL queries. Do not\nattempt future workbooks before you have been able to complete each of these questions.\n1. Which School has the schoolId, 4?\n2. What programme has the code CCM03?\n3. What is the student id of the student that lives at: 869 Luke St?\n4. How many students are from Essex? (Hint, you can look at the row numbers in the con-\nsole, we will cover count later)\n5. Which student has enter an alternative phone number: 01848 116775?\n6. Which student has the post code ME15 8ST?\n7. Which student lives in the Greater London and has the phone number 01537 356648?\n8. What programmes have the schoolFK 6 and a programme length of 4?\n9. How many students have a first name start with A and a phone number starting 017?\n10. How many Bachelor programmes are there? (Hint, Bachelor awards all start with B)\nPage 6 of 6"
+  },
+  "e736cbfe2e077e40-2": {
+    "image": "slides/e736cbfe2e077e40-2.webp",
+    "title": "MCOMD2DEG____Workbook_2__OrderBy",
+    "page": 2,
+    "label": "Page",
+    "text": "1 Introduction\nThis workbook provides exercises that are intended to help build your SQL skills.\nYour practical sessions are for working on this as well as working on your project with your\nteam mates.\nNote: Completion of workbooks are necessary to ensure that you are able to complete your\nLogbook tasks.\n2 Order by\nThe ORDER BY function is incredibly useful and be used to sort our results. We can order\nin ascending or descending direction. Type the following query carefully into the DBeaver\nconsole:\nSELECT *\nFROM student\nORDER BY \"firstName\";\nQUESTION:\n/hand_rightWhat did you notice about the results?\n/hand_rightWhich direction are the results ordered by?\nIn the previous query we did not declare the ordering direction for the results. The default\nordering is ascending. This can be altered with the following query:\nSELECT *\nFROM student\nORDER BY \"firstName\" desc;\nNotice this time that the results are ordered in the opposite direction. This means we only\ndeclare desc or descending when we want the results to be presented in a descending order.\nWe can also ORDER BY multiple columns. Let’s say we want to ORDER BY ﬁrstName in as-\ncending order, and then order the results by lastName in descending order. We can combine\nthe two commands as follows:\nSELECT *\nFROM student\nORDER BY \"firstName\",\n\"lastName\" desc;\nIt is a bit difﬁcult to see the results, however if you scroll down the output, you’ll see that two\nentries called ‘Ashley’ are ordered by their lastName values.\nIn cases where there are no values to sort with, these are placed at the bottom of the results.\nLook at the following query. The column we are sorting by, endOfProgramme is a nullable\ncolumn.\nSELECT *\nFROM registration\nORDER BY \"endOfProgramme\";\nNotice in the results, those with values in the endOfProgramme colume are ordered. They are\nfollowed by the rest of the results where endOfProgramme is null.\nPage 1 of 3"
+  },
+  "e736cbfe2e077e40-3": {
+    "image": "slides/e736cbfe2e077e40-3.webp",
+    "title": "MCOMD2DEG____Workbook_2__OrderBy",
+    "page": 3,
+    "label": "Page",
+    "text": "When querying, the ORDER BY function comes last after all conditions.\nQUESTION:\n/hand_rightWhat query will select all BSc programmes and order them by length of programme?\n/hand_rightFind all students who live in Kent and organise them in alphabetic order by Post Code. What\nstudent is at row 15?\n3 Count\nThe COUNT function is a useful tool and is especially useful when we have a lot of records. The\nCOUNT function does exactly what you would expect it to, it counts the results. The COUNT\nfunction can retrieve results alone or be an additional result. We will look into how it can be\nan additional result in a later workbook when we visit the GROUP BY function. For now, we’ll\nlook at COUNT in its simplest form.\nSELECT COUNT(\"studentID\")\nFROM student\nWHERE \"homeCounty\" = 'Greater Manchester';\nThe result is useful because it tells us how many records have a home county of Greater Manchester.\nThis removes the need for us to scroll through the records and manually count them, or look at\nrow numbers to see how many there are.\nQUESTION:\n/hand_rightHow many students have a name beginning with ‘F’?\n/hand_rightHow many students have a name beginning with ‘A’ and live in ‘Kent’?\n/hand_rightHow many students live in ‘Greater London’ and have a Gmail email address?\n4 In\nThe function IN is useful and works in a similar way to OR.\nType in the following query and see how it works:\nSELECT *\nFROM student\nWHERE \"homeCounty\" IN ('County Durham', 'York', 'Derbyshire');\nThe IN function allows us to retrieve records for students with home counties County Durham,\nYork and Derbyshire. This is a quicker way than using the OR method.\n5 Between\nBETWEEN is a useful function, especially for dates. BETWEEN acts as a way of ﬁnding data\nthat has a value between two values. This can only be used with numbers and dates, not letters\nor strings.\nPage 2 of 3"
+  },
+  "e736cbfe2e077e40-4": {
+    "image": "slides/e736cbfe2e077e40-4.webp",
+    "title": "MCOMD2DEG____Workbook_2__OrderBy",
+    "page": 4,
+    "label": "Page",
+    "text": "SELECT *\nFROM registration\nWHERE \"dateOfRegistration\" BETWEEN '2018-01-01' AND '2018-12-31';\nThe above query retrieves all of the registrations of 2018, by using the between function. Take\nnotice of the format of the dates; PostgreSQL sees dates in the format YYYY-MM-DD.\nQUESTION:\n/hand_rightHow many students registered in 2019?\n/hand_rightHow many students registered in 2020?\n/warning_signTry using the COUNT function in your query.\nPage 3 of 3"
+  },
+  "b181fa3595fe733b-7": {
+    "image": "slides/b181fa3595fe733b-7.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 7,
+    "label": "Slide",
+    "text": "Logical Data Model\nTo achieve this, we will need to specify:\nTables\nColumns (attributes)\nData types and length\nNullability\nPrimary Key (PK)\nAlternative Keys (AK)\nForeign Keys (FK)\nWhether nulls are allowed\nOther \nconstraints"
+  },
+  "b181fa3595fe733b-8": {
+    "image": "slides/b181fa3595fe733b-8.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 8,
+    "label": "Slide",
+    "text": "Attribute Types\nEach entity type will have attributes associated with it.\nThe attributes will translate to columns when the tables are created.\nIn the LDM, the attributes need to not only be declared, they also need to:\nBe assigned an appropriate data type\nHave their nullability appropriately defined\nHave any default values declared\nHave any additional constraints declared"
+  },
+  "b181fa3595fe733b-9": {
+    "image": "slides/b181fa3595fe733b-9.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 9,
+    "label": "Slide",
+    "text": "Primary Key\nThere is just one main defining characteristic of a primary key.\nA unique identifying attribute (column) in a given table.\nHistorically this would be a pre-existing attribute, or combination of pre-existing attributes, such as Employee Number or FirstName + \nLastName\n + \nHireDate\n.\nToday we create a new column as an \nartificial simple key"
+  },
+  "b181fa3595fe733b-15": {
+    "image": "slides/b181fa3595fe733b-15.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 15,
+    "label": "Slide",
+    "text": "Activity: Artificial Simple Key\nWhat \ndatatypes\n should be used for each of these attributes?\nContactID\nlastName\nemailAddress\nmobileNumber\ndateOfBirth"
+  },
+  "b181fa3595fe733b-18": {
+    "image": "slides/b181fa3595fe733b-18.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 18,
+    "label": "Slide",
+    "text": "Step 1: Entity Type to Base Table\nEach entity becomes a base table.\nAll attributes of the entity become columns (attributes) of the table\nThe identifying attribute(s) of the entity becomes the primary key of the table."
+  },
+  "b181fa3595fe733b-20": {
+    "image": "slides/b181fa3595fe733b-20.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 20,
+    "label": "Slide",
+    "text": "Step 2: Relationships become Foreign Keys\nEach One-to-Many relationship becomes a foreign key.\nNote: \nForeign keys \nalways\n go in the base table corresponding to the Many side of the relationship."
+  },
+  "b181fa3595fe733b-21": {
+    "image": "slides/b181fa3595fe733b-21.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 21,
+    "label": "Slide",
+    "text": ""
+  },
+  "b181fa3595fe733b-23": {
+    "image": "slides/b181fa3595fe733b-23.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 23,
+    "label": "Slide",
+    "text": "Step 3: Do Foreign Keys Allow ‘Null’?\nTo d\netermine whether Null FK values are allowed:\nIf the relationship is \nmandatory\n on the ERD, then nulls are \nnot allowed \nin the corresponding Foreign Key column.\nIf the relationship is \noptional\n on the ERD, then nulls are \nallowed\n in the corresponding Foreign Key column.\nWe specify if null is allowed by using an ‘N’ or ‘NULL’ in the diagram."
+  },
+  "b181fa3595fe733b-25": {
+    "image": "slides/b181fa3595fe733b-25.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 25,
+    "label": "Slide",
+    "text": "Step 5: Document\nNow for each table we document the following information:\nAll attributes\nThe Primary Key\nForeign Key(s)\nThe data types, including lengths\nNullability\nAlternative Keys, if any\nDefaults, if any\nColumn Constraints, if any\nTable Constraints, if any"
+  },
+  "b181fa3595fe733b-33": {
+    "image": "slides/b181fa3595fe733b-33.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 33,
+    "label": "Slide",
+    "text": "A Table Definition in an LDM\nProgramme\nKEY\nCOLUMN NAME\nDATA TYPE\nNULLABILITY\nDEFAULT\nCOLUMN CONSTRAINT\nPK\nprogrammeId\nbigserial\nNOT NULL\nSequence Next Value\nprogrammeName\nvarchar(255)\nNOT NULL\nprogrammeCode\nvarchar(10)\nNOT NULL\nFK\nschoolFK\nint\nNOT NULL\nlengthOfProgramme\nint\nNOT NULL\nprogrammeAward\nvarchar(10)\nNOT NULL\nIdentifies the Foreign Key column. The Programme table sits on the “many” side of the relationship with school, i.e. one school has many programmes. So the Programme table contains the reference column to the School table"
+  },
+  "b181fa3595fe733b-35": {
+    "image": "slides/b181fa3595fe733b-35.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 35,
+    "label": "Slide",
+    "text": "A Table Definition in an LDM\nProgramme\nKEY\nCOLUMN NAME\nDATA TYPE\nNULLABILITY\nDEFAULT\nCOLUMN CONSTRAINT\nPK\nprogrammeId\nbigserial\nNOT NULL\nSequence Next Value\nprogrammeName\nvarchar(255)\nNOT NULL\nprogrammeCode\nvarchar(10)\nNOT NULL\nFK\nschoolFK\nint\nNOT NULL\nlengthOfProgramme\nint\nNOT NULL\nprogrammeAward\nvarchar(10)\nNOT NULL\nThis defines whether we allow null values or not."
+  },
+  "b181fa3595fe733b-37": {
+    "image": "slides/b181fa3595fe733b-37.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 37,
+    "label": "Slide",
+    "text": "A Table Definition in an LDM\nProgramme\nKEY\nCOLUMN NAME\nDATA TYPE\nNULLABILITY\nDEFAULT\nCOLUMN CONSTRAINT\nPK\nprogrammeId\nbigserial\nNOT NULL\nSequence Next Value\nprogrammeName\nvarchar(255)\nNOT NULL\nprogrammeCode\nvarchar(10)\nNOT NULL\nFK\nschoolFK\nint\nNOT NULL\nlengthOfProgramme\nint\nNOT NULL\nprogrammeAward\nvarchar(10)\nNOT NULL\nWe can define any default values that will apply to the attributes. Default values apply if no data is given by the data input. If the identifying column is assigned using a sequence, then the default will always be Sequence Next Value."
+  },
+  "b181fa3595fe733b-39": {
+    "image": "slides/b181fa3595fe733b-39.webp",
+    "title": "Week_3_LogicalDataModelling",
+    "page": 39,
+    "label": "Slide",
+    "text": "A Table Definition in an LDM\nProgramme\nKEY\nCOLUMN NAME\nDATA TYPE\nNULLABILITY\nDEFAULT\nCOLUMN CONSTRAINT\nPK\nprogrammeId\nbigserial\nNOT NULL\nSequence Next Value\nprogrammeName\nvarchar(255)\nNOT NULL\nprogrammeCode\nvarchar(10)\nNOT NULL\nFK\nschoolFK\nint\nNOT NULL\nlengthOfProgramme\nint\nNOT NULL\nprogrammeAward\nvarchar(10)\nNOT NULL\nWe can then define any additional constraints. These may not be applied database side, but are important for data consideration. For example, an email attribute should contain an ‘@’ symbol. This validation could occur database side or at the data entry point but we should consider it at this stage."
+  }
+}

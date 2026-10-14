@@ -1,0 +1,11 @@
+.source-study{margin-top:24px;border-top:1px solid #d8dfed;padding-top:18px}
+.source-study button{background:none;border:0;padding:8px 0;color:#1645b9;font:inherit;text-align:left;text-decoration:underline;cursor:pointer;line-height:1.5}
+.source-study button:focus-visible{outline:3px solid #df8d00;outline-offset:4px}
+.source-study small{display:block;color:#52647e;margin-top:4px}
+.slide-dialog{box-sizing:border-box;width:min(1100px,96vw);max-height:94dvh;border:1px solid #bac6d9;border-radius:16px;padding:0;color:#152442;background:#fff;overflow:auto}
+.slide-dialog::backdrop{background:rgb(15 27 48 / 75%)}
+.slide-dialog-header{position:sticky;top:0;background:white;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px;border-bottom:1px solid #d8dfed;z-index:1}
+.slide-dialog-header h2{font-size:1.1rem;line-height:1.4;margin:0;overflow-wrap:anywhere}
+.slide-dialog-header button{flex-shrink:0;min-height:44px}
+.slide-content{padding:16px}.source-slide-image{display:block;width:100%;height:auto;margin-bottom:16px}.slide-transcript{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6}.slide-content a{display:inline-block;padding:8px 0;color:#1645b9}.slide-content details{margin-top:16px}.slide-content summary{cursor:pointer;min-height:44px}
+@media(max-width:600px){.slide-dialog-header{align-items:stretch;flex-direction:column;gap:10px}.slide-dialog-header button{align-self:flex-end}.slide-content{padding:10px}.slide-dialog{width:96vw;max-height:96dvh}}

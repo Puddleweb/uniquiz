@@ -20,7 +20,9 @@
           "explanation": "A network requires interconnected communicating devices; internet access, a dedicated server and a third device are not prerequisites.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 4
+            "page": 4,
+            "slideId": "7534f98899b9e426-4",
+            "label": "Page"
           }
         },
         {
@@ -37,7 +39,9 @@
           "explanation": "Resource sharing lets connected users access equipment such as printers and servers. Compression and encryption concern data representation or protection, not shared access to a printer.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 4
+            "page": 4,
+            "slideId": "7534f98899b9e426-4",
+            "label": "Page"
           }
         },
         {
@@ -54,7 +58,9 @@
           "explanation": "Client and server describe roles in an exchange. A machine serving browsers can act as a client when requesting another service.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 6
+            "page": 6,
+            "slideId": "7534f98899b9e426-6",
+            "label": "Page"
           }
         },
         {
@@ -71,7 +77,9 @@
           "explanation": "Signals can weaken as they travel. A repeater regenerates or amplifies the signal; routing between networks is a router function.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 8
+            "page": 8,
+            "slideId": "7534f98899b9e426-8",
+            "label": "Page"
           }
         },
         {
@@ -88,7 +96,9 @@
           "explanation": "A hub is a multi-port repeater. A learning switch uses MAC-to-port information; IP routing and policy filtering are different functions.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 8
+            "page": 8,
+            "slideId": "7534f98899b9e426-8",
+            "label": "Page"
           }
         },
         {
@@ -105,7 +115,9 @@
           "explanation": "An Ethernet switch learns destination-port associations. Hubs and repeaters do not make those forwarding decisions; an access point principally provides wireless access.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 10
+            "page": 10,
+            "slideId": "7534f98899b9e426-10",
+            "label": "Page"
           }
         },
         {
@@ -122,7 +134,9 @@
           "explanation": "Routing provides delivery between networks. Repeating, local switching and application caching address different needs.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 10
+            "page": 10,
+            "slideId": "7534f98899b9e426-10",
+            "label": "Page"
           }
         },
         {
@@ -139,7 +153,9 @@
           "explanation": "A wireless access point provides wireless devices with connectivity into the wired network. A file server supplies files but is not itself the Wi-Fi access function.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 11
+            "page": 11,
+            "slideId": "7534f98899b9e426-11",
+            "label": "Page"
           }
         },
         {
@@ -156,7 +172,9 @@
           "explanation": "A firewall checks traffic against security rules. A repeater regenerates signals and a load balancer distributes work; neither is the filtering role described here.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 11
+            "page": 11,
+            "slideId": "7534f98899b9e426-11",
+            "label": "Page"
           }
         },
         {
@@ -173,7 +191,9 @@
           "explanation": "Load balancing distributes requests among servers. Caching may reduce repeated work but does not by itself distribute requests across the server pool.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 11
+            "page": 11,
+            "slideId": "7534f98899b9e426-11",
+            "label": "Page"
           }
         },
         {
@@ -190,7 +210,9 @@
           "explanation": "The proxy mediates application requests and may cache content. The other devices provide connectivity or forwarding rather than the described application intermediary role.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 11
+            "page": 11,
+            "slideId": "7534f98899b9e426-11",
+            "label": "Page"
           }
         },
         {
@@ -207,7 +229,9 @@
           "explanation": "In the decentralised peer exchange participants supply and request resources. Multiple servers or wireless connectivity do not alone make the architecture peer-to-peer.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 12
+            "page": 12,
+            "slideId": "7534f98899b9e426-12",
+            "label": "Page"
           }
         },
         {
@@ -224,7 +248,9 @@
           "explanation": "A local area network covers a small geographical area such as a building. A MAN covers a city or large campus, a WAN spans larger areas, and a PAN is centred on a person.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 14
+            "page": 14,
+            "slideId": "7534f98899b9e426-14",
+            "label": "Page"
           }
         },
         {
@@ -241,7 +267,9 @@
           "explanation": "A WAN spans a large geographical area and can interconnect branch LANs. A MAN is metropolitan in scale; LAN and PAN have smaller scopes.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 14
+            "page": 14,
+            "slideId": "7534f98899b9e426-14",
+            "label": "Page"
           }
         },
         {
@@ -258,7 +286,9 @@
           "explanation": "Protocols specify formats, sequence and actions on sending or receipt. Agreeing only on the format leaves communication behaviour underspecified.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 15
+            "page": 15,
+            "slideId": "7534f98899b9e426-15",
+            "label": "Page"
           }
         },
         {
@@ -275,7 +305,9 @@
           "explanation": "Layering separates responsibilities through interfaces. It reduces the impact of changes, without removing dependencies or making layer functions identical.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 17
+            "page": 17,
+            "slideId": "7534f98899b9e426-17",
+            "label": "Page"
           }
         },
         {
@@ -292,7 +324,9 @@
           "explanation": "The OSI model has seven layers. The reverse order starts at the application, while Link/Internet/Transport/Application is the four-layer TCP/IP model.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 18
+            "page": 18,
+            "slideId": "7534f98899b9e426-18",
+            "label": "Page"
           }
         },
         {
@@ -309,7 +343,9 @@
           "explanation": "Each sending layer adds the control information needed for its own role. Corresponding information is processed and removed on reception rather than discarded before sending.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 19
+            "page": 19,
+            "slideId": "7534f98899b9e426-19",
+            "label": "Page"
           }
         },
         {
@@ -326,7 +362,9 @@
           "explanation": "The physical layer deals with transmitting bits over media such as cables or fibre. Session and presentation functions operate at higher levels.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 20
+            "page": 20,
+            "slideId": "7534f98899b9e426-20",
+            "label": "Page"
           }
         },
         {
@@ -343,7 +381,9 @@
           "explanation": "The data-link layer handles node-to-node frame transfer and is associated with Ethernet and MAC addresses. It is distinct from network-layer packet routing.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 21
+            "page": 21,
+            "slideId": "7534f98899b9e426-21",
+            "label": "Page"
           }
         },
         {
@@ -360,7 +400,9 @@
           "explanation": "The network layer provides packet delivery from source host to destination host using addressing and routing. The equivalent layer in the four-layer TCP/IP model is Internet.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 22
+            "page": 22,
+            "slideId": "7534f98899b9e426-22",
+            "label": "Page"
           }
         },
         {
@@ -377,7 +419,9 @@
           "explanation": "TCP and UDP are transport protocols. The transport layer delivers data between processes; IP is associated with the Internet/network layer.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 23
+            "page": 23,
+            "slideId": "7534f98899b9e426-23",
+            "label": "Page"
           }
         },
         {
@@ -394,7 +438,9 @@
           "explanation": "The session layer manages sessions and synchronisation. Physical and data-link layers focus on transmission over the medium and between adjacent nodes.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 24
+            "page": 24,
+            "slideId": "7534f98899b9e426-24",
+            "label": "Page"
           }
         },
         {
@@ -411,7 +457,9 @@
           "explanation": "The presentation layer deals with representation of data, including translation, encoding, compression and encryption in the OSI model.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 25
+            "page": 25,
+            "slideId": "7534f98899b9e426-25",
+            "label": "Page"
           }
         },
         {
@@ -428,7 +476,9 @@
           "explanation": "The application layer supports network services used by applications, such as file transfer and email. Lower layers handle transport and delivery.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 26
+            "page": 26,
+            "slideId": "7534f98899b9e426-26",
+            "label": "Page"
           }
         },
         {
@@ -445,7 +495,9 @@
           "explanation": "The TCP/IP Internet layer corresponds to the OSI Network layer. It handles IP packets and routing rather than application services or local link functions.",
           "source": {
             "title": "Lecture-Introduction to Network Protocols",
-            "page": 19
+            "page": 19,
+            "slideId": "7534f98899b9e426-19",
+            "label": "Page"
           }
         },
         {
@@ -462,7 +514,9 @@
           "explanation": "Network design plans connectivity, hardware, security and growth around the services and constraints the organisation actually needs.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 2
+            "page": 2,
+            "slideId": "2d4f37918597e476-2",
+            "label": "Page"
           }
         },
         {
@@ -479,7 +533,9 @@
           "explanation": "Low latency reduces delay in interactive communication. Capacity and reliability also matter, but bandwidth alone does not describe delay.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 4
+            "page": 4,
+            "slideId": "2d4f37918597e476-4",
+            "label": "Page"
           }
         },
         {
@@ -496,7 +552,9 @@
           "explanation": "Scalability is the ability to accommodate growth without a complete redesign. It requires planning for the expected load rather than assuming capacity is unlimited.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 5
+            "page": 5,
+            "slideId": "2d4f37918597e476-5",
+            "label": "Page"
           }
         },
         {
@@ -513,7 +571,9 @@
           "explanation": "A redundant path and working failover reduce dependence on one link. The backup must be tested rather than assumed to work.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 6
+            "page": 6,
+            "slideId": "2d4f37918597e476-6",
+            "label": "Page"
           }
         },
         {
@@ -530,7 +590,9 @@
           "explanation": "Segmentation supports security by separating groups and enforcing appropriate access between them. Separation needs suitable rules to be effective.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 7
+            "page": 7,
+            "slideId": "2d4f37918597e476-7",
+            "label": "Page"
           }
         },
         {
@@ -547,7 +609,9 @@
           "explanation": "Manageability includes monitoring, configuration and troubleshooting. Alerts and documentation help staff understand and diagnose the network.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 8
+            "page": 8,
+            "slideId": "2d4f37918597e476-8",
+            "label": "Page"
           }
         },
         {
@@ -564,7 +628,9 @@
           "explanation": "Budget and growth plans constrain the design at the business level; technical choices should be made within those constraints.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 10
+            "page": 10,
+            "slideId": "2d4f37918597e476-10",
+            "label": "Page"
           }
         },
         {
@@ -581,7 +647,9 @@
           "explanation": "A site survey establishes physical conditions and coverage needs before detailed equipment placement decisions.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 11
+            "page": 11,
+            "slideId": "2d4f37918597e476-11",
+            "label": "Page"
           }
         },
         {
@@ -598,7 +666,9 @@
           "explanation": "Traffic analysis should identify demanding periods and application usage, because acceptable average performance can conceal peak-time problems.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 11
+            "page": 11,
+            "slideId": "2d4f37918597e476-11",
+            "label": "Page"
           }
         },
         {
@@ -615,7 +685,9 @@
           "explanation": "Conceptual design describes needed services at a high level. Logical and physical design then develop how they will be delivered.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 12
+            "page": 12,
+            "slideId": "2d4f37918597e476-12",
+            "label": "Page"
           }
         },
         {
@@ -632,7 +704,9 @@
           "explanation": "Addressing, VLAN structure, routing and security zones describe logical organisation rather than the physical placement of equipment.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 12
+            "page": 12,
+            "slideId": "2d4f37918597e476-12",
+            "label": "Page"
           }
         },
         {
@@ -649,7 +723,9 @@
           "explanation": "Physical design specifies the actual equipment and physical infrastructure used to realise the network.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 12
+            "page": 12,
+            "slideId": "2d4f37918597e476-12",
+            "label": "Page"
           }
         },
         {
@@ -666,7 +742,9 @@
           "explanation": "A pilot helps identify practical issues and validate performance before expanding the deployment. It does not guarantee perfect future operation.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 14
+            "page": 14,
+            "slideId": "2d4f37918597e476-14",
+            "label": "Page"
           }
         },
         {
@@ -683,7 +761,9 @@
           "explanation": "Useful documentation explains both the design and its operation, enabling ongoing maintenance and troubleshooting.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 15
+            "page": 15,
+            "slideId": "2d4f37918597e476-15",
+            "label": "Page"
           }
         },
         {
@@ -700,7 +780,9 @@
           "explanation": "Acceptance testing confirms that the deployed system meets agreed needs, such as service and capacity targets, rather than merely turning on.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 16
+            "page": 16,
+            "slideId": "2d4f37918597e476-16",
+            "label": "Page"
           }
         },
         {
@@ -717,7 +799,9 @@
           "explanation": "Wireshark is used for packet capture and inspection. Diagrams and inventories provide other kinds of useful information.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 17
+            "page": 17,
+            "slideId": "2d4f37918597e476-17",
+            "label": "Page"
           }
         },
         {
@@ -734,7 +818,9 @@
           "explanation": "Top-down design begins with business and application requirements and derives technology choices from them.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 20
+            "page": 20,
+            "slideId": "2d4f37918597e476-20",
+            "label": "Page"
           }
         },
         {
@@ -751,7 +837,9 @@
           "explanation": "Bottom-up design starts with available technology and works upward towards the application and business needs.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 21
+            "page": 21,
+            "slideId": "2d4f37918597e476-21",
+            "label": "Page"
           }
         },
         {
@@ -768,7 +856,9 @@
           "explanation": "A hybrid approach combines requirements-led thinking with the practical opportunities and limits of available technology.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 22
+            "page": 22,
+            "slideId": "2d4f37918597e476-22",
+            "label": "Page"
           }
         },
         {
@@ -785,7 +875,9 @@
           "explanation": "The core is the high-speed backbone, prioritising reliable and stable interconnection.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 31
+            "page": 31,
+            "slideId": "2d4f37918597e476-31",
+            "label": "Page"
           }
         },
         {
@@ -802,7 +894,9 @@
           "explanation": "Distribution connects access networks to the core and commonly performs routing, filtering and policy enforcement.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 32
+            "page": 32,
+            "slideId": "2d4f37918597e476-32",
+            "label": "Page"
           }
         },
         {
@@ -819,7 +913,9 @@
           "explanation": "The access layer provides device connectivity and related access controls, before traffic moves toward distribution and core layers.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 33
+            "page": 33,
+            "slideId": "2d4f37918597e476-33",
+            "label": "Page"
           }
         },
         {
@@ -836,7 +932,9 @@
           "explanation": "Zero Trust does not grant implicit trust based solely on network location. Identity and access decisions still matter for internal devices.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 34
+            "page": 34,
+            "slideId": "2d4f37918597e476-34",
+            "label": "Page"
           }
         },
         {
@@ -853,7 +951,9 @@
           "explanation": "Fine-grained segmentation controls communication between workloads. It complements identity checks and monitoring rather than replacing them.",
           "source": {
             "title": "Lecture 2_Networking",
-            "page": 36
+            "page": 36,
+            "slideId": "2d4f37918597e476-36",
+            "label": "Page"
           }
         },
         {
@@ -870,7 +970,9 @@
           "explanation": "Layering helps separate physical connectivity from routing. A healthy lower layer does not establish that all higher-layer configuration is correct.",
           "source": {
             "title": "Lecture3",
-            "page": 3
+            "page": 3,
+            "slideId": "5bde622d5611128e-3",
+            "label": "Page"
           }
         },
         {
@@ -887,7 +989,9 @@
           "explanation": "The immediate fault concerns physical signalling. It can affect higher-layer services, but that does not change the location of the observed fault.",
           "source": {
             "title": "Lecture3",
-            "page": 5
+            "page": 5,
+            "slideId": "5bde622d5611128e-5",
+            "label": "Page"
           }
         },
         {
@@ -904,7 +1008,9 @@
           "explanation": "Frames and MAC addressing belong to the data-link role. IP routing is a network-layer responsibility; end-to-end transport is a separate role.",
           "source": {
             "title": "Lecture3",
-            "page": 6
+            "page": 6,
+            "slideId": "5bde622d5611128e-6",
+            "label": "Page"
           }
         },
         {
@@ -921,7 +1027,9 @@
           "explanation": "Routing between networks uses logical addressing. Local link addressing and checksums have other roles.",
           "source": {
             "title": "Lecture3",
-            "page": 7
+            "page": 7,
+            "slideId": "5bde622d5611128e-7",
+            "label": "Page"
           }
         },
         {
@@ -938,7 +1046,9 @@
           "explanation": "TCP supplies reliable ordered transport. UDP does not itself provide retransmission and ordering; IP and Ethernet do not replace that end-to-end service.",
           "source": {
             "title": "Lecture3",
-            "page": 9
+            "page": 9,
+            "slideId": "5bde622d5611128e-9",
+            "label": "Page"
           }
         },
         {
@@ -955,7 +1065,9 @@
           "explanation": "UDP can suit a loss-tolerant design because it does not impose TCP-style reliable ordered delivery. It does not guarantee speed or eliminate application design responsibilities.",
           "source": {
             "title": "Lecture3",
-            "page": 9
+            "page": 9,
+            "slideId": "5bde622d5611128e-9",
+            "label": "Page"
           }
         },
         {
@@ -972,7 +1084,9 @@
           "explanation": "Transport protocols differ. Interpret the lecture reliability statements in light of its TCP-versus-UDP comparison rather than attributing TCP guarantees to all transport.",
           "source": {
             "title": "Lecture3",
-            "page": 8
+            "page": 8,
+            "slideId": "5bde622d5611128e-8",
+            "label": "Page"
           }
         },
         {
@@ -989,7 +1103,9 @@
           "explanation": "The presentation role concerns representation, including translation and compression. This conceptual mapping does not mean each implementation has a separate presentation-layer component.",
           "source": {
             "title": "Lecture3",
-            "page": 11
+            "page": 11,
+            "slideId": "5bde622d5611128e-11",
+            "label": "Page"
           }
         },
         {
@@ -1006,7 +1122,9 @@
           "explanation": "DNS resolves names; DHCP configures hosts, HTTPS serves secure web traffic, and NTP supports clock synchronisation. A symptom suggests a test, not a definitive diagnosis.",
           "source": {
             "title": "Lecture3",
-            "page": 14
+            "page": 14,
+            "slideId": "5bde622d5611128e-14",
+            "label": "Page"
           }
         },
         {
@@ -1023,7 +1141,9 @@
           "explanation": "The listed DHCP server and client ports are 67 and 68 respectively. DNS and NTP use different conventional ports.",
           "source": {
             "title": "Lecture3",
-            "page": 14
+            "page": 14,
+            "slideId": "5bde622d5611128e-14",
+            "label": "Page"
           }
         },
         {
@@ -1040,7 +1160,9 @@
           "explanation": "SFTP runs over SSH, conventionally on port 22. It is distinct from FTP and TFTP; service names and actual configuration should also be checked.",
           "source": {
             "title": "Lecture3",
-            "page": 15
+            "page": 15,
+            "slideId": "5bde622d5611128e-15",
+            "label": "Page"
           }
         },
         {
@@ -1057,7 +1179,9 @@
           "explanation": "IMAP supports access to a mailbox; SMTP concerns sending and transferring mail. The other protocols address unrelated network services.",
           "source": {
             "title": "Lecture3",
-            "page": 16
+            "page": 16,
+            "slideId": "5bde622d5611128e-16",
+            "label": "Page"
           }
         },
         {
@@ -1074,7 +1198,9 @@
           "explanation": "The four-layer mapping combines the three upper OSI layers into Application, retaining Transport and mapping Network to Internet.",
           "source": {
             "title": "Lecture3",
-            "page": 26
+            "page": 26,
+            "slideId": "5bde622d5611128e-26",
+            "label": "Page"
           }
         },
         {
@@ -1091,7 +1217,9 @@
           "explanation": "The Link or Network Access layer covers physical and local data-link responsibilities in this four-layer model. Names vary, so use the stated model.",
           "source": {
             "title": "Lecture3",
-            "page": 21
+            "page": 21,
+            "slideId": "5bde622d5611128e-21",
+            "label": "Page"
           }
         }
       ]
@@ -1114,7 +1242,9 @@
           "explanation": "Research combines original investigation with gaining knowledge and understanding. Copying or memorising alone lacks the investigative contribution described in the lecture.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 15
+            "page": 15,
+            "slideId": "89d921dde6f90594-15",
+            "label": "Page"
           }
         },
         {
@@ -1131,7 +1261,9 @@
           "explanation": "The example begins with an aim and a research question, plans a design, collects and analyses evidence, then presents findings. The conclusion should follow the investigation.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 16
+            "page": 16,
+            "slideId": "89d921dde6f90594-16",
+            "label": "Page"
           }
         },
         {
@@ -1148,7 +1280,9 @@
           "explanation": "The question asks about a specific relationship that can be investigated. The other options are broader intentions or aims.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 16
+            "page": 16,
+            "slideId": "89d921dde6f90594-16",
+            "label": "Page"
           }
         },
         {
@@ -1165,7 +1299,9 @@
           "explanation": "Controlling other variables helps make a comparison of teaching modes more interpretable. It does not guarantee a result or replace data collection.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 16
+            "page": 16,
+            "slideId": "89d921dde6f90594-16",
+            "label": "Page"
           }
         },
         {
@@ -1182,7 +1318,9 @@
           "explanation": "The lecture recognises using a different approach or technique as a way to be original. Merely renaming or copying work does not introduce that difference.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 18
+            "page": 18,
+            "slideId": "89d921dde6f90594-18",
+            "label": "Page"
           }
         },
         {
@@ -1199,7 +1337,9 @@
           "explanation": "The lecture notes that by-products can be original, including understanding why an experiment or technique did not work. A failed intended outcome is not automatically the absence of a contribution.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 18
+            "page": 18,
+            "slideId": "89d921dde6f90594-18",
+            "label": "Page"
           }
         },
         {
@@ -1216,7 +1356,9 @@
           "explanation": "Using new tools or procedures in a context is one of the routes to originality listed in the lecture.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 19
+            "page": 19,
+            "slideId": "89d921dde6f90594-19",
+            "label": "Page"
           }
         },
         {
@@ -1233,7 +1375,9 @@
           "explanation": "Exploring unexpected findings and the new directions they suggest is described as exploring the unanticipated.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 19
+            "page": 19,
+            "slideId": "89d921dde6f90594-19",
+            "label": "Page"
           }
         },
         {
@@ -1250,7 +1394,9 @@
           "explanation": "The lecture identifies interpreting or using data in new ways as a source of originality. Cosmetic changes alone do not change the interpretation.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 19
+            "page": 19,
+            "slideId": "89d921dde6f90594-19",
+            "label": "Page"
           }
         },
         {
@@ -1267,7 +1413,9 @@
           "explanation": "The lecture contrasts knowing what with a higher-level understanding of how and why. Collecting facts alone is not the same as explaining them.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 20
+            "page": 20,
+            "slideId": "89d921dde6f90594-20",
+            "label": "Page"
           }
         },
         {
@@ -1284,7 +1432,9 @@
           "explanation": "A contribution goes beyond the researcher learning something personally: it aims to add to the wider body of knowledge and understanding.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 21
+            "page": 21,
+            "slideId": "89d921dde6f90594-21",
+            "label": "Page"
           }
         },
         {
@@ -1301,7 +1451,9 @@
           "explanation": "The activity asks students to identify terms, use search resources, and analyse valid and current definitions. Finding a result and judging its usefulness are separate steps.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 13
+            "page": 13,
+            "slideId": "89d921dde6f90594-13",
+            "label": "Page"
           }
         },
         {
@@ -1318,7 +1470,9 @@
           "explanation": "Originality is not restricted to physical products: the lecture also names theories, models and methods as possible outcomes.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 18
+            "page": 18,
+            "slideId": "89d921dde6f90594-18",
+            "label": "Page"
           }
         },
         {
@@ -1335,7 +1489,9 @@
           "explanation": "The process includes data collection and analysis before the conclusion. Conclusions should be informed by the evidence rather than selected in advance.",
           "source": {
             "title": "Week 1 - Introduction",
-            "page": 16
+            "page": 16,
+            "slideId": "89d921dde6f90594-16",
+            "label": "Page"
           }
         },
         {
@@ -1352,7 +1508,9 @@
           "explanation": "Research develops explanations of how and why. Comparing, analysing and testing help build an argument beyond a description.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 17
+            "page": 17,
+            "slideId": "f58e89d6c1f9c421-17",
+            "label": "Page"
           }
         },
         {
@@ -1369,7 +1527,9 @@
           "explanation": "Open-minded research allows existing ideas to be questioned. Unexpected evidence should be assessed rather than rejected simply because it challenges a preference.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 18
+            "page": 18,
+            "slideId": "f58e89d6c1f9c421-18",
+            "label": "Page"
           }
         },
         {
@@ -1386,7 +1546,9 @@
           "explanation": "Generalisation considers application to other situations. The scope of a conclusion must still be justified by the research.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 18
+            "page": 18,
+            "slideId": "f58e89d6c1f9c421-18",
+            "label": "Page"
           }
         },
         {
@@ -1403,7 +1565,9 @@
           "explanation": "Critical analysis questions the evidence and its interpretation. Differences may arise from context, methods or the data used.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 19
+            "page": 19,
+            "slideId": "f58e89d6c1f9c421-19",
+            "label": "Page"
           }
         },
         {
@@ -1420,7 +1584,9 @@
           "explanation": "Currency concerns how up to date evidence is. Older work can remain useful, but its relevance to a changing context needs assessment.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 19
+            "page": 19,
+            "slideId": "f58e89d6c1f9c421-19",
+            "label": "Page"
           }
         },
         {
@@ -1437,7 +1603,9 @@
           "explanation": "Considering objections tests the reasoning and helps address weaknesses instead of simply asserting that the conclusion is correct.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 21
+            "page": 21,
+            "slideId": "f58e89d6c1f9c421-21",
+            "label": "Page"
           }
         },
         {
@@ -1454,7 +1622,9 @@
           "explanation": "Critical thinking involves fair evaluation with grounds for judgement. It is more than criticism or personal dislike.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 23
+            "page": 23,
+            "slideId": "f58e89d6c1f9c421-23",
+            "label": "Page"
           }
         },
         {
@@ -1471,7 +1641,9 @@
           "explanation": "Reflection involves careful consideration of alternatives, consequences and available evidence before drawing conclusions.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 23
+            "page": 23,
+            "slideId": "f58e89d6c1f9c421-23",
+            "label": "Page"
           }
         },
         {
@@ -1488,7 +1660,9 @@
           "explanation": "A claim states something as true. A question requests information, and an instruction asks someone to act.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 24
+            "page": 24,
+            "slideId": "f58e89d6c1f9c421-24",
+            "label": "Page"
           }
         },
         {
@@ -1505,7 +1679,9 @@
           "explanation": "Claim describes the role of a statement, not its evidential strength. Claims may express facts, beliefs or opinions and must be assessed.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 24
+            "page": 24,
+            "slideId": "f58e89d6c1f9c421-24",
+            "label": "Page"
           }
         },
         {
@@ -1522,7 +1698,9 @@
           "explanation": "An argument connects supporting reasons to a conclusion. Repetition or technical language alone does not supply that support.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 29
+            "page": 29,
+            "slideId": "f58e89d6c1f9c421-29",
+            "label": "Page"
           }
         },
         {
@@ -1539,7 +1717,9 @@
           "explanation": "The claim is the point or conclusion being advanced. Other parts of the argument support or qualify it.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 31
+            "page": 31,
+            "slideId": "f58e89d6c1f9c421-31",
+            "label": "Page"
           }
         },
         {
@@ -1556,7 +1736,9 @@
           "explanation": "The usage records supply evidence for the recommendation, so they function as grounds.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 32
+            "page": 32,
+            "slideId": "f58e89d6c1f9c421-32",
+            "label": "Page"
           }
         },
         {
@@ -1573,7 +1755,9 @@
           "explanation": "A warrant supplies the bridge between the evidence and what the writer concludes from it. That link may be implicit and should be examined.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 33
+            "page": 33,
+            "slideId": "f58e89d6c1f9c421-33",
+            "label": "Page"
           }
         },
         {
@@ -1590,7 +1774,9 @@
           "explanation": "Backing strengthens the reasoning behind the warrant. Grounds provide the evidence on which the argument's claim rests.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 34
+            "page": 34,
+            "slideId": "f58e89d6c1f9c421-34",
+            "label": "Page"
           }
         },
         {
@@ -1607,7 +1793,9 @@
           "explanation": "A qualifier expresses the strength or limits of a claim. Here it indicates uncertainty rather than an absolute guarantee.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 35
+            "page": 35,
+            "slideId": "f58e89d6c1f9c421-35",
+            "label": "Page"
           }
         },
         {
@@ -1624,7 +1812,9 @@
           "explanation": "A rebuttal considers objections, exceptions or limits that the argument needs to address.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 36
+            "page": 36,
+            "slideId": "f58e89d6c1f9c421-36",
+            "label": "Page"
           }
         },
         {
@@ -1641,7 +1831,9 @@
           "explanation": "The warrant links the scores to the conclusion about understanding. Examining whether that link is justified tests the reasoning.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 33
+            "page": 33,
+            "slideId": "f58e89d6c1f9c421-33",
+            "label": "Page"
           }
         },
         {
@@ -1658,7 +1850,9 @@
           "explanation": "A qualified conclusion limits its scope and strength to what the evidence can support. One setting does not establish a universal result.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 35
+            "page": 35,
+            "slideId": "f58e89d6c1f9c421-35",
+            "label": "Page"
           }
         },
         {
@@ -1675,7 +1869,9 @@
           "explanation": "The model helps examine how an argument is constructed and where it needs support. It does not itself guarantee that the evidence or conclusion is correct.",
           "source": {
             "title": "Week 2 - Good Research and Critical Thinking",
-            "page": 37
+            "page": 37,
+            "slideId": "f58e89d6c1f9c421-37",
+            "label": "Page"
           }
         },
         {
@@ -1692,7 +1888,9 @@
           "explanation": "A clear focus makes the review manageable. Boundaries such as process and location should be justified by the research question.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 3
+            "page": 3,
+            "slideId": "7293089aa7a76ad3-3",
+            "label": "Page"
           }
         },
         {
@@ -1709,7 +1907,9 @@
           "explanation": "Recording methods and limitations alongside findings helps you compare the strength and relevance of different studies.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 15
+            "page": 15,
+            "slideId": "7293089aa7a76ad3-15",
+            "label": "Page"
           }
         },
         {
@@ -1726,7 +1926,9 @@
           "explanation": "A thematic structure groups work by aspects of the topic so that related findings can be compared.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 21
+            "page": 21,
+            "slideId": "7293089aa7a76ad3-21",
+            "label": "Page"
           }
         },
         {
@@ -1743,7 +1945,9 @@
           "explanation": "A methodological review examines how different research approaches influence the findings and conclusions.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 21
+            "page": 21,
+            "slideId": "7293089aa7a76ad3-21",
+            "label": "Page"
           }
         },
         {
@@ -1760,7 +1964,9 @@
           "explanation": "Synthesis connects sources into an account of the topic. It requires more than isolated summaries and should preserve relevant disagreement.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 25
+            "page": 25,
+            "slideId": "7293089aa7a76ad3-25",
+            "label": "Page"
           }
         },
         {
@@ -1777,7 +1983,9 @@
           "explanation": "The conclusion draws the review together, explains its significance and relates the evidence and gaps to the proposed research.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 29
+            "page": 29,
+            "slideId": "7293089aa7a76ad3-29",
+            "label": "Page"
           }
         },
         {
@@ -1794,7 +2002,9 @@
           "explanation": "A short citation connects a claim to a source, while the full reference gives readers the information needed to locate it.",
           "source": {
             "title": "How to Write a Literature Review - Practical Steps",
-            "page": 35
+            "page": 35,
+            "slideId": "7293089aa7a76ad3-35",
+            "label": "Page"
           }
         },
         {
@@ -1811,7 +2021,9 @@
           "explanation": "A search plan starts from the research problem, identifies key terms and considers suitable sources.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 9
+            "page": 9,
+            "slideId": "dc9ec706be169621-9",
+            "label": "Page"
           }
         },
         {
@@ -1828,7 +2040,9 @@
           "explanation": "Alternative terminology can retrieve relevant material that one phrasing misses. Results still need to be checked for relevance and quality.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 18
+            "page": 18,
+            "slideId": "dc9ec706be169621-18",
+            "label": "Page"
           }
         },
         {
@@ -1845,7 +2059,9 @@
           "explanation": "The lecture cautions that Scholar includes material that is not peer reviewed and may not provide free full text. Search visibility is not a quality guarantee.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 26
+            "page": 26,
+            "slideId": "dc9ec706be169621-26",
+            "label": "Page"
           }
         },
         {
@@ -1862,7 +2078,9 @@
           "explanation": "The abstract summarises the work and helps decide whether a closer reading is worthwhile.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 29
+            "page": 29,
+            "slideId": "dc9ec706be169621-29",
+            "label": "Page"
           }
         },
         {
@@ -1879,7 +2097,9 @@
           "explanation": "Following relevant references can reveal connected research and key contributors. Those sources still need independent evaluation.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 37
+            "page": 37,
+            "slideId": "dc9ec706be169621-37",
+            "label": "Page"
           }
         },
         {
@@ -1896,7 +2116,9 @@
           "explanation": "Phrase searching helps find the specified words together. Supported search syntax varies by platform, so check its guidance.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 38
+            "page": 38,
+            "slideId": "dc9ec706be169621-38",
+            "label": "Page"
           }
         },
         {
@@ -1913,7 +2135,9 @@
           "explanation": "Search limits should reflect a justified scope rather than selectively hide evidence. Foundational older work may still be relevant.",
           "source": {
             "title": "Intro to research and lit reviews",
-            "page": 39
+            "page": 39,
+            "slideId": "dc9ec706be169621-39",
+            "label": "Page"
           }
         },
         {
@@ -1930,7 +2154,9 @@
           "explanation": "The first pass is a quick overview of the title, abstract, introduction, headings, conclusion and references to judge relevance and direction.",
           "source": {
             "title": "keshav-how-to-readPaper",
-            "page": 1
+            "page": 1,
+            "slideId": "e3d97831bc19b60a-1",
+            "label": "Page"
           }
         },
         {
@@ -1947,7 +2173,9 @@
           "explanation": "Context concerns the surrounding research and theoretical basis. It helps position a contribution within an existing field.",
           "source": {
             "title": "keshav-how-to-readPaper",
-            "page": 1
+            "page": 1,
+            "slideId": "e3d97831bc19b60a-1",
+            "label": "Page"
           }
         },
         {
@@ -1964,7 +2192,9 @@
           "explanation": "The second pass develops understanding of the content, including figures and evidence, without necessarily working through every detailed proof.",
           "source": {
             "title": "keshav-how-to-readPaper",
-            "page": 1
+            "page": 1,
+            "slideId": "e3d97831bc19b60a-1",
+            "label": "Page"
           }
         },
         {
@@ -1981,7 +2211,9 @@
           "explanation": "The deepest pass attempts to reconstruct the work, making hidden assumptions and potential weaknesses easier to identify.",
           "source": {
             "title": "keshav-how-to-readPaper",
-            "page": 2
+            "page": 2,
+            "slideId": "e3d97831bc19b60a-2",
+            "label": "Page"
           }
         },
         {
@@ -1998,7 +2230,9 @@
           "explanation": "Mapping helps organise the topic and its relationships, supporting decisions about scope and subtopics.",
           "source": {
             "title": "Week 3 - Academic Writing and Referencing(1)",
-            "page": 11
+            "page": 11,
+            "slideId": "7c0b118782abbede-11",
+            "label": "Page"
           }
         },
         {
@@ -2015,7 +2249,9 @@
           "explanation": "Coherence is the logical flow and connection between ideas. Correct grammar alone does not make an argument easy to follow.",
           "source": {
             "title": "Week 3 - Academic Writing and Referencing(1)",
-            "page": 14
+            "page": 14,
+            "slideId": "7c0b118782abbede-14",
+            "label": "Page"
           }
         },
         {
@@ -2032,7 +2268,9 @@
           "explanation": "Completed methods and reported past work generally use past tense. Proposed future work and established knowledge have different tense needs.",
           "source": {
             "title": "Week 3 - Academic Writing and Referencing(1)",
-            "page": 20
+            "page": 20,
+            "slideId": "7c0b118782abbede-20",
+            "label": "Page"
           }
         },
         {
@@ -2049,7 +2287,9 @@
           "explanation": "Cautious wording should match the scope and strength of the evidence. A limited sample does not justify universal certainty.",
           "source": {
             "title": "Week 3 - Academic Writing and Referencing(1)",
-            "page": 22
+            "page": 22,
+            "slideId": "7c0b118782abbede-22",
+            "label": "Page"
           }
         },
         {
@@ -2066,7 +2306,9 @@
           "explanation": "Introducing the full term makes the writing accessible and lets the abbreviation be used consistently later.",
           "source": {
             "title": "Week 3 - Academic Writing and Referencing(1)",
-            "page": 23
+            "page": 23,
+            "slideId": "7c0b118782abbede-23",
+            "label": "Page"
           }
         },
         {
@@ -2083,7 +2325,9 @@
           "explanation": "Signposting should express a real logical relationship. A transition word cannot repair unrelated reasoning by itself.",
           "source": {
             "title": "Week 3 - Academic Writing and Referencing(1)",
-            "page": 25
+            "page": 25,
+            "slideId": "7c0b118782abbede-25",
+            "label": "Page"
           }
         }
       ]
@@ -2106,7 +2350,9 @@
           "explanation": "A primary key identifies a row uniquely. It may contain one column or a combination of columns.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 5
+            "page": 5,
+            "slideId": "603fdf3207de1c88-5",
+            "label": "Slide"
           }
         },
         {
@@ -2123,7 +2369,9 @@
           "explanation": "A composite key uses two or more columns together to identify a row. Neither column has to be unique on its own.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 5
+            "page": 5,
+            "slideId": "603fdf3207de1c88-5",
+            "label": "Slide"
           }
         },
         {
@@ -2140,7 +2388,9 @@
           "explanation": "The foreign key references the shop identifier, keeping the relationship tied to an existing shop.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 5
+            "page": 5,
+            "slideId": "603fdf3207de1c88-5",
+            "label": "Slide"
           }
         },
         {
@@ -2157,7 +2407,9 @@
           "explanation": "Validation checks whether entered data satisfies the intended rules. The lecture uses an implausibly old employee as an example.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 5
+            "page": 5,
+            "slideId": "603fdf3207de1c88-5",
+            "label": "Slide"
           }
         },
         {
@@ -2174,7 +2426,9 @@
           "explanation": "An integer stores whole numbers. Stock counts also need suitable constraints, such as a non-negative range.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 7
+            "page": 7,
+            "slideId": "603fdf3207de1c88-7",
+            "label": "Slide"
           }
         },
         {
@@ -2191,7 +2445,9 @@
           "explanation": "A Boolean represents a logical true-or-false state, rather than an image or a calendar date.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 7
+            "page": 7,
+            "slideId": "603fdf3207de1c88-7",
+            "label": "Slide"
           }
         },
         {
@@ -2208,7 +2464,9 @@
           "explanation": "A datatype restricts the kind of value. A separate validation rule is needed to restrict which numeric values are acceptable.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 7
+            "page": 7,
+            "slideId": "603fdf3207de1c88-7",
+            "label": "Slide"
           }
         },
         {
@@ -2225,7 +2483,9 @@
           "explanation": "Planning includes tables, columns, rules and relationships. Choosing columns alone does not describe the links between entities.",
           "source": {
             "title": "1 - Intro to dbs",
-            "page": 4
+            "page": 4,
+            "slideId": "603fdf3207de1c88-4",
+            "label": "Slide"
           }
         },
         {
@@ -2242,7 +2502,9 @@
           "explanation": "The requirement is about mandatory assignment, not name uniqueness, login accounts or the numerical sequence of identifiers.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 4
+            "page": 4,
+            "slideId": "9a7a4535a9c16fb2-4",
+            "label": "Slide"
           }
         },
         {
@@ -2259,7 +2521,9 @@
           "explanation": "This is a self-referencing relationship: one employee row can identify another employee as its manager. It does not mean an employee should be their own manager.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 8
+            "page": 8,
+            "slideId": "9a7a4535a9c16fb2-8",
+            "label": "Slide"
           }
         },
         {
@@ -2276,7 +2540,9 @@
           "explanation": "A phone number is an identifier, not a quantity. Text preserves meaningful characters and leading zeros; validation remains a separate requirement.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 7
+            "page": 7,
+            "slideId": "9a7a4535a9c16fb2-7",
+            "label": "Slide"
           }
         },
         {
@@ -2293,7 +2559,9 @@
           "explanation": "The first set tests the two valid boundary values and a value just outside each. Interior-only and invalid-only sets do not establish both boundary decisions.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 9
+            "page": 9,
+            "slideId": "9a7a4535a9c16fb2-9",
+            "label": "Slide"
           }
         },
         {
@@ -2310,7 +2578,9 @@
           "explanation": "A default supplies an omitted value. It does not validate its business meaning, impose uniqueness or schedule a later replacement.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 9
+            "page": 9,
+            "slideId": "9a7a4535a9c16fb2-9",
+            "label": "Slide"
           }
         },
         {
@@ -2327,7 +2597,9 @@
           "explanation": "Shop ID is the foreign key to the shop table. The descriptive columns describe the item itself.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 9
+            "page": 9,
+            "slideId": "9a7a4535a9c16fb2-9",
+            "label": "Slide"
           }
         },
         {
@@ -2344,7 +2616,9 @@
           "explanation": "At least 90 includes the boundary. Testing 89, 90 and 91 distinguishes an inclusive threshold from an erroneous strictly-greater-than check.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 10
+            "page": 10,
+            "slideId": "9a7a4535a9c16fb2-10",
+            "label": "Slide"
           }
         },
         {
@@ -2361,7 +2635,9 @@
           "explanation": "Dependent records can retain references to a removed employee. The design must decide how to handle those relationships and avoid invalid references.",
           "source": {
             "title": "2 - The Shop Db",
-            "page": 11
+            "page": 11,
+            "slideId": "9a7a4535a9c16fb2-11",
+            "label": "Slide"
           }
         },
         {
@@ -2378,7 +2654,9 @@
           "explanation": "DROP TABLE removes a database object and its data. This is why the lecture warns that dropping objects is destructive.",
           "source": {
             "title": "3 - Create",
-            "page": 5
+            "page": 5,
+            "slideId": "cfe9fcab40d82b71-5",
+            "label": "Slide"
           }
         },
         {
@@ -2395,7 +2673,9 @@
           "explanation": "The increment is the step between sequence values. Limits and cycling are separate settings.",
           "source": {
             "title": "3 - Create",
-            "page": 6
+            "page": 6,
+            "slideId": "cfe9fcab40d82b71-6",
+            "label": "Slide"
           }
         },
         {
@@ -2412,7 +2692,9 @@
           "explanation": "START WITH sets the initial value. Adding the increment of 2 twice gives 10, 12 and 14.",
           "source": {
             "title": "3 - Create",
-            "page": 6
+            "page": 6,
+            "slideId": "cfe9fcab40d82b71-6",
+            "label": "Slide"
           }
         },
         {
@@ -2429,7 +2711,9 @@
           "explanation": "MAXVALUE sets the upper bound, while MINVALUE sets the lower bound and START WITH chooses the initial value.",
           "source": {
             "title": "3 - Create",
-            "page": 6
+            "page": 6,
+            "slideId": "cfe9fcab40d82b71-6",
+            "label": "Slide"
           }
         },
         {
@@ -2446,7 +2730,9 @@
           "explanation": "CYCLE allows reuse of values after a limit. It does not remove existing rows or guarantee uniqueness of a key populated from that sequence.",
           "source": {
             "title": "3 - Create",
-            "page": 6
+            "page": 6,
+            "slideId": "cfe9fcab40d82b71-6",
+            "label": "Slide"
           }
         },
         {
@@ -2463,7 +2749,9 @@
           "explanation": "A trigger executes logic in response to a defined event and timing. Defaults supply omitted values and sequences generate values; neither is a general event handler.",
           "source": {
             "title": "3 - Create",
-            "page": 7
+            "page": 7,
+            "slideId": "cfe9fcab40d82b71-7",
+            "label": "Slide"
           }
         },
         {
@@ -2480,7 +2768,9 @@
           "explanation": "CREATE TABLE defines the structure, including columns and their datatypes, with column or table constraints where required.",
           "source": {
             "title": "3 - Create",
-            "page": 8
+            "page": 8,
+            "slideId": "cfe9fcab40d82b71-8",
+            "label": "Slide"
           }
         },
         {
@@ -2497,7 +2787,9 @@
           "explanation": "The final review explicitly notes missing elements and a trigger that does not work. Examples need checking against the scenario and the chosen SQL dialect.",
           "source": {
             "title": "3 - Create",
-            "page": 15
+            "page": 15,
+            "slideId": "cfe9fcab40d82b71-15",
+            "label": "Slide"
           }
         },
         {
@@ -2514,7 +2806,9 @@
           "explanation": "ALTER TABLE changes structure, such as columns or constraints. INSERT and UPDATE change row data.",
           "source": {
             "title": "4  - Update",
-            "page": 4
+            "page": 4,
+            "slideId": "7a69a3c2a699a378-4",
+            "label": "Slide"
           }
         },
         {
@@ -2531,7 +2825,9 @@
           "explanation": "INSERT INTO adds data rows to an existing table. It does not create the table structure itself.",
           "source": {
             "title": "4  - Update",
-            "page": 7
+            "page": 7,
+            "slideId": "7a69a3c2a699a378-7",
+            "label": "Slide"
           }
         },
         {
@@ -2548,7 +2844,9 @@
           "explanation": "SET lists the changes to apply to rows selected by the UPDATE statement.",
           "source": {
             "title": "4  - Update",
-            "page": 8
+            "page": 8,
+            "slideId": "7a69a3c2a699a378-8",
+            "label": "Slide"
           }
         },
         {
@@ -2565,7 +2863,9 @@
           "explanation": "WHERE filters the rows to be changed. This allows a targeted update, such as selecting one employee by identifier.",
           "source": {
             "title": "4  - Update",
-            "page": 8
+            "page": 8,
+            "slideId": "7a69a3c2a699a378-8",
+            "label": "Slide"
           }
         },
         {
@@ -2582,7 +2882,9 @@
           "explanation": "Without a WHERE condition, UPDATE targets all rows. Check the intended scope before executing a change.",
           "source": {
             "title": "4  - Update",
-            "page": 8
+            "page": 8,
+            "slideId": "7a69a3c2a699a378-8",
+            "label": "Slide"
           }
         },
         {
@@ -2599,7 +2901,9 @@
           "explanation": "The WHERE clause tests the identifier value, not the physical position of the row. SET changes the surname in the matching row.",
           "source": {
             "title": "4  - Update",
-            "page": 12
+            "page": 12,
+            "slideId": "7a69a3c2a699a378-12",
+            "label": "Slide"
           }
         },
         {
@@ -2616,7 +2920,9 @@
           "explanation": "NOT NULL rejects SQL NULL. It does not enforce uniqueness or prove that entered text is a meaningful name.",
           "source": {
             "title": "4  - Update",
-            "page": 10
+            "page": 10,
+            "slideId": "7a69a3c2a699a378-10",
+            "label": "Slide"
           }
         },
         {
@@ -2633,7 +2939,9 @@
           "explanation": "UPDATE changes stored values in an existing row. Adding another row would create a second record rather than correct the original one.",
           "source": {
             "title": "4  - Update",
-            "page": 4
+            "page": 4,
+            "slideId": "7a69a3c2a699a378-4",
+            "label": "Slide"
           }
         },
         {
@@ -2650,7 +2958,9 @@
           "explanation": "SQL stands for Structured Query Language. It is a language used to work with data in databases, rather than the name of one database product.",
           "source": {
             "title": "Week_1_Introduction",
-            "page": 4
+            "page": 4,
+            "slideId": "12f385f48d9c8e9a-4",
+            "label": "Slide"
           }
         },
         {
@@ -2667,7 +2977,9 @@
           "explanation": "Key-value, document, graph and column-family are NoSQL database models. Keys are identifiers, datatypes describe values, and SQL commands are operations. NoSQL systems vary: avoid assuming that none can represent relationships.",
           "source": {
             "title": "Week_1_Introduction",
-            "page": 6
+            "page": 6,
+            "slideId": "12f385f48d9c8e9a-6",
+            "label": "Slide"
           }
         },
         {
@@ -2684,7 +2996,9 @@
           "explanation": "An initial list may be incomplete. Discussion and clarification help establish what the organisation actually needs before the design is implemented.",
           "source": {
             "title": "Week_1_Introduction",
-            "page": 11
+            "page": 11,
+            "slideId": "12f385f48d9c8e9a-11",
+            "label": "Slide"
           }
         },
         {
@@ -2701,7 +3015,9 @@
           "explanation": "Designers need to understand and refine client requirements. Clear communication helps distinguish an initial request from the underlying organisational need and supports a suitable solution.",
           "source": {
             "title": "Week_1_Introduction",
-            "page": 12
+            "page": 12,
+            "slideId": "12f385f48d9c8e9a-12",
+            "label": "Slide"
           }
         },
         {
@@ -2718,7 +3034,9 @@
           "explanation": "An entity type describes a collection of similar things; one identified artwork is an occurrence. An attribute is a property of the type.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 15
+            "page": 15,
+            "slideId": "3861d6a349aadf23-15",
+            "label": "Slide"
           }
         },
         {
@@ -2735,7 +3053,9 @@
           "explanation": "Visits have their own occurrences and properties. Collapsing them into a single date loses multiple visits and their outcomes.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 19
+            "page": 19,
+            "slideId": "3861d6a349aadf23-19",
+            "label": "Slide"
           }
         },
         {
@@ -2752,7 +3072,9 @@
           "explanation": "A conceptual model establishes business entities and relationships before more implementation-specific decisions.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 7
+            "page": 7,
+            "slideId": "3861d6a349aadf23-7",
+            "label": "Slide"
           }
         },
         {
@@ -2769,7 +3091,9 @@
           "explanation": "The foreign key belongs on the many side. A reference in Publisher to only one Edition cannot represent all its editions.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 23
+            "page": 23,
+            "slideId": "3861d6a349aadf23-23",
+            "label": "Slide"
           }
         },
         {
@@ -2786,7 +3110,9 @@
           "explanation": "Members can exist without bookings, while a booking cannot lack its member. Maximum cardinality and minimum participation are distinct decisions.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 31
+            "page": 31,
+            "slideId": "3861d6a349aadf23-31",
+            "label": "Slide"
           }
         },
         {
@@ -2803,7 +3129,9 @@
           "explanation": "Hours depend on the particular volunteer-event pairing. An intermediate entity records each pairing and its properties.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 25
+            "page": 25,
+            "slideId": "3861d6a349aadf23-25",
+            "label": "Slide"
           }
         },
         {
@@ -2820,7 +3148,9 @@
           "explanation": "Relational databases can represent many-to-many associations using a linking table. The slide warning concerns direct implementation, not a ban on the business relationship.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 25
+            "page": 25,
+            "slideId": "3861d6a349aadf23-25",
+            "label": "Slide"
           }
         },
         {
@@ -2837,7 +3167,9 @@
           "explanation": "Maximum one on both sides gives one-to-one. The permission to have no assignment makes participation optional.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 23
+            "page": 23,
+            "slideId": "3861d6a349aadf23-23",
+            "label": "Slide"
           }
         },
         {
@@ -2854,7 +3186,9 @@
           "explanation": "Loan is singular, meaningful and independent of physical implementation. LoanDate describes a property rather than the loan entity type.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 18
+            "page": 18,
+            "slideId": "3861d6a349aadf23-18",
+            "label": "Slide"
           }
         },
         {
@@ -2871,7 +3205,9 @@
           "explanation": "This lecture uses a simplified conceptual diagram of entity types and relationships, postponing attribute detail to logical modelling. Other ER notations may include attributes.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 19
+            "page": 19,
+            "slideId": "3861d6a349aadf23-19",
+            "label": "Slide"
           }
         },
         {
@@ -2888,7 +3224,9 @@
           "explanation": "Maximum cardinality does not determine whether zero related instances are allowed. Minimum participation must be elicited from requirements.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 31
+            "page": 31,
+            "slideId": "3861d6a349aadf23-31",
+            "label": "Slide"
           }
         },
         {
@@ -2905,7 +3243,9 @@
           "explanation": "The discrepancy concerns minimum participation, not whether customers and bookings are entities or the maximum number of bookings.",
           "source": {
             "title": "Week_2_ERModelling_Students",
-            "page": 33
+            "page": 33,
+            "slideId": "3861d6a349aadf23-33",
+            "label": "Slide"
           }
         },
         {
@@ -2922,7 +3262,9 @@
           "explanation": "SELECT chooses the output column; WHERE filters rows. Quoting status as a string tests two string literals instead of the status column.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 5
+            "page": 5,
+            "slideId": "0a87e1b15fe5448c-5",
+            "label": "Page"
           }
         },
         {
@@ -2939,7 +3281,9 @@
           "explanation": "The trailing percent permits any suffix after Mar. A leading percent permits a prefix; percent on both sides permits a substring anywhere. Equality does not interpret the wildcard.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 6
+            "page": 6,
+            "slideId": "0a87e1b15fe5448c-6",
+            "label": "Page"
           }
         },
         {
@@ -2956,7 +3300,9 @@
           "explanation": "AND requires both conditions. Rows 1 and 3 meet both; row 2 fails the city condition and row 4 fails the surname prefix.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 7
+            "page": 7,
+            "slideId": "0a87e1b15fe5448c-7",
+            "label": "Page"
           }
         },
         {
@@ -2973,7 +3319,9 @@
           "explanation": "OR accepts either condition. The requirement needs AND, so both the location and prefix must match.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 7
+            "page": 7,
+            "slideId": "0a87e1b15fe5448c-7",
+            "label": "Page"
           }
         },
         {
@@ -2990,7 +3338,9 @@
           "explanation": "Double quotes preserve the identifier; single quotes delimit the text value. Quoting York as an identifier asks for a column of that name.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 5
+            "page": 5,
+            "slideId": "0a87e1b15fe5448c-5",
+            "label": "Page"
           }
         },
         {
@@ -3007,7 +3357,9 @@
           "explanation": "Projection controls columns, not row filtering, distinctness or ordering. Explicit columns also keep the output focused on the report requirement.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 5
+            "page": 5,
+            "slideId": "0a87e1b15fe5448c-5",
+            "label": "Page"
           }
         },
         {
@@ -3024,7 +3376,9 @@
           "explanation": "Percent can match zero or more characters, so B itself matches. AB7 has the wrong start and b7 differs in case under the stated assumption.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 6
+            "page": 6,
+            "slideId": "0a87e1b15fe5448c-6",
+            "label": "Page"
           }
         },
         {
@@ -3041,7 +3395,9 @@
           "explanation": "varchar(8) expresses variable-length text with a length limit. A numeric type changes the representation of leading zeros; date and Boolean describe different kinds of values.",
           "source": {
             "title": "Database_Lvl_5___Workbook_1",
-            "page": 3
+            "page": 3,
+            "slideId": "0a87e1b15fe5448c-3",
+            "label": "Page"
           }
         },
         {
@@ -3058,7 +3414,9 @@
           "explanation": "Priority is ascending by default; cost is descending only within ties on priority. Therefore the priority-1 rows come first, with cost 30 before 20.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 2
+            "page": 2,
+            "slideId": "e736cbfe2e077e40-2",
+            "label": "Page"
           }
         },
         {
@@ -3075,7 +3433,9 @@
           "explanation": "A price tie is not resolved by that sort key. An explicit unique tiebreaker gives a deterministic ordering.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 2
+            "page": 2,
+            "slideId": "e736cbfe2e077e40-2",
+            "label": "Page"
           }
         },
         {
@@ -3092,7 +3452,9 @@
           "explanation": "PostgreSQL defaults to NULLS LAST for ascending order. Sorting does not filter rows. Descending order has a different default, so the workbook example is not a universal rule.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 2
+            "page": 2,
+            "slideId": "e736cbfe2e077e40-2",
+            "label": "Page"
           }
         },
         {
@@ -3109,7 +3471,9 @@
           "explanation": "In this query WHERE filters rows and ORDER BY specifies their presentation order. DESC belongs to the sort expression, not a WHERE condition.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 3
+            "page": 3,
+            "slideId": "e736cbfe2e077e40-3",
+            "label": "Page"
           }
         },
         {
@@ -3126,7 +3490,9 @@
           "explanation": "COUNT(expression) counts non-NULL values, whereas COUNT(*) counts rows. Counting an identifier that is never NULL can hide this distinction.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 3
+            "page": 3,
+            "slideId": "e736cbfe2e077e40-3",
+            "label": "Page"
           }
         },
         {
@@ -3143,7 +3509,9 @@
           "explanation": "IN tests membership in the listed alternatives. AND would require the same value to equal two different cities; BETWEEN is a range test.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 3
+            "page": 3,
+            "slideId": "e736cbfe2e077e40-3",
+            "label": "Page"
           }
         },
         {
@@ -3160,7 +3528,9 @@
           "explanation": "BETWEEN includes both endpoints. The question uses DATE values; a timestamp ending at midnight would require separate attention to times within the final day.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 4
+            "page": 4,
+            "slideId": "e736cbfe2e077e40-4",
+            "label": "Page"
           }
         },
         {
@@ -3177,7 +3547,9 @@
           "explanation": "WHERE retains three rows, then COUNT returns their number as a single aggregate result. The number of different cities is not what COUNT(id) measures.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 3
+            "page": 3,
+            "slideId": "e736cbfe2e077e40-3",
+            "label": "Page"
           }
         },
         {
@@ -3194,7 +3566,9 @@
           "explanation": "BETWEEN includes values equal to either bound and the values in between, excluding values outside the range.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 4
+            "page": 4,
+            "slideId": "e736cbfe2e077e40-4",
+            "label": "Page"
           }
         },
         {
@@ -3211,7 +3585,9 @@
           "explanation": "Without an explicit sort, row order is unspecified. Different plans or storage access can change presentation order without changing the selected records.",
           "source": {
             "title": "MCOMD2DEG____Workbook_2__OrderBy",
-            "page": 2
+            "page": 2,
+            "slideId": "e736cbfe2e077e40-2",
+            "label": "Page"
           }
         },
         {
@@ -3228,7 +3604,9 @@
           "explanation": "A logical model specifies tables and columns with their keys, types, nullability and constraints. Performance estimates and operational settings address different design concerns.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 7
+            "page": 7,
+            "slideId": "b181fa3595fe733b-7",
+            "label": "Slide"
           }
         },
         {
@@ -3245,7 +3623,9 @@
           "explanation": "The foreign key belongs on the many side: Vehicle. Several vehicles may reference the same depot. Making depot_id the Vehicle primary key would restrict the depot to one vehicle row.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 20
+            "page": 20,
+            "slideId": "b181fa3595fe733b-20",
+            "label": "Slide"
           }
         },
         {
@@ -3262,7 +3642,9 @@
           "explanation": "Every inspection requires a vehicle, so its foreign key is NOT NULL. Allowing a vehicle to have no inspections is a separate participation rule and does not make the inspection foreign key optional.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 23
+            "page": 23,
+            "slideId": "b181fa3595fe733b-23",
+            "label": "Slide"
           }
         },
         {
@@ -3279,7 +3661,9 @@
           "explanation": "A nullable foreign key in Ticket permits an unassigned ticket and references a technician when supplied. Many tickets may reference the same technician; the technician identifier is not the ticket primary key.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 23
+            "page": 23,
+            "slideId": "b181fa3595fe733b-23",
+            "label": "Slide"
           }
         },
         {
@@ -3296,7 +3680,9 @@
           "explanation": "A primary key must uniquely identify each row. Without a uniqueness guarantee, the proposed combination is unsafe. Composite and natural keys are possible when the requirements support them; generation is not compulsory.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 9
+            "page": 9,
+            "slideId": "b181fa3595fe733b-9",
+            "label": "Slide"
           }
         },
         {
@@ -3313,7 +3699,9 @@
           "explanation": "The catalogue code is an alternative candidate identifier. NOT NULL and UNIQUE preserve its required uniqueness even when product_id is selected as the primary key. Display choices and defaults do not enforce that rule.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 7
+            "page": 7,
+            "slideId": "b181fa3595fe733b-7",
+            "label": "Slide"
           }
         },
         {
@@ -3330,7 +3718,9 @@
           "explanation": "Character data preserves the identifier exactly, including leading zeros. The appearance of digits does not make a value a quantity. The length and allowed characters should also be documented.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 15
+            "page": 15,
+            "slideId": "b181fa3595fe733b-15",
+            "label": "Slide"
           }
         },
         {
@@ -3347,7 +3737,9 @@
           "explanation": "The length limit, required presence and uniqueness are separate constraints. A default empty string does not enforce uniqueness, and allowing 20 characters fails the stated maximum.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 8
+            "page": 8,
+            "slideId": "b181fa3595fe733b-8",
+            "label": "Slide"
           }
         },
         {
@@ -3364,7 +3756,9 @@
           "explanation": "Omitting a column allows its default to supply the value. NOT NULL is satisfied by the default 2. A default is a specified fallback, not a copy of the previous row.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 37
+            "page": 37,
+            "slideId": "b181fa3595fe733b-37",
+            "label": "Slide"
           }
         },
         {
@@ -3381,7 +3775,9 @@
           "explanation": "An explicit NULL does not request the default. It violates NOT NULL. To use the default, omit the column or request DEFAULT; this distinction matters when testing a logical design.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 35
+            "page": 35,
+            "slideId": "b181fa3595fe733b-35",
+            "label": "Slide"
           }
         },
         {
@@ -3398,7 +3794,9 @@
           "explanation": "Allocation is on the many side of each of its two relationships. It therefore carries both references. This supports multiple allocations without storing a list of identifiers in Volunteer or Event.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 21
+            "page": 21,
+            "slideId": "b181fa3595fe733b-21",
+            "label": "Slide"
           }
         },
         {
@@ -3415,7 +3813,9 @@
           "explanation": "The missing business rule determines whether the foreign key can be NULL. Naming alone does not settle participation, and a foreign key need not replace the row identifier.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 25
+            "page": 25,
+            "slideId": "b181fa3595fe733b-25",
+            "label": "Slide"
           }
         },
         {
@@ -3432,7 +3832,9 @@
           "explanation": "The datatype and NOT NULL enforce type and presence, while a range check enforces the permitted values. A default does not constrain later values; uniqueness would impose an unrelated restriction.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 39
+            "page": 39,
+            "slideId": "b181fa3595fe733b-39",
+            "label": "Slide"
           }
         },
         {
@@ -3449,7 +3851,9 @@
           "explanation": "A UNIQUE constraint on the foreign key prevents repeated non-NULL venue references. Removing that restriction permits several sessions at a venue, while retaining the foreign key preserves reference validity.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 33
+            "page": 33,
+            "slideId": "b181fa3595fe733b-33",
+            "label": "Slide"
           }
         },
         {
@@ -3466,7 +3870,9 @@
           "explanation": "The initial mapping turns the entity type into a table, its attributes into columns and its identifying attribute into the primary key. Later steps document types, constraints and relationships.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 18
+            "page": 18,
+            "slideId": "b181fa3595fe733b-18",
+            "label": "Slide"
           }
         },
         {
@@ -3483,7 +3889,9 @@
           "explanation": "Optional participation allows absence of a reference through NULL. A supplied non-NULL value must still reference an existing agent. Nullability and referential integrity enforce different rules.",
           "source": {
             "title": "Week_3_LogicalDataModelling",
-            "page": 23
+            "page": 23,
+            "slideId": "b181fa3595fe733b-23",
+            "label": "Slide"
           }
         }
       ]
