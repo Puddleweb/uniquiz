@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "modules": [
+    "networking"
+  ],
+  "questions": {
+    "networking-w1-001": {
+      "videoId": "bj-Yfakjllc",
+      "start": 438,
+      "end": 483,
+      "title": "Network Devices - Hosts, IP Addresses, Networks - Networking Fundamentals - Lesson 1a",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-002": {
+      "videoId": "bj-Yfakjllc",
+      "start": 483,
+      "end": 527,
+      "title": "Network Devices - Hosts, IP Addresses, Networks - Networking Fundamentals - Lesson 1a",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-003": {
+      "videoId": "bj-Yfakjllc",
+      "start": 90,
+      "end": 167,
+      "title": "Network Devices - Hosts, IP Addresses, Networks - Networking Fundamentals - Lesson 1a",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-004": {
+      "videoId": "H7-NR3Q3BeI",
+      "start": 39,
+      "end": 95,
+      "title": "Hub, Bridge, Switch, Router - Network Devices - Networking Fundamentals - Lesson 1b",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-005": {
+      "videoId": "H7-NR3Q3BeI",
+      "start": 99,
+      "end": 308,
+      "title": "Hub, Bridge, Switch, Router - Network Devices - Networking Fundamentals - Lesson 1b",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-006": {
+      "videoId": "H7-NR3Q3BeI",
+      "start": 308,
+      "end": 528,
+      "title": "Hub, Bridge, Switch, Router - Network Devices - Networking Fundamentals - Lesson 1b",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-007": {
+      "videoId": "H7-NR3Q3BeI",
+      "start": 528,
+      "end": 781,
+      "title": "Hub, Bridge, Switch, Router - Network Devices - Networking Fundamentals - Lesson 1b",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-008": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 683,
+      "end": 744,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-009": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 180,
+      "end": 240,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-010": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 356,
+      "end": 437,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-011": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 499,
+      "end": 575,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-012": {
+      "videoId": "3mjUqn7Uxz4",
+      "start": 80,
+      "end": 165,
+      "title": "Client Server and Peer-to-Peer Networking - CompTIA Network+ N10-005: 3.5",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-013": {
+      "videoId": "4_zSIXb7tLQ",
+      "start": 73,
+      "end": 104,
+      "title": "Network Types:  LAN, WAN, PAN, CAN, MAN, SAN, WLAN",
+      "channel": "PowerCert Animated Videos"
+    },
+    "networking-w1-014": {
+      "videoId": "4_zSIXb7tLQ",
+      "start": 255,
+      "end": 296,
+      "title": "Network Types:  LAN, WAN, PAN, CAN, MAN, SAN, WLAN",
+      "channel": "PowerCert Animated Videos"
+    },
+    "networking-w1-015": {
+      "videoId": "E5bSumTAHZE",
+      "start": 16,
+      "end": 126,
+      "title": "Network Protocols - ARP, FTP, SMTP, HTTP, SSL, TLS, HTTPS, DNS, DHCP - Networking Fundamentals - L6",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-016": {
+      "videoId": "eelvWAURfdI",
+      "start": 503,
+      "end": 551,
+      "title": "Network Layers Model (Networking Basics) - Computerphile",
+      "channel": "Computerphile"
+    },
+    "networking-w1-017": {
+      "videoId": "AYgXr1dynKU",
+      "start": 88,
+      "end": 128,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-018": {
+      "videoId": "0aGqGKrRE0g",
+      "start": 505,
+      "end": 671,
+      "title": "OSI Model: A Practical Perspective - Part 2 - Networking Fundamentals - Lesson 2",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-019": {
+      "videoId": "LkolbURrtTs",
+      "start": 118,
+      "end": 222,
+      "title": "OSI Model: A Practical Perspective - Networking Fundamentals - Lesson 2a",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-020": {
+      "videoId": "LkolbURrtTs",
+      "start": 223,
+      "end": 356,
+      "title": "OSI Model: A Practical Perspective - Networking Fundamentals - Lesson 2a",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-021": {
+      "videoId": "LkolbURrtTs",
+      "start": 449,
+      "end": 578,
+      "title": "OSI Model: A Practical Perspective - Networking Fundamentals - Lesson 2a",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-022": {
+      "videoId": "0aGqGKrRE0g",
+      "start": 54,
+      "end": 207,
+      "title": "OSI Model: A Practical Perspective - Part 2 - Networking Fundamentals - Lesson 2",
+      "channel": "Practical Networking"
+    },
+    "networking-w1-023": {
+      "videoId": "AYgXr1dynKU",
+      "start": 381,
+      "end": 408,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-024": {
+      "videoId": "AYgXr1dynKU",
+      "start": 408,
+      "end": 436,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-025": {
+      "videoId": "AYgXr1dynKU",
+      "start": 436,
+      "end": 465,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "networking-w1-026": {
+      "videoId": "AR23ZlBI9EI",
+      "start": 56,
+      "end": 119,
+      "title": "CISSP Domain 4 Preview | The TCP/IP model",
+      "channel": "ThorTeaches.com: CISSP, CC, CISM, GenAI training"
+    },
+    "net-w2-001": {
+      "videoId": "ZkVdeOgaCoo",
+      "start": 69,
+      "end": 94,
+      "title": "Network Design Methodology - Applying a Methodology to Network Design - Enterprise Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-002": {
+      "videoId": "FVxENIjdAJk",
+      "start": 217,
+      "end": 264,
+      "title": "Performance Issues - CompTIA Network+ N10-009 - 5.4",
+      "channel": "Professor Messer"
+    },
+    "net-w2-003": {
+      "videoId": "B9wteKPNyS8",
+      "start": 1010,
+      "end": 1028,
+      "title": "Identifying Customer Requirements 2 - Applying a Methodology to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-004": {
+      "videoId": "PvyEcLhmNBk",
+      "start": 425,
+      "end": 479,
+      "title": "Free CCNA | LAN Architectures | Day 52 | CCNA 200-301 Complete Course",
+      "channel": "Jeremy's IT Lab"
+    },
+    "net-w2-005": {
+      "videoId": "DsOzQLX5cg4",
+      "start": 268,
+      "end": 308,
+      "title": "Segmentation Enforcement - CompTIA Network+ N10-009 - 4.1",
+      "channel": "Professor Messer"
+    },
+    "net-w2-006": {
+      "videoId": "ZkVdeOgaCoo",
+      "start": 224,
+      "end": 272,
+      "title": "Network Design Methodology - Applying a Methodology to Network Design - Enterprise Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-007": {
+      "videoId": "B9wteKPNyS8",
+      "start": 542,
+      "end": 598,
+      "title": "Identifying Customer Requirements 2 - Applying a Methodology to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-008": {
+      "videoId": "CEZyq-fBn3w",
+      "start": 565,
+      "end": 637,
+      "title": "Network Documentation - CompTIA Network+ N10-009 - 3.1",
+      "channel": "Professor Messer"
+    },
+    "net-w2-009": {
+      "videoId": "FVxENIjdAJk",
+      "start": 164,
+      "end": 217,
+      "title": "Performance Issues - CompTIA Network+ N10-009 - 5.4",
+      "channel": "Professor Messer"
+    },
+    "net-w2-010": {
+      "videoId": "ZkVdeOgaCoo",
+      "start": 69,
+      "end": 94,
+      "title": "Network Design Methodology - Applying a Methodology to Network Design - Enterprise Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-011": {
+      "videoId": "CEZyq-fBn3w",
+      "start": 58,
+      "end": 109,
+      "title": "Network Documentation - CompTIA Network+ N10-009 - 3.1",
+      "channel": "Professor Messer"
+    },
+    "net-w2-012": {
+      "videoId": "CEZyq-fBn3w",
+      "start": 1,
+      "end": 49,
+      "title": "Network Documentation - CompTIA Network+ N10-009 - 3.1",
+      "channel": "Professor Messer"
+    },
+    "net-w2-013": {
+      "videoId": "ZkVdeOgaCoo",
+      "start": 612,
+      "end": 647,
+      "title": "Network Design Methodology - Applying a Methodology to Network Design - Enterprise Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-014": {
+      "videoId": "QPcm6z8xlEk",
+      "start": 1739,
+      "end": 1855,
+      "title": "Using the Top Down Approach to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-015": {
+      "videoId": "QPcm6z8xlEk",
+      "start": 1600,
+      "end": 1665,
+      "title": "Using the Top Down Approach to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-016": {
+      "videoId": "AYgXr1dynKU",
+      "start": 576,
+      "end": 638,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "net-w2-017": {
+      "videoId": "QPcm6z8xlEk",
+      "start": 42,
+      "end": 96,
+      "title": "Using the Top Down Approach to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-018": {
+      "videoId": "QPcm6z8xlEk",
+      "start": 96,
+      "end": 128,
+      "title": "Using the Top Down Approach to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-019": {
+      "videoId": "B9wteKPNyS8",
+      "start": 1046,
+      "end": 1127,
+      "title": "Identifying Customer Requirements 2 - Applying a Methodology to Network Design",
+      "channel": "Ekeeda"
+    },
+    "net-w2-020": {
+      "videoId": "PvyEcLhmNBk",
+      "start": 687,
+      "end": 737,
+      "title": "Free CCNA | LAN Architectures | Day 52 | CCNA 200-301 Complete Course",
+      "channel": "Jeremy's IT Lab"
+    },
+    "net-w2-021": {
+      "videoId": "PvyEcLhmNBk",
+      "start": 368,
+      "end": 422,
+      "title": "Free CCNA | LAN Architectures | Day 52 | CCNA 200-301 Complete Course",
+      "channel": "Jeremy's IT Lab"
+    },
+    "net-w2-022": {
+      "videoId": "PvyEcLhmNBk",
+      "start": 316,
+      "end": 368,
+      "title": "Free CCNA | LAN Architectures | Day 52 | CCNA 200-301 Complete Course",
+      "channel": "Jeremy's IT Lab"
+    },
+    "net-w2-023": {
+      "videoId": "jlMwWL4yalM",
+      "start": 1,
+      "end": 63,
+      "title": "Zero Trust - CompTIA Network+ N10-009 - 1.8",
+      "channel": "Professor Messer"
+    },
+    "net-w2-024": {
+      "videoId": "Gb0ozUy2d1g",
+      "start": 62,
+      "end": 111,
+      "title": "What Is Microsegmentation?",
+      "channel": "JumpCloud"
+    },
+    "net-w3-001": {
+      "videoId": "AYgXr1dynKU",
+      "start": 134,
+      "end": 321,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "net-w3-002": {
+      "videoId": "LkolbURrtTs",
+      "start": 118,
+      "end": 222,
+      "title": "OSI Model: A Practical Perspective - Networking Fundamentals - Lesson 2a",
+      "channel": "Practical Networking"
+    },
+    "net-w3-003": {
+      "videoId": "LkolbURrtTs",
+      "start": 223,
+      "end": 356,
+      "title": "OSI Model: A Practical Perspective - Networking Fundamentals - Lesson 2a",
+      "channel": "Practical Networking"
+    },
+    "net-w3-004": {
+      "videoId": "LkolbURrtTs",
+      "start": 449,
+      "end": 578,
+      "title": "OSI Model: A Practical Perspective - Networking Fundamentals - Lesson 2a",
+      "channel": "Practical Networking"
+    },
+    "net-w3-005": {
+      "videoId": "ueth6WvFVMU",
+      "start": 241,
+      "end": 330,
+      "title": "Introduction to IP - CompTIA Network+ N10-009 - 1.4",
+      "channel": "Professor Messer"
+    },
+    "net-w3-006": {
+      "videoId": "ueth6WvFVMU",
+      "start": 330,
+      "end": 420,
+      "title": "Introduction to IP - CompTIA Network+ N10-009 - 1.4",
+      "channel": "Professor Messer"
+    },
+    "net-w3-007": {
+      "videoId": "ueth6WvFVMU",
+      "start": 241,
+      "end": 420,
+      "title": "Introduction to IP - CompTIA Network+ N10-009 - 1.4",
+      "channel": "Professor Messer"
+    },
+    "net-w3-008": {
+      "videoId": "AYgXr1dynKU",
+      "start": 408,
+      "end": 436,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "net-w3-009": {
+      "videoId": "jX1pobYmZdE",
+      "start": 309,
+      "end": 377,
+      "title": "Common Ports - CompTIA Network+ N10-009 - 1.4",
+      "channel": "Professor Messer"
+    },
+    "net-w3-010": {
+      "videoId": "cxbsSKGJQow",
+      "start": 179,
+      "end": 268,
+      "title": "DHCP: Assigning IP Addresses on Ports 67 & 68",
+      "channel": "Computer Engineering life"
+    },
+    "net-w3-011": {
+      "videoId": "jX1pobYmZdE",
+      "start": 110,
+      "end": 156,
+      "title": "Common Ports - CompTIA Network+ N10-009 - 1.4",
+      "channel": "Professor Messer"
+    },
+    "net-w3-012": {
+      "videoId": "SBaARws0hy4",
+      "start": 146,
+      "end": 264,
+      "title": "POP3 vs IMAP - What's the difference?",
+      "channel": "PowerCert Animated Videos"
+    },
+    "net-w3-013": {
+      "videoId": "AR23ZlBI9EI",
+      "start": 112,
+      "end": 132,
+      "title": "CISSP Domain 4 Preview | The TCP/IP model",
+      "channel": "ThorTeaches.com: CISSP, CC, CISM, GenAI training"
+    },
+    "net-w3-014": {
+      "videoId": "AR23ZlBI9EI",
+      "start": 56,
+      "end": 82,
+      "title": "CISSP Domain 4 Preview | The TCP/IP model",
+      "channel": "ThorTeaches.com: CISSP, CC, CISM, GenAI training"
+    }
+  }
+}

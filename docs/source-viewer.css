@@ -9,3 +9,7 @@
 .slide-dialog-header button{flex-shrink:0;min-height:44px}
 .slide-content{padding:16px}.source-slide-image{display:block;width:100%;height:auto;margin-bottom:16px}.slide-transcript{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6}.slide-content a{display:inline-block;padding:8px 0;color:#1645b9}.slide-content details{margin-top:16px}.slide-content summary{cursor:pointer;min-height:44px}
 @media(max-width:600px){.slide-dialog-header{align-items:stretch;flex-direction:column;gap:10px}.slide-dialog-header button{align-self:flex-end}.slide-content{padding:10px}.slide-dialog{width:96vw;max-height:96dvh}}
+
+.video-study a.learning-video{display:inline-block;min-height:44px;padding:10px 0;box-sizing:border-box;color:#1645b9;font-weight:600;text-decoration:underline;line-height:1.5}
+.video-study a:focus-visible{outline:3px solid #df8d00;outline-offset:4px}
+.video-study small{line-height:1.6;overflow-wrap:anywhere}
