@@ -4,9 +4,10 @@ import {readFileSync} from 'node:fs';
 import {validVideo,videoURL,videoTime,validateVideos,videoMarkup} from '../docs/learning-videos.js';
 const read=file=>JSON.parse(readFileSync(new URL('../docs/'+file,import.meta.url)));
 const bank=read('questions.json'),data=read('learning-videos.json');
-test('every networking question has a reviewed video and other modules remain outside the pilot',()=>{
- assert.deepEqual(data.modules,['networking']);assert.equal(validateVideos(data,bank),data);
- assert.equal(Object.keys(data.questions).length,bank.modules.find(m=>m.id==='networking').questions.length);
+test('every networking and database question has a reviewed video; PPS stays unchanged',()=>{
+ assert.deepEqual(data.modules,['networking','database']);assert.equal(validateVideos(data,bank),data);
+ assert.equal(Object.keys(data.questions).length,bank.modules.filter(m=>data.modules.includes(m.id)).reduce((n,m)=>n+m.questions.length,0));
+ assert.ok(bank.modules.find(m=>m.id==='pps').questions.every(q=>!data.questions[q.id]));
  const missing=structuredClone(data);delete missing.questions[Object.keys(missing.questions)[0]];assert.throws(()=>validateVideos(missing,bank));
 });
 test('links use a fixed HTTPS YouTube destination and integer start times',()=>{

@@ -1,7 +1,8 @@
 {
   "version": 1,
   "modules": [
-    "networking"
+    "networking",
+    "database"
   ],
   "questions": {
     "networking-w1-001": {
@@ -451,6 +452,580 @@
       "end": 82,
       "title": "CISSP Domain 4 Preview | The TCP/IP model",
       "channel": "ThorTeaches.com: CISSP, CC, CISM, GenAI training"
+    },
+    "db-w1-001": {
+      "videoId": "qw--VYLpxG4",
+      "start": 8964,
+      "end": 9083,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-002": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 2170,
+      "end": 2370,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-003": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 11988,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-014": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 11988,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-004": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10155,
+      "end": 10485,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-007": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10155,
+      "end": 10485,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-005": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 4684,
+      "end": 4724,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-006": {
+      "videoId": "ZFtHaIvc66c",
+      "start": 10,
+      "end": 178,
+      "title": "PostgreSQL - How to use the Boolean Data Type. Did you know there are 5 Ways to say TRUE or FALSE?",
+      "channel": "Software Nuggets"
+    },
+    "db-w1-008": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 123,
+      "end": 349,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w1-009": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 3171,
+      "end": 3405,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w1-010": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 3171,
+      "end": 3405,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w1-011": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 4753,
+      "end": 4785,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-012": {
+      "videoId": "DpDgaGP-jsQ",
+      "start": 239,
+      "end": 570,
+      "title": "Software Testing Tutorial #35 - Boundary Value Analysis in Testing",
+      "channel": "Software Testing Mentor"
+    },
+    "db-w1-015": {
+      "videoId": "DpDgaGP-jsQ",
+      "start": 239,
+      "end": 570,
+      "title": "Software Testing Tutorial #35 - Boundary Value Analysis in Testing",
+      "channel": "Software Testing Mentor"
+    },
+    "db-w1-013": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 6015,
+      "end": 6335,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-016": {
+      "videoId": "qw--VYLpxG4",
+      "start": 13253,
+      "end": 13647,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-017": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 5290,
+      "end": 5345,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-018": {
+      "videoId": "Az5bZebnXJk",
+      "start": 861,
+      "end": 928,
+      "title": "Sequence | Serial data types in Postgresql | Full Course | Source Code",
+      "channel": "teachmedatabase"
+    },
+    "db-w1-019": {
+      "videoId": "Az5bZebnXJk",
+      "start": 861,
+      "end": 1058,
+      "title": "Sequence | Serial data types in Postgresql | Full Course | Source Code",
+      "channel": "teachmedatabase"
+    },
+    "db-w1-020": {
+      "videoId": "Az5bZebnXJk",
+      "start": 930,
+      "end": 1028,
+      "title": "Sequence | Serial data types in Postgresql | Full Course | Source Code",
+      "channel": "teachmedatabase"
+    },
+    "db-w1-022": {
+      "videoId": "85pG_pDkITY",
+      "start": 11375,
+      "end": 11610,
+      "title": "PostgreSQL Tutorial Full Course 2022",
+      "channel": "Derek Banas"
+    },
+    "db-w1-023": {
+      "videoId": "qw--VYLpxG4",
+      "start": 2497,
+      "end": 2952,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-024": {
+      "videoId": "85pG_pDkITY",
+      "start": 11375,
+      "end": 12565,
+      "title": "PostgreSQL Tutorial Full Course 2022",
+      "channel": "Derek Banas"
+    },
+    "db-w1-025": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 5345,
+      "end": 5435,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-026": {
+      "videoId": "qw--VYLpxG4",
+      "start": 3355,
+      "end": 3554,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-027": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10896,
+      "end": 11155,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-028": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10896,
+      "end": 11155,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-029": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10896,
+      "end": 11155,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-030": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10896,
+      "end": 11155,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-032": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10896,
+      "end": 11155,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-031": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 6035,
+      "end": 6179,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-033": {
+      "videoId": "qw--VYLpxG4",
+      "start": 317,
+      "end": 550,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-034": {
+      "videoId": "wzcb10_lQqA",
+      "start": 43,
+      "end": 155,
+      "title": "Types of NoSQL Databases",
+      "channel": "MongoDB"
+    },
+    "db-w1-035": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 197,
+      "end": 315,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w1-036": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 197,
+      "end": 315,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-001": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 560,
+      "end": 665,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-002": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 560,
+      "end": 665,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-009": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 560,
+      "end": 665,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-003": {
+      "videoId": "RJ9TpkWKyU0",
+      "start": 66,
+      "end": 218,
+      "title": "Conceptual, Logical & Physical Data Models",
+      "channel": "DataAcademy.in"
+    },
+    "db-w2-010": {
+      "videoId": "RJ9TpkWKyU0",
+      "start": 66,
+      "end": 218,
+      "title": "Conceptual, Logical & Physical Data Models",
+      "channel": "DataAcademy.in"
+    },
+    "db-w2-004": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 15176,
+      "end": 15299,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-005": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1644,
+      "end": 2020,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-008": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1644,
+      "end": 2020,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-011": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1644,
+      "end": 2020,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-012": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1644,
+      "end": 2020,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w2-006": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 15299,
+      "end": 15379,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-007": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 15299,
+      "end": 15379,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-013": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4919,
+      "end": 4999,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-014": {
+      "videoId": "qw--VYLpxG4",
+      "start": 5865,
+      "end": 6190,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-019": {
+      "videoId": "qw--VYLpxG4",
+      "start": 5865,
+      "end": 6190,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-015": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4992,
+      "end": 5129,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-016": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4992,
+      "end": 5129,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-018": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4348,
+      "end": 4518,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-020": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 4753,
+      "end": 4785,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-001": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4518,
+      "end": 4793,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-002": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4518,
+      "end": 4793,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-010": {
+      "videoId": "qw--VYLpxG4",
+      "start": 4518,
+      "end": 4793,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-003": {
+      "videoId": "1MI2cl8CzUw",
+      "start": 410,
+      "end": 518,
+      "title": "Order Data in Postgres, SQL Server and MySQL. From simple to advanced sorting",
+      "channel": "DB4Breakfast"
+    },
+    "db-w3-004": {
+      "videoId": "85pG_pDkITY",
+      "start": 3220,
+      "end": 3572,
+      "title": "PostgreSQL Tutorial Full Course 2022",
+      "channel": "Derek Banas"
+    },
+    "db-w3-006": {
+      "videoId": "qw--VYLpxG4",
+      "start": 5563,
+      "end": 5743,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-007": {
+      "videoId": "qw--VYLpxG4",
+      "start": 5743,
+      "end": 5865,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-009": {
+      "videoId": "qw--VYLpxG4",
+      "start": 5743,
+      "end": 5865,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-008": {
+      "videoId": "qw--VYLpxG4",
+      "start": 6190,
+      "end": 6401,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-011": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 668,
+      "end": 808,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w3-012": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 15176,
+      "end": 15299,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-013": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 12120,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-014": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 12120,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-022": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 12120,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-026": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 12120,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-015": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 790,
+      "end": 999,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "db-w3-016": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 6035,
+      "end": 6238,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-018": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 6035,
+      "end": 6238,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-017": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 4753,
+      "end": 4785,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-019": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 6258,
+      "end": 6335,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-020": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 6035,
+      "end": 6335,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-021": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 15299,
+      "end": 15379,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-023": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10155,
+      "end": 10485,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-024": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 11988,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w3-025": {
+      "videoId": "HXV3zeQKqGY",
+      "start": 14954,
+      "end": 15013,
+      "title": "SQL Tutorial - Full Database Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w1-021": {
+      "videoId": "qw--VYLpxG4",
+      "start": 14126,
+      "end": 14238,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "db-w2-017": {
+      "videoId": "aZpKduXQG_M",
+      "start": 6,
+      "end": 102,
+      "title": "SQL - When to Use Single or Double Quotes in Queries",
+      "channel": "Coding With Brett"
+    },
+    "db-w3-005": {
+      "videoId": "2UWO1VRxDWo",
+      "start": 0,
+      "end": 59,
+      "title": "SQL COUNT(star) vs COUNT(column name) - Count Non-Null column values #sqltips #sqlforbeginners",
+      "channel": "ExcelPowerTips"
     }
   }
 }
