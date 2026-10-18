@@ -1026,6 +1026,216 @@
       "end": 59,
       "title": "SQL COUNT(star) vs COUNT(column name) - Count Non-Null column values #sqltips #sqlforbeginners",
       "channel": "ExcelPowerTips"
+    },
+    "networking-w4-001": {
+      "videoId": "4_zSIXb7tLQ",
+      "start": 73,
+      "end": 104,
+      "title": "Network Types:  LAN, WAN, PAN, CAN, MAN, SAN, WLAN",
+      "channel": "PowerCert Animated Videos"
+    },
+    "networking-w4-002": {
+      "videoId": "H7-NR3Q3BeI",
+      "start": 528,
+      "end": 781,
+      "title": "Hub, Bridge, Switch, Router - Network Devices - Networking Fundamentals - Lesson 1b",
+      "channel": "Practical Networking"
+    },
+    "networking-w4-003": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 683,
+      "end": 744,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w4-004": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 718,
+      "end": 744,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w4-005": {
+      "videoId": "tf66r-LSEZE",
+      "start": 68,
+      "end": 124,
+      "title": "The Bus, Star, Ring, Mesh & Tree Network Topologies",
+      "channel": "Tech Hub Academy | Coding Made Simple"
+    },
+    "networking-w4-006": {
+      "videoId": "tf66r-LSEZE",
+      "start": 68,
+      "end": 124,
+      "title": "The Bus, Star, Ring, Mesh & Tree Network Topologies",
+      "channel": "Tech Hub Academy | Coding Made Simple"
+    },
+    "networking-w4-007": {
+      "videoId": "tf66r-LSEZE",
+      "start": 158,
+      "end": 198,
+      "title": "The Bus, Star, Ring, Mesh & Tree Network Topologies",
+      "channel": "Tech Hub Academy | Coding Made Simple"
+    },
+    "networking-w4-008": {
+      "videoId": "tf66r-LSEZE",
+      "start": 198,
+      "end": 234,
+      "title": "The Bus, Star, Ring, Mesh & Tree Network Topologies",
+      "channel": "Tech Hub Academy | Coding Made Simple"
+    },
+    "networking-w4-009": {
+      "videoId": "E5bSumTAHZE",
+      "start": 449,
+      "end": 489,
+      "title": "Network Protocols - ARP, FTP, SMTP, HTTP, SSL, TLS, HTTPS, DNS, DHCP - Networking Fundamentals - L6",
+      "channel": "Practical Networking"
+    },
+    "networking-w4-010": {
+      "videoId": "FTUV0t6JaDA",
+      "start": 155,
+      "end": 210,
+      "title": "NAT Explained - Network Address Translation",
+      "channel": "PowerCert Animated Videos"
+    },
+    "networking-w4-011": {
+      "videoId": "ueth6WvFVMU",
+      "start": 330,
+      "end": 420,
+      "title": "Introduction to IP - CompTIA Network+ N10-009 - 1.4",
+      "channel": "Professor Messer"
+    },
+    "networking-w4-012": {
+      "videoId": "iqjj4ZSPV08",
+      "start": 180,
+      "end": 240,
+      "title": "Networking Devices - CompTIA Network+ N10-009 - 1.2",
+      "channel": "Professor Messer"
+    },
+    "networking-w4-013": {
+      "videoId": "AYgXr1dynKU",
+      "start": 134,
+      "end": 321,
+      "title": "Understanding the OSI Model - CompTIA Network+ N10-009 - 1.1",
+      "channel": "Professor Messer"
+    },
+    "networking-w4-014": {
+      "videoId": "Ki1ZWPejiwA",
+      "start": 42,
+      "end": 67,
+      "title": "Network Design Principles for Beginners: Scalable & Secure Networks",
+      "channel": "CodeLucky"
+    },
+    "database-w4-001": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1534,
+      "end": 1644,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-002": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 3171,
+      "end": 3410,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-003": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1644,
+      "end": 2000,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-004": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 1644,
+      "end": 2000,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-005": {
+      "videoId": "qw--VYLpxG4",
+      "start": 12570,
+      "end": 12917,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w4-006": {
+      "videoId": "85pG_pDkITY",
+      "start": 3921,
+      "end": 4130,
+      "title": "PostgreSQL Tutorial Full Course 2022",
+      "channel": "Derek Banas"
+    },
+    "database-w4-007": {
+      "videoId": "qw--VYLpxG4",
+      "start": 12570,
+      "end": 12917,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w4-008": {
+      "videoId": "qw--VYLpxG4",
+      "start": 12917,
+      "end": 13253,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w4-009": {
+      "videoId": "qw--VYLpxG4",
+      "start": 12917,
+      "end": 13253,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w4-010": {
+      "videoId": "qw--VYLpxG4",
+      "start": 12917,
+      "end": 13253,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w4-011": {
+      "videoId": "chz_g0VfP4U",
+      "start": 1209,
+      "end": 1243,
+      "title": "Learn PostgreSQL in 40 Minutes (Full Course)",
+      "channel": "RoadsideCoder"
+    },
+    "database-w4-012": {
+      "videoId": "chz_g0VfP4U",
+      "start": 1243,
+      "end": 1265,
+      "title": "Learn PostgreSQL in 40 Minutes (Full Course)",
+      "channel": "RoadsideCoder"
+    },
+    "database-w4-013": {
+      "videoId": "chz_g0VfP4U",
+      "start": 1320,
+      "end": 1378,
+      "title": "Learn PostgreSQL in 40 Minutes (Full Course)",
+      "channel": "RoadsideCoder"
+    },
+    "database-w4-014": {
+      "videoId": "IfaqkiHpIjo",
+      "start": 3171,
+      "end": 3410,
+      "title": "Database Lesson #4 of 8 - Data Modeling and the ER Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-015": {
+      "videoId": "85pG_pDkITY",
+      "start": 4425,
+      "end": 4696,
+      "title": "PostgreSQL Tutorial Full Course 2022",
+      "channel": "Derek Banas"
+    },
+    "database-w4-016": {
+      "videoId": "85pG_pDkITY",
+      "start": 4130,
+      "end": 4395,
+      "title": "PostgreSQL Tutorial Full Course 2022",
+      "channel": "Derek Banas"
     }
   }
 }

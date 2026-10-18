@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-13",
+  "updated": "2026-10-17",
   "modules": [
     {
       "id": "networking",
@@ -1219,6 +1219,272 @@
             "title": "Lecture3",
             "page": 21,
             "slideId": "5bde622d5611128e-21",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-001",
+          "week": 4,
+          "prompt": "A design brief connects computers and a shared printer within one office building under one organisation. A separate service connects that office to sites abroad. Which description best distinguishes the two scopes?",
+          "options": [
+            "The office network is a LAN; the inter-site service connects networks across a wider area.",
+            "The office network is a WAN because it connects several different devices.",
+            "The office network becomes a WAN whenever users access the internet.",
+            "The office network is a PAN because all equipment has one owner."
+          ],
+          "answer": 0,
+          "explanation": "LAN describes a local network scope. Connecting that LAN to a wider network does not change the local network into a WAN. Device count and common ownership alone do not define a personal-area network.",
+          "source": {
+            "title": "lecture4",
+            "page": 3,
+            "slideId": "ffbc642e666d08e1-3",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-002",
+          "week": 4,
+          "prompt": "An office has two IP subnets. Existing switches already connect devices within each subnet. Which additional function is needed for traffic to pass between the subnets?",
+          "options": [
+            "Flood every Ethernet frame across both networks.",
+            "Resolve public DNS names for hosts in both networks.",
+            "Provide additional switch ports within each network.",
+            "Route IP packets between the two networks."
+          ],
+          "answer": 3,
+          "explanation": "A router, or a device providing equivalent Layer 3 routing, forwards packets between IP networks. More Layer 2 ports, frame flooding or DNS name resolution do not themselves provide inter-subnet routing.",
+          "source": {
+            "title": "lecture4",
+            "page": 4,
+            "slideId": "ffbc642e666d08e1-4",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-003",
+          "week": 4,
+          "prompt": "An office already has wired Ethernet switching and a router providing internet access. Laptops need to join the same LAN wirelessly. Which function directly meets the new requirement?",
+          "options": [
+            "A DNS resolver translating website names into IP addresses.",
+            "A router translating private addresses at the internet boundary.",
+            "An access point bridging wireless clients onto the LAN.",
+            "An Ethernet switch adding wired ports to the existing LAN."
+          ],
+          "answer": 2,
+          "explanation": "The missing function is wireless access. An access point connects wireless stations to the LAN. A combined home device may include an access point, router and switch, but these are separate functions.",
+          "source": {
+            "title": "lecture4",
+            "page": 4,
+            "slideId": "ffbc642e666d08e1-4",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-004",
+          "week": 4,
+          "prompt": "A laptop reaches a server through Wi-Fi to an access point and then a wired Ethernet link. Which statement correctly describes the link technologies in this path?",
+          "options": [
+            "Both segments use IEEE 802.3 because they belong to one LAN.",
+            "The wireless segment uses IEEE 802.11 and the Ethernet segment uses IEEE 802.3.",
+            "Both segments use IEEE 802.11 because the laptop started wirelessly.",
+            "The wireless segment uses IEEE 802.3 and the Ethernet segment uses IEEE 802.11."
+          ],
+          "answer": 1,
+          "explanation": "A LAN can combine different link technologies. IEEE 802.11 specifies wireless LAN operation; IEEE 802.3 specifies Ethernet. The Wi-Fi hop does not turn the following Ethernet hop into Wi-Fi. This also qualifies the later slide's overly broad description of Ethernet as wired and wireless.",
+          "source": {
+            "title": "lecture4",
+            "page": 5,
+            "slideId": "ffbc642e666d08e1-5",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-005",
+          "week": 4,
+          "prompt": "Six PCs have separate cables to one switch in a star topology. One PC's cable is unplugged; the switch and all other cables remain healthy. What is the expected effect?",
+          "options": [
+            "That PC loses its link; the other PCs can still communicate through the switch.",
+            "Every PC loses its link because the star requires a closed loop.",
+            "The PCs on either side of that PC lose their links, but the rest continue.",
+            "All PCs retain connectivity because the switch supplies a second physical path."
+          ],
+          "answer": 0,
+          "explanation": "Each star branch is a separate connection to the centre. Losing one branch normally isolates that device, not every other branch. A single-switch star does not automatically provide a backup cable for the disconnected PC.",
+          "source": {
+            "title": "lecture4",
+            "page": 14,
+            "slideId": "ffbc642e666d08e1-14",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-006",
+          "week": 4,
+          "prompt": "The same office uses one central switch with no redundant switch or alternate links. All PC cables are intact, but the switch loses power. Which conclusion follows from the topology?",
+          "options": [
+            "Only communication with the internet fails; local frames still cross the unpowered switch.",
+            "Each PC automatically forwards other PCs' frames to bypass the central switch.",
+            "Only the most recently connected PC loses service; existing connections continue.",
+            "Communication through that switch fails, even between PCs with intact cables."
+          ],
+          "answer": 3,
+          "explanation": "The central device is a shared dependency in this star. Intact branch cables cannot forward frames through an unpowered switch. Extra redundancy must be designed and implemented; it is not supplied by the star shape itself.",
+          "source": {
+            "title": "lecture4",
+            "page": 14,
+            "slideId": "ffbc642e666d08e1-14",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-007",
+          "week": 4,
+          "prompt": "In a simple bus LAN, devices depend on one shared backbone cable, with no redundant path. A fault makes that shared backbone unusable. Why can this affect more devices than a broken branch cable in a switched star?",
+          "options": [
+            "The bus assigns one IP address to every endpoint; the star assigns one per cable.",
+            "The bus contains a separate backup route for each endpoint; the star has none.",
+            "The bus backbone is a shared communication dependency; a star branch serves one endpoint.",
+            "The bus requires a router for each frame; a star requires a router only for broadcasts."
+          ],
+          "answer": 2,
+          "explanation": "The key distinction is where the failed link sits in the topology. A shared bus failure can disrupt the common medium. A failed individual star branch normally affects that branch, although failure of the star's centre can affect everyone.",
+          "source": {
+            "title": "lecture4",
+            "page": 13,
+            "slideId": "ffbc642e666d08e1-13",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-008",
+          "week": 4,
+          "prompt": "A site needs to keep traffic flowing after one inter-switch link fails. Compared with a topology having only one path between switches, what is the main benefit of adding a usable mesh of alternate links?",
+          "options": [
+            "Traffic no longer needs addressing because every switch has several neighbours.",
+            "Traffic can use another path if forwarding is configured to handle the redundancy.",
+            "Traffic on every flow necessarily becomes faster by exactly the number of added links.",
+            "Traffic cannot loop because adding physical links always removes forwarding loops."
+          ],
+          "answer": 1,
+          "explanation": "Redundant links can provide alternate paths, but protocols and configuration must make those paths usable and avoid loops where relevant. Mesh connectivity does not eliminate addressing or guarantee a fixed speed increase.",
+          "source": {
+            "title": "lecture4",
+            "page": 16,
+            "slideId": "ffbc642e666d08e1-16",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-009",
+          "week": 4,
+          "prompt": "Two hosts have IP addresses and a subnet mask configured. Before deciding whether to send traffic directly on the local network or through a default gateway, what does a host use the mask to determine?",
+          "options": [
+            "Whether the destination is in the same IP network as its own address.",
+            "Which complete destination IP address should replace the host's default gateway.",
+            "Which physical hardware address belongs to the destination IP address.",
+            "Which address is currently available for allocation by the DHCP server."
+          ],
+          "answer": 0,
+          "explanation": "The mask identifies the network portion of an IP address. The host compares the destination network with its own to decide local delivery versus routing through a gateway. It does not resolve names or select a transport protocol.",
+          "source": {
+            "title": "lecture4",
+            "page": 11,
+            "slideId": "ffbc642e666d08e1-11",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-010",
+          "week": 4,
+          "prompt": "Several private-addressed office PCs access websites through a router configured for shared outbound IPv4 address translation. The ISP has assigned the office one public IPv4 address. What do internet-facing servers normally see as the source IP address of those translated connections?",
+          "options": [
+            "Each PC's private IPv4 address, unchanged across the internet.",
+            "A different ISP-assigned public IPv4 address for every PC.",
+            "The website server's own IPv4 address as both source and destination.",
+            "The router's public IPv4 address, with translation state distinguishing the connections."
+          ],
+          "answer": 3,
+          "explanation": "With shared outbound NAT/PAT, multiple private hosts can appear behind one public IPv4 address. Connection state, commonly including translated ports, lets replies reach the appropriate internal connection. NAT is address translation, not a substitute for an access-control policy.",
+          "source": {
+            "title": "lecture4",
+            "page": 18,
+            "slideId": "ffbc642e666d08e1-18",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-011",
+          "week": 4,
+          "prompt": "A live voice application can tolerate an occasional lost sample, but a late retransmission would be less useful than the next current sample. Which transport choice best matches that stated trade-off, assuming the application handles any required loss recovery?",
+          "options": [
+            "TCP, requiring missing stream bytes to be recovered before ordered delivery continues.",
+            "TCP, because it deliberately delivers later bytes ahead of missing earlier bytes.",
+            "UDP, avoiding transport-level retransmission of every missing sample.",
+            "UDP, because it guarantees that every sample arrives in the order sent."
+          ],
+          "answer": 2,
+          "explanation": "UDP supplies datagrams without TCP's reliable ordered byte-stream service. That can fit an application prioritising timely samples and handling loss itself. UDP does not guarantee delivery or order, and the best protocol still depends on the complete application requirements.",
+          "source": {
+            "title": "lecture4",
+            "page": 6,
+            "slideId": "ffbc642e666d08e1-6",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-012",
+          "week": 4,
+          "prompt": "A guest wireless network and a staff records server already have working IP connectivity. The requirement is to stop guests opening connections to the records server while allowing authorised staff. Which control most directly enforces that traffic restriction?",
+          "options": [
+            "WPA encryption on the guest access point, using one shared password for all guests.",
+            "An access-control policy enforced by a firewall between the relevant network zones.",
+            "Outbound address translation that lets guests share the staff public IPv4 address.",
+            "A DHCP reservation assigning the records server the same address after every restart."
+          ],
+          "answer": 1,
+          "explanation": "A firewall can enforce which traffic is allowed between sources and destinations. A subnet mask, DNS record or stronger signal does not itself enforce the required access policy. Permissions and identity controls may also be required at the application.",
+          "source": {
+            "title": "lecture4",
+            "page": 19,
+            "slideId": "ffbc642e666d08e1-19",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-013",
+          "week": 4,
+          "prompt": "One PC cannot reach a local server, while a second PC on the same switch can. The affected PC has no link indicator and its cable is visibly loose. What is the most useful first action?",
+          "options": [
+            "Reseat or replace that cable, then retest link status and connectivity.",
+            "Flush the PC's DNS cache, then retry the server by its hostname.",
+            "Trace the route to an external website, then investigate the ISP path.",
+            "Change the PC's default gateway, then retest traffic outside its subnet."
+          ],
+          "answer": 0,
+          "explanation": "Start with the concrete physical fault affecting the failing host. A working comparison host helps narrow the scope. Restore and verify the link before changing unrelated addressing, name-service or internet-routing settings; record the result rather than assuming the repair worked.",
+          "source": {
+            "title": "lecture4",
+            "page": 20,
+            "slideId": "ffbc642e666d08e1-20",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w4-014",
+          "week": 4,
+          "prompt": "A LAN supports 20 staff today and is expected to support 60 with similar applications next year. Which design question most directly addresses scalability?",
+          "options": [
+            "Can a second power supply keep the current switch running after a power-unit failure?",
+            "Can firewall rules limit which current users reach the finance service?",
+            "Can central monitoring identify which current link has failed?",
+            "Can port capacity, addressing and uplink capacity grow without replacing the whole design?"
+          ],
+          "answer": 3,
+          "explanation": "Scalability concerns accommodating growth in users, devices and traffic. Capacity and expansion limits matter before the extra load arrives. Naming and diagram conventions help management, but do not establish that the network can support the growth.",
+          "source": {
+            "title": "lecture4",
+            "page": 17,
+            "slideId": "ffbc642e666d08e1-17",
             "label": "Page"
           }
         }
@@ -3892,6 +4158,310 @@
             "page": 23,
             "slideId": "b181fa3595fe733b-23",
             "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-001",
+          "week": 4,
+          "prompt": "Original practice: a volunteer can support several events, and an event can have several volunteers. The number of hours is specific to one volunteer at one event. Which relational design represents this requirement without repeating event columns?",
+          "options": [
+            "Volunteer and Event tables, plus Assignment(volunteer_id, event_id, hours) referencing both.",
+            "Volunteer(volunteer_id, event_id, hours), with one row per volunteer only.",
+            "Event(event_id, volunteer_id, hours), with one row per event only.",
+            "Volunteer(volunteer_id, total_hours) and Event(event_id), without a linking table."
+          ],
+          "answer": 0,
+          "explanation": "The many-to-many association needs its own rows. Hours describe a particular volunteer-event assignment, so belong on that association. A single foreign key on either entity cannot represent multiple assignments in both directions; a total alone loses the per-event detail.",
+          "source": {
+            "title": "LDMExercise",
+            "page": 1,
+            "slideId": "ee45dcd45d692656-1",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-002",
+          "week": 4,
+          "prompt": "Original practice: every equipment item has an item_id. An item may have been made by modifying another registered item, but the predecessor may be unknown or not in this database. At most one predecessor is recorded. Which field best represents that optional link?",
+          "options": [
+            "A mandatory predecessor_id on Item referencing Item.item_id.",
+            "A predecessor_name on Item, required to be unique across all items.",
+            "A separate predecessor_id primary key replacing each item's own item_id.",
+            "A nullable predecessor_id on Item referencing Item.item_id."
+          ],
+          "answer": 3,
+          "explanation": "This is an optional recursive relationship: the referenced row is another item in the same table. NULL can represent no recorded predecessor in this model. A mandatory reference would rule out roots and unrecorded predecessors; a name is not a reliable substitute for the item identifier.",
+          "source": {
+            "title": "LDMExercise",
+            "page": 1,
+            "slideId": "ee45dcd45d692656-1",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-003",
+          "week": 4,
+          "prompt": "Original practice: a brief says each vehicle belongs to one depot and a depot may hold many vehicles. It does not say whether a newly registered depot can be empty. What should be clarified before finalising the minimum participation on the depot side?",
+          "options": [
+            "Whether the depot identifier should be displayed before the depot name in a report.",
+            "Whether the vehicle table should be listed before the depot table in the schema.",
+            "Whether a depot may exist in the database before any vehicle is assigned to it.",
+            "Whether the depot name should use title case in the application interface."
+          ],
+          "answer": 2,
+          "explanation": "The missing requirement is the minimum number of vehicles per depot: zero or at least one. Maximum cardinality of many does not settle minimum participation. Resolve that business rule with stakeholders rather than inventing a mandatory relationship.",
+          "source": {
+            "title": "LDMExercise",
+            "page": 1,
+            "slideId": "ee45dcd45d692656-1",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-004",
+          "week": 4,
+          "prompt": "Original practice: a technician may be assigned to at most three workshops at once, while each workshop can have many technicians. A model records Technician, Workshop and Assignment. Which statement best evaluates the upper-limit requirement?",
+          "options": [
+            "A foreign key from Assignment to Technician automatically rejects a fourth workshop for a technician.",
+            "The association represents many-to-many links, but the three-workshop limit also needs an explicit business rule and enforcement.",
+            "Making Assignment.technician_id unique allows each technician exactly three workshop assignments.",
+            "Making Workshop.workshop_id a primary key limits the database to three workshops in total."
+          ],
+          "answer": 1,
+          "explanation": "Foreign keys ensure referenced entities exist; they do not count a technician's assignments. Uniqueness on technician_id would allow at most one assignment, not three. Record the cardinality limit and plan a suitable transaction-aware enforcement mechanism; ordinary PK/FK declarations alone are insufficient.",
+          "source": {
+            "title": "LDMExercise",
+            "page": 1,
+            "slideId": "ee45dcd45d692656-1",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-005",
+          "week": 4,
+          "prompt": "Synthetic tables: team(team_id PK) contains 10, 20, 30. member(member_id PK, team_id FK) contains (1,10), (2,10), (3,20). No values are NULL. How many rows result from team t INNER JOIN member m ON m.team_id = t.team_id, with no DISTINCT or grouping?",
+          "options": [
+            "3 rows: one for each matching member-team pair.",
+            "2 rows: one for each team that has a member.",
+            "4 rows: one for each member plus the empty team.",
+            "9 rows: every team paired with every member."
+          ],
+          "answer": 0,
+          "explanation": "The inner join emits each matching pair: (10,1), (10,2) and (20,3). It does not collapse two members of team 10 into one row. Team 30 is excluded because it has no matching member. Nine rows would be the Cartesian product without the equality condition.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 2,
+            "slideId": "62e72ad3fe27ba97-2",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-006",
+          "week": 4,
+          "prompt": "Synthetic tables: author(author_id PK, name) and book(book_id PK, author_id FK, title). An author can have several books and each book has one author. Using aliases a for author and b for book, which condition correctly joins each book to its author?",
+          "options": [
+            "ON b.book_id = a.author_id",
+            "ON b.author_id = b.book_id",
+            "ON a.author_id = a.author_id",
+            "ON b.author_id = a.author_id"
+          ],
+          "answer": 3,
+          "explanation": "The book's foreign key identifies the author. Equating the two unrelated primary keys can give accidental matches; comparing fields within Book is not the relationship; comparing an author key to itself does not connect it to a book. Assume aliases a for Author and b for Book.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 2,
+            "slideId": "62e72ad3fe27ba97-2",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-007",
+          "week": 4,
+          "prompt": "Synthetic tables: dept(dept_id PK) has 1 and 2. staff(staff_id PK, dept_id FK) has (11,1), (12,1), (13,2). A query selects only d.dept_id from dept d INNER JOIN staff s ON s.dept_id=d.dept_id, without DISTINCT. Which multiset of values is returned, ignoring order?",
+          "options": [
+            "1, 2",
+            "1, 2, 3",
+            "1, 1, 2",
+            "11, 12, 13"
+          ],
+          "answer": 2,
+          "explanation": "Projecting only the department column does not remove duplicate result values. There is still one result row for each matching staff-department pair. SELECT DISTINCT d.dept_id would instead collapse the repeated 1.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 2,
+            "slideId": "62e72ad3fe27ba97-2",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-008",
+          "week": 4,
+          "prompt": "Synthetic tables: customer(customer_id PK) contains 1, 2, 3. purchase(purchase_id PK, customer_id FK) contains (21,1), (22,1), (23,2). How many rows result from customer c LEFT JOIN purchase p ON p.customer_id=c.customer_id, with no other clauses?",
+          "options": [
+            "3 rows: exactly one row for each customer, regardless of purchases.",
+            "4 rows: three matched pairs and one NULL-extended row for customer 3.",
+            "3 rows: exactly one row for each purchase, excluding customer 3.",
+            "6 rows: every customer receives one matched row and one unmatched row."
+          ],
+          "answer": 1,
+          "explanation": "Customer 1 produces two rows, customer 2 one, and customer 3 one row with NULL purchase fields. LEFT JOIN preserves every left row, but it does not guarantee only one result row per left row when several right rows match.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 4,
+            "slideId": "62e72ad3fe27ba97-4",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-009",
+          "week": 4,
+          "prompt": "Synthetic schema: depot(depot_id PK) and van(van_id PK, depot_id FK). A depot may have no vans. Which query returns the IDs of depots with no matching van?",
+          "options": [
+            "SELECT d.depot_id FROM depot d LEFT JOIN van v ON v.depot_id=d.depot_id WHERE v.van_id IS NULL;",
+            "SELECT d.depot_id FROM depot d INNER JOIN van v ON v.depot_id=d.depot_id WHERE v.van_id IS NULL;",
+            "SELECT d.depot_id FROM depot d LEFT JOIN van v ON v.depot_id=d.depot_id WHERE d.depot_id IS NULL;",
+            "SELECT d.depot_id FROM depot d LEFT JOIN van v ON v.depot_id=d.depot_id WHERE v.van_id = NULL;"
+          ],
+          "answer": 0,
+          "explanation": "The left join retains empty depots with NULL values in the van columns. Testing the non-nullable van primary key with IS NULL identifies those missing matches. An inner join removes them; depot primary keys cannot be NULL; = NULL does not evaluate to true in SQL.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 4,
+            "slideId": "62e72ad3fe27ba97-4",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-010",
+          "week": 4,
+          "prompt": "A LEFT JOIN preserves all departments, then the query applies WHERE e.status = 'active' to the employee alias on the right. A department has no employees at all. What happens to its NULL-extended row?",
+          "options": [
+            "It is retained because LEFT JOIN makes all later WHERE conditions optional.",
+            "It becomes a row containing an employee with status 'active'.",
+            "It causes a syntax error because WHERE cannot follow a LEFT JOIN.",
+            "It is removed because NULL = 'active' is not true in the WHERE condition."
+          ],
+          "answer": 3,
+          "explanation": "WHERE filters the joined result. The missing employee's status is NULL, so the equality test is unknown and the row is discarded. To retain all departments while matching only active employees, place that right-side matching restriction in ON, then apply any remaining filters deliberately.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 4,
+            "slideId": "62e72ad3fe27ba97-4",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-011",
+          "week": 4,
+          "prompt": "Which expression has the same preserved rows and matching pairs as A RIGHT JOIN B ON A.k = B.k, assuming the SELECT list explicitly uses the same named columns?",
+          "options": [
+            "A LEFT JOIN B ON A.k = B.k",
+            "B INNER JOIN A ON A.k = B.k",
+            "B LEFT JOIN A ON A.k = B.k",
+            "A FULL OUTER JOIN B ON A.k = B.k"
+          ],
+          "answer": 2,
+          "explanation": "A right join preserves B. Swapping the table order and using a left join also preserves B, with the same equality condition. Keep the SELECT list explicit because SELECT * column order may differ after swapping the tables.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 5,
+            "slideId": "62e72ad3fe27ba97-5",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-012",
+          "week": 4,
+          "prompt": "Synthetic tables A(k PRIMARY KEY) contains 1, 2 and B(k PRIMARY KEY) contains 2, 3. Which set of (A.k, B.k) pairs results from A FULL OUTER JOIN B ON A.k=B.k, ignoring order?",
+          "options": [
+            "(2,2)",
+            "(1,NULL), (2,2), (NULL,3)",
+            "(1,NULL), (2,2)",
+            "(1,2), (1,3), (2,2), (2,3)"
+          ],
+          "answer": 1,
+          "explanation": "The equality match is (2,2). FULL OUTER JOIN additionally keeps unmatched rows from both inputs, using NULLs for the missing side. INNER JOIN keeps only the match; LEFT JOIN alone omits B's unmatched 3; a Cartesian product produces four combinations.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 5,
+            "slideId": "62e72ad3fe27ba97-5",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-013",
+          "week": 4,
+          "prompt": "Synthetic registration(student_id, club_id) contains (7,10), (7,20), (8,10). The query joins registration a to registration b ON a.student_id=b.student_id AND a.club_id<>b.club_id. Which pairs (a.club_id,b.club_id) are returned, ignoring order?",
+          "options": [
+            "(10,20) and (20,10)",
+            "(10,20) only",
+            "(10,10), (20,20) and (10,10)",
+            "(10,20), (20,10) and (10,10)"
+          ],
+          "answer": 0,
+          "explanation": "The two rows for student 7 can occupy the two alias roles in either order, producing two ordered pairs. Student 8 has only one row and cannot pair it with a different club. A condition such as a.club_id < b.club_id would select one orientation when that is the intended requirement.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 3,
+            "slideId": "62e72ad3fe27ba97-3",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-014",
+          "week": 4,
+          "prompt": "employee(employee_id, manager_id) stores an optional manager_id referencing employee.employee_id. In employee e LEFT JOIN employee m ON e.manager_id=m.employee_id, what do the aliases e and m represent?",
+          "options": [
+            "Two new persistent tables created by executing the SELECT query.",
+            "Two copies of each column that must contain identical values in every result row.",
+            "Two different databases that are merged by the join condition.",
+            "Two roles of the same table: the employee row and its possible manager row."
+          ],
+          "answer": 3,
+          "explanation": "Aliases distinguish the two references to Employee in the self join. They do not create permanent tables. The condition connects an employee to another row acting as manager, and the left join keeps employees without a recorded manager.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 3,
+            "slideId": "62e72ad3fe27ba97-3",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-015",
+          "week": 4,
+          "prompt": "Tables x and y contain 4 and 3 rows respectively. A query uses FROM x, y and has no WHERE condition. How many row combinations are produced before any aggregation or DISTINCT?",
+          "options": [
+            "7",
+            "4",
+            "12",
+            "3"
+          ],
+          "answer": 2,
+          "explanation": "Without a condition relating the tables, each row of x is paired with every row of y: 4 times 3 equals 12. Comma syntax can express an inner join when a suitable WHERE predicate is supplied, but omitting it leaves a Cartesian product.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 3,
+            "slideId": "62e72ad3fe27ba97-3",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-016",
+          "week": 4,
+          "prompt": "Synthetic schema: region(region_id PK, name), branch(branch_id PK, region_id FK), delivery(delivery_id PK, branch_id FK). Each branch has one region and each delivery one branch. Which join path correctly returns each delivery with its region name?",
+          "options": [
+            "delivery d JOIN branch b ON d.delivery_id=b.branch_id JOIN region r ON b.region_id=r.region_id",
+            "delivery d JOIN branch b ON d.branch_id=b.branch_id JOIN region r ON b.region_id=r.region_id",
+            "delivery d JOIN region r ON d.branch_id=r.region_id JOIN branch b ON b.branch_id=d.branch_id",
+            "delivery d JOIN branch b ON d.branch_id=b.branch_id JOIN region r ON b.branch_id=r.region_id"
+          ],
+          "answer": 1,
+          "explanation": "Follow the declared relationships: delivery references branch, which references region. Equal-looking numbers in unrelated identifiers are not evidence of a relationship. The path must use the correct foreign-key/primary-key pairs at both steps.",
+          "source": {
+            "title": "Workbook3-Joins",
+            "page": 6,
+            "slideId": "62e72ad3fe27ba97-6",
+            "label": "Page"
           }
         }
       ]

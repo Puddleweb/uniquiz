@@ -12,9 +12,9 @@ test('writing activities have stable unique IDs, sources and self-review guidanc
 
 test('workshops keep modules separate and preserve existing activity IDs',()=>{
  assert.equal(workshopActivities('pps').length,4);
- assert.equal(workshopActivities('networking').length,3);
- assert.ok(workshopActivities('networking').every(a=>a.id.startsWith('networking-w2-')));
+ assert.equal(workshopActivities('networking').length,4);
+ assert.ok(workshopActivities('networking').every(a=>a.module==='networking'));
  assert.deepEqual(workshopActivities('unknown'),workshopActivities('pps'));
 });
 
-test('database workshop exposes only its own original exercises',()=>{assert.equal(workshopActivities('database').length,4);assert.ok(workshopActivities('database').every(a=>a.module==='database'));});
+test('database workshop exposes only its own original exercises',()=>{assert.equal(workshopActivities('database').length,6);assert.ok(workshopActivities('database').every(a=>a.module==='database'));});

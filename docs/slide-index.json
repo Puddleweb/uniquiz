@@ -1006,5 +1006,131 @@
     "page": 39,
     "label": "Slide",
     "text": "A Table Definition in an LDM\nProgramme\nKEY\nCOLUMN NAME\nDATA TYPE\nNULLABILITY\nDEFAULT\nCOLUMN CONSTRAINT\nPK\nprogrammeId\nbigserial\nNOT NULL\nSequence Next Value\nprogrammeName\nvarchar(255)\nNOT NULL\nprogrammeCode\nvarchar(10)\nNOT NULL\nFK\nschoolFK\nint\nNOT NULL\nlengthOfProgramme\nint\nNOT NULL\nprogrammeAward\nvarchar(10)\nNOT NULL\nWe can then define any additional constraints. These may not be applied database side, but are important for data consideration. For example, an email attribute should contain an ‘@’ symbol. This validation could occur database side or at the data entry point but we should consider it at this stage."
+  },
+  "ffbc642e666d08e1-3": {
+    "image": "slides/ffbc642e666d08e1-3.webp",
+    "title": "lecture4",
+    "page": 3,
+    "label": "Page",
+    "text": "Characteristics of LANs\n3\nGeographically limited to small areas like buildings or campuses \nEnables high-speed data transfer between connected devices \nTypically owned and operated by a single organization or individual"
+  },
+  "ffbc642e666d08e1-4": {
+    "image": "slides/ffbc642e666d08e1-4.webp",
+    "title": "lecture4",
+    "page": 4,
+    "label": "Page",
+    "text": "LAN Components\n4\nCOMPUTERS, SWITCHES, ROUTERS, AND ACCESS POINTS \nCABLING SUCH AS ETHERNET FOR WIRED CONNECTIONS \nWIRELESS DEVICES FOR WI-FI-BASED LAN CONNECTIONS"
+  },
+  "ffbc642e666d08e1-5": {
+    "image": "slides/ffbc642e666d08e1-5.webp",
+    "title": "lecture4",
+    "page": 5,
+    "label": "Page",
+    "text": "LAN Standards and Protocols\n9/4/20XX Presentation Title5\nIEEE 802.3 Ethernet standard for wired connections IEEE 802.11 standards for Wi-Fi Other LAN standards such as Bluetooth and ZigBee"
+  },
+  "ffbc642e666d08e1-6": {
+    "image": "slides/ffbc642e666d08e1-6.webp",
+    "title": "lecture4",
+    "page": 6,
+    "label": "Page",
+    "text": "Network Protocols\n9/4/20XX Presentation Title6\nDefinition and role of protocols in managing communication \nCommon protocols include TCP/IP , UDP , and ICMP \nProtocol selection based on application needs and reliability requirements"
+  },
+  "ffbc642e666d08e1-11": {
+    "image": "slides/ffbc642e666d08e1-11.webp",
+    "title": "lecture4",
+    "page": 11,
+    "label": "Page",
+    "text": "Subnetting in LANs•Definition and purpose of subnetting to manage IP addresses •Role of subnet masks in dividing network and host portions of an address •Enhances LAN security and organization"
+  },
+  "ffbc642e666d08e1-13": {
+    "image": "slides/ffbc642e666d08e1-13.webp",
+    "title": "lecture4",
+    "page": 13,
+    "label": "Page",
+    "text": "Bus Topology\n13\nLinear structure where all devices share a single communication line Simplified design but limited fault tolerance Used in smaller or simpler networks\n"
+  },
+  "ffbc642e666d08e1-14": {
+    "image": "slides/ffbc642e666d08e1-14.webp",
+    "title": "lecture4",
+    "page": 14,
+    "label": "Page",
+    "text": "Star Topology\nCentral hub or switch connects all devices Popular due to reliability and ease of troubleshooting Scalability with minimal impact on other connections\n14"
+  },
+  "ffbc642e666d08e1-16": {
+    "image": "slides/ffbc642e666d08e1-16.webp",
+    "title": "lecture4",
+    "page": 16,
+    "label": "Page",
+    "text": "Mesh TopologyDevices interconnect, allowing multiple communication paths High redundancy and fault tolerance Commonly used in large, resilient networks\n16\n"
+  },
+  "ffbc642e666d08e1-17": {
+    "image": "slides/ffbc642e666d08e1-17.webp",
+    "title": "lecture4",
+    "page": 17,
+    "label": "Page",
+    "text": "LAN Design Considerations•Scalability to add more devices as needed •Security measures including firewalls and encrypted protocols •Efficient layout to minimize latency and maximize performance"
+  },
+  "ffbc642e666d08e1-18": {
+    "image": "slides/ffbc642e666d08e1-18.webp",
+    "title": "lecture4",
+    "page": 18,
+    "label": "Page",
+    "text": "Network Address Translation (NAT) in LANs•Translates private IP addresses to a public IP for internet access •Increases network security by hiding internal IP addresses •Allows multiple devices to share a single public IP address"
+  },
+  "ffbc642e666d08e1-19": {
+    "image": "slides/ffbc642e666d08e1-19.webp",
+    "title": "lecture4",
+    "page": 19,
+    "label": "Page",
+    "text": "LAN Security Measures•Password protection for access control •Firewalls to monitor and filter incoming and outgoing traffic •Encryption protocols to secure data during transmission"
+  },
+  "ffbc642e666d08e1-20": {
+    "image": "slides/ffbc642e666d08e1-20.webp",
+    "title": "lecture4",
+    "page": 20,
+    "label": "Page",
+    "text": "Troubleshooting LANs•Common LAN issues include connectivity problems, slow speeds, and device conflicts •Basic troubleshooting steps: checking cables, rebooting devices, and verifying IP configurations •Use of diagnostic tools like ping, tracert, and network analyzers"
+  },
+  "ee45dcd45d692656-1": {
+    "image": "slides/ee45dcd45d692656-1.webp",
+    "title": "LDMExercise",
+    "page": 1,
+    "label": "Page",
+    "text": "Open Safari is looking to create a database to store information regarding various operations within \nthe zoo. The databases main purpose will be to track which keepers are assigned to which habitats, \nbut also to provide a centralised source for the individual diet plans for each animal. Below are some \nthings that have been brought up in meetings with the business. \n \n \n \n \nUsing the details above, build a Logical Data Model for their proposed database. \nConsider what questions you may need to ask the stakeholders? \n \nWe want a table which will store all Keeper details such \nas their name, DOB. Their level should be included as this \ndetermines whether we can allow them alone in certain \nareas. They can either be Junior Keeper, Senior Keeper or \njust “Keeper”. The Keeper level sits between the Junior \nand Senior. We also want to track whether they are first \naid trained. This will help us get on top on training \nEach keeper is assigned to an area. We need \ninformation about the areas such as location, \nmanager, and fire evacuation meeting point. A senior \nkeeper will manage an area, but also be assigned to \nthat area in their own table.  \nWe want to centrally store what species we have in the zoo and their \nLevel of Conservation. This will link to the Animal table which is where \nwill store the profiles of every animal in the zoo. We want to store \ntheir names, ages, whether they were born in the wild or in the zoo, \ntheir sex, whether they have had children. Some animals in our zoo are \nthe children of other animals here, so we would want to store mother \nand father for the animals. For many their parents are not in the zoo so \nthis won’t apply. It may be easier to have a separate table tracking \nparenthood. Each animal also has an identification number that can be \nrecognised in a captive animal database. This will need to be recorded. \nEach animal will have a specific diet \nplan, we will upload this to a separate \nwebsite, but the animal table will need \na placeholder for this relationship. \nEvery keeper is assigned up to three habitats to work on. Each \nanimal is assigned to a single habitat, but habitats can hold \nmany animals (sometimes of singular species, sometimes \nmultiple). Each habitat will ultimately have several keepers \nassigned to it, to ensure 24/7 coverage. Keepers can be \nassigned habitats or moved depending on staff levels. "
+  },
+  "62e72ad3fe27ba97-2": {
+    "image": "slides/62e72ad3fe27ba97-2.webp",
+    "title": "Workbook3-Joins",
+    "page": 2,
+    "label": "Page",
+    "text": "1 Introduction\nWhen querying tables, most of the time we are interested in information from many sources.\nRelational Databases, by their very design, mean that they are built on relationships and when\nquerying them we need to make use of these relationships.\nThe main method of doing this is to use Joins. Are visually represented using Venn Diagrams\nin this workbook.\nThere are four different types of joins which we will look through.\nNote: Completion of workbooks are necessary to ensure that you are able to complete your\nLogbook tasks.\n2 Inner Join\nThe INNER JOIN function is the most common join you will use when querying tables. The join\nwill return all records that have matching records in each table. Visually we can see the INNER\nJOIN as follows:\nINNER JOINT able 1 T able 2\nIn the above illustration we can see that an INNER JOIN is all the records in Table 1 that have a\ncorresponding record in Table 2.\nType the following SQL into DataGrip carefully:\nSELECT p.\"programmeName\", s.\"schoolName\"\nFROM programme p\nINNER JOIN school s\nON s.\"schoolId\" = p.\"schoolFK\";\nThere are a few things to note in this query. But ﬁrst we will look at the JOIN part.\nThis query is fetching results from two tables: programme and school. To retrieve appropriate\nresults, i.e. the correct school for each programme, we need to join the two tables. This is done\nusing the INNER JOIN command.\nFirst, we select from one table, in this case programme, we then need toINNER JOIN the school\ntable, but we need to deﬁne on what we are joining the two tables. This is where the ON clause\ncomes in and it is here, we tell the query to join \"schoolFK\" to \"schoolId\".\nPage 1 of 5"
+  },
+  "62e72ad3fe27ba97-3": {
+    "image": "slides/62e72ad3fe27ba97-3.webp",
+    "title": "Workbook3-Joins",
+    "page": 3,
+    "label": "Page",
+    "text": "Note: In the above examples, ‘p’ and ‘s’ are used as shorthand once declared within the SQL\nquery. The single letter when referencing tables in this way is called an ‘alias’.\n2.1 Simplifying Inner Joins\nThe inner join is the most commonly used join when querying databases so it is only natural\nthat we can simplify it and thus, simplify our overall query. Type in the following query:\nSELECT p.\"programmeName\", s.\"schoolName\"\nFROM programme p, school s\nWHERE p.\"schoolFK\" = s.\"schoolId\";\nQUESTION:\n/hand_rightWhat do you notice about the results?\nWe can simplify inner joins by replacing them with a WHERE clause, linking the matching\ncolumns, which in this case are \"schoolFK\" and \"schoolId\". This is because we’re interested in\nwhere Table 1 matches with Table 2.\n2.2 Aliases\nAs previously noted, in each of the previous queries we have used aliases. The aliases used are\n‘p’ for the programme table and ‘s’ for the school table.\nWe declare the aliases after we declare the table;FROM programme p and they provide a short-\ncut to the queried table allowing us to call the table without continually typing the full table\nname.\nAliases are a good practice to start when querying multiple tables; they simplify our query\nand prevent the query from breaking. Sometimes multiple tables will have columns with the\nsame name, and this can cause issues when querying, aliases are a shortcut to prevent this from\nhappening.\nAliases are also handy if we want to use the same table twice in the same query, an example of\nthis is below:\nSELECT r1.\"studentFK\"\nFROM registration r1\nINNER JOIN registration r2 on r1.\"studentFK\" = r2.\"studentFK\"\nAND r1.\"registrationId\" != r2.\"registrationId\";\nThis query joins an instance of registration to another, different, instance of registration and\njoins based on StudentFK. However, we tell the query that we are only interested if the two\ninstances have different registrationId. In other words, this query is retrieving students who have\nregistered more than once.\n3 Left Join\nLeft Joins are a form of an outer join. Outer joins ﬁnd records in tables that match the criteria\nwe given them, as well as rows that do not match the criteria we give them. The below diagram\nis illustrates how this works in a left join.\nPage 2 of 5"
+  },
+  "62e72ad3fe27ba97-4": {
+    "image": "slides/62e72ad3fe27ba97-4.webp",
+    "title": "Workbook3-Joins",
+    "page": 4,
+    "label": "Page",
+    "text": "LEFT JOINT able 1 T able 2\nIf we have two tables, a left join selects all values in Table 1 and any values in Table 2 that meet\nthe criteria. In action, lets look at the sample tables below:\nNumber Square\n2 4\n3 9\n4 16\nTable 1\nNumber Cube\n2 8\n3 27\n5 125\nTable 2\nEach table has a matching column, Number. If we do a LEFT JOIN with the two, we select all\nvalues in T able 1, and any values from T able 2that match the criteria in T able 1(the criteria being\n‘Number’), so we get:\nNumber Square Cube\n2 4 8\n3 9 27\n4 16 NULL\nTable 3\nThe record where ‘Number’ is 4 does not have a matching value in T able 2 and therefore the\nvalue returns as NULL. Additionally, the row in T able2 where ‘Number’ is 5 is not included in\nthe result as it has no matching value in T able 1.\n/warning_signFor the following example you will need to run the ClubCreation SQL script uploaded\nalongside this Workbook on Blackboard.\nThe new table we have created registers some students to school clubs. However, not all stu-\ndents have been registered, so let us see the Left Join in action. Type in the following SQL\ncarefully.\nSELECT s.\"firstName\", s.\"lastName\", cr.\"clubFK\"\nFROM student s\nLEFT JOIN \"clubRegistration\" cr ON s.\"studentId\" = cr.\"studentFK\";\nNotice how the results are organised. At the top of the list are all the students who have a\nmatching record in the \"clubRegistration\" table, i.e. all the students who have signed up for a\nclub. Underneath are all the students who have no registration in the table so the values for\ntheir registration is NULL.\nPage 3 of 5"
+  },
+  "62e72ad3fe27ba97-5": {
+    "image": "slides/62e72ad3fe27ba97-5.webp",
+    "title": "Workbook3-Joins",
+    "page": 5,
+    "label": "Page",
+    "text": "In left join queries, the ﬁrst table, the one on the left hand side of the join, is the one declared at\nthe FROM part.\n4 Right Join\nBy it’s name you should be able to guess what a RIGHT JOIN is, especially in comparison to\nthe LEFT JOIN. The right join works like a left join, but in the opposite direction, so selecting all\nvalues from Table 2 and the values in Table 1 that match the criteria.\nQUESTION:\n/hand_rightIf we look at our previous sample tables, how would the RIGHT JOIN work on them?\n/warning_signIn practice you would normally just use LEFT JOIN and swap the table order to achieve the\nsame result.\n5 Full Outer Join\nSometimes we want to retrieve everything from two or more tables but join them wherever they\nhave matching criteria. In this case, we can use the FULL OUTER JOIN.\nThis type of join is one of the least commonly used, but it is important to be aware of. This can\nbe visually represented with the following diagram:\n<—FULL OUTER JOIN—>\nBoth tables joined over a shared column, all data is included.\nT able 1 T able 2\nIn a FULL OUTER JOIN we can join these two tables, as before, on the common column number,\nbut the join will return all values from table 1 and all values of table 2.\nNumber Square Cube\n2 4 8\n3 9 27\n4 16 NULL\n5 NULL 125\nTable 4\nAfter seeing left join and right join, you should notice that a full outer join is a combination of\nthe two. As we previously noted though, full outer joins are among the least likely to be used\nin practice, but it is useful to be aware of.\nPage 4 of 5"
+  },
+  "62e72ad3fe27ba97-6": {
+    "image": "slides/62e72ad3fe27ba97-6.webp",
+    "title": "Workbook3-Joins",
+    "page": 6,
+    "label": "Page",
+    "text": "6 Questions: Part 1\n1. Find all the students registered on Civil Engineering course, retrieve their ﬁrst, last names\nand their registration dates.\n2. Find all the programmes of the school Creative Arts.\n3. Find all students who have a previous registration (Hint, where their ‘endOfProgramme’\nis NOT null).\n4. Find how many students are signed up to Art or Music. (Hint, use count and IN)\n5. Find all the ﬁrst names and last names of all students who are members of either Hockey\nor Drama, you can do this via a complex join of three tables or by looking up the IDs of\nHockey and Drama.\n7 Questions: Part 2\nFor these questions you will need to join more than two tables or combine clauses.\n1. Find the student’s last names, the programmes they are currently registered on and the\naward they will receive at the end of the programme.\n2. Retrieve the students ﬁrst and last names, and the club names that they are signed up for.\n3. Retrieve all club name, and the number of students signed up.\n4. Retrieve all students ﬁrst names, last names, the programmes they are registered to and\nthe club that they are signed up for. (Those that have no club registration should have\nnull in the column).\nPage 5 of 5"
   }
 }
