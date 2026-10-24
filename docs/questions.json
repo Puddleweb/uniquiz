@@ -4965,11 +4965,11 @@
           "options": [
             "code VARCHAR(12)",
             "code BIGINT",
-            "code DATE",
-            "code BOOLEAN"
+            "code VARCHAR(10)",
+            "code VARCHAR(12) CHECK (length(code) = 12)"
           ],
           "answer": 0,
-          "explanation": "VARCHAR preserves letters and leading zeroes while limiting length. A numeric representation does not fit an alphanumeric identifier. Maximum length is not an exact-length requirement.",
+          "explanation": "VARCHAR(12) preserves letters and leading zeroes and accepts shorter codes as well as 12-character ones. BIGINT cannot represent alphanumeric codes, VARCHAR(10) rejects legitimate 11- or 12-character codes, and an exact-length CHECK rejects legitimate shorter codes.",
           "source": {
             "title": "MCOMD2DEG____Workbook_4___DDL",
             "page": 3,
