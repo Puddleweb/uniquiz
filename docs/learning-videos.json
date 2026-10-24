@@ -1236,6 +1236,118 @@
       "end": 4395,
       "title": "PostgreSQL Tutorial Full Course 2022",
       "channel": "Derek Banas"
+    },
+    "database-w4-rel-001": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 159,
+      "end": 577,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-002": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 159,
+      "end": 577,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-003": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 577,
+      "end": 765,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-004": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-005": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-006": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-007": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1090,
+      "end": 1364,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w4-rel-008": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-001": {
+      "videoId": "qw--VYLpxG4",
+      "start": 2955,
+      "end": 3260,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-002": {
+      "videoId": "qw--VYLpxG4",
+      "start": 13840,
+      "end": 14060,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-003": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10285,
+      "end": 10476,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-004": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10285,
+      "end": 10476,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-005": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11887,
+      "end": 11988,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-006": {
+      "videoId": "qw--VYLpxG4",
+      "start": 11988,
+      "end": 12180,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-007": {
+      "videoId": "qw--VYLpxG4",
+      "start": 2799,
+      "end": 2937,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
+    },
+    "database-w5-008": {
+      "videoId": "qw--VYLpxG4",
+      "start": 10355,
+      "end": 10392,
+      "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
+      "channel": "freeCodeCamp.org"
     }
   }
 }

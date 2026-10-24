@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13",
+  "updated": "2026-10-24",
   "modules": [
     {
       "id": "pps",
@@ -141,7 +141,8 @@
         "Save your lab configurations, results and explanations as you work.",
         "The handbook leaves the assessment-specific AI-use levels blank. Confirm these with the module team before using AI for assessed work.",
         "Teaching includes lectures and practical labs. Your personal teaching timetable was not supplied.",
-        "The supplied Example TCA questions show fill-in-the-blank, true/false and select-two formats. These are examples, not confirmation of the complete exam structure, question count, duration or marking scheme. Practise recall and evaluating several statements, as well as single-answer MCQs."
+        "The supplied Example TCA questions show fill-in-the-blank, true/false and select-two formats. These are examples, not confirmation of the complete exam structure, question count, duration or marking scheme. Practise recall and evaluating several statements, as well as single-answer MCQs.",
+        "The supplied Week 5 mock includes single-choice, true/false, fill-in and matching questions and mentions partial/negative credit. Treat it as practice format evidence, not confirmation of the final TCA format, duration or deadline."
       ],
       "notesSource": "Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit. Example TCA questions, embedded screenshots for questions 1-3, 7, 12 and 14 (document page numbers unverified).",
       "reassessment": "Week commencing 12 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",

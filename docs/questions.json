@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-17",
+  "updated": "2026-10-24",
   "modules": [
     {
       "id": "networking",
@@ -2595,6 +2595,234 @@
             "slideId": "7c0b118782abbede-25",
             "label": "Page"
           }
+        },
+        {
+          "id": "pps-w5-001",
+          "week": 5,
+          "prompt": "A student installs RStudio but has no local R installation. Which explanation best distinguishes the roles of the two tools?",
+          "options": [
+            "RStudio is the language runtime and R only draws plots.",
+            "R executes the language; RStudio provides an environment for editing and working with R.",
+            "R and RStudio are different names for the same installed program.",
+            "R is only needed when the analysis uses a spreadsheet file."
+          ],
+          "answer": 1,
+          "explanation": "R is the language and computing environment; RStudio is an IDE used to work with it. A local RStudio setup requires an appropriate R installation.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 13,
+            "slideId": "20963344fee5738e-13",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-002",
+          "week": 5,
+          "prompt": "After running x <- c(2, 4, 6) and then x + 1 in R, a student runs sum(x). What is returned?",
+          "options": [
+            "15",
+            "13",
+            "12",
+            "3"
+          ],
+          "answer": 2,
+          "explanation": "x + 1 produces a new result but does not assign it back to x. The stored vector is still 2, 4, 6, whose sum is 12. Use x <- x + 1 to change the binding.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 25,
+            "slideId": "20963344fee5738e-25",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-003",
+          "week": 5,
+          "prompt": "Which R expression constructs a numeric vector containing the three values 4, 9 and 12?",
+          "options": [
+            "c(4, 9, 12)",
+            "sum(4, 9, 12)",
+            "c(\"4, 9, 12\")",
+            "4 + 9 + 12"
+          ],
+          "answer": 0,
+          "explanation": "c combines the three numeric values into a vector. sum and addition return a single total; the quoted comma-separated text is one character value.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 24,
+            "slideId": "20963344fee5738e-24",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-004",
+          "week": 5,
+          "prompt": "Why is a data frame more suitable than a single atomic vector for records containing a name, an age and a score?",
+          "options": [
+            "Each row of a data frame must have a different number of fields.",
+            "Atomic vectors can store numbers only, whereas data frames store text only.",
+            "Every data-frame column automatically has the same type.",
+            "A data frame allows different types across its equal-length columns."
+          ],
+          "answer": 3,
+          "explanation": "An atomic vector has one type. A data frame can combine, for example, a character name column and numeric age and score columns, with one aligned value per row.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 23,
+            "slideId": "20963344fee5738e-23",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-005",
+          "week": 5,
+          "prompt": "scores <- c(3, 5, 7). Which code stores a doubled copy in doubled while preserving scores?",
+          "options": [
+            "scores <- scores * 2",
+            "doubled <- scores * 2",
+            "doubled <- sum(scores) * 2",
+            "doubled <- scores + 2"
+          ],
+          "answer": 1,
+          "explanation": "Vector multiplication doubles each element. Assigning its result to a different name preserves scores. The other expressions overwrite scores, aggregate to a total or add rather than multiply.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 25,
+            "slideId": "20963344fee5738e-25",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-006",
+          "week": 5,
+          "prompt": "A data frame records six sensor observations using columns site, temperature and humidity. What should one row represent?",
+          "options": [
+            "All temperatures from the six observations.",
+            "One variable name and its type.",
+            "One observation with its site, temperature and humidity.",
+            "One separate data frame for each variable."
+          ],
+          "answer": 2,
+          "explanation": "Rows represent observations and columns represent variables. Keeping measurements from the same observation together supports meaningful analysis.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 28,
+            "slideId": "20963344fee5738e-28",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-007",
+          "week": 5,
+          "prompt": "An imported score column looks numeric on screen, but arithmetic fails. Which initial inspection most directly checks its stored type?",
+          "options": [
+            "str(results)",
+            "head(results)",
+            "plot(results$score)",
+            "sum(results$score)"
+          ],
+          "answer": 0,
+          "explanation": "str reports the structure and types of columns, helping detect a character column that contains numeric-looking text. head shows sample records, but appearance alone is not a reliable type check.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 29,
+            "slideId": "20963344fee5738e-29",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-008",
+          "week": 5,
+          "prompt": "A data frame readings has columns site, temperature and humidity in that order. Which expression selects the temperature value in its second row?",
+          "options": [
+            "readings[1, 2]",
+            "readings[2, 1]",
+            "readings[2, ]",
+            "readings[2, 2]"
+          ],
+          "answer": 3,
+          "explanation": "Data-frame indexing uses [row, column]. Row 2 and column 2 select that temperature; omitting the column index selects the entire row.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 33,
+            "slideId": "20963344fee5738e-33",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-009",
+          "week": 5,
+          "prompt": "Which expression selects all rows but only the site and humidity columns from a data frame readings?",
+          "options": [
+            "readings[c(\"site\", \"humidity\"), ]",
+            "readings[, c(\"site\", \"humidity\")]",
+            "readings$site + readings$humidity",
+            "readings[1, c(\"site\", \"humidity\")]"
+          ],
+          "answer": 1,
+          "explanation": "An empty row index retains all rows, and the character vector specifies the chosen columns. Putting column names in the row position selects the wrong dimension.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 34,
+            "slideId": "20963344fee5738e-34",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-010",
+          "week": 5,
+          "prompt": "summary(measurements) shows a numeric column with mean 18 and median 12. Which interpretation stays within that output?",
+          "options": [
+            "Every observation must be between 12 and 18.",
+            "Exactly half of the observations must equal 12.",
+            "The mean exceeds the median; this alone does not establish the reason or prove an error.",
+            "The output proves that the data were collected incorrectly."
+          ],
+          "answer": 2,
+          "explanation": "The summary reports descriptive statistics, not a diagnosis of cause or data quality. Inspect the observations and context before explaining the difference.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 32,
+            "slideId": "20963344fee5738e-32",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-011",
+          "week": 5,
+          "prompt": "A study records age and reaction_time for each participant. Which R plot call directly represents paired values as a scatterplot?",
+          "options": [
+            "plot(age, reaction_time)",
+            "barplot(age, names.arg = reaction_time)",
+            "plot(sum(age), sum(reaction_time))",
+            "barplot(reaction_time, names.arg = age)"
+          ],
+          "answer": 0,
+          "explanation": "plot(x, y) represents paired quantitative observations. Bar charts and aggregate totals serve different purposes; preserve the matching order of values from each participant.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 36,
+            "slideId": "20963344fee5738e-36",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "pps-w5-012",
+          "week": 5,
+          "prompt": "A student runs head(results) and sees six complete records. Which conclusion is justified?",
+          "options": [
+            "Every record in results is complete.",
+            "results contains exactly six records.",
+            "All columns in results have numeric types.",
+            "The displayed first records are complete; the remaining records still need checking."
+          ],
+          "answer": 3,
+          "explanation": "head displays only the beginning of the data by default. It is useful for inspecting layout and sample values, but does not establish the completeness or quality of every record.",
+          "source": {
+            "title": "Week 5 - Introduction to R(1)",
+            "page": 29,
+            "slideId": "20963344fee5738e-29",
+            "label": "Page"
+          }
         }
       ]
     },
@@ -4461,6 +4689,310 @@
             "title": "Workbook3-Joins",
             "page": 6,
             "slideId": "62e72ad3fe27ba97-6",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w4-rel-001",
+          "week": 4,
+          "prompt": "A relation contains tuples (asset_id, label, cost). Two displayed versions contain the same tuples and attributes but list the rows in different orders. In the relational model, what has changed?",
+          "options": [
+            "The relation has changed because tuple position identifies a record.",
+            "The relation is unchanged; only its presentation order differs.",
+            "The primary key must change to preserve the original row positions.",
+            "The attribute domains change because rows have been rearranged."
+          ],
+          "answer": 1,
+          "explanation": "A relation is a set of tuples, so row position does not carry identity. A particular display order is separate from the underlying relation.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 7,
+            "slideId": "f28a8b711c354640-7",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-002",
+          "week": 4,
+          "prompt": "A membership level must be one of Bronze, Silver or Gold. A designer chooses a text column but adds no constraint. Which review best captures the remaining domain problem?",
+          "options": [
+            "Text already restricts the value to the three named levels.",
+            "A foreign key to member_id would enforce these three spellings.",
+            "Text supports the representation, but the allowed values still need enforcing.",
+            "Making the text column a primary key restricts its values to the levels."
+          ],
+          "answer": 2,
+          "explanation": "A domain describes permitted values, not just their broad storage type. A CHECK constraint or an appropriate referenced lookup table can restrict the values.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 14,
+            "slideId": "f28a8b711c354640-14",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-003",
+          "week": 4,
+          "prompt": "Assignment(employee_id, project_id, hours) records at most one row for each employee-project pair. Each employee can join several projects, and each project can have several employees. Which key matches these rules?",
+          "options": [
+            "employee_id alone",
+            "project_id alone",
+            "hours alone",
+            "The pair (employee_id, project_id)"
+          ],
+          "answer": 3,
+          "explanation": "Neither component alone is unique under the stated rules. The pair identifies the assignment to which hours belong.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 24,
+            "slideId": "f28a8b711c354640-24",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-004",
+          "week": 4,
+          "prompt": "A table repeats a supplier telephone number on every product supplied. A phone change is applied to only some of those rows. Which anomaly is directly illustrated?",
+          "options": [
+            "Update anomaly: one supplier now has conflicting recorded phone numbers.",
+            "Insertion anomaly: the supplier cannot be stored until a product exists.",
+            "Deletion anomaly: removing a product removed the supplier entirely.",
+            "Key anomaly: every product necessarily has the same identifier."
+          ],
+          "answer": 0,
+          "explanation": "The repeated fact must be updated consistently. Partial updating creates disagreement about the same supplier; insertion and deletion anomalies describe different operations.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 26,
+            "slideId": "f28a8b711c354640-26",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-005",
+          "week": 4,
+          "prompt": "A combined SupplierProduct table requires product_id on every row. A new supplier has not yet offered any products, so its details cannot be recorded without inventing a product. What is the design problem?",
+          "options": [
+            "A deletion anomaly caused by removing an existing product.",
+            "An insertion anomaly caused by tying supplier facts to product rows.",
+            "An update anomaly caused by inconsistent changes to a phone number.",
+            "A sort-order problem caused by storing supplier rows after products."
+          ],
+          "answer": 1,
+          "explanation": "Supplier existence is being made dependent on a product row. Separating supplier facts permits a supplier to exist before it supplies a product.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 26,
+            "slideId": "f28a8b711c354640-26",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-006",
+          "week": 4,
+          "prompt": "Deleting the final product row for a supplier also removes the only stored copy of its contact details. Which redesign addresses that information loss?",
+          "options": [
+            "Keep contact details in the product table but sort by supplier.",
+            "Give every product a new surrogate key while keeping contact details repeated.",
+            "Store supplier details separately and reference the supplier from product-related rows.",
+            "Make the contact details mandatory in every product row."
+          ],
+          "answer": 2,
+          "explanation": "Separate storage gives supplier details a lifecycle independent of individual product rows. Sorting, new product keys and mandatory repetition do not remove this deletion anomaly.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 26,
+            "slideId": "f28a8b711c354640-26",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-007",
+          "week": 4,
+          "prompt": "Programme(programme_id, title) and Student(student_id, programme_id) are related using Student.programme_id as a foreign key. Many students may join one programme. Which statement follows?",
+          "options": [
+            "Each programme_id in Student must be unique.",
+            "Student.programme_id identifies the student without student_id.",
+            "Programme.title must be the foreign key in Student.",
+            "Several Student rows may reference the same Programme row."
+          ],
+          "answer": 3,
+          "explanation": "A foreign key links a referencing row to the referenced key. It does not impose uniqueness on the referencing column unless an additional uniqueness rule requires that.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 18,
+            "slideId": "f28a8b711c354640-18",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w4-rel-008",
+          "week": 4,
+          "prompt": "A team normalises a table to reduce duplicated supplier facts. Which evaluation is most defensible?",
+          "options": [
+            "It reduces certain anomalies, while keys, constraints and correct updates are still needed.",
+            "It proves every recorded supplier fact is true in the real world.",
+            "It removes the need to define relationships between tables.",
+            "It ensures every query will execute faster than before."
+          ],
+          "answer": 0,
+          "explanation": "Normalisation helps avoid redundant storage and associated anomalies. It cannot verify real-world truth, replace integrity constraints or guarantee query performance.",
+          "source": {
+            "title": "Week_4_The_Relational_Model",
+            "page": 20,
+            "slideId": "f28a8b711c354640-20",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-001",
+          "week": 5,
+          "prompt": "A PostgreSQL table must store an equipment label of at most 30 characters, and every row must supply a non-NULL label. Which column definition expresses both requirements?",
+          "options": [
+            "label VARCHAR(30) DEFAULT NULL",
+            "label VARCHAR(30) NOT NULL",
+            "label VARCHAR(30) UNIQUE",
+            "label INTEGER NOT NULL"
+          ],
+          "answer": 1,
+          "explanation": "VARCHAR(30) limits character length and NOT NULL rejects SQL NULL. UNIQUE addresses duplication rather than required presence; these rules do not by themselves reject an empty string.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 3,
+            "slideId": "a15ab12c0456e52a-3",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-002",
+          "week": 5,
+          "prompt": "In PostgreSQL, asset_id BIGSERIAL PRIMARY KEY combines generated values with a key constraint. Which description correctly separates their roles?",
+          "options": [
+            "BIGSERIAL alone rejects every duplicate value entered explicitly.",
+            "PRIMARY KEY generates the next sequence value when the column is omitted.",
+            "BIGSERIAL supplies sequence-backed defaults; PRIMARY KEY enforces unique, non-NULL identifiers.",
+            "BIGSERIAL guarantees an uninterrupted sequence with no gaps after failed inserts."
+          ],
+          "answer": 2,
+          "explanation": "The generated default and the primary-key constraint serve different purposes. Sequence allocation can leave gaps, and generation alone does not enforce uniqueness of explicitly supplied values.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 4,
+            "slideId": "a15ab12c0456e52a-4",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-003",
+          "week": 5,
+          "prompt": "A required booking status must be exactly 'open' or 'closed'. Which PostgreSQL column definition enforces both the permitted values and presence?",
+          "options": [
+            "status TEXT NOT NULL CHECK (status IN ('open', 'closed'))",
+            "status TEXT CHECK (status IN ('open', 'closed'))",
+            "status TEXT NOT NULL DEFAULT 'open'",
+            "status TEXT UNIQUE DEFAULT 'open'"
+          ],
+          "answer": 0,
+          "explanation": "The CHECK restricts non-NULL values, and NOT NULL enforces presence. A default supplies a value when requested or omitted; it does not restrict all values that can be explicitly inserted.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 6,
+            "slideId": "a15ab12c0456e52a-6",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-004",
+          "week": 5,
+          "prompt": "A column is defined as email TEXT NOT NULL CHECK (email LIKE '%@%'). Which conclusion is justified?",
+          "options": [
+            "Every accepted value belongs to a working mailbox.",
+            "Every accepted value has a valid domain with a full stop.",
+            "Every accepted value contains exactly one @ character.",
+            "Every accepted value is non-NULL and contains at least one @ character."
+          ],
+          "answer": 3,
+          "explanation": "The predicate tests only for an @ somewhere in a non-NULL value. It does not prove address syntax, mailbox existence or uniqueness of the @ character.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 5,
+            "slideId": "a15ab12c0456e52a-5",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-005",
+          "week": 5,
+          "prompt": "Room(room_id BIGINT PRIMARY KEY) already exists. A Booking row must refer to an existing Room, and several bookings may refer to the same room. Which definition fits?",
+          "options": [
+            "room_id BIGINT UNIQUE",
+            "room_id BIGINT NOT NULL REFERENCES Room(room_id)",
+            "room_id BIGSERIAL PRIMARY KEY",
+            "room_id BIGINT NOT NULL UNIQUE"
+          ],
+          "answer": 1,
+          "explanation": "The foreign key checks the referenced room and NOT NULL makes the reference mandatory. UNIQUE on Booking.room_id would incorrectly restrict a room to at most one booking.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 6,
+            "slideId": "a15ab12c0456e52a-6",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-006",
+          "week": 5,
+          "prompt": "Two new PostgreSQL tables are to be created with inline foreign keys: Booking references Room, and Room has no reference to Booking. Neither exists yet. Which creation sequence works without deferring the addition of the foreign key?",
+          "options": [
+            "Create Booking first because it contains the reference.",
+            "Create either table first; a reference to a missing table is stored for later.",
+            "Create Room first, then create Booking with its reference.",
+            "Create Booking with a primary key instead of a foreign key, then create Room."
+          ],
+          "answer": 2,
+          "explanation": "The referenced table must exist when the inline foreign-key constraint is created. Creating Room first satisfies that dependency; a primary key is not a substitute for a reference.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 5,
+            "slideId": "a15ab12c0456e52a-5",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-007",
+          "week": 5,
+          "prompt": "An inventory code uses letters and digits, may start with zero, and has a maximum length of 12 characters. Which definition best preserves that representation?",
+          "options": [
+            "code VARCHAR(12)",
+            "code BIGINT",
+            "code DATE",
+            "code BOOLEAN"
+          ],
+          "answer": 0,
+          "explanation": "VARCHAR preserves letters and leading zeroes while limiting length. A numeric representation does not fit an alphanumeric identifier. Maximum length is not an exact-length requirement.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 3,
+            "slideId": "a15ab12c0456e52a-3",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-008",
+          "week": 5,
+          "prompt": "Existing rows include status='pending'. A team adds CHECK (status IN ('open','closed')) as a normal validated constraint. What should it expect?",
+          "options": [
+            "The new constraint will silently rename pending to open.",
+            "The constraint will affect new rows only and ignore existing rows.",
+            "The constraint will delete existing rows that violate it.",
+            "Adding the constraint will fail until the conflicting data or rule is resolved."
+          ],
+          "answer": 3,
+          "explanation": "A normal validated CHECK constraint checks existing rows too. It does not choose a corrective value or delete data. Review the business rule and existing values before adding it.",
+          "source": {
+            "title": "MCOMD2DEG____Workbook_4___DDL",
+            "page": 6,
+            "slideId": "a15ab12c0456e52a-6",
             "label": "Page"
           }
         }

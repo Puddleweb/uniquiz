@@ -1,4 +1,4 @@
-import {workshopActivities,normaliseDraft} from './writing-activities.js?v=20261017-week4';
+import {workshopActivities,normaliseDraft} from './writing-activities.js?v=20261024-week5';
 const requestedModule=new URLSearchParams(location.search).get('module');
 const moduleId=['networking','database'].includes(requestedModule)?requestedModule:'pps';
 const activities=workshopActivities(moduleId);
@@ -23,7 +23,7 @@ function show(id,focus=false){
 }
 function review(focus){
  const d=draft(),panel=host.querySelector('#review-panel');
- panel.innerHTML=`<section class="feedback"><h3 id="review-title" tabindex="-1">Check your reasoning</h3><p>Compare your attempt honestly. These checks are your own assessment, not automatic marking.</p>${current.checklist.map((text,i)=>`<label class="check"><input type="checkbox" data-check="${i}" ${d.checks[i]?'checked':''}><span>${esc(text)}</span></label>`).join('')}<p id="result" role="status"></p><h3>One possible approach</h3><p>${esc(current.example)}</p><p>${esc(current.reflection)}</p><p class="hint">Edit your response to try again. Editing hides the guidance and resets this checklist.</p></section>`;
+ panel.innerHTML=`<section class="feedback"><h3 id="review-title" tabindex="-1">Check your reasoning</h3><p>Compare your attempt honestly. These checks are your own assessment, not automatic marking.</p>${current.checklist.map((text,i)=>`<label class="check"><input type="checkbox" data-check="${i}" ${d.checks[i]?'checked':''}><span>${esc(text)}</span></label>`).join('')}<p id="result" role="status"></p><h3>One possible approach</h3><p class="scenario">${esc(current.example)}</p><p>${esc(current.reflection)}</p><p class="hint">Edit your response to try again. Editing hides the guidance and resets this checklist.</p></section>`;
  function result(){const n=draft().checks.filter(Boolean).length;panel.querySelector('#result').textContent=`${n} of ${current.checklist.length} criteria self-checked. ${n===current.checklist.length?'Consider whether your reasoning is supported throughout.':'Use the unchecked points to guide your next attempt.'}`}
  panel.querySelectorAll('input').forEach(input=>input.onchange=()=>{draft().checks[Number(input.dataset.check)]=input.checked;save();result()});result();if(focus)panel.querySelector('#review-title').focus();
 }

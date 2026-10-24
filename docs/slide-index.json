@@ -1132,5 +1132,145 @@
     "page": 6,
     "label": "Page",
     "text": "6 Questions: Part 1\n1. Find all the students registered on Civil Engineering course, retrieve their ﬁrst, last names\nand their registration dates.\n2. Find all the programmes of the school Creative Arts.\n3. Find all students who have a previous registration (Hint, where their ‘endOfProgramme’\nis NOT null).\n4. Find how many students are signed up to Art or Music. (Hint, use count and IN)\n5. Find all the ﬁrst names and last names of all students who are members of either Hockey\nor Drama, you can do this via a complex join of three tables or by looking up the IDs of\nHockey and Drama.\n7 Questions: Part 2\nFor these questions you will need to join more than two tables or combine clauses.\n1. Find the student’s last names, the programmes they are currently registered on and the\naward they will receive at the end of the programme.\n2. Retrieve the students ﬁrst and last names, and the club names that they are signed up for.\n3. Retrieve all club name, and the number of students signed up.\n4. Retrieve all students ﬁrst names, last names, the programmes they are registered to and\nthe club that they are signed up for. (Those that have no club registration should have\nnull in the column).\nPage 5 of 5"
+  },
+  "20963344fee5738e-13": {
+    "image": "slides/20963344fee5738e-13.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 13,
+    "label": "Page",
+    "text": "R Studio – Integrated Development Environment\n• R itself is fine, but not very easy to use \n• R Studio is an Integrated Development \nEnvironment (IDE) of R \n• This means that RStudio comes with built-in \nfeatures that make using R a little easier\n• So, we will be using R Studio today\n"
+  },
+  "20963344fee5738e-23": {
+    "image": "slides/20963344fee5738e-23.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 23,
+    "label": "Page",
+    "text": "What is a Vector?\nA vector in R is like a list of values, but all the values must be of the same \ntype (e.g., numbers, characters, or TRUE/FALSE values)\nIf you’ve worked with arrays or lists in other languages you can think of \nvectors as something similar—but in R, they can only hold one type of data \nat a time\nTypes of Vectors:\n• Numeric: These hold numbers (e.g., 1, 2, 3.5)\n• Character: These hold text (e.g., \"apple\", \"banana\")\n• Logical: These hold TRUE or FALSE values"
+  },
+  "20963344fee5738e-24": {
+    "image": "slides/20963344fee5738e-24.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 24,
+    "label": "Page",
+    "text": "Creating Vectors\nTo create a vector, we use the c() function (short for combine or concatenate).\nThis creates a vector with the values 5, 10, 15, 20, 25\n"
+  },
+  "20963344fee5738e-25": {
+    "image": "slides/20963344fee5738e-25.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 25,
+    "label": "Page",
+    "text": "Vector Manipulation\nOnce you have a vector, you can perform different operations on it, like \nadding numbers together or multiplying every value by a number\nThis would change the values to 2, 3, 4, 5\nSome Other Operations:\n• sum(my_vector) adds up all the values\n• my_vector * 2 multiplies each value by 2\n• plot(my_vector) gives you a quick graph of your data\n"
+  },
+  "20963344fee5738e-28": {
+    "image": "slides/20963344fee5738e-28.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 28,
+    "label": "Page",
+    "text": "A data frame is a table-like structure in R, where each column is a vector \nof the same length. Each column can have different data types, making \ndata frames perfect for handling datasets\nEach row represents an observation (e.g., a person), and each column \nrepresents a variable (e.g., age or score).\nWhat is a Dataframe?\n"
+  },
+  "20963344fee5738e-29": {
+    "image": "slides/20963344fee5738e-29.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 29,
+    "label": "Page",
+    "text": "Before analysing data, it’s essential to explore it. R offers several built-in \nfunctions to help you understand the data structure, types, and basic \nstatistics\nYou could use:\n• head() to view the first few rows\n• str() to see the structure of the data frame\n• summary() to get a summary of each column\nExploring Data Frames"
+  },
+  "20963344fee5738e-32": {
+    "image": "slides/20963344fee5738e-32.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 32,
+    "label": "Page",
+    "text": "Summary() Function\n"
+  },
+  "20963344fee5738e-33": {
+    "image": "slides/20963344fee5738e-33.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 33,
+    "label": "Page",
+    "text": "Accessing Data in Dataframes\nAccessing Data can be useful to select specific elements, columns and \nrows\nThis is often done through two operators:\n• $ operator to select columns by name\n• [ , ] notation to access specific rows and columns"
+  },
+  "20963344fee5738e-34": {
+    "image": "slides/20963344fee5738e-34.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 34,
+    "label": "Page",
+    "text": "Accessing Data in Dataframes - Example\n"
+  },
+  "20963344fee5738e-36": {
+    "image": "slides/20963344fee5738e-36.webp",
+    "title": "Week 5 - Introduction to R(1)",
+    "page": 36,
+    "label": "Page",
+    "text": "Activity 2  – Plotting Data\nPlot #1 – Bar plot to see Scores by Name\n• students$Score provides the scores for each student, and names.arg=students$Name labels \neach bar with the student’s name\n• main, xlab, and ylab add the title and labels\nPlot #2 – Scatter plot of Age vs Score Patterns\n• students$Age is plotted on the x-axis and students$Score on the y-axis\n• pch=16 sets the shape of the points, and col gives them a colour\n"
+  },
+  "f28a8b711c354640-7": {
+    "image": "slides/f28a8b711c354640-7.webp",
+    "title": "Week_4_The_Relational_Model",
+    "page": 7,
+    "label": "Slide",
+    "text": "The Model\nIn a relational model, a database is represented as a collection of relations.\nA \nrelation\n is defined as a set of \ntuples\n that each represents a similar real-world entity.\nA \ntuple\n is an ordered list of attribute values that each describe an aspect of the entity, such a first name, last name, \netc\n…"
+  },
+  "f28a8b711c354640-14": {
+    "image": "slides/f28a8b711c354640-14.webp",
+    "title": "Week_4_The_Relational_Model",
+    "page": 14,
+    "label": "Slide",
+    "text": "Domain\nWe define the \ndomain\n as the range of acceptable values for an attribute.\nFor example, the date domain will only allow a day, month and year. We cannot put a string there.\nDomains can be used multiple times in a relation. We can have multiple integer domains, string domains, \netc\n…\nNote: \nThis informs the data type and attribute constraints!"
+  },
+  "f28a8b711c354640-18": {
+    "image": "slides/f28a8b711c354640-18.webp",
+    "title": "Week_4_The_Relational_Model",
+    "page": 18,
+    "label": "Slide",
+    "text": "Foreign Key\nWe also need to identify any foreign keys in our definition.\nThe easiest way to do this is to use an asterisk by the attribute name.\nOur definition for \nprogramme\n then becomes:\nprogramme\n(\nprogrammeId\n, \nprogrammeName\n, \nprogrammeCode\n, \nschoolFK\n*, \nlengthOfProgramme\n, \nprogrammeAward\n)\nWhen creating and managing a database, this whole thing may seem fairly pointless, however this method of definition becomes incredibly useful when we look to normalize our database."
+  },
+  "f28a8b711c354640-20": {
+    "image": "slides/f28a8b711c354640-20.webp",
+    "title": "Week_4_The_Relational_Model",
+    "page": 20,
+    "label": "Slide",
+    "text": "What is \nNormalisation\n?\nNormalisation\n of a relational model is the \nprocess\n of \nanalysing\n our relations \nto ensure that they \ndo not contain any redundant data\n.\nThe goal of \nnormalisation\n is to ensure that \nno anomalies can occur \nduring data insertion, deletion or update."
+  },
+  "f28a8b711c354640-24": {
+    "image": "slides/f28a8b711c354640-24.webp",
+    "title": "Week_4_The_Relational_Model",
+    "page": 24,
+    "label": "Slide",
+    "text": "Types of Anomalies\nLook at the following \nunnormalised\n relational data model:\nSUPPLIES\n(\nSUPRNR\n, \nPRODNR\n, PURCHASE_PRICE, DELIV_PERIOD, SUPNAME, SUPADDRESS, PRODNAME, PRODTYPE)\nPO_LINE\n(\nPONR\n \nPRODNR\n, QUANTITY, PODATE, SUPNR)\nInstantly we can see the primary keys are composite; they are made up of multiple columns.\nIf we look at the relation with some data (tuples), it could look like the following:"
+  },
+  "f28a8b711c354640-26": {
+    "image": "slides/f28a8b711c354640-26.webp",
+    "title": "Week_4_The_Relational_Model",
+    "page": 26,
+    "label": "Slide",
+    "text": "Types of Anomalies\nUltimately, databases designed that give the possibility of data duplication will result in data anomalies.\nThe three classifications are:\nInsertion Anomalies\nDeletion Anomalies\nUpdate Anomalies."
+  },
+  "a15ab12c0456e52a-3": {
+    "image": "slides/a15ab12c0456e52a-3.webp",
+    "title": "MCOMD2DEG____Workbook_4___DDL",
+    "page": 3,
+    "label": "Page",
+    "text": "Figure 1: Using CREATE SCHEMA in DBeaver.\nWhen we look into the schema ‘library’, you will see there is nothing there so we need to make\nour tables.\nThe ﬁrst table we are going to create is ‘student’.\nBut wait! We already have a table called student in our database, under the public schema. This\nis why it was important to create our new schema ‘library’. Using library as a preﬁx we can\nspecify which student table we are referring to.\n3.1 CREATE Syntax\nThe CREATE syntax uses several aspects that that enable an SQL script to create new data tables,\nincluding:\n• table_name: name of the table\n• column#: column name\n• datatype: the type of data we will allow in the column\n• length: maximum length we allow\n• nullability: if we do not allow nulls, we need to specify so\nThe following is an example of what the CREATE syntax looks like in practice:\nCREATE TABLE table_name (\ncolumn1 datatype(length) nullability,\ncolumn2 datatype(length) nullability,\n...\n);\nIn addition to the above we can add other details, such as default values, unique, check condi-\ntions and constraints.\nWith our syntax known, we can create our ﬁrst table, ‘student’.\nAs we identiﬁed before, we know that a student table already exists, so we need to preﬁx this\ntable with the assigned schema’s name, ‘library’. We, then get our ﬁrst line:\nCREATE TABLE library.student (\nPage 2 of 7"
+  },
+  "a15ab12c0456e52a-4": {
+    "image": "slides/a15ab12c0456e52a-4.webp",
+    "title": "MCOMD2DEG____Workbook_4___DDL",
+    "page": 4,
+    "label": "Page",
+    "text": "3.2 CREATE Syntax: T able Columns\nNext we want to deﬁne our ﬁrst column, and as per the diagram (SampleLibraryDB.png), it is\nthe Primary Key ’StudentId’.\nFigure 2: The ’Student’ table from SampleLibraryDB.png.\nSo, our next line will look something like:\nStudentId bigserial primary key,\nAs we are deﬁning this column as the primary key we don’t need to deﬁne it as NOT NULL.\nRemember: The deﬁnition of a primary key means it can never be null, so the nullability is\nalready deﬁned.\nThe ‘bigserial’ data type is incredibly useful for when we create tables, it creates a sequence\nwhen the table is created which automatically assigns the next integer value to the inserted\ndata, therefore ensuring consistent uniqueness across the primary key. The sequence only ever\ngoes forward, so no used number will ever be used again.\nNow let us look at our next two columns which are similar to each other.\n• FirstName\n• LastName\nFollowing our syntax we can deﬁne the next two rows:\nFirstName varchar NOT NULL,\nLastName varchar NOT NULL,\nThese are two simple columns, both alike each other. We don’t need to add lengths or defaults,\nbut we will require all records to have both values.\n3.3 CREATE Syntax: Constraints\nOur last attribute is a bit different as we have an additional detail on our model.\nWe have a data constraint which we should look to implement, we want to create a column for\n‘Email’ with varchar and not null. This is the same as our ﬁrst name and last name ones, but we\nalso want to add the constraint “must contain ‘@’”.\nLuckily for us, DDL provides us the CHECK command and we can use this to provide a data\ncheck to anything being entered into this column and it looks like:\nPage 3 of 7"
+  },
+  "a15ab12c0456e52a-5": {
+    "image": "slides/a15ab12c0456e52a-5.webp",
+    "title": "MCOMD2DEG____Workbook_4___DDL",
+    "page": 5,
+    "label": "Page",
+    "text": "Email varchar NOT NULL CHECK (Email LIKE ‘%@%’)\n3.4 CREATE Syntax: Full CREATE Statement\nNow, we have our last column, so we can bring them all together:\nCREATE TABLE Student (\nStudentId bigserial primary key,\nFirstName varchar NOT NULL,\nLastName varchar NOT NULL,\nEmail varchar NOT NULL CHECK (Email LIKE '%@%')\n);\nQUESTION:\n/hand_rightHow would you create the table ‘Author’ from the Logical Data Model, using the CREATE\nsyntax?\n/warning_signOnce you have an answer, run your SQL statement to create the ‘Author’ table in your data-\nbase.\nWhen creating tables from a logical data model, it is easier to start with the tables that don’t\nhave foreign keys. If we try to create a table with a foreign key to a table we have yet to create,\nthe creation script will fail.\nWhen designing your LDM, if you place the tables that do not have FKs on the outside edges\n(so that those that do have FKs are in the centre), you can use the ‘work from the outside-in’\nmethod, to create all of your tables.\n3.5 CREATE Syntax: More on Constraints\nWe now have our ‘student’ and ‘author’ tables, so let’s create the ‘genre’ table. Like our ‘student’\ntable, there is a constraint, except this time it states that:\n‘the value of Target should be one of ‘Young Child’, ‘Child’, ‘Teen’ or ‘Adult’ ”\nSo how do we create this? We will go attribute by attribute.\nFirst we deﬁne our table:\nCREATE TABLE library.genre (\ngenreId bigserial primary key,\nOur ﬁrst attribute is similar to our studentId; we deﬁne it as big serial and as the primary key.\nWe can now deﬁne our next attribute, following the same conventions as explained for ‘First-\nName’ and ‘LastName’ in the student table.:\nname varchar not null,\nAgain, there is nothing new about this attribute. Following on, our next attribute is slightly\ndifferent in that we are using a different data type; text.\nText is a deﬁned data type in PostgreSQL and is useful for attributes we know will hold a fair\nbit of words, for example more than a sentence. So we get:\ndescription text not null,\nPage 4 of 7"
+  },
+  "a15ab12c0456e52a-6": {
+    "image": "slides/a15ab12c0456e52a-6.webp",
+    "title": "MCOMD2DEG____Workbook_4___DDL",
+    "page": 6,
+    "label": "Page",
+    "text": "Now we get to our last attribute and we can use a similar deﬁnition to our CHECK clause in\nthe student table. We need to CHECK that ‘Target’ is one of four values. For this, we use theIN\nclause, as follows:\ntarget varchar not null check (target in ('Young Child',\n'Child', 'Teen', 'Adult'))\nWe have now deﬁned that the value entered in target must be one of the values, if it isn’t then\nwe will not accept it.\nNote: When typing, please check the quotation around the values, they need to be single quo-\ntation.\nPutting this all together we get our third table deﬁnition, ‘genre’.\nCREATE TABLE library.genre (\ngenreId bigserial primary key,\nname varchar not null,\ndescription text not null, target varchar not null check (\ntarget in ('Young Child', 'Child', 'Teen', 'Adult'))\n);\n3.6 CREATE Syntax: Foreign Keys\nNow, lets look at the ‘book’ table and how to deﬁne foreign keys when creating tables. There\nare multiple ways, but we will use the CONSTRAINT command.\nSo, lets deﬁne our table:\nCREATE TABLE library.book (\nbookId bigserial primary key,\ntitle varchar not null,\nauthorId int not null\nAccording to our LDM, this is a foreign key, so lets deﬁne it before we move to our next attribute.\nIn this example we are using the same column name as the column it will refer to.\nReminder: In practice, naming conventions tend to be this method or our previous method of\nusing the sufﬁx FK. Generally, it is what you prefer as a user. Many companies have predeﬁned\nconventions and will tell you which method they use.\nJust remember, whichever method you use, make sure this is the method you use universally\nacross your database. Don’t have some tables using the FK sufﬁx and others using the Id sufﬁx.\nHave a common convention across your creation.\nThe constraint comes after the nullability declaration, and before the comma to end the attribute\ndeclaration. The syntax is:\nCONSTRAINT fk_name REFERENCES referenced_table_name\nHere, fk_name is a name that we declare. It must be unique, and the convention tend to be:\ncurrentTableName_referencedTable_attributeName_fk\nSo, for our authorId foreign key, we would call it:\nbook_author_authorId_fk\nWe know which table we are referencing, so putting it together our constraint is deﬁned as:\nPage 5 of 7"
   }
 }
