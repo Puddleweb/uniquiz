@@ -1,0 +1,2139 @@
+{
+  "schemaVersion": 1,
+  "id": "uniquiz-networking-mock-20261029",
+  "version": "1.0.0",
+  "title": "Computer Networking: Fresh 100",
+  "created": "2026-10-29",
+  "description": "100 original practice questions informed by the topic coverage and mixed formats of a supplied CCCU mock. Independent revision material; not an official CCCU assessment or prediction.",
+  "scoring": {
+    "maximum": 100,
+    "pointsPerQuestion": 1,
+    "partialCredit": false,
+    "negativeCredit": false,
+    "rule": "One point only when the whole question is correct. Matching, ordering and select-multiple questions require all parts correct. Blank answers score zero. No negative marking."
+  },
+  "topics": {
+    "models": {
+      "name": "OSI and TCP/IP models",
+      "revise": "Separate bits, frames, packets and transport data. Practise mapping the four TCP/IP layers to OSI, then explain encapsulation without assuming every protocol fits one rigid box.",
+      "check": "Explain which information a switch, router and receiving application each examine.",
+      "video": {
+        "id": "AYgXr1dynKU",
+        "start": 88,
+        "title": "Understanding the OSI Model",
+        "channel": "Professor Messer"
+      }
+    },
+    "transport": {
+      "name": "Transport and communication",
+      "revise": "Compare TCP and UDP using reliability, ordering, overhead, ports and application requirements. Distinguish flow control from congestion control and encryption from reliable delivery.",
+      "check": "Choose a transport for a financial file and for replaceable live samples; justify each trade-off.",
+      "video": {
+        "id": "LkolbURrtTs",
+        "start": 118,
+        "title": "OSI Model: A Practical Perspective",
+        "channel": "Practical Networking"
+      }
+    },
+    "services": {
+      "name": "Application protocols and ports",
+      "revise": "Build a compact service-to-purpose table for DNS, DHCP, NTP, HTTP(S), SMTP and SSH/SFTP. Keep mail relay separate from mail submission and retrieval.",
+      "check": "Trace how a newly connected laptop obtains settings, resolves a name and opens a secure website.",
+      "video": {
+        "id": "E5bSumTAHZE",
+        "start": 16,
+        "title": "Network Protocols: ARP, FTP, SMTP, HTTP, TLS, DNS, DHCP",
+        "channel": "Practical Networking"
+      }
+    },
+    "devices": {
+      "name": "Devices and client/server roles",
+      "revise": "Choose devices by the function required. Distinguish repeating, bridging, routing, filtering, proxying and balancing, and recognise that one appliance can combine roles.",
+      "check": "Draw a request path through an access point, router, proxy and load balancer, explaining each role.",
+      "video": {
+        "id": "H7-NR3Q3BeI",
+        "start": 39,
+        "title": "Hub, Bridge, Switch, Router",
+        "channel": "Practical Networking"
+      }
+    },
+    "lan": {
+      "name": "LANs, topologies and Wi-Fi",
+      "revise": "Compare topology failure behaviour, Ethernet versus Wi-Fi, shared radio capacity, broadcast domains and VLAN boundaries. Consider both coverage and user density.",
+      "check": "Explain why adding access points needs a radio/capacity plan and why a VLAN alone is not an access policy.",
+      "video": {
+        "id": "tf66r-LSEZE",
+        "start": 68,
+        "title": "The Bus, Star, Ring, Mesh & Tree Network Topologies",
+        "channel": "Tech Hub Academy"
+      }
+    },
+    "diagnostics": {
+      "name": "IP addressing and troubleshooting",
+      "revise": "Use addressing, gateway, DNS and translation evidence to localise faults. Know what ping, traceroute and packet capture can demonstrate, and where their evidence stops.",
+      "check": "For a host that reaches an IP address but not a hostname, choose a targeted next test and explain why.",
+      "video": {
+        "id": "FTUV0t6JaDA",
+        "start": 155,
+        "title": "NAT Explained - Network Address Translation",
+        "channel": "PowerCert Animated Videos"
+      }
+    },
+    "process": {
+      "name": "Network design process",
+      "revise": "Work from measurable requirements through analysis, logical design, physical design, validation and acceptance. Distinguish top-down, bottom-up and hybrid decisions.",
+      "check": "Turn a vague request for a fast network into a measurable acceptance criterion and a relevant test.",
+      "video": null
+    },
+    "campus": {
+      "name": "Campus hierarchy and resilience",
+      "revise": "Separate access, distribution and core functions. Evaluate redundancy, capacity, failure domains, failover and growth using the whole path rather than a device count.",
+      "check": "Identify shared power, links or providers that can defeat an apparently redundant design.",
+      "video": null
+    },
+    "threats": {
+      "name": "Threats and vulnerability analysis",
+      "revise": "Identify the mechanism and affected asset for floods, spoofing, poisoning, hijacking, injection, memory errors and social engineering. Do not label every outage an attack.",
+      "check": "For each threat, state the evidence that distinguishes it from a configuration error and select one relevant control.",
+      "video": null
+    },
+    "controls": {
+      "name": "Security controls and validation",
+      "revise": "Distinguish IDS alerts from inline prevention, validate rules, combine controls, protect credentials and traffic, and apply identity-based access decisions.",
+      "check": "Explain the limits of encryption, segmentation and monitoring individually, then combine them in a small security plan.",
+      "video": null
+    }
+  },
+  "sources": {
+    "tcp": [
+      "TCP standard (RFC 9293)",
+      "https://www.rfc-editor.org/rfc/rfc9293.html"
+    ],
+    "udp": [
+      "UDP specification (RFC 768)",
+      "https://www.rfc-editor.org/rfc/rfc768.html"
+    ],
+    "dns": [
+      "DNS implementation (RFC 1035)",
+      "https://www.rfc-editor.org/rfc/rfc1035.html"
+    ],
+    "dhcp": [
+      "DHCP (RFC 2131)",
+      "https://www.rfc-editor.org/rfc/rfc2131.html"
+    ],
+    "smtp": [
+      "Mail submission versus relay (RFC 6409)",
+      "https://www.rfc-editor.org/rfc/rfc6409.html"
+    ],
+    "tls": [
+      "TLS 1.3 (RFC 8446)",
+      "https://www.rfc-editor.org/rfc/rfc8446.html"
+    ],
+    "ports": [
+      "IANA service and port registry",
+      "https://www.iana.org/assignments/service-names-port-numbers/"
+    ],
+    "campus": [
+      "Cisco campus architecture",
+      "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Campus/campover.html"
+    ],
+    "ha": [
+      "Cisco campus high availability",
+      "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Campus/HA_campus_DG/hacampusdg.html"
+    ],
+    "switch": [
+      "Cisco: how a switch works",
+      "https://www.cisco.com/site/us/en/learn/topics/small-business/network-switch-how.html"
+    ],
+    "topology": [
+      "Cisco network topology",
+      "https://www-cloud.cisco.com/site/us/en/learn/topics/networking/what-is-network-topology.html"
+    ],
+    "zt": [
+      "NIST Zero Trust Architecture",
+      "https://csrc.nist.gov/pubs/sp/800/207/final"
+    ],
+    "ids": [
+      "NIST intrusion detection and prevention guide",
+      "https://csrc.nist.gov/pubs/sp/800/94/final"
+    ],
+    "firewall": [
+      "NIST firewall policy guide",
+      "https://csrc.nist.gov/pubs/sp/800/41/r1/final"
+    ],
+    "patch": [
+      "NIST enterprise patch management",
+      "https://csrc.nist.gov/pubs/sp/800/40/r4/final"
+    ],
+    "ip": [
+      "IPv4 (RFC 791)",
+      "https://www.rfc-editor.org/rfc/rfc791.html"
+    ],
+    "arp": [
+      "ARP (RFC 826)",
+      "https://www.rfc-editor.org/rfc/rfc826.html"
+    ],
+    "icmp": [
+      "ICMP (RFC 792)",
+      "https://www.rfc-editor.org/rfc/rfc792.html"
+    ],
+    "nat": [
+      "Traditional NAT (RFC 3022)",
+      "https://www.rfc-editor.org/rfc/rfc3022.html"
+    ],
+    "private": [
+      "Private IPv4 addressing (RFC 1918)",
+      "https://www.rfc-editor.org/rfc/rfc1918.html"
+    ],
+    "ssh": [
+      "SSH architecture (RFC 4251)",
+      "https://www.rfc-editor.org/rfc/rfc4251.html"
+    ],
+    "ntp": [
+      "NTPv4 (RFC 5905)",
+      "https://www.rfc-editor.org/rfc/rfc5905.html"
+    ],
+    "http": [
+      "HTTP semantics (RFC 9110)",
+      "https://www.rfc-editor.org/rfc/rfc9110.html"
+    ],
+    "osi": [
+      "Cisco: the seven-layer model",
+      "https://www.cisco.com/c/en/us/td/docs/ios/sw_upgrades/interlink/r2_0/api_con/acoview.pdf"
+    ],
+    "wlan": [
+      "NIST wireless LAN security",
+      "https://csrc.nist.gov/pubs/sp/800/153/final"
+    ],
+    "owasp": [
+      "OWASP injection guidance",
+      "https://owasp.org/Top10/A03_2021-Injection/"
+    ],
+    "phishing": [
+      "CISA: recognise and report phishing",
+      "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+    ],
+    "ddos": [
+      "CISA: understanding denial-of-service attacks",
+      "https://www.cisa.gov/news-events/news/understanding-denial-service-attacks"
+    ],
+    "memory": [
+      "MITRE CWE-120: buffer copying without checking input size",
+      "https://cwe.mitre.org/data/definitions/120.html"
+    ],
+    "wifi-modern": [
+      "HPE Aruba: Wi-Fi generations and security",
+      "https://arubanetworking.hpe.com/techdocs/aos/wifi-design-deploy/generations/overview/"
+    ],
+    "wpa3": [
+      "Cisco WPA3 deployment guide",
+      "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/wpa3-dep-guide-og.html"
+    ]
+  },
+  "questions": [
+    {
+      "id": "net-mock-20261029-001",
+      "topic": "models",
+      "type": "single",
+      "prompt": "A NIC reports repeated Ethernet frame-check failures, although the receiver still detects a signal. Which OSI responsibility is most directly implicated?",
+      "answer": 1,
+      "explanation": "A frame check sequence detects corruption of a received frame at the Data Link layer. Detecting a signal alone does not establish that the frame is valid.",
+      "objective": "Distinguish link error detection from physical signal detection.",
+      "refs": [
+        "osi"
+      ],
+      "options": [
+        "Physical signalling",
+        "Data Link error detection",
+        "Network path selection",
+        "Transport congestion control"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-002",
+      "topic": "models",
+      "type": "single",
+      "prompt": "A router forwards an IP packet onto a different Ethernet link. Which description best fits normal encapsulation?",
+      "answer": 2,
+      "explanation": "Link-layer framing serves one link. A router processes the IP packet and uses framing appropriate to its next link; it does not normally replace the transport protocol.",
+      "objective": "Apply per-link re-encapsulation.",
+      "refs": [
+        "ip",
+        "arp"
+      ],
+      "options": [
+        "The original Ethernet frame crosses every router unchanged",
+        "The router replaces TCP with UDP",
+        "The router constructs a new link-layer frame for the outgoing link",
+        "The router removes IP addressing permanently"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-003",
+      "topic": "models",
+      "type": "single",
+      "prompt": "Two applications encode the same date in incompatible representations. In the OSI teaching model, which responsibility addresses this mismatch?",
+      "answer": 3,
+      "explanation": "Presentation responsibilities concern representation and translation. The network can deliver data correctly even when the applications disagree on its meaning.",
+      "objective": "Recognise representation problems.",
+      "refs": [
+        "osi"
+      ],
+      "options": [
+        "Session establishment",
+        "Network forwarding",
+        "Physical encoding of bits",
+        "Presentation of application data"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-004",
+      "topic": "models",
+      "type": "single",
+      "prompt": "A diagram places DHCP in the Internet layer because it supplies IP settings. How should it be corrected?",
+      "answer": 0,
+      "explanation": "DHCP is an application protocol carried over UDP/IP. Classify a protocol by its role and encapsulation, rather than by a word in the information it configures.",
+      "objective": "Classify a configuration service without a name-based shortcut.",
+      "refs": [
+        "dhcp"
+      ],
+      "options": [
+        "Place DHCP in the Application layer; its purpose does not determine its layer",
+        "Keep it there because every protocol mentioning IP is Internet-layer",
+        "Move all addressing-related services to Physical",
+        "Move DHCP to Transport because it uses UDP"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-005",
+      "topic": "models",
+      "type": "truefalse",
+      "prompt": "Changing Ethernet to Wi-Fi can leave the IP service above the link layer in use, provided the new link supports it.",
+      "answer": true,
+      "explanation": "Layering permits different link technologies to carry IP. Interfaces and practical capabilities must still be compatible.",
+      "objective": "Explain substitution through layered interfaces.",
+      "refs": [
+        "ip"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-006",
+      "topic": "models",
+      "type": "truefalse",
+      "prompt": "The seven-layer OSI model requires every real protocol to fit exactly one layer with no overlap.",
+      "answer": false,
+      "explanation": "OSI is a reference model. Real implementations can combine responsibilities or cross model boundaries; a model helps reasoning without prescribing every implementation detail.",
+      "objective": "Separate a reference model from mandatory implementation.",
+      "refs": [
+        "osi"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-007",
+      "topic": "models",
+      "type": "short",
+      "prompt": "In OSI terminology, what is the layer immediately above Presentation? Enter the layer name.",
+      "answer": [
+        "Application",
+        "Application layer",
+        "Layer 7",
+        "7"
+      ],
+      "explanation": "The upper three OSI layers are Session, Presentation and Application, in that order towards the user.",
+      "objective": "Locate the upper-layer boundary.",
+      "refs": [
+        "osi"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-008",
+      "topic": "models",
+      "type": "short",
+      "prompt": "In the four-layer TCP/IP model, Network Access groups OSI Physical with which other OSI layer?",
+      "answer": [
+        "Data Link",
+        "Data Link layer",
+        "Datalink",
+        "Layer 2",
+        "2"
+      ],
+      "explanation": "Network Access (also called Link or Network Interface) covers local framing as well as physical transmission in this four-layer comparison.",
+      "objective": "Map the lower layers between models.",
+      "refs": [
+        "osi"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-009",
+      "topic": "models",
+      "type": "matching",
+      "prompt": "Match each observation to its primary OSI layer. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Physical handles signalling; Network handles inter-network delivery; Transport identifies processes; Session describes dialogue management in the reference model.",
+      "objective": "Localise four distinct responsibilities.",
+      "refs": [
+        "osi",
+        "ip",
+        "tcp"
+      ],
+      "items": [
+        "No optical signal at the fibre receiver",
+        "IP forwarding table selects the next network",
+        "Port number selects the receiving process",
+        "A logical dialogue is established and later closed"
+      ],
+      "options": [
+        "Physical",
+        "Network",
+        "Transport",
+        "Session"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-010",
+      "topic": "models",
+      "type": "ordering",
+      "prompt": "Order these sender-side stages from application data to the medium. Select the stage for each position.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Encapsulation proceeds down the stack. Each lower service carries the data supplied by the layer above. This simplified sequence groups Link and Physical in its last step.",
+      "objective": "Sequence encapsulation.",
+      "refs": [
+        "ip",
+        "tcp"
+      ],
+      "items": [
+        "Application creates data",
+        "Transport adds its control information",
+        "IP encapsulates transport data",
+        "Link framing and physical transmission occur"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-011",
+      "topic": "transport",
+      "type": "single",
+      "prompt": "A file transfer receives TCP bytes in a different packet arrival order. What does TCP normally present to the application?",
+      "answer": 0,
+      "explanation": "TCP uses sequence information and buffering to present bytes in their original order, even when segments arrive out of order. Missing bytes may have to be recovered before later bytes can be delivered in sequence.",
+      "objective": "Explain receiver reordering for a TCP byte stream.",
+      "refs": [
+        "tcp"
+      ],
+      "options": [
+        "The original byte order, after buffering and recovery as needed",
+        "Packets in arrival order with no correction",
+        "A new IP route for each missing byte",
+        "A guarantee that the remote application saved the file"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-012",
+      "topic": "transport",
+      "type": "single",
+      "prompt": "A receiver has little free buffer space. Which TCP mechanism limits how much outstanding data the sender may send on that basis?",
+      "answer": 2,
+      "explanation": "TCP receive-window flow control protects the receiving endpoint. Congestion control instead responds to the capacity and condition of the network path.",
+      "objective": "Separate receiver flow control from network congestion.",
+      "refs": [
+        "tcp"
+      ],
+      "options": [
+        "DNS response caching",
+        "IP next-hop selection",
+        "Receiver flow control",
+        "Sender congestion-window adjustment"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-013",
+      "topic": "transport",
+      "type": "single",
+      "prompt": "A sensor sends disposable readings over UDP. The application now requires recovery of a missing reading. What must the designer address?",
+      "answer": 3,
+      "explanation": "UDP itself does not promise retransmission or ordered delivery. Required reliability must come from the application or another suitable transport design.",
+      "objective": "Locate responsibility for UDP loss recovery.",
+      "refs": [
+        "udp"
+      ],
+      "options": [
+        "UDP automatically retransmits after a fixed delay",
+        "IP guarantees that missing readings reappear",
+        "A switch can recover every missing application message",
+        "Recovery must be provided above UDP or by choosing a suitable reliable transport"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-014",
+      "topic": "transport",
+      "type": "single",
+      "prompt": "A laptop has several connections to the same web server. Which transport information helps distinguish those flows?",
+      "answer": 1,
+      "explanation": "TCP connections are identified by their endpoint address/port pairs. Different client source ports allow concurrent connections to the same server service.",
+      "objective": "Apply transport multiplexing.",
+      "refs": [
+        "tcp"
+      ],
+      "options": [
+        "Only the client source IP address",
+        "Source and destination ports together with the endpoint IP addresses",
+        "Only the destination service port",
+        "Only the destination IP address"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-015",
+      "topic": "transport",
+      "type": "multiple",
+      "prompt": "Select TWO properties TCP provides as a transport service.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "TCP supports ordering and loss recovery. Encryption and application or human acknowledgement require other mechanisms.",
+      "objective": "Identify reliability features without adding security guarantees.",
+      "refs": [
+        "tcp"
+      ],
+      "options": [
+        "Ordered byte delivery",
+        "Automatic confidentiality of every payload",
+        "Retransmission to recover lost data",
+        "Proof that a user read the message"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-016",
+      "topic": "transport",
+      "type": "multiple",
+      "prompt": "A live monitoring dashboard can replace an old reading with a new one. Select TWO requirements that could support considering UDP.",
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "These stated tolerance and timing requirements can favour a lightweight datagram design. UDP does not by itself ensure timeliness, encryption or freedom from loss.",
+      "objective": "Evaluate a transport trade-off using requirements.",
+      "refs": [
+        "udp"
+      ],
+      "options": [
+        "Every reading must arrive in strict order before display",
+        "A late reading is less useful than the next current reading",
+        "The application can tolerate occasional missing readings",
+        "The network must encrypt traffic simply because UDP is used"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-017",
+      "topic": "transport",
+      "type": "truefalse",
+      "prompt": "If TCP acknowledges bytes, that acknowledgement alone proves the bytes were written to the receiving application's disk.",
+      "answer": false,
+      "explanation": "A TCP acknowledgement concerns receipt in the transport stream. Durable application storage requires an application-level success response or other evidence.",
+      "objective": "Interpret acknowledgements conservatively.",
+      "refs": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-018",
+      "topic": "transport",
+      "type": "short",
+      "prompt": "What is the transport protocol data unit called for UDP? Enter its conventional name.",
+      "answer": [
+        "Datagram",
+        "Datagrams",
+        "UDP datagram",
+        "UDP datagrams"
+      ],
+      "explanation": "UDP carries datagrams. TCP carries segments on the wire and presents a byte stream to applications.",
+      "objective": "Name the UDP data unit.",
+      "refs": [
+        "udp"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-019",
+      "topic": "transport",
+      "type": "matching",
+      "prompt": "Match each communication requirement or behaviour to the best concept. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Receiver capacity, path congestion, message service and process selection are separate issues. A single claim that transport makes everything reliable hides these distinctions.",
+      "objective": "Differentiate four transport concepts.",
+      "refs": [
+        "tcp",
+        "udp"
+      ],
+      "items": [
+        "Prevent a sender overwhelming its receiver",
+        "Reduce sending pressure when the path is congested",
+        "Deliver independent messages without establishing a TCP connection",
+        "Identify which local application receives data"
+      ],
+      "options": [
+        "Flow control",
+        "Congestion control",
+        "UDP datagrams",
+        "Transport port"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-020",
+      "topic": "transport",
+      "type": "ordering",
+      "prompt": "Order a normal TCP three-way connection establishment from the initiating client's first message.",
+      "answer": [
+        0,
+        1,
+        2
+      ],
+      "explanation": "A typical active open exchanges SYN, SYN-ACK and ACK before the connection is established. This is connection setup, not encryption negotiation.",
+      "objective": "Sequence TCP setup.",
+      "refs": [
+        "tcp"
+      ],
+      "items": [
+        "Client sends SYN",
+        "Server sends SYN with ACK",
+        "Client sends ACK"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-021",
+      "topic": "services",
+      "type": "single",
+      "prompt": "A policy allows DNS queries over UDP/53 but blocks TCP/53. Which evaluation is most accurate?",
+      "answer": 1,
+      "explanation": "DNS supports both UDP and TCP on port 53. A blanket TCP block can interfere with valid DNS exchanges, including zone transfers and responses requiring TCP.",
+      "objective": "Recognise both conventional DNS transports.",
+      "refs": [
+        "dns"
+      ],
+      "options": [
+        "DNS uses UDP for every operation, so the rule is sufficient",
+        "The rule can break valid DNS operations that require TCP",
+        "TCP/53 is required only for encrypted web browsing",
+        "DNS moves all blocked TCP exchanges to UDP without loss of functionality"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-022",
+      "topic": "services",
+      "type": "single",
+      "prompt": "A mail administrator separates server-to-server relay from authenticated client submission. Which conventional ports fit that distinction?",
+      "answer": 0,
+      "explanation": "SMTP relay conventionally uses port 25. Message submission normally uses port 587 under RFC 6409; implicit TLS submission on 465 is another defined deployment context.",
+      "objective": "Distinguish SMTP relay and submission.",
+      "refs": [
+        "smtp",
+        "ports"
+      ],
+      "options": [
+        "Relay 25; submission 587",
+        "Relay 587; submission 25",
+        "Relay 53; submission 23",
+        "Relay 443; submission 110"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-023",
+      "topic": "services",
+      "type": "single",
+      "prompt": "An administrator needs encrypted remote command-line access. Which conventional protocol and port are the best fit?",
+      "answer": 2,
+      "explanation": "SSH provides secure remote access, conventionally using TCP port 22. Telnet and traditional FTP do not provide the same protected remote-shell service.",
+      "objective": "Select a secure administration service.",
+      "refs": [
+        "ssh",
+        "ports"
+      ],
+      "options": [
+        "Telnet on 23",
+        "FTP control on 21",
+        "SSH on 22",
+        "DNS on 53"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-024",
+      "topic": "services",
+      "type": "single",
+      "prompt": "Two otherwise healthy systems produce logs with different clock times. Which network service most directly addresses clock synchronisation?",
+      "answer": 3,
+      "explanation": "NTP synchronises clocks across a network. DHCP supplies configuration, ARP resolves local IPv4 neighbour addresses, and SMTP transfers mail.",
+      "objective": "Select time synchronisation.",
+      "refs": [
+        "ntp"
+      ],
+      "options": [
+        "DHCP",
+        "ARP",
+        "SMTP",
+        "NTP"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-025",
+      "topic": "services",
+      "type": "multiple",
+      "prompt": "Select TWO statements that accurately distinguish common file-transfer services.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Traditional FTP separates control and data. SFTP uses SSH; it is also distinct from FTPS, which secures FTP using TLS.",
+      "objective": "Differentiate FTP, SFTP and FTPS.",
+      "refs": [
+        "ssh",
+        "ports"
+      ],
+      "options": [
+        "FTP commonly separates control and data connections",
+        "SFTP is the same protocol as unencrypted FTP",
+        "SFTP transfers files through the SSH protocol family",
+        "FTP control conventionally uses port 53"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-026",
+      "topic": "services",
+      "type": "truefalse",
+      "prompt": "Receiving an IP lease from DHCP proves that the configured DNS server will correctly resolve every hostname.",
+      "answer": false,
+      "explanation": "DHCP can supply a DNS server address, but address assignment does not test DNS reachability, server operation or the correctness of DNS records.",
+      "objective": "Separate configuration delivery from service validation.",
+      "refs": [
+        "dhcp",
+        "dns"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-027",
+      "topic": "services",
+      "type": "short",
+      "prompt": "A browser uses conventional HTTPS over TCP. What is the default server port? Enter the number.",
+      "answer": [
+        "443",
+        "port 443",
+        "TCP 443",
+        "443 TCP"
+      ],
+      "explanation": "The conventional HTTPS service port is 443. The question specifies TCP; modern HTTP/3 can also use UDP on 443 through QUIC.",
+      "objective": "Recall the secure web service port with transport context.",
+      "refs": [
+        "ports",
+        "http"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-028",
+      "topic": "services",
+      "type": "short",
+      "prompt": "A client asks a server to allocate an IPv4 lease and supply a gateway automatically. Enter the protocol acronym.",
+      "answer": [
+        "DHCP",
+        "Dynamic Host Configuration Protocol"
+      ],
+      "explanation": "DHCP distributes IPv4 configuration such as addresses, lease parameters and router information. DNS serves a different purpose.",
+      "objective": "Identify automatic host configuration.",
+      "refs": [
+        "dhcp"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-029",
+      "topic": "services",
+      "type": "matching",
+      "prompt": "Match each application task to its service. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Classify by the application task. Carrying all these services over an IP network does not make them Internet-layer protocols.",
+      "objective": "Map distinct application roles.",
+      "refs": [
+        "dns",
+        "smtp",
+        "http",
+        "ntp"
+      ],
+      "items": [
+        "Resolve a hostname to an address",
+        "Transfer mail between mail servers",
+        "Request a web resource",
+        "Synchronise a network clock"
+      ],
+      "options": [
+        "DNS",
+        "SMTP",
+        "HTTP",
+        "NTP"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-030",
+      "topic": "services",
+      "type": "ordering",
+      "prompt": "Order a normal initial DHCPv4 address allocation from a client with no lease, ignoring packet loss.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The conventional DORA exchange is Discover, Offer, Request, Acknowledge. Renewals and other DHCP situations can use different exchanges.",
+      "objective": "Sequence initial DHCP allocation.",
+      "refs": [
+        "dhcp"
+      ],
+      "items": [
+        "Client broadcasts DHCPDISCOVER",
+        "Server sends DHCPOFFER",
+        "Client sends DHCPREQUEST",
+        "Server sends DHCPACK"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-031",
+      "topic": "devices",
+      "type": "single",
+      "prompt": "A switch receives a frame with source MAC A on port 3 and destination MAC B, already learned on port 7 in the same VLAN. What should it normally do?",
+      "answer": 3,
+      "explanation": "A learning switch learns from source MAC addresses and forwards known unicasts using the destination MAC entry within the relevant VLAN.",
+      "objective": "Apply MAC learning and known-unicast forwarding.",
+      "refs": [
+        "switch"
+      ],
+      "options": [
+        "Learn A on port 7 and repeat to all ports",
+        "Route using B as an IP address",
+        "Forward back to port 3 only",
+        "Learn A on port 3 and forward towards port 7"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-032",
+      "topic": "devices",
+      "type": "single",
+      "prompt": "A simple Ethernet hub receives a signal on one port. Which behaviour distinguishes it from a bridge?",
+      "answer": 0,
+      "explanation": "A hub is a physical-layer repeater. A bridge or switch can make link-layer forwarding decisions from learned MAC addresses.",
+      "objective": "Distinguish repeating from bridging.",
+      "refs": [
+        "switch"
+      ],
+      "options": [
+        "It repeats the signal to other ports without consulting a MAC table",
+        "It inspects an IP route before repeating",
+        "It encrypts the signal before forwarding",
+        "It selects only the destination MAC port"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-033",
+      "topic": "devices",
+      "type": "single",
+      "prompt": "A browser is configured to send external web requests to an intermediary that can cache responses and enforce browsing policy. Which role is this?",
+      "answer": 1,
+      "explanation": "A forward proxy acts on behalf of clients at the application level. Merely routing packets or relaying DHCP does not provide that web-request intermediary role.",
+      "objective": "Recognise a forward proxy from its client-facing purpose.",
+      "refs": [
+        "http"
+      ],
+      "options": [
+        "A DHCP relay",
+        "A forward proxy",
+        "An Ethernet repeater",
+        "A default gateway only"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-034",
+      "topic": "devices",
+      "type": "single",
+      "prompt": "A new service name points to an entry point that chooses among several healthy backend web servers. Which role is responsible for that selection?",
+      "answer": 2,
+      "explanation": "A load balancer selects a backend for incoming service traffic. Health checking can help avoid unavailable backends, but must be configured and tested.",
+      "objective": "Recognise backend traffic distribution.",
+      "refs": [
+        "ha"
+      ],
+      "options": [
+        "Wireless access point",
+        "ARP responder",
+        "Load balancer",
+        "Passive tap"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-035",
+      "topic": "devices",
+      "type": "multiple",
+      "prompt": "Select TWO functions an integrated home router appliance might combine, even though they are different network roles.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "One appliance may run DHCP, translation, routing, wireless and firewall services. Product packaging does not make those functions identical.",
+      "objective": "Distinguish an appliance from its combined functions.",
+      "refs": [
+        "dhcp",
+        "nat"
+      ],
+      "options": [
+        "Assign host leases as a DHCP server",
+        "Make every remote host part of one Ethernet collision domain",
+        "Translate private IPv4 connections using NAT/PAT",
+        "Guarantee every internet service is safe"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-036",
+      "topic": "devices",
+      "type": "multiple",
+      "prompt": "A two-port learning bridge joins two legacy Ethernet segments. Select TWO expected behaviours.",
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "A bridge learns source addresses and filters/forwards frames between segments. Routing and IP lease allocation are different functions.",
+      "objective": "Apply bridging to segment traffic.",
+      "refs": [
+        "switch"
+      ],
+      "options": [
+        "It chooses internet paths using BGP by definition",
+        "It learns which source MAC addresses are on each side",
+        "It can filter traffic that does not need to cross to the other segment",
+        "It assigns all attached computers public IP addresses"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-037",
+      "topic": "devices",
+      "type": "truefalse",
+      "prompt": "A Layer 2 switch must know the user's domain name before forwarding a frame to a known MAC address.",
+      "answer": false,
+      "explanation": "Link-layer forwarding uses the relevant VLAN and destination MAC address. DNS names are not required for an ordinary Layer 2 forwarding decision.",
+      "objective": "Separate switching from name resolution.",
+      "refs": [
+        "switch"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-038",
+      "topic": "devices",
+      "type": "truefalse",
+      "prompt": "When a web server calls an authentication API, that web server takes the client role in the API exchange.",
+      "answer": true,
+      "explanation": "Client and server describe roles in a particular exchange. A machine can serve one request while acting as a client to another service.",
+      "objective": "Apply relative client/server roles.",
+      "refs": [
+        "http"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-039",
+      "topic": "devices",
+      "type": "short",
+      "prompt": "Which device role connects IP networks and selects an outgoing path using a routing table? Enter its conventional name.",
+      "answer": [
+        "Router",
+        "IP router"
+      ],
+      "explanation": "A router forwards between IP networks. A Layer 3 switch can perform this routing role too; the key distinction is the function.",
+      "objective": "Identify network-layer path selection.",
+      "refs": [
+        "ip"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-040",
+      "topic": "devices",
+      "type": "matching",
+      "prompt": "Match each requirement to the role that most directly supplies it. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "These are different functions: signal regeneration, wireless attachment, policy enforcement and reciprocal service roles. Some products combine several roles.",
+      "objective": "Compare four device or architecture functions.",
+      "refs": [
+        "switch",
+        "firewall",
+        "wlan"
+      ],
+      "items": [
+        "Extend a degraded physical signal",
+        "Bridge wireless client traffic onto a wired LAN",
+        "Apply traffic-permission rules",
+        "Let peers both offer and request a shared resource"
+      ],
+      "options": [
+        "Repeater",
+        "Access point",
+        "Firewall",
+        "Peer-to-peer architecture"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-041",
+      "topic": "lan",
+      "type": "single",
+      "prompt": "An equipment room uses a single shared backbone cable with attached stations. Which topology best describes that physical arrangement?",
+      "answer": 1,
+      "explanation": "A bus uses a shared linear backbone. A star uses separate links to a central device, a ring forms a cycle, and a full mesh directly links every pair.",
+      "objective": "Identify a shared-backbone topology.",
+      "refs": [
+        "topology"
+      ],
+      "options": [
+        "Ring",
+        "Bus",
+        "Full mesh",
+        "Star"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-042",
+      "topic": "lan",
+      "type": "single",
+      "prompt": "A lab uses a physical ring with no bypass or redundant route. What additional information matters when predicting the effect of one broken link?",
+      "answer": 2,
+      "explanation": "A physical label does not fully specify recovery behaviour. Protocols, bypass facilities and alternate paths determine whether traffic can survive a break.",
+      "objective": "Avoid inferring resilience from topology names alone.",
+      "refs": [
+        "topology"
+      ],
+      "options": [
+        "Whether the ring is labelled as a LAN or campus network",
+        "Whether the stations use static or leased IPv4 addresses",
+        "The ring protocol and whether it can recover around the failure",
+        "Whether the DNS resolver is hosted locally"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-043",
+      "topic": "lan",
+      "type": "single",
+      "prompt": "A design changes from a partial mesh to a full mesh. Which trade-off should be assessed?",
+      "answer": 0,
+      "explanation": "A full mesh connects every pair of nodes, increasing alternate/direct paths and cabling or link-management demands. Shared dependencies can still fail.",
+      "objective": "Evaluate mesh cost and resilience.",
+      "refs": [
+        "topology"
+      ],
+      "options": [
+        "More direct paths, but more links and management complexity",
+        "Fewer direct paths, with the same number of links",
+        "More direct paths, but fewer links to manage",
+        "Fewer paths, but automatic isolation of every shared failure"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-044",
+      "topic": "lan",
+      "type": "single",
+      "prompt": "A lecture hall has good signal strength but poor service when 150 students join one access point. What should the survey investigate?",
+      "answer": 3,
+      "explanation": "Coverage and capacity are separate. Many associated clients share radio airtime; interference, channel planning and demand can matter despite strong signal.",
+      "objective": "Distinguish Wi-Fi coverage from capacity.",
+      "refs": [
+        "wlan"
+      ],
+      "options": [
+        "Only the maximum signal strength at the front of the room",
+        "Only whether clients receive valid DHCP leases",
+        "Only the coverage map measured in an empty room",
+        "Radio capacity, channel use and concurrent client demand"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-045",
+      "topic": "lan",
+      "type": "multiple",
+      "prompt": "Select TWO statements appropriate to a modern Wi-Fi plan.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "2.4 and 5 GHz remain common; 6 GHz is also used by suitable newer equipment under applicable rules. Client compatibility and local permissions must be checked.",
+      "objective": "Avoid treating older band lists as exhaustive.",
+      "refs": [
+        "wifi-modern"
+      ],
+      "options": [
+        "2.4 GHz and 5 GHz are common Wi-Fi bands",
+        "Every Wi-Fi deployment is restricted to exactly two bands forever",
+        "Some newer Wi-Fi equipment can also use 6 GHz where permitted",
+        "All clients support every band an access point supports"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-046",
+      "topic": "lan",
+      "type": "truefalse",
+      "prompt": "Two VLANs on the same physical switch are separate Layer 2 broadcast domains under normal VLAN configuration.",
+      "answer": true,
+      "explanation": "VLANs provide logical link-layer separation on shared switching hardware. Communication between them needs an appropriate Layer 3 path and policy.",
+      "objective": "Explain VLAN broadcast separation.",
+      "refs": [
+        "campus"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-047",
+      "topic": "lan",
+      "type": "truefalse",
+      "prompt": "Putting a guest device in a different VLAN automatically guarantees that it cannot reach staff servers, regardless of routing and firewall rules.",
+      "answer": false,
+      "explanation": "A router or Layer 3 switch may allow communication between VLANs. Required restrictions must be enforced and tested through suitable policy controls.",
+      "objective": "Separate segmentation from access enforcement.",
+      "refs": [
+        "firewall",
+        "campus"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-048",
+      "topic": "lan",
+      "type": "short",
+      "prompt": "An installation guide names IEEE 802.3. Which wired LAN technology does that identify?",
+      "answer": [
+        "Ethernet",
+        "Wired Ethernet"
+      ],
+      "explanation": "IEEE 802.3 specifies Ethernet. IEEE 802.11 concerns wireless LANs. This is a technology distinction, rather than an Internet service.",
+      "objective": "Distinguish Ethernet and WLAN standards.",
+      "refs": [
+        "switch"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-049",
+      "topic": "lan",
+      "type": "short",
+      "prompt": "Six workstations each have a separate cable to one central switch. Enter the physical topology name.",
+      "answer": [
+        "Star",
+        "Star topology"
+      ],
+      "explanation": "Separate spoke links meeting at a central device form a star. Its central device and shared dependencies still need resilience planning.",
+      "objective": "Recognise a central-spoke topology.",
+      "refs": [
+        "topology"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-050",
+      "topic": "lan",
+      "type": "matching",
+      "prompt": "Match the planning observation to the appropriate action. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Coverage, shared radio capacity, broadcast separation and path redundancy require different design measures. One extra device does not necessarily address every issue.",
+      "objective": "Choose targeted LAN design actions.",
+      "refs": [
+        "wlan",
+        "campus"
+      ],
+      "items": [
+        "Weak signal behind a thick wall",
+        "High airtime utilisation in a busy room",
+        "Guest broadcasts should stay outside the staff LAN",
+        "A building needs inter-switch alternate paths"
+      ],
+      "options": [
+        "Review AP placement and perform a coverage survey",
+        "Assess channel and capacity planning",
+        "Define separate VLAN membership",
+        "Evaluate redundant links and loop-safe forwarding"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-051",
+      "topic": "diagnostics",
+      "type": "single",
+      "prompt": "A host is 192.168.50.20/24 and its gateway is 192.168.50.1. It sends to 192.168.60.30. What is the normal next-hop decision?",
+      "answer": 1,
+      "explanation": "With a /24, the first three octets identify the local subnet. The destination is remote, so the host normally sends the packet via its gateway.",
+      "objective": "Apply local-versus-remote subnet reasoning.",
+      "refs": [
+        "ip"
+      ],
+      "options": [
+        "Send directly because both addresses start with 192.168",
+        "Use the configured gateway because the destination is outside its /24",
+        "Send directly because the gateway and source share a subnet",
+        "Choose the next hop using the DNS suffix rather than the mask"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-052",
+      "topic": "diagnostics",
+      "type": "single",
+      "prompt": "An internet-facing capture shows one public IPv4 address for connections from several private hosts, each with translated source ports. What is illustrated?",
+      "answer": 2,
+      "explanation": "NAPT, often called PAT, uses transport port translation as well as address translation to let multiple internal flows share a public address.",
+      "objective": "Recognise shared-address translation from evidence.",
+      "refs": [
+        "nat"
+      ],
+      "options": [
+        "DNS recursion",
+        "ARP caching",
+        "Port address translation (PAT/NAPT)",
+        "NTP synchronisation"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-053",
+      "topic": "diagnostics",
+      "type": "single",
+      "prompt": "A laptop can reach a service by IP address but its normal hostname fails. What is the most targeted next check?",
+      "answer": 3,
+      "explanation": "Successful IP reachability narrows the investigation. A targeted DNS query tests the name-resolution path without assuming that every network component has failed.",
+      "objective": "Select a hypothesis-driven DNS test.",
+      "refs": [
+        "dns"
+      ],
+      "options": [
+        "Replace the access switch before querying the resolver",
+        "Change the default gateway without checking the resolver",
+        "Renew the lease repeatedly without testing name resolution",
+        "Query the configured DNS resolver for that name"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-054",
+      "topic": "diagnostics",
+      "type": "single",
+      "prompt": "A traceroute displays several responding hops and then timeouts. What conclusion is justified?",
+      "answer": 0,
+      "explanation": "Traceroute depends on probe and response behaviour. Non-response can result from filtering, rate limiting or routing; it is not by itself proof of a failed router.",
+      "objective": "Interpret traceroute limits.",
+      "refs": [
+        "icmp"
+      ],
+      "options": [
+        "Some later probes did not receive the expected replies; filtering or reply policy may be involved",
+        "The first timed-out hop is certainly the point where user traffic stops",
+        "The last responding router must be the destination host",
+        "The destination service has definitely rejected the user login"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-055",
+      "topic": "diagnostics",
+      "type": "multiple",
+      "prompt": "Select TWO conclusions a successful ICMP echo reply from a host supports.",
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "Ping provides reachability evidence for its own exchange. It does not test an unrelated application, guarantee future success or prove a fixed route.",
+      "objective": "Scope ping evidence.",
+      "refs": [
+        "icmp"
+      ],
+      "options": [
+        "The addressed host or responding endpoint was reachable for that exchange",
+        "Its HTTPS application definitely works correctly",
+        "All future traffic will take the same route",
+        "An ICMP echo exchange completed on that occasion"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-056",
+      "topic": "diagnostics",
+      "type": "truefalse",
+      "prompt": "If a workstation has no physical link indication, checking its cable, port and adapter is a reasonable early step before investigating application authentication.",
+      "answer": true,
+      "explanation": "Troubleshooting should follow the evidence. A missing link is a strong reason to inspect the local physical connection first.",
+      "objective": "Prioritise a physical-layer symptom.",
+      "refs": [
+        "osi"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-057",
+      "topic": "diagnostics",
+      "type": "short",
+      "prompt": "A host needs the Ethernet MAC address of its IPv4 next-hop neighbour on the local link. Enter the protocol acronym normally used.",
+      "answer": [
+        "ARP",
+        "Address Resolution Protocol"
+      ],
+      "explanation": "ARP resolves an IPv4 protocol address to a local hardware address. It does not resolve an internet hostname or discover a full route.",
+      "objective": "Identify local IPv4 neighbour resolution.",
+      "refs": [
+        "arp"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-058",
+      "topic": "diagnostics",
+      "type": "short",
+      "prompt": "Which named analyser can open a packet capture so you can inspect headers and protocol exchanges? Enter the tool name.",
+      "answer": [
+        "Wireshark"
+      ],
+      "explanation": "Wireshark inspects captured packets. Capture access and encryption determine what is visible; it does not automatically decrypt every protected payload.",
+      "objective": "Select packet-level inspection.",
+      "refs": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-059",
+      "topic": "diagnostics",
+      "type": "matching",
+      "prompt": "Match each diagnostic result to the most directly indicated area to investigate. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "These are investigation priorities, not conclusive diagnoses. Use the observed failed function to choose the next targeted test.",
+      "objective": "Localise symptoms without overclaiming causes.",
+      "refs": [
+        "dhcp",
+        "dns",
+        "ip"
+      ],
+      "items": [
+        "No addresses allocated; DHCP requests receive no response",
+        "IP connectivity works; a hostname resolves incorrectly",
+        "Local hosts work; remote destinations fail after a gateway change",
+        "Many damaged Ethernet frames on one cable"
+      ],
+      "options": [
+        "DHCP reachability or server operation",
+        "DNS data or resolver behaviour",
+        "Default gateway or routing",
+        "Link quality or interface errors"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-060",
+      "topic": "diagnostics",
+      "type": "ordering",
+      "prompt": "A fault report says only one desk cannot reach the network. Order this evidence-led investigation workflow.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "First establish what is affected, then inspect relevant evidence, test a hypothesis and verify the outcome. A test should answer a specific question.",
+      "objective": "Sequence a structured fault investigation.",
+      "refs": [
+        "osi"
+      ],
+      "items": [
+        "Confirm and scope the reported symptom",
+        "Inspect the indicated local connection and configuration",
+        "Test a specific hypothesis using a comparison or diagnostic",
+        "Verify service restoration and document the finding"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-061",
+      "topic": "process",
+      "type": "single",
+      "prompt": "A faculty asks for a fast network. Which follow-up produces the most useful performance requirement?",
+      "answer": 1,
+      "explanation": "A useful requirement connects user workloads to measurable service targets. Fast alone does not define a testable outcome or a capacity assumption.",
+      "objective": "Turn a vague request into testable requirements.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "Which switch model has the most ports in stock?",
+        "What applications, concurrent users and measurable response targets must be supported?",
+        "Which cable type should be ordered before measuring demand?",
+        "Which existing router can be retained regardless of application needs?"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-062",
+      "topic": "process",
+      "type": "single",
+      "prompt": "A designer commits to a switch model before identifying required applications, then reshapes the service plan to fit it. Which approach is illustrated?",
+      "answer": 2,
+      "explanation": "This sequence starts from available technology and adapts the service plan around it. A top-down process starts with the required business and application outcomes.",
+      "objective": "Recognise a technology-first design sequence.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "Top-down",
+        "Hybrid with requirements and technology reviewed together",
+        "Bottom-up",
+        "Requirements-first logical planning"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-063",
+      "topic": "process",
+      "type": "single",
+      "prompt": "An approved application requirement conflicts with a fixed cabling constraint. The team revisits both service options and feasible technologies together. Which approach fits?",
+      "answer": 0,
+      "explanation": "A hybrid approach combines requirements with practical technology constraints. The decision should still explain which requirements are met and what trade-offs remain.",
+      "objective": "Apply hybrid design to conflicting constraints.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "A hybrid design approach",
+        "A bottom-up approach that treats existing technology as the sole starting point",
+        "A top-down approach that disregards physical constraints",
+        "A physical replacement plan without revisiting logical requirements"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-064",
+      "topic": "process",
+      "type": "single",
+      "prompt": "Which item belongs most clearly in a logical network design?",
+      "answer": 3,
+      "explanation": "Logical design defines network organisation and communication. Physical design specifies how it is realised in equipment, locations, media and connections.",
+      "objective": "Distinguish logical from physical deliverables.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "The patch-panel mounting height",
+        "The exact fibre route through a ceiling",
+        "The supplier serial numbers",
+        "Subnet/VLAN structure and permitted communication between zones"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-065",
+      "topic": "process",
+      "type": "multiple",
+      "prompt": "Select TWO outputs that are primarily physical-design details.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Locations, cabling, device selection and physical interfaces realise the logical design. Address allocation and communication policy belong primarily to the logical view.",
+      "objective": "Identify physical implementation details.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "Rack placement and cable routes",
+        "IP subnet allocation by department",
+        "Equipment models and port counts",
+        "Guest-to-staff access policy"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-066",
+      "topic": "process",
+      "type": "multiple",
+      "prompt": "Select TWO findings that site and traffic analysis should supply before final capacity decisions.",
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Measured demand and site constraints guide capacity and placement. Average traffic alone can conceal busy-period limitations.",
+      "objective": "Select useful analysis evidence.",
+      "refs": [
+        "wlan",
+        "campus"
+      ],
+      "options": [
+        "The current inventory without measurements of demand",
+        "Peak concurrent traffic by important application",
+        "The average daily traffic figure with no busy-period detail",
+        "Building coverage gaps and relevant installation constraints"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-067",
+      "topic": "process",
+      "type": "truefalse",
+      "prompt": "A prototype that meets a requirement under an unrealistic single-user load is sufficient evidence that it meets the same requirement at the stated 200-user load.",
+      "answer": false,
+      "explanation": "The test conditions must represent the requirement. A light-load result cannot establish performance at a much larger concurrency level.",
+      "objective": "Assess test validity against stated demand.",
+      "refs": [
+        "ha"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-068",
+      "topic": "process",
+      "type": "short",
+      "prompt": "Before full rollout, a proposed design is simulated and tested against requirements. Enter the design-phase term: ______.",
+      "answer": [
+        "Validation",
+        "Design validation"
+      ],
+      "explanation": "Validation tests the proposed design before committing to full deployment. Tool output is evidence only for the features and conditions actually modelled.",
+      "objective": "Identify pre-deployment design validation.",
+      "refs": [
+        "campus"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-069",
+      "topic": "process",
+      "type": "matching",
+      "prompt": "Match each task to the design stage. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The design moves from needs and evidence to logical structure and physical implementation. Stages can be revisited as constraints become clearer.",
+      "objective": "Map design tasks to stages.",
+      "refs": [
+        "campus"
+      ],
+      "items": [
+        "Interview departments about service needs",
+        "Record present traffic peaks and building constraints",
+        "Define subnets and permitted flows",
+        "Choose racks, media and physical connections"
+      ],
+      "options": [
+        "Requirements gathering",
+        "Site and traffic analysis",
+        "Logical design",
+        "Physical design"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-070",
+      "topic": "process",
+      "type": "ordering",
+      "prompt": "Order this simplified top-down delivery path.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "This simplified path starts with outcomes before technology. Validation should inform deployment; acceptance then checks the delivered service against agreed requirements.",
+      "objective": "Sequence requirement-led delivery.",
+      "refs": [
+        "campus"
+      ],
+      "items": [
+        "Agree business and application requirements",
+        "Develop logical design",
+        "Develop physical design",
+        "Validate the proposal, deploy and perform acceptance tests"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-071",
+      "topic": "campus",
+      "type": "single",
+      "prompt": "A traditional three-tier campus block must aggregate access switches and apply inter-VLAN routing policy. Which tier is the usual focus?",
+      "answer": 3,
+      "explanation": "The distribution tier traditionally aggregates access blocks and supplies routing/policy boundaries. Actual routed-access designs can place some functions elsewhere.",
+      "objective": "Locate policy aggregation in the stated architecture.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "Access",
+        "Physical",
+        "Core",
+        "Distribution"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-072",
+      "topic": "campus",
+      "type": "single",
+      "prompt": "A proposal places heavy application inspection throughout a core whose stated goal is fast, reliable transit between distribution blocks. Which concern should be reviewed?",
+      "answer": 0,
+      "explanation": "The core is normally kept focused on dependable transit. Additional processing must be justified against performance, operational complexity and availability requirements.",
+      "objective": "Evaluate core responsibilities against a design goal.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "Whether core complexity undermines the stated transit and availability goals",
+        "Whether access switches need a longer DHCP lease",
+        "Whether distribution policies should be copied to every client application",
+        "Whether each VLAN should use a different DNS suffix"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-073",
+      "topic": "campus",
+      "type": "single",
+      "prompt": "A small site merges core and distribution functions into one tier. Which judgement is appropriate?",
+      "answer": 1,
+      "explanation": "Hierarchy describes roles, not a requirement for three separate physical tiers in every site. A collapsed design must still meet the actual service requirements.",
+      "objective": "Evaluate collapsed-core suitability.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "The site must add a separate core tier regardless of its requirements",
+        "A collapsed core can be appropriate if capacity, resilience and growth needs are met",
+        "Combining tiers removes the need for access-layer connectivity",
+        "A collapsed core guarantees higher availability solely because it uses fewer tiers"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-074",
+      "topic": "campus",
+      "type": "single",
+      "prompt": "Two internet circuits enter through the same duct and share one upstream provider facility. What is the main resilience concern?",
+      "answer": 2,
+      "explanation": "Redundancy only protects against failures that the alternatives do not share. Physical routes, upstream services, power and equipment must be examined.",
+      "objective": "Identify common-mode link failure.",
+      "refs": [
+        "ha"
+      ],
+      "options": [
+        "Different advertised speeds could change the primary-path choice",
+        "Different address ranges could require updated routing policy",
+        "A shared physical or provider failure can disable both",
+        "Different link technologies could require different transceivers"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-075",
+      "topic": "campus",
+      "type": "multiple",
+      "prompt": "Select TWO checks that directly test whether a backup path supports high availability.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "A backup must be usable and must restore the required service quickly enough. Configuration, convergence and application behaviour require evidence.",
+      "objective": "Validate end-to-end failover.",
+      "refs": [
+        "ha"
+      ],
+      "options": [
+        "Disconnect the primary path in a controlled test and measure recovery",
+        "Check only whether the spare interface is administratively enabled",
+        "Check whether essential application sessions recover within the agreed target",
+        "Confirm only that two cables are listed in the inventory"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-076",
+      "topic": "campus",
+      "type": "multiple",
+      "prompt": "Select TWO design decisions that directly support expansion from one building to three.",
+      "answer": [
+        1,
+        2
+      ],
+      "explanation": "Modularity and planned capacity let the network grow in manageable blocks. Growth assumptions should be documented and checked, rather than treating spare capacity as unlimited.",
+      "objective": "Plan modular growth.",
+      "refs": [
+        "campus"
+      ],
+      "options": [
+        "Use every available port on day one without spare capacity",
+        "Use repeatable access/distribution blocks",
+        "Leave address and uplink capacity for planned additions",
+        "Make every change depend on replacing the entire backbone"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-077",
+      "topic": "campus",
+      "type": "truefalse",
+      "prompt": "Two redundant switches powered only by the same failed power strip can both become unavailable.",
+      "answer": true,
+      "explanation": "A shared power dependency can defeat device redundancy. Availability assessment must include the supporting infrastructure, not just network links.",
+      "objective": "Identify shared infrastructure dependencies.",
+      "refs": [
+        "ha"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-078",
+      "topic": "campus",
+      "type": "short",
+      "prompt": "In campus hierarchy terminology, at which tier do end-user switch ports and wireless attachment normally reside? Enter the tier name.",
+      "answer": [
+        "Access",
+        "Access layer",
+        "Access tier"
+      ],
+      "explanation": "The access tier attaches endpoints. Distribution and core roles aggregate and transport traffic beyond those edge connections.",
+      "objective": "Locate endpoint attachment.",
+      "refs": [
+        "campus"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-079",
+      "topic": "campus",
+      "type": "short",
+      "prompt": "The primary path fails and a configured backup takes over. Enter the conventional term for this switchover.",
+      "answer": [
+        "Failover",
+        "Fail over",
+        "Fail-over"
+      ],
+      "explanation": "Failover is the transition to a working backup. Recovery time and surviving application behaviour determine whether it meets the availability target.",
+      "objective": "Name backup switchover.",
+      "refs": [
+        "ha"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-080",
+      "topic": "campus",
+      "type": "matching",
+      "prompt": "Match each operational deliverable to its purpose. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Acceptance tests measure delivered requirements; documentation supports operation; monitoring detects changes; a pilot reduces uncertainty before wider rollout.",
+      "objective": "Differentiate deployment and operations evidence.",
+      "refs": [
+        "campus",
+        "ha"
+      ],
+      "items": [
+        "Agreed application tests with recorded pass/fail evidence",
+        "Current diagrams, addressing and configuration records",
+        "Central alerts compared with normal traffic patterns",
+        "A limited rollout with real users before wider deployment"
+      ],
+      "options": [
+        "Acceptance testing",
+        "Maintainable handover documentation",
+        "Operational monitoring",
+        "Pilot deployment"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-081",
+      "topic": "threats",
+      "type": "single",
+      "prompt": "Many compromised hosts simultaneously send traffic intended to exhaust a service's capacity. Which description is most specific?",
+      "answer": 1,
+      "explanation": "A distributed denial-of-service attack uses multiple sources to exhaust or disrupt a target. An outage alone would not prove this cause; the scenario supplies attack intent and distribution.",
+      "objective": "Identify distributed resource exhaustion.",
+      "refs": [
+        "ddos"
+      ],
+      "options": [
+        "Passive eavesdropping",
+        "Distributed denial of service",
+        "Legitimate route convergence",
+        "Normal lease renewal"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-082",
+      "topic": "threats",
+      "type": "single",
+      "prompt": "A service accumulates many incomplete TCP connection attempts that consume connection-state resources. Which mechanism fits?",
+      "answer": 0,
+      "explanation": "A SYN flood targets resources used for connection establishment. This differs from flooding a link with arbitrary volume or tampering with application input.",
+      "objective": "Recognise incomplete-handshake exhaustion.",
+      "refs": [
+        "tcp",
+        "ddos"
+      ],
+      "options": [
+        "SYN flooding",
+        "DNS zone transfer",
+        "NTP clock drift",
+        "DHCP address renewal"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-083",
+      "topic": "threats",
+      "type": "single",
+      "prompt": "A resolver cache contains a forged mapping for a legitimate service name, sending later users to the wrong address. What is the principal mechanism?",
+      "answer": 2,
+      "explanation": "DNS poisoning supplies false name-resolution data. ARP poisoning instead targets local IPv4-to-hardware address mappings.",
+      "objective": "Identify the data structure poisoned in DNS attacks.",
+      "refs": [
+        "dns"
+      ],
+      "options": [
+        "ARP cache corruption",
+        "MAC learning ageing",
+        "DNS cache poisoning",
+        "Wireless channel interference"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-084",
+      "topic": "threats",
+      "type": "single",
+      "prompt": "A local attacker convinces hosts that the gateway IPv4 address belongs to the attacker's MAC address. Which mechanism is involved?",
+      "answer": 3,
+      "explanation": "False ARP information can redirect local traffic intended for a gateway. This targets local neighbour resolution, rather than DNS names.",
+      "objective": "Recognise local neighbour impersonation.",
+      "refs": [
+        "arp"
+      ],
+      "options": [
+        "SMTP relay",
+        "TCP flow control",
+        "DHCP lease expiry",
+        "ARP poisoning"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-085",
+      "topic": "threats",
+      "type": "multiple",
+      "prompt": "Select TWO statements that correctly describe source-IP spoofing.",
+      "answer": [
+        0,
+        3
+      ],
+      "explanation": "A forged source address is not authentication. Replies may go to the impersonated address, so spoofing alone does not establish a working two-way session.",
+      "objective": "Explain spoofing and its limits.",
+      "refs": [
+        "ip"
+      ],
+      "options": [
+        "A packet can claim a source address that is not the sender's actual address",
+        "It automatically gives the attacker the legitimate host's password",
+        "It guarantees the attacker receives replies sent to the claimed address",
+        "The source-address field alone should not be treated as strong identity proof"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-086",
+      "topic": "threats",
+      "type": "multiple",
+      "prompt": "A login value is concatenated directly into an SQL command. Select TWO measures most directly relevant to preventing SQL injection in that operation.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "Parameterisation keeps data separate from command structure; suitable validation adds defence. Network layout does not repair unsafe query construction.",
+      "objective": "Select controls for an injection mechanism.",
+      "refs": [
+        "owasp"
+      ],
+      "options": [
+        "Use parameterised queries",
+        "Rely only on perimeter traffic filtering",
+        "Validate input according to the expected data",
+        "Use encryption while retaining the unsafe query construction"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-087",
+      "topic": "threats",
+      "type": "truefalse",
+      "prompt": "A person can be deceived by a phishing message even when the message was transported over an encrypted connection.",
+      "answer": true,
+      "explanation": "Encryption protects a channel; it does not ensure the sender's story or request is trustworthy. Social engineering targets human judgement and workflow.",
+      "objective": "Separate channel protection from content trust.",
+      "refs": [
+        "phishing",
+        "tls"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-088",
+      "topic": "threats",
+      "type": "truefalse",
+      "prompt": "Copying attacker-controlled input into a fixed-size buffer without checking its size can create a memory-corruption vulnerability.",
+      "answer": true,
+      "explanation": "Unchecked copying can overwrite memory beyond the intended buffer. The result can range from a crash to exploitable corruption, depending on the program and protections.",
+      "objective": "Recognise unsafe memory handling.",
+      "refs": [
+        "memory"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-089",
+      "topic": "threats",
+      "type": "short",
+      "prompt": "An attacker silently reads unencrypted network traffic without changing its contents. Enter the conventional threat term.",
+      "answer": [
+        "Eavesdropping",
+        "Passive eavesdropping",
+        "Sniffing",
+        "Packet sniffing"
+      ],
+      "explanation": "Eavesdropping concerns unauthorised observation. Altering messages or impersonating an endpoint introduces additional attack behaviour.",
+      "objective": "Identify passive confidentiality loss.",
+      "refs": [
+        "tls"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-090",
+      "topic": "threats",
+      "type": "matching",
+      "prompt": "Match each scenario to the closest threat. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "These differ in the abused mechanism: session state, routing information, malformed packet handling and human deception. Historic malformed-packet attacks are not evidence that every modern stack is vulnerable.",
+      "objective": "Differentiate attack mechanisms from scenarios.",
+      "refs": [
+        "ip",
+        "icmp",
+        "phishing"
+      ],
+      "items": [
+        "An attacker reuses a stolen authenticated session token",
+        "An unauthorised route diverts traffic through a hostile path",
+        "A crafted oversized/reassembled IP message crashes a vulnerable legacy stack",
+        "A user is persuaded to enter credentials into a convincing fake form"
+      ],
+      "options": [
+        "Session hijacking",
+        "Routing manipulation",
+        "Ping-of-Death-style malformed-packet attack",
+        "Phishing"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-091",
+      "topic": "controls",
+      "type": "single",
+      "prompt": "A sensor receives a copy of network traffic and alerts on suspicious activity, but cannot stop packets on the live path. Which role does it perform?",
+      "answer": 2,
+      "explanation": "A passive IDS observes and alerts. Inline prevention requires a deployment and enforcement capability that can affect traffic on the live path.",
+      "objective": "Distinguish passive detection from inline prevention.",
+      "refs": [
+        "ids"
+      ],
+      "options": [
+        "Inline IPS enforcement",
+        "Stateful firewall filtering",
+        "Passive IDS monitoring",
+        "Application traffic distribution"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-092",
+      "topic": "controls",
+      "type": "single",
+      "prompt": "A firewall policy needs application-aware inspection plus intrusion-prevention features. Which description best fits the intended capability?",
+      "answer": 3,
+      "explanation": "NGFW products commonly combine firewalling with deeper application inspection and prevention capabilities. Feature availability, licensing, placement and configuration still matter.",
+      "objective": "Select a security platform by required capability.",
+      "refs": [
+        "firewall",
+        "ids"
+      ],
+      "options": [
+        "A stateless packet filter limited to IP/port rules",
+        "A router performing basic route selection only",
+        "A passive packet capture sensor without enforcement",
+        "A next-generation firewall with those features configured"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-093",
+      "topic": "controls",
+      "type": "single",
+      "prompt": "A normally quiet server suddenly sends unusually high outbound traffic. Which detection approach compares this behaviour with a baseline?",
+      "answer": 0,
+      "explanation": "Anomaly detection looks for deviations from expected behaviour. A deviation warrants investigation; it does not establish malicious intent on its own.",
+      "objective": "Interpret baseline-based detection.",
+      "refs": [
+        "ids"
+      ],
+      "options": [
+        "Anomaly-based detection",
+        "Signature matching for a known exploit byte pattern",
+        "A fixed source-IP deny rule",
+        "A static allowlist of destination service ports"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-094",
+      "topic": "controls",
+      "type": "single",
+      "prompt": "A critical security update is available for an exposed service. Which operational response best balances risk and service continuity?",
+      "answer": 1,
+      "explanation": "Patch management identifies applicable fixes, handles testing/deployment and verifies outcomes. Prioritisation should consider exposure and exploitation risk rather than treating updates as automatically harmless or unnecessary.",
+      "objective": "Apply a managed patching workflow.",
+      "refs": [
+        "patch"
+      ],
+      "options": [
+        "Defer it until the service fails, then decide whether it applied",
+        "Assess applicability, test appropriately, deploy promptly and verify the update",
+        "Treat the perimeter firewall as sufficient mitigation without reviewing exposure",
+        "Install it widely without checking compatibility or successful deployment"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-095",
+      "topic": "controls",
+      "type": "multiple",
+      "prompt": "Select TWO decisions consistent with Zero Trust principles.",
+      "answer": [
+        1,
+        3
+      ],
+      "explanation": "Zero Trust does not grant implicit trust based only on network location. Access decisions and least privilege focus on protecting resources and authorised use.",
+      "objective": "Apply context-based least-privilege access.",
+      "refs": [
+        "zt"
+      ],
+      "options": [
+        "Trust a device permanently because it is on campus Wi-Fi",
+        "Evaluate identity, device and access context for resource access",
+        "Grant every internal user broad access automatically",
+        "Limit access to what is required for the authorised task"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-096",
+      "topic": "controls",
+      "type": "multiple",
+      "prompt": "Select TWO properties that correctly configured TLS is designed to support for application communications.",
+      "answer": [
+        0,
+        2
+      ],
+      "explanation": "TLS protects a communication channel, including confidentiality and integrity. Endpoint compromise or dishonest application content requires other controls.",
+      "objective": "State the security properties and limits of TLS.",
+      "refs": [
+        "tls"
+      ],
+      "options": [
+        "Confidentiality of protected application data in transit",
+        "Automatic repair of every compromised endpoint",
+        "Detection of tampering with protected records",
+        "Proof that every webpage gives honest advice"
+      ],
+      "select": 2
+    },
+    {
+      "id": "net-mock-20261029-097",
+      "topic": "controls",
+      "type": "truefalse",
+      "prompt": "A signature-based detector can miss a new attack if it has no matching signature or other detection logic.",
+      "answer": true,
+      "explanation": "Signatures identify known patterns. Coverage depends on the rule set and visibility; complementary detection and review can address some gaps.",
+      "objective": "Explain signature coverage limits.",
+      "refs": [
+        "ids"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-098",
+      "topic": "controls",
+      "type": "short",
+      "prompt": "A current wireless deployment offers WPA2 and a newer WPA-family security generation. Enter the newer generation named WPA followed by its number.",
+      "answer": [
+        "WPA3",
+        "WPA 3",
+        "WPA-3"
+      ],
+      "explanation": "WPA3 is the newer generation relative to WPA2. Choose a supported secure mode and appropriate authentication; a label alone does not validate the whole deployment.",
+      "objective": "Distinguish WPA generations without assuming automatic protection.",
+      "refs": [
+        "wpa3"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-099",
+      "topic": "controls",
+      "type": "short",
+      "prompt": "A policy blocks every flow unless an explicit rule permits it. Enter the common two-word policy name.",
+      "answer": [
+        "Default deny",
+        "Default-deny",
+        "Deny by default"
+      ],
+      "explanation": "Default deny starts from no implicit permission. Required flows need explicit, reviewed allow rules and testing so security and necessary service both work.",
+      "objective": "Name an explicit-allow policy baseline.",
+      "refs": [
+        "firewall"
+      ]
+    },
+    {
+      "id": "net-mock-20261029-100",
+      "topic": "controls",
+      "type": "matching",
+      "prompt": "Match each security validation result to its interpretation. Use every option once.",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "Test both permitted and prohibited behaviours. Alerts require context, encryption has a defined scope, and policy needs maintenance as services change.",
+      "objective": "Interpret control testing and residual gaps.",
+      "refs": [
+        "firewall",
+        "ids",
+        "tls"
+      ],
+      "items": [
+        "An authorised flow works and a prohibited guest flow is blocked",
+        "An IDS alert fires during a known benign backup",
+        "HTTPS is enabled but stolen credentials still log in",
+        "A rule set is reviewed after a new service is added"
+      ],
+      "options": [
+        "Evidence for the tested access rule",
+        "Potential false positive requiring review",
+        "Channel encryption does not replace credential protection",
+        "Change-aware policy maintenance"
+      ]
+    }
+  ]
+}
