@@ -1,0 +1,2318 @@
+{
+  "schemaVersion": 1,
+  "id": "uniquiz-cccu-original-mock-deduplicated",
+  "version": "2.0.0",
+  "title": "Computer Networking: Original Mock, Streamlined",
+  "created": "2026-10-29",
+  "description": "The supplied CCCU mock with repeated questions removed: 65 retained original questions, in their original order. Original stems and visible multiple-choice options are preserved. 64 questions are scored; original Q32 is retained as an unscored discussion because its wording is ambiguous.",
+  "scoring": {
+    "maximum": 64,
+    "pointsPerQuestion": 1,
+    "partialCredit": false,
+    "negativeCredit": false,
+    "rule": "One point per fully correct scored question; no partial or negative marks. 64 available marks across 65 retained questions. Original Q32 is review-only. Equivalent defensible answers are accepted where the source wording is broad. These are practice rules, not the original platform marking scheme."
+  },
+  "preserveOrder": true,
+  "topics": {
+    "models": {
+      "name": "OSI and TCP/IP models",
+      "revise": "Separate bits, frames, packets and transport data. Practise mapping the four TCP/IP layers to OSI, then explain encapsulation without assuming every protocol fits one rigid box.",
+      "check": "Explain which information a switch, router and receiving application each examine.",
+      "video": {
+        "id": "AYgXr1dynKU",
+        "start": 88,
+        "title": "Understanding the OSI Model",
+        "channel": "Professor Messer"
+      }
+    },
+    "transport": {
+      "name": "Transport and communication",
+      "revise": "Compare TCP and UDP using reliability, ordering, overhead, ports and application requirements. Distinguish flow control from congestion control and encryption from reliable delivery.",
+      "check": "Choose a transport for a financial file and for replaceable live samples; justify each trade-off.",
+      "video": {
+        "id": "LkolbURrtTs",
+        "start": 118,
+        "title": "OSI Model: A Practical Perspective",
+        "channel": "Practical Networking"
+      }
+    },
+    "services": {
+      "name": "Application protocols and ports",
+      "revise": "Build a compact service-to-purpose table for DNS, DHCP, NTP, HTTP(S), SMTP and SSH/SFTP. Keep mail relay separate from mail submission and retrieval.",
+      "check": "Trace how a newly connected laptop obtains settings, resolves a name and opens a secure website.",
+      "video": {
+        "id": "E5bSumTAHZE",
+        "start": 16,
+        "title": "Network Protocols: ARP, FTP, SMTP, HTTP, TLS, DNS, DHCP",
+        "channel": "Practical Networking"
+      }
+    },
+    "devices": {
+      "name": "Devices and client/server roles",
+      "revise": "Choose devices by the function required. Distinguish repeating, bridging, routing, filtering, proxying and balancing, and recognise that one appliance can combine roles.",
+      "check": "Draw a request path through an access point, router, proxy and load balancer, explaining each role.",
+      "video": {
+        "id": "H7-NR3Q3BeI",
+        "start": 39,
+        "title": "Hub, Bridge, Switch, Router",
+        "channel": "Practical Networking"
+      }
+    },
+    "lan": {
+      "name": "LANs, topologies and Wi-Fi",
+      "revise": "Compare topology failure behaviour, Ethernet versus Wi-Fi, shared radio capacity, broadcast domains and VLAN boundaries. Consider both coverage and user density.",
+      "check": "Explain why adding access points needs a radio/capacity plan and why a VLAN alone is not an access policy.",
+      "video": {
+        "id": "tf66r-LSEZE",
+        "start": 68,
+        "title": "The Bus, Star, Ring, Mesh & Tree Network Topologies",
+        "channel": "Tech Hub Academy"
+      }
+    },
+    "diagnostics": {
+      "name": "IP addressing and troubleshooting",
+      "revise": "Use addressing, gateway, DNS and translation evidence to localise faults. Know what ping, traceroute and packet capture can demonstrate, and where their evidence stops.",
+      "check": "For a host that reaches an IP address but not a hostname, choose a targeted next test and explain why.",
+      "video": {
+        "id": "FTUV0t6JaDA",
+        "start": 155,
+        "title": "NAT Explained - Network Address Translation",
+        "channel": "PowerCert Animated Videos"
+      }
+    },
+    "process": {
+      "name": "Network design process",
+      "revise": "Work from measurable requirements through analysis, logical design, physical design, validation and acceptance. Distinguish top-down, bottom-up and hybrid decisions.",
+      "check": "Turn a vague request for a fast network into a measurable acceptance criterion and a relevant test.",
+      "video": null
+    },
+    "campus": {
+      "name": "Campus hierarchy and resilience",
+      "revise": "Separate access, distribution and core functions. Evaluate redundancy, capacity, failure domains, failover and growth using the whole path rather than a device count.",
+      "check": "Identify shared power, links or providers that can defeat an apparently redundant design.",
+      "video": null
+    },
+    "threats": {
+      "name": "Threats and vulnerability analysis",
+      "revise": "Identify the mechanism and affected asset for floods, spoofing, poisoning, hijacking, injection, memory errors and social engineering. Do not label every outage an attack.",
+      "check": "For each threat, state the evidence that distinguishes it from a configuration error and select one relevant control.",
+      "video": null
+    },
+    "controls": {
+      "name": "Security controls and validation",
+      "revise": "Distinguish IDS alerts from inline prevention, validate rules, combine controls, protect credentials and traffic, and apply identity-based access decisions.",
+      "check": "Explain the limits of encryption, segmentation and monitoring individually, then combine them in a small security plan.",
+      "video": null
+    }
+  },
+  "sources": {
+    "tcp": [
+      "TCP standard (RFC 9293)",
+      "https://www.rfc-editor.org/rfc/rfc9293.html"
+    ],
+    "udp": [
+      "UDP specification (RFC 768)",
+      "https://www.rfc-editor.org/rfc/rfc768.html"
+    ],
+    "dns": [
+      "DNS implementation (RFC 1035)",
+      "https://www.rfc-editor.org/rfc/rfc1035.html"
+    ],
+    "dhcp": [
+      "DHCP (RFC 2131)",
+      "https://www.rfc-editor.org/rfc/rfc2131.html"
+    ],
+    "smtp": [
+      "Mail submission versus relay (RFC 6409)",
+      "https://www.rfc-editor.org/rfc/rfc6409.html"
+    ],
+    "tls": [
+      "TLS 1.3 (RFC 8446)",
+      "https://www.rfc-editor.org/rfc/rfc8446.html"
+    ],
+    "ports": [
+      "IANA service and port registry",
+      "https://www.iana.org/assignments/service-names-port-numbers/"
+    ],
+    "campus": [
+      "Cisco campus architecture",
+      "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Campus/campover.html"
+    ],
+    "ha": [
+      "Cisco campus high availability",
+      "https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Campus/HA_campus_DG/hacampusdg.html"
+    ],
+    "switch": [
+      "Cisco: how a switch works",
+      "https://www.cisco.com/site/us/en/learn/topics/small-business/network-switch-how.html"
+    ],
+    "topology": [
+      "Cisco network topology",
+      "https://www-cloud.cisco.com/site/us/en/learn/topics/networking/what-is-network-topology.html"
+    ],
+    "zt": [
+      "NIST Zero Trust Architecture",
+      "https://csrc.nist.gov/pubs/sp/800/207/final"
+    ],
+    "ids": [
+      "NIST intrusion detection and prevention guide",
+      "https://csrc.nist.gov/pubs/sp/800/94/final"
+    ],
+    "firewall": [
+      "NIST firewall policy guide",
+      "https://csrc.nist.gov/pubs/sp/800/41/r1/final"
+    ],
+    "patch": [
+      "NIST enterprise patch management",
+      "https://csrc.nist.gov/pubs/sp/800/40/r4/final"
+    ],
+    "ip": [
+      "IPv4 (RFC 791)",
+      "https://www.rfc-editor.org/rfc/rfc791.html"
+    ],
+    "arp": [
+      "ARP (RFC 826)",
+      "https://www.rfc-editor.org/rfc/rfc826.html"
+    ],
+    "icmp": [
+      "ICMP (RFC 792)",
+      "https://www.rfc-editor.org/rfc/rfc792.html"
+    ],
+    "nat": [
+      "Traditional NAT (RFC 3022)",
+      "https://www.rfc-editor.org/rfc/rfc3022.html"
+    ],
+    "private": [
+      "Private IPv4 addressing (RFC 1918)",
+      "https://www.rfc-editor.org/rfc/rfc1918.html"
+    ],
+    "ssh": [
+      "SSH architecture (RFC 4251)",
+      "https://www.rfc-editor.org/rfc/rfc4251.html"
+    ],
+    "ntp": [
+      "NTPv4 (RFC 5905)",
+      "https://www.rfc-editor.org/rfc/rfc5905.html"
+    ],
+    "http": [
+      "HTTP semantics (RFC 9110)",
+      "https://www.rfc-editor.org/rfc/rfc9110.html"
+    ],
+    "osi": [
+      "Cisco: the seven-layer model",
+      "https://www.cisco.com/c/en/us/td/docs/ios/sw_upgrades/interlink/r2_0/api_con/acoview.pdf"
+    ],
+    "wlan": [
+      "NIST wireless LAN security",
+      "https://csrc.nist.gov/pubs/sp/800/153/final"
+    ],
+    "owasp": [
+      "OWASP injection guidance",
+      "https://owasp.org/Top10/A03_2021-Injection/"
+    ],
+    "phishing": [
+      "CISA: recognise and report phishing",
+      "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+    ],
+    "ddos": [
+      "CISA: understanding denial-of-service attacks",
+      "https://www.cisa.gov/news-events/news/understanding-denial-service-attacks"
+    ],
+    "memory": [
+      "MITRE CWE-120: buffer copying without checking input size",
+      "https://cwe.mitre.org/data/definitions/120.html"
+    ],
+    "wifi-modern": [
+      "HPE Aruba: Wi-Fi generations and security",
+      "https://arubanetworking.hpe.com/techdocs/aos/wifi-design-deploy/generations/overview/"
+    ],
+    "wpa3": [
+      "Cisco WPA3 deployment guide",
+      "https://www.cisco.com/c/en/us/products/collateral/wireless/catalyst-9100ax-access-points/wpa3-dep-guide-og.html"
+    ]
+  },
+  "questions": [
+    {
+      "id": "cccu-mock-original-q001",
+      "originalNumber": 1,
+      "topic": "controls",
+      "type": "single",
+      "answer": 2,
+      "explanation": "A next-generation firewall combines conventional traffic filtering with deeper inspection and often intrusion-prevention capabilities. These features still depend on deployment and configuration.",
+      "objective": "NGFW capabilities.",
+      "refs": [
+        "firewall",
+        "ids"
+      ],
+      "prompt": "What is the role of next-generation firewalls (NGFW) in security architectures?",
+      "options": [
+        "Only block ports at the network layer",
+        "Replace IDS entirely",
+        "Combine traditional firewall features with deep packet inspection and IPS capabilities",
+        "Encrypt all traffic automatically"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 1,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q002",
+      "originalNumber": 2,
+      "topic": "threats",
+      "type": "single",
+      "answer": 3,
+      "explanation": "The scenario describes availability being deliberately exhausted by traffic. A distributed attack uses multiple sources; a DoS attack need not be distributed.",
+      "objective": "Recognise a traffic-flood availability attack.",
+      "refs": [
+        "ddos"
+      ],
+      "prompt": "Which of the following describes a scenario where critical services are unavailable due to deliberate traffic floods?",
+      "options": [
+        "Man-in-the-middle",
+        "Phishing",
+        "Data leakage",
+        "Denial-of-Service (DoS) and Distributed DoS (DDoS) attacks"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 2,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q003",
+      "originalNumber": 3,
+      "topic": "threats",
+      "type": "single",
+      "answer": 1,
+      "explanation": "DNS cache poisoning introduces false cached name-to-address information so users may reach an attacker-controlled destination. It is different from poisoning local ARP mappings.",
+      "objective": "DNS cache poisoning.",
+      "refs": [
+        "dns"
+      ],
+      "prompt": "DNS cache poisoning attacks aim to cause users to be redirected to attacker-controlled IP addresses. This is an example of which vulnerability category?",
+      "options": [
+        "IP spoofing",
+        "DNS poisoning (cache poisoning)",
+        "ARP poisoning",
+        "Phishing"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 3,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q004",
+      "originalNumber": 4,
+      "topic": "controls",
+      "type": "single",
+      "answer": 1,
+      "explanation": "Anomaly-based detection compares behaviour with an expected baseline. Unusual behaviour warrants investigation and is not itself proof of an attack.",
+      "objective": "Anomaly-based monitoring.",
+      "refs": [
+        "ids"
+      ],
+      "prompt": "Which monitoring approach helps detect and counter unusual traffic patterns indicating potential security incidents?",
+      "options": [
+        "Only physical access controls are needed",
+        "Anomaly-based detection in IDS",
+        "Signature-based detection only",
+        "No monitoring required"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 4,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q005",
+      "originalNumber": 5,
+      "topic": "threats",
+      "type": "single",
+      "answer": 0,
+      "explanation": "The intended historical example is Ping of Death: malformed or oversized/reassembled packets can exploit vulnerable packet handling. Not every ICMP flood or current network stack has this vulnerability.",
+      "objective": "Malformed ICMP/IP packet handling attacks.",
+      "refs": [
+        "icmp",
+        "ip"
+      ],
+      "prompt": "What type of attack uses crafted ICMP messages to disrupt a service by exceeding packet handling capabilities?",
+      "options": [
+        "Ping of Death (ICMP-related)",
+        "SYN flood",
+        "DNS amplification",
+        "SMB relay"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 5,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q006",
+      "originalNumber": 6,
+      "topic": "controls",
+      "type": "single",
+      "answer": 3,
+      "explanation": "An IDS monitors for attack signatures or anomalous behaviour and produces alerts. Prevention requires an appropriate inline enforcement capability.",
+      "objective": "Purpose of an IDS.",
+      "refs": [
+        "ids"
+      ],
+      "prompt": "Which security tool type monitors network traffic for unusual patterns or known attack signatures?",
+      "options": [
+        "Load balancer",
+        "Content delivery network",
+        "VPN concentrator",
+        "Intrusion Detection System (IDS)"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 6,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q008",
+      "originalNumber": 8,
+      "topic": "threats",
+      "type": "single",
+      "answer": 1,
+      "explanation": "Forged IP source addresses and manipulation of routes affect Internet-layer addressing or forwarding. ARP and MAC attacks target local-link mechanisms.",
+      "objective": "Internet-layer spoofing and routing attacks.",
+      "refs": [
+        "ip"
+      ],
+      "prompt": "Which Internet-layer attacks involve spoofing of source addresses or routing manipulation?",
+      "options": [
+        "Blanket encryption",
+        "IP spoofing and routing attacks",
+        "MAC flooding",
+        "ARP poisoning"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 8,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q009",
+      "originalNumber": 9,
+      "topic": "controls",
+      "type": "single",
+      "answer": 1,
+      "explanation": "This is the best available original option: unpatched systems may retain known exploitable vulnerabilities that an applicable security patch addresses. Patches fix vulnerabilities rather than attackers' exploit programs.",
+      "objective": "Risk from missing security patches.",
+      "refs": [
+        "patch"
+      ],
+      "prompt": "Why are unpatched software vulnerabilities a continuing risk for organisations?",
+      "options": [
+        "Because patches are rarely available for popular software",
+        "Because patches fix known exploits that attackers can use to compromise systems",
+        "Because all software remains secure after updates",
+        "Because patches slow down systems"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 9,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q010",
+      "originalNumber": 10,
+      "topic": "threats",
+      "type": "single",
+      "answer": 3,
+      "explanation": "The only original option containing injection is the intended choice. Its grouping is imprecise: insufficient input validation is directly relevant to SQL/code injection, while phishing and malware distribution are not generally caused by input-validation flaws.",
+      "objective": "Recognise the intended injection option and its wording limitation.",
+      "refs": [
+        "owasp"
+      ],
+      "prompt": "In the TCP/IP application layer, which attacks are typically associated with insufficient input validation?",
+      "options": [
+        "SYN flooding",
+        "ARP poisoning",
+        "DNS spoofing",
+        "Phishing, malware distribution, SQL/code injection"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 10,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q011",
+      "originalNumber": 11,
+      "topic": "threats",
+      "type": "single",
+      "answer": 2,
+      "explanation": "SQL, NoSQL, OS-command and LDAP injection are recognised injection categories. The exact lecture list is not an official answer key; the broad listed option is technically appropriate.",
+      "objective": "Distinguish several injection categories.",
+      "refs": [
+        "owasp"
+      ],
+      "prompt": "Injection flaws in applications typically enable attackers to input malicious data to gain control. Which are the common types mentioned in the Network Security notes?",
+      "options": [
+        "LDAP injections only",
+        "XML injections",
+        "SQL, NoSQL, OS, and LDAP injections",
+        "Code injections only"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 11,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q012",
+      "originalNumber": 12,
+      "topic": "threats",
+      "type": "single",
+      "answer": 3,
+      "explanation": "Eavesdropping is unauthorised observation of communications. Unencrypted payloads can expose sensitive information to an observer with traffic access.",
+      "objective": "Passive eavesdropping.",
+      "refs": [
+        "tls"
+      ],
+      "prompt": "Which threat involves secretly listening to unencrypted communications to read sensitive data?",
+      "options": [
+        "Phishing",
+        "Spoofing",
+        "Buffer overflow",
+        "Eavesdropping"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 12,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q013",
+      "originalNumber": 13,
+      "topic": "threats",
+      "type": "single",
+      "answer": 1,
+      "explanation": "This is the intended original choice. SYN flooding consumes TCP setup resources, while session hijacking abuses session state. Session hijacking can also involve application-layer session tokens; the original layer classification is simplified.",
+      "objective": "Recognise the intended connection/session attack grouping.",
+      "refs": [
+        "tcp",
+        "ids"
+      ],
+      "prompt": "Which transport-layer attack exploits lack of session security and can lead to disruption of connections?",
+      "options": [
+        "MAC flooding",
+        "Session hijacking or SYN flooding",
+        "IP spoofing",
+        "DNS poisoning"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 13,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q014",
+      "originalNumber": 14,
+      "topic": "controls",
+      "type": "single",
+      "answer": 3,
+      "explanation": "Improper authentication and weak credential handling can enable unauthorised access. Strong policies and correctly deployed authentication controls are protections, not examples of that weakness.",
+      "objective": "Authentication and credential weaknesses.",
+      "refs": [
+        "zt"
+      ],
+      "prompt": "Which authentication-related weakness is highlighted as a common Application Layer vulnerability?",
+      "options": [
+        "TLS mutual authentication",
+        "Perfect forward secrecy",
+        "Strong password policies implemented",
+        "Improper authentication and weak credential handling"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 14,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q015",
+      "originalNumber": 15,
+      "topic": "threats",
+      "type": "single",
+      "answer": 0,
+      "explanation": "A buffer overflow can overwrite memory outside an intended buffer. Depending on the defect and protections, consequences can include crashes or arbitrary code execution.",
+      "objective": "Memory handling vulnerabilities.",
+      "refs": [
+        "memory"
+      ],
+      "prompt": "Which vulnerability arises from improper memory handling that can allow attackers to execute arbitrary code on a target system?",
+      "options": [
+        "Buffer overflows",
+        "DNS poisoning",
+        "SQL injection",
+        "Cross-site scripting (XSS)"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 15,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q016",
+      "originalNumber": 16,
+      "topic": "threats",
+      "type": "single",
+      "answer": 1,
+      "explanation": "Social engineering manipulates people or processes into unsafe actions, such as disclosing credentials. It does not depend on overwhelming network hardware.",
+      "objective": "Phishing and social engineering mechanisms.",
+      "refs": [
+        "phishing"
+      ],
+      "prompt": "Phishing and social engineering primarily aim to compromise information by which means?",
+      "options": [
+        "Providing false software updates",
+        "Tricking individuals into divulging confidential information",
+        "Overloading network devices",
+        "Exploiting hardware defects"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 16,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q017",
+      "originalNumber": 17,
+      "topic": "lan",
+      "type": "short",
+      "answer": [
+        "Bus",
+        "Bus topology"
+      ],
+      "explanation": "A bus topology uses a shared linear communication backbone.",
+      "objective": "Bus topology.",
+      "refs": [
+        "topology"
+      ],
+      "prompt": "In LAN design, a _____ topology represents a linear structure where devices share a single communication line.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 17,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q018",
+      "originalNumber": 18,
+      "topic": "lan",
+      "type": "short",
+      "answer": [
+        "Network",
+        "Computer network",
+        "LAN",
+        "Local area network"
+      ],
+      "explanation": "The wording is broad: network and LAN are both reasonable. The question does not specify enough geographical detail to insist on LAN alone, so both are accepted.",
+      "objective": "Interpret the original broad network definition fairly.",
+      "refs": [
+        "switch"
+      ],
+      "prompt": "A _____ is a collection of devices communicating over a shared medium within defined boundaries.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 18,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q020",
+      "originalNumber": 20,
+      "topic": "lan",
+      "type": "short",
+      "answer": [
+        "Mesh",
+        "Mesh topology",
+        "Full mesh",
+        "Full mesh topology",
+        "Partial mesh",
+        "Partial mesh topology"
+      ],
+      "explanation": "A mesh provides alternate paths. Actual resilience also depends on forwarding, usable routes and shared failure dependencies.",
+      "objective": "Mesh redundancy.",
+      "refs": [
+        "topology"
+      ],
+      "prompt": "In LAN topology assessments, a _____ topology offers high redundancy and fault tolerance through multiple communication paths.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 20,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q021",
+      "originalNumber": 21,
+      "topic": "lan",
+      "type": "blanks",
+      "answer": [
+        "2.4",
+        "5"
+      ],
+      "explanation": "The traditional intended pair is 2.4 GHz and 5 GHz. Newer supported Wi-Fi can also use 6 GHz where permitted, so any two distinct valid bands from this set are accepted.",
+      "objective": "Common WLAN frequency bands.",
+      "refs": [
+        "wifi-modern"
+      ],
+      "prompt": "Wi-Fi networks in LANs commonly use the IEEE 802.11 standards with operating frequencies in the _____ and _____ bands.",
+      "fields": [
+        "First band",
+        "Second band"
+      ],
+      "groups": [
+        [
+          "2.4",
+          "2.4 GHz",
+          "2.4GHz",
+          "2.4 gigahertz"
+        ],
+        [
+          "5",
+          "5 GHz",
+          "5GHz",
+          "5 gigahertz"
+        ],
+        [
+          "6",
+          "6 GHz",
+          "6GHz",
+          "6 gigahertz"
+        ]
+      ],
+      "unordered": true,
+      "minimumDistinct": 2,
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 21,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q022",
+      "originalNumber": 22,
+      "topic": "diagnostics",
+      "type": "short",
+      "answer": [
+        "NAT",
+        "Network Address Translation",
+        "PAT",
+        "Port Address Translation",
+        "NAPT",
+        "Network Address Port Translation"
+      ],
+      "explanation": "NAT translates IP addresses. PAT/NAPT is the common shared-public-address form that also uses port translation, and is accepted as a more specific correct term.",
+      "objective": "IPv4 translation.",
+      "refs": [
+        "nat"
+      ],
+      "prompt": "The term _____ describes translating private IP addresses to public ones for Internet access within a LAN.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 22,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q023",
+      "originalNumber": 23,
+      "topic": "diagnostics",
+      "type": "blanks",
+      "answer": [
+        "ping",
+        "traceroute",
+        "Wireshark"
+      ],
+      "explanation": "The original is open-ended and does not name a mandatory trio. Any three distinct recognised tools in the accepted list score correctly; aliases such as tracert/traceroute count as one tool. ping, traceroute and Wireshark are examples, not the only acceptable answer.",
+      "objective": "Select legitimate LAN diagnostic tools.",
+      "refs": [
+        "icmp",
+        "dns"
+      ],
+      "prompt": "Troubleshooting LANs commonly employs tools such as _____, _____, and _____.",
+      "fields": [
+        "Tool 1",
+        "Tool 2",
+        "Tool 3"
+      ],
+      "groups": [
+        [
+          "ping"
+        ],
+        [
+          "traceroute",
+          "tracert"
+        ],
+        [
+          "Wireshark",
+          "wireshark analyser",
+          "wireshark analyzer"
+        ],
+        [
+          "tcpdump"
+        ],
+        [
+          "ipconfig"
+        ],
+        [
+          "ifconfig"
+        ],
+        [
+          "ip",
+          "ip command",
+          "iproute2"
+        ],
+        [
+          "nslookup"
+        ],
+        [
+          "dig"
+        ],
+        [
+          "netstat"
+        ],
+        [
+          "ss"
+        ],
+        [
+          "arp"
+        ],
+        [
+          "route"
+        ],
+        [
+          "iperf",
+          "iperf3"
+        ],
+        [
+          "mtr"
+        ],
+        [
+          "pathping"
+        ],
+        [
+          "nmap"
+        ],
+        [
+          "tshark"
+        ],
+        [
+          "ethtool"
+        ],
+        [
+          "network analyser",
+          "network analyzer",
+          "packet analyser",
+          "packet analyzer",
+          "packet sniffer"
+        ]
+      ],
+      "unordered": true,
+      "minimumDistinct": 3,
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 23,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q024",
+      "originalNumber": 24,
+      "topic": "models",
+      "type": "short",
+      "answer": [
+        "Internet",
+        "Internet layer",
+        "IP",
+        "IP layer"
+      ],
+      "explanation": "Internet is the conventional four-layer TCP/IP model name in this sequence. It corresponds most closely to OSI Network.",
+      "objective": "Name the four-layer Internet layer.",
+      "refs": [
+        "ip",
+        "osi"
+      ],
+      "prompt": "TCP/IP is the foundation protocol suite for LANs and the Internet, implemented in a layered fashion with four layers: Application, Transport, _____, and Network Access.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 24,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q025",
+      "originalNumber": 25,
+      "topic": "lan",
+      "type": "short",
+      "answer": [
+        "Star",
+        "Star topology"
+      ],
+      "explanation": "A star has separate links from stations to a central device. A failure of the central device remains a shared risk.",
+      "objective": "Star topology.",
+      "refs": [
+        "topology"
+      ],
+      "prompt": "A common LAN topology where all devices connect to a central hub or switch is the _____ topology.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 25,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q027",
+      "originalNumber": 27,
+      "topic": "controls",
+      "type": "blanks",
+      "answer": [
+        "WPA2",
+        "WPA3"
+      ],
+      "explanation": "The modern recommended pair is WPA2 and WPA3, with secure supported modes. The source says such as, so two distinct named Wi-Fi security protocols are accepted; WPA and WEP are historical mechanisms and should not be selected for a new secure deployment.",
+      "objective": "Recognise Wi-Fi security protocols and distinguish legacy insecurity.",
+      "refs": [
+        "wpa3",
+        "wlan"
+      ],
+      "prompt": "In wireless LANs, security protocols such as _____ and _____ are used to secure Wi-Fi networks.",
+      "fields": [
+        "Protocol 1",
+        "Protocol 2"
+      ],
+      "groups": [
+        [
+          "WPA2",
+          "WPA 2",
+          "WPA-2",
+          "Wi-Fi Protected Access 2",
+          "WPA2-Personal",
+          "WPA2-Enterprise"
+        ],
+        [
+          "WPA3",
+          "WPA 3",
+          "WPA-3",
+          "Wi-Fi Protected Access 3",
+          "WPA3-Personal",
+          "WPA3-Enterprise"
+        ],
+        [
+          "WPA",
+          "Wi-Fi Protected Access"
+        ],
+        [
+          "WEP",
+          "Wired Equivalent Privacy"
+        ]
+      ],
+      "unordered": true,
+      "minimumDistinct": 2,
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 27,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q028",
+      "originalNumber": 28,
+      "topic": "lan",
+      "type": "short",
+      "answer": [
+        "Wired",
+        "Wired network",
+        "Wired networking",
+        "Wired LAN",
+        "Wired Ethernet"
+      ],
+      "explanation": "IEEE 802.3 is Ethernet; IEEE 802.11 concerns WLAN radio links.",
+      "objective": "Ethernet versus wireless standards.",
+      "refs": [
+        "switch"
+      ],
+      "prompt": "IEEE 802.3 is the Ethernet standard for _____ connections.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 28,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q029",
+      "originalNumber": 29,
+      "topic": "services",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "DNS is an application-layer service. Address records map names to IP addresses, although DNS can hold other record types as well.",
+      "objective": "DNS layer and principal addressing purpose.",
+      "refs": [
+        "dns"
+      ],
+      "prompt": "DNS operates within the Application Layer and is primarily concerned with mapping domain names to IP addresses.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 29,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q030",
+      "originalNumber": 30,
+      "topic": "transport",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "UDP is connectionless and does not itself guarantee reliable, ordered delivery. An application using it must provide any required recovery or ordering.",
+      "objective": "UDP service properties.",
+      "refs": [
+        "udp"
+      ],
+      "prompt": "UDP is connection-oriented and guarantees reliable ordered delivery of data.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 30,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q032",
+      "originalNumber": 32,
+      "topic": "models",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "The statement is ambiguous without specifying a protocol or model convention. Routers can participate in network-layer congestion management, while TCP performs transport-layer congestion control. Assigning an unqualified True or False would be unfair, so this original item is retained for review and excluded from the score.",
+      "objective": "Discuss congestion responsibilities across layers.",
+      "refs": [
+        "tcp",
+        "ip"
+      ],
+      "prompt": "Congestion control is a function of the Network Layer in OSI, managing how packets are moved across a congested network.",
+      "scored": false,
+      "reviewAnswer": "Context-dependent: network-layer congestion mechanisms and TCP transport-layer congestion control both exist.",
+      "sourceIssue": "The original wording does not specify the congestion mechanism or model convention; this item is review-only.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 32,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q035",
+      "originalNumber": 35,
+      "topic": "models",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "OSI is a reference model used to explain responsibilities and interfaces. Real implementations need not copy its seven layers exactly.",
+      "objective": "Reference model versus mandatory implementation.",
+      "refs": [
+        "osi"
+      ],
+      "prompt": "The OSI model is a practical implementation standard that must be implemented exactly as defined in all network hardware.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 35,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q036",
+      "originalNumber": 36,
+      "topic": "models",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "The intended teaching answer is True: modularity allows a technology to change while preserving its service interface. In practice, changed interfaces, performance or assumptions can still affect other layers.",
+      "objective": "Layer modularity with stable interfaces.",
+      "refs": [
+        "osi"
+      ],
+      "prompt": "The OSI model’s modular design allows each layer to evolve independently without impacting other layers.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 36,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q037",
+      "originalNumber": 37,
+      "topic": "lan",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "A VLAN primarily supplies Layer 2 logical separation. Routing and access-control policies can enforce communication boundaries between those VLANs at Layer 3 or above.",
+      "objective": "VLAN layer classification.",
+      "refs": [
+        "campus",
+        "firewall"
+      ],
+      "prompt": "A VLAN is a concept that helps segment traffic and enforce security zones at the Network Layer.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 37,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q039",
+      "originalNumber": 39,
+      "topic": "models",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "Link-layer framing and frame checks provide local-link organisation and error detection. Error detection does not imply that every link protocol performs reliable end-to-end recovery.",
+      "objective": "Data Link framing and local error detection.",
+      "refs": [
+        "osi"
+      ],
+      "prompt": "In the OSI model, the Data Link Layer is responsible for both error detection and framing of data on a local link.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 39,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q041",
+      "originalNumber": 41,
+      "topic": "models",
+      "type": "matching",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "TCP transport provides stream recovery/flow control; IP handles inter-network delivery; link technologies frame local traffic; Physical transmits signals. These original selected labels form a complete technically correct response bank.",
+      "objective": "Map lower-layer functions.",
+      "refs": [
+        "tcp",
+        "ip",
+        "osi"
+      ],
+      "prompt": "Map the following OSI/TCP-IP concepts to their primary traffic handling function.",
+      "items": [
+        "Error recovery and flow control for data streams",
+        "Packet routing across networks",
+        "Framing and MAC addressing on local links",
+        "Physical transmission over media"
+      ],
+      "options": [
+        "Transport Layer (TCP)",
+        "Network Layer (IP)",
+        "Data Link Layer (Ethernet/Wi-Fi)",
+        "Physical Layer"
+      ],
+      "reuseOptions": true,
+      "optionProvenance": "All response labels visible in the PDF; the complete correct set can be recovered.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 41,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q042",
+      "originalNumber": 42,
+      "topic": "models",
+      "type": "matching",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The reference model supports scoped troubleshooting, modular interfaces and common terminology. Its application-layer role supplies services used by applications.",
+      "objective": "OSI abstraction and troubleshooting benefits.",
+      "refs": [
+        "osi"
+      ],
+      "prompt": "Match the following OSI layers to their primary role in troubleshooting and modular design.",
+      "items": [
+        "Troubleshooting scope limited to a specific layer",
+        "Abstraction allowing independent evolution of technologies",
+        "Standardisation across diverse hardware and software",
+        "End-user service provision to applications"
+      ],
+      "options": [
+        "Layered troubleshooting (OSI)",
+        "Modularity (OSI)",
+        "Standardisation (OSI)",
+        "Application Layer role (OSI)"
+      ],
+      "reuseOptions": true,
+      "optionProvenance": "All response labels visible in the PDF; the complete correct set can be recovered.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 42,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q043",
+      "originalNumber": 43,
+      "topic": "models",
+      "type": "matching",
+      "answer": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "The conventional OSI roles are Session, Presentation, Application and Physical respectively. Data Link handles frames rather than the physical movement of bits. The missing Physical response was restored; the question and its rows are unchanged.",
+      "objective": "Map upper-layer roles and bit transmission.",
+      "refs": [
+        "osi"
+      ],
+      "prompt": "Match the OSI model layers to their core responsibilities as described in Lecture 3.",
+      "items": [
+        "Layer that manages a session between applications",
+        "Layer that handles data presentation and translation",
+        "Layer that provides services to applications",
+        "Layer that manages how bits are moved across a medium"
+      ],
+      "options": [
+        "Session Layer (Layer 5)",
+        "Presentation Layer (Layer 6)",
+        "Application Layer (Layer 7)",
+        "Data Link Layer (Layer 2)",
+        "Physical Layer (Layer 1)"
+      ],
+      "reuseOptions": true,
+      "optionProvenance": "Original visible response labels retained; the missing correct Physical label was restored because unselected dropdown options were not exported.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 43,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q044",
+      "originalNumber": 44,
+      "topic": "services",
+      "type": "matching",
+      "answer": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "explanation": "Conventional HTTP, HTTPS and DNS service ports are 80, 443 and 53. Mail submission normally uses 587; 465 is accepted for implicit TLS submission. Port 25 is conventionally relay. The PDF does not show its full original dropdown bank, so missing correct submission responses have been restored.",
+      "objective": "Associate common service ports without conflating submission and relay.",
+      "refs": [
+        "ports",
+        "smtp",
+        "dns"
+      ],
+      "prompt": "Identify the correct set of port-number associations for common Application Layer protocols.",
+      "items": [
+        "HTTP web service port",
+        "HTTPS secure web service port",
+        "DNS name resolution port",
+        "SMTP mail submission port"
+      ],
+      "options": [
+        "80",
+        "443",
+        "53",
+        "23 (Telnet)",
+        "587 (mail submission)",
+        "465 (implicit TLS submission)",
+        "25 (SMTP relay)"
+      ],
+      "reuseOptions": true,
+      "acceptedPerItem": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "optionProvenance": "80, 443, 53 and 23 (Telnet) are visible source labels; appropriate missing SMTP responses were restored.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 44,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q045",
+      "originalNumber": 45,
+      "topic": "services",
+      "type": "matching",
+      "answer": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "explanation": "All four are application-layer services, even though DHCP supplies IP settings. The original PDF shows selected answers rather than the complete bank; three suitable application-service labels were restored. The misleading Network-layer choice remains an available distractor.",
+      "objective": "Classify configuration, name, time and secure web services.",
+      "refs": [
+        "dhcp",
+        "dns",
+        "ntp",
+        "http"
+      ],
+      "prompt": "Match the role of the following protocol types in the lecture with their core function.",
+      "items": [
+        "DHCP server provides dynamic IP addresses",
+        "DNS translates domain names to IP addresses",
+        "NTP synchronises network time",
+        "HTTPS provides secure web traffic"
+      ],
+      "options": [
+        "Network Layer/Internet Protocol management (address assignment context)",
+        "Application/Host Configuration (DHCP)",
+        "Application/Name Resolution (DNS)",
+        "Application/Network Time Synchronisation",
+        "Application/Secure Web Service (HTTPS)"
+      ],
+      "reuseOptions": true,
+      "optionProvenance": "Two original visible response labels retained; three missing correct application-service labels were restored.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 45,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q046",
+      "originalNumber": 46,
+      "topic": "models",
+      "type": "matching",
+      "answer": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "explanation": "The four-layer model groups OSI Physical/Data Link into Network Interface and the three upper OSI layers into Application. Its Internet and Transport layers correspond most closely to OSI Network and Transport.",
+      "objective": "Compare full OSI/TCP-IP groupings.",
+      "refs": [
+        "osi"
+      ],
+      "prompt": "Match the following TCP/IP model layers to the OSI layers that most closely correspond, in the order of the four-layer model.",
+      "items": [
+        "TCP/IP Network Interface corresponds to OSI Physical + Data Link",
+        "TCP/IP Internet Layer corresponds to OSI Network Layer",
+        "TCP/IP Transport Layer corresponds to OSI Transport Layer",
+        "TCP/IP Application Layer corresponds to OSI Application/Presentation/Session"
+      ],
+      "options": [
+        "OSI: Physical + Data Link",
+        "OSI: Network Layer",
+        "OSI: Transport Layer",
+        "OSI: Application/Presentation/Session"
+      ],
+      "reuseOptions": true,
+      "optionProvenance": "All response labels visible in the PDF; the complete correct set can be recovered.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 46,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q051",
+      "originalNumber": 51,
+      "topic": "process",
+      "type": "short",
+      "answer": [
+        "Hybrid approach",
+        "Hybrid",
+        "Hybrid design",
+        "Hybrid design approach"
+      ],
+      "explanation": "A hybrid approach combines requirements-led decisions with the realities of available technology and constraints.",
+      "objective": "Hybrid design.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "A design approach that blends Top-Down and Bottom-Up strategies is the _____.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 51,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q053",
+      "originalNumber": 53,
+      "topic": "process",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "Top-down design starts with business/application needs and derives supporting technical requirements before choosing implementation details.",
+      "objective": "Top-down starting point.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "A top-down design approach begins with business requirements and derives network requirements from them.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 53,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q054",
+      "originalNumber": 54,
+      "topic": "process",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "Logical design includes addressing, segmentation and communication relationships. Equipment, locations and physical links belong to physical implementation design.",
+      "objective": "Logical versus physical design.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "The primary aim of a logical design is to specify physical devices without regard to IP addressing.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 54,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q055",
+      "originalNumber": 55,
+      "topic": "process",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "Both tools can support modelling or emulating network behaviour, with different feature coverage. A simulation is evidence for the features and conditions actually tested.",
+      "objective": "Design simulation tools.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "GNS3 and Packet Tracer are tools used to simulate network designs during the planning phase.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 55,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q056",
+      "originalNumber": 56,
+      "topic": "lan",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "VLANs separate link-layer broadcast domains and can support security zoning and traffic organisation. Access policies still need enforcement; VLANs do not automatically guarantee security or balanced load.",
+      "objective": "Purpose and limits of VLAN segmentation.",
+      "refs": [
+        "campus",
+        "firewall"
+      ],
+      "prompt": "VLAN segmentation is a technique used to improve security and improve load management in a campus network.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 56,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q057",
+      "originalNumber": 57,
+      "topic": "lan",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "A wireless plan must consider coverage and concurrent demand. A room can have strong signal but insufficient shared radio capacity for its user density.",
+      "objective": "Wireless coverage and density planning.",
+      "refs": [
+        "wlan"
+      ],
+      "prompt": "Wireless access point placement should consider Wi-Fi coverage mapping and user density.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 57,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q058",
+      "originalNumber": 58,
+      "topic": "campus",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "In a traditional three-tier campus, distribution aggregates access traffic and is a common routing/policy boundary. Some real architectures distribute functions differently.",
+      "objective": "Distribution aggregation and policy.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "The distribution layer is responsible for routing policy enforcement and aggregation of access layer traffic.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 58,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q061",
+      "originalNumber": 61,
+      "topic": "campus",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "Hierarchy supports performance, scalability, manageability and availability. Cost is a constraint and trade-off, not the sole or primary definition of the model.",
+      "objective": "Purposes of hierarchical design.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "The three layers of hierarchical design (Core, Distribution, Access) are primarily concerned with cost minimisation rather than performance.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 61,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q062",
+      "originalNumber": 62,
+      "topic": "campus",
+      "type": "truefalse",
+      "answer": false,
+      "explanation": "Failover can maintain availability by switching to a working backup when a primary path fails. Recovery time and shared dependencies determine its effectiveness.",
+      "objective": "Failover relevance.",
+      "refs": [
+        "ha"
+      ],
+      "prompt": "A failover routing strategy is not relevant to availability in network design.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 62,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q063",
+      "originalNumber": 63,
+      "topic": "process",
+      "type": "truefalse",
+      "answer": true,
+      "explanation": "Bottom-up design starts from available technologies or infrastructure and considers how to meet goals with those resources.",
+      "objective": "Bottom-up starting point.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "Bottom-up design starts with the availability of existing technology and then adapts to meet business goals.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 63,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q064",
+      "originalNumber": 64,
+      "topic": "campus",
+      "type": "single",
+      "answer": 3,
+      "explanation": "A required continuously accessible library or student portal makes availability a service requirement. A single appliance can instead be a failure dependency.",
+      "objective": "Identify a high-availability requirement.",
+      "refs": [
+        "ha"
+      ],
+      "prompt": "Which scenario best demonstrates the need for high availability in a university network design?",
+      "options": [
+        "Academic printing services operating in off-peak hours",
+        "A single firewall appliance handling all traffic",
+        "Occasional vendor maintenance windows once a year",
+        "Online library systems and student portals must be accessible 24/7",
+        "A laboratory network isolated from the internet"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 64,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q065",
+      "originalNumber": 65,
+      "topic": "process",
+      "type": "single",
+      "answer": 3,
+      "explanation": "Acceptance testing checks the delivered system against agreed requirements and practical user operation, rather than merely confirming equipment is present.",
+      "objective": "Deployment acceptance evidence.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "During Deployment & Acceptance Testing, what is typically verified?",
+      "options": [
+        "That only the vendor’s devices are present",
+        "That documentation is complete without testing",
+        "That no performance tests are required",
+        "That requirements are met and users can operate the system"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 65,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q069",
+      "originalNumber": 69,
+      "topic": "process",
+      "type": "single",
+      "answer": 0,
+      "explanation": "Peak-load measurements and wireless coverage surveys establish present demand and physical constraints before detailed design choices.",
+      "objective": "Site and traffic analysis activities.",
+      "refs": [
+        "wlan",
+        "campus"
+      ],
+      "prompt": "Which activity is most closely associated with Site & Traffic Analysis?",
+      "options": [
+        "Measuring peak loads and Wi-Fi coverage across campuses",
+        "Configuring firewall rules",
+        "Defining application layer protocols",
+        "Drafting maintenance procedures"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 69,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q070",
+      "originalNumber": 70,
+      "topic": "campus",
+      "type": "single",
+      "answer": 2,
+      "explanation": "Scalability means accommodating anticipated growth through planned capacity and modular additions without rebuilding the whole network.",
+      "objective": "Scalability planning.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "In network design, which activity best exemplifies the concept of scalability?",
+      "options": [
+        "Focussing solely on current campus sites without future expansion",
+        "Maximising the number of servers in a single rack",
+        "Planning for additional access points, VLANs, and cloud resources without a complete redesign",
+        "Minimising the number of VLANs to reduce complexity",
+        "Reusing the same hardware indefinitely regardless of growth"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 70,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q072",
+      "originalNumber": 72,
+      "topic": "process",
+      "type": "single",
+      "answer": 0,
+      "explanation": "Current diagrams, addressing and configuration records help new staff understand the network and support fault investigation and changes.",
+      "objective": "Value of design documentation.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "Which of the following is a key benefit of documenting network designs?",
+      "options": [
+        "Eases onboarding of new staff and aids troubleshooting",
+        "Reduces the need for governance",
+        "Eliminates the need for monitoring tools",
+        "Increases hardware cost"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 72,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q073",
+      "originalNumber": 73,
+      "topic": "campus",
+      "type": "single",
+      "answer": 2,
+      "explanation": "The core provides dependable high-capacity transit between distribution blocks. Endpoint attachment is normally an access-layer role.",
+      "objective": "Core backbone role.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "What is the role of the Core Layer in a hierarchical network design?",
+      "options": [
+        "Direct end-user access to the network",
+        "Implement security policies at the edge",
+        "Provide a fast, reliable backbone interconnecting distribution switches",
+        "Host application servers"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 73,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q074",
+      "originalNumber": 74,
+      "topic": "campus",
+      "type": "single",
+      "answer": 3,
+      "explanation": "Central monitoring and alerts improve visibility and fault response. They require useful baselines and maintained configuration to support manageability.",
+      "objective": "Operational manageability.",
+      "refs": [
+        "ha"
+      ],
+      "prompt": "In a university expansion scenario, which requirement best supports manageability?",
+      "options": [
+        "Maximising the number of wireless heat maps",
+        "Installing end-user software on every device",
+        "Installing the most expensive core routers",
+        "Centralised monitoring dashboards with automated alerts"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 74,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q076",
+      "originalNumber": 76,
+      "topic": "controls",
+      "type": "single",
+      "answer": 2,
+      "explanation": "Zero Trust does not grant implicit trust solely because a user or device is inside the network. Identity, context and least-privilege resource access matter.",
+      "objective": "Zero Trust principles.",
+      "refs": [
+        "zt"
+      ],
+      "prompt": "In the context of network design, what does the term ‘Zero Trust’ primarily address?",
+      "options": [
+        "Focusing exclusively on physical security",
+        "Assuming no user, device or network is trusted by default and verifying continuously",
+        "Isolating all networks with no cross-traffic",
+        "Trusting internal hosts by default",
+        "Only securing the perimeter firewall"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 76,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q079",
+      "originalNumber": 79,
+      "topic": "process",
+      "type": "single",
+      "answer": 3,
+      "explanation": "Validation tests or models a proposal before full rollout to check requirements and identify problems. Acceptance testing then evaluates the delivered service.",
+      "objective": "Purpose of design validation.",
+      "refs": [
+        "campus"
+      ],
+      "prompt": "What is the main purpose of the Validation phase in the network design process?",
+      "options": [
+        "To renegotiate vendor contracts",
+        "To deploy all devices into production immediately",
+        "To train users on new systems",
+        "To simulate and test the design before going live",
+        "To document the final purchase orders"
+      ],
+      "optionProvenance": "Original complete options retained",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 79,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q081",
+      "originalNumber": 81,
+      "topic": "transport",
+      "type": "matching",
+      "answer": [
+        1,
+        0,
+        4,
+        5
+      ],
+      "explanation": "The intended matches are TCP, UDP, FTP and HTTPS/TLS. The source heading incorrectly groups all these as Transport-layer protocols: FTP and HTTPS are application protocols, and TLS protects application communications. Because file transfer is not restricted to plain FTP, SSH-based transfer is accepted too. The broad secure-web wording accepts HTTPS or TLS.",
+      "objective": "Compare reliability, datagrams, file transfer and secure web roles.",
+      "refs": [
+        "tcp",
+        "udp",
+        "ssh",
+        "tls",
+        "http"
+      ],
+      "prompt": "Pair the protocol with its primary function in the transport layer (as covered in the lecture):",
+      "items": [
+        "Provides reliable, ordered data delivery",
+        "Provides best-effort, connectionless data transfer",
+        "Used for file transfer between systems",
+        "Used for secure web traffic"
+      ],
+      "options": [
+        "UDP",
+        "TCP",
+        "SSH",
+        "TLS",
+        "FTP",
+        "HTTPS"
+      ],
+      "reuseOptions": true,
+      "acceptedPerItem": [
+        [
+          1
+        ],
+        [
+          0
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "optionProvenance": "Four visible source labels retained; missing FTP and HTTPS labels restored. Equivalent technically defensible matches accepted.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 81,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q082",
+      "originalNumber": 82,
+      "topic": "transport",
+      "type": "matching",
+      "answer": [
+        0,
+        3,
+        2,
+        4
+      ],
+      "explanation": "HTTP retrieves web resources, TCP provides reliable byte-stream transport and IP carries packets between networks. ICMP supplies control/error information and echo diagnostics; it does not guarantee delivery, despite the imprecise source wording.",
+      "objective": "Map web, transport, Internet and control protocol roles.",
+      "refs": [
+        "http",
+        "tcp",
+        "ip",
+        "icmp"
+      ],
+      "prompt": "Match the protocol to its role in delivering content over the internet (as per the lecture):",
+      "items": [
+        "Retrieves web content from servers",
+        "Transports user data with reliability",
+        "Transports packets across networks",
+        "Transports control information and checks for delivery"
+      ],
+      "options": [
+        "HTTP",
+        "FTP",
+        "IP",
+        "TCP",
+        "ICMP"
+      ],
+      "reuseOptions": true,
+      "optionProvenance": "Four visible labels retained; the missing correct ICMP label restored.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 82,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q085",
+      "originalNumber": 85,
+      "topic": "devices",
+      "type": "matching",
+      "answer": [
+        3,
+        1,
+        2,
+        0
+      ],
+      "explanation": "The intended teaching matches are Hub, Switch, Router and Bridge. A switch is a multiport bridge, so the MAC-learning description fits both. The final row is broad enough to describe a bridge, switch or router depending on the type of segmentation; these defensible alternatives are accepted. Original option labels ending in Device are retained as shown in the PDF.",
+      "objective": "Distinguish repeating, bridging, switching and routing fairly.",
+      "refs": [
+        "switch",
+        "ip"
+      ],
+      "prompt": "Select the correct device-function pairings for common network hardware mentioned in the notes",
+      "items": [
+        "Device that broadcasts incoming traffic to all ports in a LAN",
+        "Device that learns MAC addresses and forwards based on them within a LAN",
+        "Device used to connect separate networks and perform path selection",
+        "Device that segments a LAN and can connect disparate LANs"
+      ],
+      "options": [
+        "BridgeDevice",
+        "SwitchDevice",
+        "RouterDevice",
+        "HubDevice"
+      ],
+      "reuseOptions": true,
+      "acceptedPerItem": [
+        [
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "optionProvenance": "All four original visible response labels retained exactly; broad device descriptions accept technically defensible alternatives.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 85,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q088",
+      "originalNumber": 88,
+      "topic": "devices",
+      "type": "short",
+      "answer": [
+        "Proxy server",
+        "Proxy",
+        "Forward proxy",
+        "Forward proxy server"
+      ],
+      "explanation": "A forward proxy acts on behalf of a client. A router normally forwards network-layer packets rather than acting as this application-request intermediary.",
+      "objective": "Proxy server role.",
+      "refs": [
+        "http"
+      ],
+      "prompt": "A _____ is an intermediate server that forwards requests on behalf of clients to target servers.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 88,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q090",
+      "originalNumber": 90,
+      "topic": "transport",
+      "type": "short",
+      "answer": [
+        "Transport",
+        "Transport layer",
+        "Layer 4",
+        "4"
+      ],
+      "explanation": "Transport identifies application endpoints/processes through mechanisms such as port numbers. IP supplies host/network delivery below it.",
+      "objective": "Process-to-process transport.",
+      "refs": [
+        "tcp"
+      ],
+      "prompt": "The layer that handles the delivery of a message from one process to another in the OSI model is the _____ layer.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 90,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q095",
+      "originalNumber": 95,
+      "topic": "controls",
+      "type": "short",
+      "answer": [
+        "Firewall",
+        "Fire wall",
+        "Network firewall"
+      ],
+      "explanation": "A firewall enforces rules on traffic flows. This differs from a passive IDS that observes and alerts without necessarily enforcing the policy.",
+      "objective": "Firewall policy enforcement.",
+      "refs": [
+        "firewall"
+      ],
+      "prompt": "A _____ monitors and controls incoming and outgoing network traffic based on security rules.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 95,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q098",
+      "originalNumber": 98,
+      "topic": "devices",
+      "type": "short",
+      "answer": [
+        "Load balancer",
+        "Load-balancer",
+        "Load balancing device",
+        "Load balancing server"
+      ],
+      "explanation": "A load balancer distributes service traffic among backends. Health checking and appropriate redundancy are still needed for availability.",
+      "objective": "Load balancer role.",
+      "refs": [
+        "ha"
+      ],
+      "prompt": "A _____ distributes network or application traffic across multiple servers to improve availability.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 98,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    },
+    {
+      "id": "cccu-mock-original-q099",
+      "originalNumber": 99,
+      "topic": "devices",
+      "type": "short",
+      "answer": [
+        "Server",
+        "Server host"
+      ],
+      "explanation": "The server role provides a service in response to requests. The roles describe an exchange; a machine can also be a client in a different exchange.",
+      "objective": "Client-server roles.",
+      "refs": [
+        "http"
+      ],
+      "prompt": "In a client–server architecture, the _____ provides services in response to client requests.",
+      "source": {
+        "title": "MOCK TCA - supplied CCCU mock",
+        "originalQuestion": 99,
+        "stem": "Original wording retained; PDF line wraps, font ligatures and blank placeholders normalised."
+      }
+    }
+  ],
+  "deduplication": {
+    "originalQuestions": 100,
+    "retained": 65,
+    "removed": 35,
+    "removedQuestions": [
+      {
+        "originalNumber": 7,
+        "coveredBy": [
+          2
+        ],
+        "reason": "Repeats recognition of a traffic-flood denial-of-service attack."
+      },
+      {
+        "originalNumber": 19,
+        "coveredBy": [
+          41
+        ],
+        "reason": "Repeats Data Link framing and MAC addressing."
+      },
+      {
+        "originalNumber": 26,
+        "coveredBy": [
+          43,
+          81
+        ],
+        "reason": "Repeats presentation/security associations; the original blank also wrongly implies encryption belongs to one layer."
+      },
+      {
+        "originalNumber": 31,
+        "coveredBy": [
+          85
+        ],
+        "reason": "Repeats the hub versus MAC-learning switch/bridge distinction."
+      },
+      {
+        "originalNumber": 33,
+        "coveredBy": [
+          43
+        ],
+        "reason": "Repeats Session-layer management between applications."
+      },
+      {
+        "originalNumber": 34,
+        "coveredBy": [
+          43,
+          81
+        ],
+        "reason": "Repeats presentation and TLS/security roles; its rigid TLS layer and format-translation claim is misleading."
+      },
+      {
+        "originalNumber": 38,
+        "coveredBy": [
+          41
+        ],
+        "reason": "Repeats where MAC addressing belongs."
+      },
+      {
+        "originalNumber": 40,
+        "coveredBy": [
+          44
+        ],
+        "reason": "Repeats the conventional HTTP service-port association."
+      },
+      {
+        "originalNumber": 47,
+        "coveredBy": [
+          41
+        ],
+        "reason": "Repeats all four lower-layer/function mappings from Q41."
+      },
+      {
+        "originalNumber": 48,
+        "coveredBy": [
+          41,
+          43,
+          45
+        ],
+        "reason": "Repeats routing, MAC, presentation and application roles already covered; its source answer bank is incomplete."
+      },
+      {
+        "originalNumber": 49,
+        "coveredBy": [
+          42,
+          56,
+          63,
+          76
+        ],
+        "reason": "All four statements repeat modularity/troubleshooting, VLAN benefits, bottom-up design and Zero Trust."
+      },
+      {
+        "originalNumber": 50,
+        "coveredBy": [
+          39,
+          41,
+          43,
+          81
+        ],
+        "reason": "Repeats link error detection, IP routing, presentation/security and application service roles."
+      },
+      {
+        "originalNumber": 52,
+        "coveredBy": [
+          58
+        ],
+        "reason": "Q58 retains the same distribution aggregation fact and adds its policy role."
+      },
+      {
+        "originalNumber": 59,
+        "coveredBy": [
+          79
+        ],
+        "reason": "Repeats validation before going live; Q79 states its purpose directly."
+      },
+      {
+        "originalNumber": 60,
+        "coveredBy": [
+          56
+        ],
+        "reason": "Repeats the need for security zoning/segmentation without a new technical distinction."
+      },
+      {
+        "originalNumber": 66,
+        "coveredBy": [
+          37,
+          56,
+          58
+        ],
+        "reason": "Revisits VLAN/policy placement already covered and is ambiguous between access VLAN membership and distribution policy."
+      },
+      {
+        "originalNumber": 67,
+        "coveredBy": [
+          56
+        ],
+        "reason": "Repeats VLAN segmentation and security zoning."
+      },
+      {
+        "originalNumber": 68,
+        "coveredBy": [
+          51
+        ],
+        "reason": "Repeats the definition of hybrid design."
+      },
+      {
+        "originalNumber": 71,
+        "coveredBy": [
+          51
+        ],
+        "reason": "Repeats hybrid design as the combination of goals and technology constraints."
+      },
+      {
+        "originalNumber": 75,
+        "coveredBy": [
+          53
+        ],
+        "reason": "Repeats the business-requirements starting point of top-down design."
+      },
+      {
+        "originalNumber": 77,
+        "coveredBy": [
+          55
+        ],
+        "reason": "Repeats the same design tools; both GNS3 and Packet Tracer in its options are defensible."
+      },
+      {
+        "originalNumber": 78,
+        "coveredBy": [
+          58
+        ],
+        "reason": "Repeats distribution aggregation/policy; distribution and aggregation are also overlapping option labels."
+      },
+      {
+        "originalNumber": 80,
+        "coveredBy": [
+          81,
+          82
+        ],
+        "reason": "Repeats TCP/IP/UDP protocol identification using a malformed self-referential matching structure."
+      },
+      {
+        "originalNumber": 83,
+        "coveredBy": [
+          29,
+          44,
+          81,
+          82
+        ],
+        "reason": "Repeats IP, DNS, mail and secure-channel associations; its guarantee of email delivery wording is inaccurate."
+      },
+      {
+        "originalNumber": 84,
+        "coveredBy": [
+          30,
+          81,
+          82
+        ],
+        "reason": "Repeats the same TCP, UDP, HTTP and IP roles."
+      },
+      {
+        "originalNumber": 86,
+        "coveredBy": [
+          82
+        ],
+        "reason": "Repeats IP carrying packets between hosts across networks."
+      },
+      {
+        "originalNumber": 87,
+        "coveredBy": [
+          43,
+          46
+        ],
+        "reason": "Repeats upper/Application-layer positioning and grouping with an ambiguous blank."
+      },
+      {
+        "originalNumber": 89,
+        "coveredBy": [
+          81
+        ],
+        "reason": "Repeats TCP reliable ordered delivery."
+      },
+      {
+        "originalNumber": 91,
+        "coveredBy": [
+          43
+        ],
+        "reason": "Repeats Application-layer services to applications."
+      },
+      {
+        "originalNumber": 92,
+        "coveredBy": [
+          85
+        ],
+        "reason": "Repeats the MAC-learning bridge role."
+      },
+      {
+        "originalNumber": 93,
+        "coveredBy": [
+          41,
+          43
+        ],
+        "reason": "Repeats physical transmission of bits."
+      },
+      {
+        "originalNumber": 94,
+        "coveredBy": [
+          85
+        ],
+        "reason": "Repeats the hub repeating traffic to connected ports."
+      },
+      {
+        "originalNumber": 96,
+        "coveredBy": [
+          30,
+          81
+        ],
+        "reason": "Repeats UDP best-effort connectionless delivery."
+      },
+      {
+        "originalNumber": 97,
+        "coveredBy": [
+          24,
+          46
+        ],
+        "reason": "Repeats the TCP/IP Internet layer name and mapping."
+      },
+      {
+        "originalNumber": 100,
+        "coveredBy": [
+          85
+        ],
+        "reason": "Repeats router inter-network forwarding and path selection."
+      }
+    ]
+  },
+  "provenanceNote": "Question stems and visible full multiple-choice options are transcribed from the supplied mock. Exported matching dropdowns only show selected responses, so some missing response labels have been restored and are identified in feedback. No personal selections or original PDF pages are published. The explanatory answer key is technically reviewed practice guidance, not an official CCCU key."
+}
