@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-31",
   "modules": [
     {
       "id": "pps",
@@ -133,18 +133,28 @@
           "submit": "To be confirmed",
           "feedback": null,
           "source": "Computer Networking Module Handbook 2026/27, assessment section"
+        },
+        {
+          "title": "Networking TCA 1 sitting",
+          "due": "2026-11-05T10:00:00Z",
+          "weight": null,
+          "length": "10:00-12:30 UK time (2 hours 30 minutes); room VH2.03",
+          "submit": "In-class assessment, VH2.03",
+          "feedback": null,
+          "source": "TCA 1 Preparation guide, p.1; the share of the handbook exam component allocated to this sitting is not specified",
+          "kind": "exam"
         }
       ],
       "notes": [
-        "Exam date, time, room and report deadline are still TBC in the supplied handbook.",
         "Check Blackboard for assessment briefs and new announcements.",
         "Save your lab configurations, results and explanations as you work.",
         "The handbook leaves the assessment-specific AI-use levels blank. Confirm these with the module team before using AI for assessed work.",
         "Teaching includes lectures and practical labs. Your personal teaching timetable was not supplied.",
-        "The supplied Example TCA questions show fill-in-the-blank, true/false and select-two formats. These are examples, not confirmation of the complete exam structure, question count, duration or marking scheme. Practise recall and evaluating several statements, as well as single-answer MCQs.",
-        "The supplied Week 5 mock includes single-choice, true/false, fill-in and matching questions and mentions partial/negative credit. Treat it as practice format evidence, not confirmation of the final TCA format, duration or deadline."
+        "TCA 1: Thursday 5 November 2026, 10:00-12:30 UK time, room VH2.03 (TCA 1 Preparation guide, p.1). The laboratory-report deadline remains TBC.",
+        "TCA 1 uses multiple-choice, true/false and fill-in-the-blank questions only; no matching questions. This preparation guide supersedes the format examples in the earlier mock.",
+        "TCA 1 revision weighting: Lecture 3 TCP/IP and OSI models accounts for 30% of questions; other included lectures account for 70%. Revise both, including layer responsibilities, protocols, encapsulation and practical examples."
       ],
-      "notesSource": "Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit. Example TCA questions, embedded screenshots for questions 1-3, 7, 12 and 14 (document page numbers unverified).",
+      "notesSource": "Computer Networking Module Handbook 2026/27, teaching and assessment sections; lab evidence is a suggested study habit. Example TCA questions, embedded screenshots for questions 1-3, 7, 12 and 14 (document page numbers unverified). TCA 1 Preparation guide, p.1.",
       "reassessment": "Week commencing 12 July 2027 — only if you are assigned reassessment. Individual deadlines are not confirmed.",
       "reassessmentSource": "Computer Networking Module Handbook 2026/27, reassessment table",
       "teaching": []
@@ -190,7 +200,9 @@
         "Assessment 1 practises requirements analysis, an annotated logical data model and evidence of normalisation to at least 3NF, with a report evaluating the design against client needs. Rubric: requirements 20%, modelling 30%, approach 25%, evaluation 15%, presentation 10%.",
         "Assessment 2 assesses implementation scripts, data/report queries, planning, testing and evaluation. Rubric: database creation 25%, user reports 20%, planning 20%, testing 15%, evaluation 20%.",
         "Brief wording needs clarification: the cover tables refer to individual reports (and website files in Assessment 2), while the main instructions describe group database work. Follow the module team's clarification. Assessment 1 also describes the review meeting as weeks beginning 26 and 30 October; the introduction slides say between those dates. Confirm the appointment window.",
-        "The supplied blank Group Contract Template asks the team to agree participation, communication, meetings, conduct, conflict handling and deadlines. Agree these together; no submission date is stated in the template."
+        "The supplied blank Group Contract Template asks the team to agree participation, communication, meetings, conduct, conflict handling and deadlines. Agree these together; no submission date is stated in the template.",
+        "The normalisation deck is named Week_6_Normalisation but stored in Week 5; its new revision is grouped under Week 5 to match the folder.",
+        "Normalisation slide clarification: slides 28 and 43 describe a single-column key as a 2NF requirement. In the general relational definition, composite keys are allowed: 2NF rules out partial dependencies of non-prime attributes on candidate keys. Confirm any separate assessment-specific key convention with your lecturer. The deck states 3NF is the minimum assessment target (slide 43). Reference: https://mariadb.com/docs/general-resources/database-theory/database-normalization/database-normalization-2nd-normal-form"
       ],
       "notesSource": "Database Design Module Handbook 2026/27, pp.1, 3–6; Week_1_Introduction slides, pp.9, 14-16; U19955 Assignments 1 and 2 2026-27, Assignment Instructions, Submission Guidelines and Appendix A rubrics; Group Contract Template, section headings",
       "teaching": [

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-24",
+  "updated": "2026-10-31",
   "modules": [
     {
       "id": "networking",
@@ -1485,6 +1485,101 @@
             "title": "lecture4",
             "page": 17,
             "slideId": "ffbc642e666d08e1-17",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w5-security-001",
+          "week": 5,
+          "prompt": "A firewall permits TCP traffic to a server on port 443 based only on addresses, protocol and ports. A harmful application request passes through that permitted connection. Which limitation best explains this?",
+          "options": [
+            "The filter made its decision without examining the application request.",
+            "The filter must have forgotten a previously established session.",
+            "The server could receive traffic only if the filter decrypted it first.",
+            "The destination port changed the request into a trusted application."
+          ],
+          "answer": 0,
+          "explanation": "A basic packet filter can permit header values while lacking the application-level inspection needed to identify a harmful request. An allowed port is not proof that its payload is safe.",
+          "source": {
+            "title": "Network Security",
+            "page": 24,
+            "slideId": "dad544c75c3d5352-24",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w5-security-002",
+          "week": 5,
+          "prompt": "A policy permits replies to connections initiated internally but rejects unsolicited inbound connections. What information distinguishes stateful inspection from a stateless header-only filter for this purpose?",
+          "options": [
+            "The DNS name displayed in the browser address bar.",
+            "The current connection state and whether a packet belongs to it.",
+            "The executable file name of every process on the destination host.",
+            "The meaning of every field in the application request body."
+          ],
+          "answer": 1,
+          "explanation": "A stateful firewall tracks connection context and evaluates packets against that context and policy. This does not imply automatic knowledge of host processes or full application semantics.",
+          "source": {
+            "title": "Network Security",
+            "page": 25,
+            "slideId": "dad544c75c3d5352-25",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w5-security-003",
+          "week": 5,
+          "prompt": "A gateway terminates a client connection and creates a separate connection to a permitted service, applying protocol-specific request rules. Which design most closely matches that behaviour?",
+          "options": [
+            "A stateless filter comparing network and transport headers.",
+            "A stateful filter that tracks sessions without parsing requests.",
+            "An application proxy acting between the client and service.",
+            "A passive network sensor that sends alerts but forwards no traffic."
+          ],
+          "answer": 2,
+          "explanation": "An application proxy intermediates the communication and can enforce application-specific policy. Its benefits must be weighed against processing overhead and protocol compatibility.",
+          "source": {
+            "title": "Network Security",
+            "page": 26,
+            "slideId": "dad544c75c3d5352-26",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w5-security-004",
+          "week": 5,
+          "prompt": "Several applications share an allowed port. A team wants to distinguish those applications and combine that control with stateful filtering and intrusion prevention. Which capability set best fits?",
+          "options": [
+            "A stateless address-and-port filter with a larger rule table.",
+            "A connection-state table with no application recognition.",
+            "A passive traffic monitor that reports suspicious sessions.",
+            "A next-generation firewall with application controls and IPS features."
+          ],
+          "answer": 3,
+          "explanation": "NGFWs combine traditional filtering with capabilities such as application recognition and intrusion prevention. The actual features, configuration and processing capacity still need checking.",
+          "source": {
+            "title": "Network Security",
+            "page": 27,
+            "slideId": "dad544c75c3d5352-27",
+            "label": "Page"
+          }
+        },
+        {
+          "id": "networking-w5-security-005",
+          "week": 5,
+          "prompt": "A team replaces simple packet filtering with an application proxy. Which acceptance test most directly checks the trade-off introduced by that decision?",
+          "options": [
+            "Measure latency and confirm that required application behaviours still work under policy.",
+            "Check only that the proxy has more rules than the old filter.",
+            "Verify that all traffic uses the same destination port.",
+            "Confirm that the proxy stops keeping connection-related information."
+          ],
+          "answer": 0,
+          "explanation": "Application inspection can add processing cost and compatibility constraints. Testing both policy enforcement and legitimate application performance checks whether the design meets its requirements.",
+          "source": {
+            "title": "Network Security",
+            "page": 26,
+            "slideId": "dad544c75c3d5352-26",
             "label": "Page"
           }
         }
@@ -4994,6 +5089,196 @@
             "page": 6,
             "slideId": "a15ab12c0456e52a-6",
             "label": "Page"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-001",
+          "week": 5,
+          "prompt": "The business rule is asset_id → purchase_date. Which pair of rows would violate that dependency?",
+          "options": [
+            "(A7, 2026-01-10) and (A8, 2026-01-10)",
+            "(A7, 2026-01-10) and (A7, 2026-02-12)",
+            "(A7, 2026-01-10) and (A8, 2026-02-12)",
+            "(A8, 2026-01-10) and (A9, 2026-01-10)"
+          ],
+          "answer": 1,
+          "explanation": "Equal determinant values must imply equal dependent values. Different assets may share a purchase date; the dependency does not require dates to be unique.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 7,
+            "slideId": "fd6e8d40b9391cc8-7",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-002",
+          "week": 5,
+          "prompt": "The only dependency specified for Price(supplier, item, amount) is {supplier, item} → amount. What follows from this rule alone?",
+          "options": [
+            "supplier determines amount independently of item.",
+            "item determines amount independently of supplier.",
+            "A given supplier-item pair has one amount, but neither component alone is guaranteed to determine it.",
+            "amount uniquely identifies the supplier-item pair."
+          ],
+          "answer": 2,
+          "explanation": "The combination is the determinant. The stated dependency does not imply a dependency from either component alone, or the reverse dependency from amount.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 11,
+            "slideId": "fd6e8d40b9391cc8-11",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-003",
+          "week": 5,
+          "prompt": "For R(A,B,C), the dependencies are A → B and B → C, and no additional independent dependencies are assumed. Which is a candidate key?",
+          "options": [
+            "{B}",
+            "{A,B}",
+            "{B,C}",
+            "{A}"
+          ],
+          "answer": 3,
+          "explanation": "A determines B and, through B, C. It is minimal; adding B produces a superkey with an unnecessary attribute. B and C do not determine A.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 13,
+            "slideId": "fd6e8d40b9391cc8-13",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-004",
+          "week": 5,
+          "prompt": "A designer says {device_id, serial_number} is a candidate key, although device_id alone determines every attribute. What is the precise problem?",
+          "options": [
+            "The pair is not irreducible, even if it uniquely identifies rows.",
+            "A key is invalid whenever its attributes have different names.",
+            "The pair must contain a non-key descriptive attribute.",
+            "A candidate key cannot be used as a primary key."
+          ],
+          "answer": 0,
+          "explanation": "Candidate keys must be minimal: no proper subset may still uniquely determine the relation. A larger identifying set can be a superkey without being a candidate key.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 13,
+            "slideId": "fd6e8d40b9391cc8-13",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-005",
+          "week": 5,
+          "prompt": "A decomposition stores Employee(employee_id, name) and Department(department_id, title), but removes every record of which department each employee belongs to. Why is this not an acceptable normalisation of the original employee-department data?",
+          "options": [
+            "The new tables necessarily contain duplicate primary keys.",
+            "The employee-department association cannot be reconstructed from the stored facts.",
+            "Each table must contain every attribute of the original relation.",
+            "Different table names prevent a join regardless of their attributes."
+          ],
+          "answer": 1,
+          "explanation": "An appropriate decomposition must preserve information, including associations. Merely retaining each entity separately loses the assignment when no linking fact remains.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 17,
+            "slideId": "fd6e8d40b9391cc8-17",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-006",
+          "week": 5,
+          "prompt": "Each employee belongs to one department, and department_id uniquely determines department_title. Which split preserves that assignment while storing department titles once?",
+          "options": [
+            "Employee(employee_id,name) and Department(department_id,title), with no link.",
+            "Employee(employee_id,name,title) and Department(department_id), with no link.",
+            "Employee(employee_id,name,department_id) and Department(department_id,title).",
+            "Employee(employee_id,department_id) and Names(name,title), with no identifiers in Names."
+          ],
+          "answer": 2,
+          "explanation": "Retaining department_id in Employee preserves the relationship. Joining on that key reconstructs each employee with the associated department title without storing the title in every employee row.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 20,
+            "slideId": "fd6e8d40b9391cc8-20",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-007",
+          "week": 5,
+          "prompt": "A table stores one equipment record per row, but its accessories cell contains a comma-separated list of accessory identifiers that must be queried individually. Which change addresses the first-normal-form issue under that requirement?",
+          "options": [
+            "Add a surrogate key but keep the list in the same cell.",
+            "Sort each list alphabetically before storing it.",
+            "Increase the text-column length so longer lists fit.",
+            "Store individual equipment-accessory associations as separate rows."
+          ],
+          "answer": 3,
+          "explanation": "For the stated requirement, the list contains multiple values that should be represented individually. A new key or a larger string does not remove that repeating group.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 25,
+            "slideId": "fd6e8d40b9391cc8-25",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-008",
+          "week": 5,
+          "prompt": "Given employee_id → office_id and office_id → office_phone, where office_id is not a key of Employee, what makes repeating office_phone in each Employee row problematic?",
+          "options": [
+            "The phone depends on the employee indirectly through the office, so office facts can be duplicated.",
+            "The employee identifier cannot be a candidate key if any phone values repeat.",
+            "A foreign-key value must be different in every employee row.",
+            "A phone column must always be part of a composite primary key."
+          ],
+          "answer": 0,
+          "explanation": "The transitive dependency duplicates a fact about the office across employees. Separating Office(office_id,office_phone) and retaining the office reference in Employee addresses that dependency.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 40,
+            "slideId": "fd6e8d40b9391cc8-40",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-009",
+          "week": 5,
+          "prompt": "A 1NF relation has a single candidate key employee_id and dependencies employee_id → team_id and team_id → team_name. What prevents it from meeting the taught 3NF goal?",
+          "options": [
+            "The candidate key contains too few attributes.",
+            "A non-key team attribute determines another non-key attribute.",
+            "The table has more than one descriptive column.",
+            "The dependency from employee_id to team_id is inherently invalid."
+          ],
+          "answer": 1,
+          "explanation": "team_name is dependent on team_id, creating a transitive dependency from employee_id. A single-column key alone does not ensure 3NF.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 34,
+            "slideId": "fd6e8d40b9391cc8-34",
+            "label": "Slide"
+          }
+        },
+        {
+          "id": "database-w5-normalisation-010",
+          "week": 5,
+          "prompt": "For R(A,B,C,D), a minimal set of dependencies is A → B, A → C and C → D. Following the lecture synthesis approach, which relations preserve these dependencies without unnecessarily repeating D with every A?",
+          "options": [
+            "R1(A,B) and R2(C,D), with no retained A-C association.",
+            "R1(A,D) and R2(B,C), with no retained determinants.",
+            "R1(A,B,C) and R2(C,D).",
+            "R1(A,B,C,D) and R2(C,D)."
+          ],
+          "answer": 2,
+          "explanation": "Combine dependencies with determinant A into A → {B,C}; C → D forms a second relation. R1 contains the original candidate key A, so no additional all-key relation is needed here.",
+          "source": {
+            "title": "Week_6_Normalisation",
+            "page": 46,
+            "slideId": "fd6e8d40b9391cc8-46",
+            "label": "Slide"
           }
         }
       ]

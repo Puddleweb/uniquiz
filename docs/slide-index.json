@@ -1272,5 +1272,96 @@
     "page": 6,
     "label": "Page",
     "text": "Now we get to our last attribute and we can use a similar deﬁnition to our CHECK clause in\nthe student table. We need to CHECK that ‘Target’ is one of four values. For this, we use theIN\nclause, as follows:\ntarget varchar not null check (target in ('Young Child',\n'Child', 'Teen', 'Adult'))\nWe have now deﬁned that the value entered in target must be one of the values, if it isn’t then\nwe will not accept it.\nNote: When typing, please check the quotation around the values, they need to be single quo-\ntation.\nPutting this all together we get our third table deﬁnition, ‘genre’.\nCREATE TABLE library.genre (\ngenreId bigserial primary key,\nname varchar not null,\ndescription text not null, target varchar not null check (\ntarget in ('Young Child', 'Child', 'Teen', 'Adult'))\n);\n3.6 CREATE Syntax: Foreign Keys\nNow, lets look at the ‘book’ table and how to deﬁne foreign keys when creating tables. There\nare multiple ways, but we will use the CONSTRAINT command.\nSo, lets deﬁne our table:\nCREATE TABLE library.book (\nbookId bigserial primary key,\ntitle varchar not null,\nauthorId int not null\nAccording to our LDM, this is a foreign key, so lets deﬁne it before we move to our next attribute.\nIn this example we are using the same column name as the column it will refer to.\nReminder: In practice, naming conventions tend to be this method or our previous method of\nusing the sufﬁx FK. Generally, it is what you prefer as a user. Many companies have predeﬁned\nconventions and will tell you which method they use.\nJust remember, whichever method you use, make sure this is the method you use universally\nacross your database. Don’t have some tables using the FK sufﬁx and others using the Id sufﬁx.\nHave a common convention across your creation.\nThe constraint comes after the nullability declaration, and before the comma to end the attribute\ndeclaration. The syntax is:\nCONSTRAINT fk_name REFERENCES referenced_table_name\nHere, fk_name is a name that we declare. It must be unique, and the convention tend to be:\ncurrentTableName_referencedTable_attributeName_fk\nSo, for our authorId foreign key, we would call it:\nbook_author_authorId_fk\nWe know which table we are referencing, so putting it together our constraint is deﬁned as:\nPage 5 of 7"
+  },
+  "dad544c75c3d5352-24": {
+    "image": "slides/dad544c75c3d5352-24.webp",
+    "title": "Network Security",
+    "page": 24,
+    "label": "Page",
+    "text": "Firewalls\n1.Packet-FilteringFirewallsOperatesatthenetworklayer(OSILayer3)andexaminesindividualdatapacketsbasedontheirheaderinformation,suchasIPaddresses,ports,andprotocols.\nAdvantages:\nSimple and quick to implement.\nRequires minimal system resources, making it efficient.\nDisadvantages:\nCannot inspect the contents of data packets (payload).Susceptible to spoofing and higher-layer attacks."
+  },
+  "dad544c75c3d5352-25": {
+    "image": "slides/dad544c75c3d5352-25.webp",
+    "title": "Network Security",
+    "page": 25,
+    "label": "Page",
+    "text": "Stateful Inspection Firewalls\n2.Worksatthetransportlayer(OSILayer4)andtracksthestateofactiveconnections.Itevaluatestrafficbasedonbothconnectioncontextandpredefinedrules. Advantages:\nProvides better security than packet-filtering by monitoring session states.Capable of detecting abnormal connection behavior.\nDisadvantages:\nRequires more system resources, leading to slower performance compared to packet-filtering firewalls.Limited ability to inspect application data."
+  },
+  "dad544c75c3d5352-26": {
+    "image": "slides/dad544c75c3d5352-26.webp",
+    "title": "Network Security",
+    "page": 26,
+    "label": "Page",
+    "text": "Proxy Firewalls (Application-Level Gateways)\n3.Operatesattheapplicationlayer(OSILayer7),actingasanintermediarybetweenusersandresources.Itinspectsandfilterstrafficattheapplicationlevel.\nAdvantages:\nAllows in-depth inspection of traffic, including payloads.\nCan enforce strict application-layer policies.\nDisadvantages:\nSlower performance due to resource-intensive processing.\nMay lack compatibility with certain applications or protocols."
+  },
+  "dad544c75c3d5352-27": {
+    "image": "slides/dad544c75c3d5352-27.webp",
+    "title": "Network Security",
+    "page": 27,
+    "label": "Page",
+    "text": "Next-Generation Firewalls (NGFW)\n4.Combinestraditionalfirewallfeatures(packetfiltering,statefulinspection)withadvancedcapabilitieslikedeeppacketinspection(DPI),intrusionpreventionsystems(IPS),andapplication-levelcontrols. Advantages:\nOffers robust protection against advanced threats.Enables granular control over applications and user activities.\nDisadvantages:\nExpensive to deploy and maintain.Demands significant processing power and regular updates."
+  },
+  "fd6e8d40b9391cc8-7": {
+    "image": "slides/fd6e8d40b9391cc8-7.webp",
+    "title": "Week_6_Normalisation",
+    "page": 7,
+    "label": "Slide",
+    "text": "The Algebra of a Functional Dependency\nA \nfunctional dependency\nX\n →\nY\nBetween two sets of attributes, X and Y, the above implies that:\na value of X \nuniquely\n determines a value of Y\nY is \nfunctionally dependent \non X\n "
+  },
+  "fd6e8d40b9391cc8-11": {
+    "image": "slides/fd6e8d40b9391cc8-11.webp",
+    "title": "Week_6_Normalisation",
+    "page": 11,
+    "label": "Slide",
+    "text": "Multiple Attributes\nThe lefthand side of the functional dependency can also be made up of multiple attributes.\n{M, N} \n→\n P\nThis can be read as M and N functionally determine the value of P.\n "
+  },
+  "fd6e8d40b9391cc8-13": {
+    "image": "slides/fd6e8d40b9391cc8-13.webp",
+    "title": "Week_6_Normalisation",
+    "page": 13,
+    "label": "Slide",
+    "text": "Candidate Key\nWe use functional dependencies to find the candidate keys in our tables.\nThe candidate key is the \nsmallest set \nof attributes that can uniquely determine \nall other attributes \nin the table.\nOur candidate keys become our primary keys when we translate the \nnormalised\n tables into tables in our database.\nFor a set of attributes to be a candidate key it must be both:\nUnique\nIrreducible"
+  },
+  "fd6e8d40b9391cc8-17": {
+    "image": "slides/fd6e8d40b9391cc8-17.webp",
+    "title": "Week_6_Normalisation",
+    "page": 17,
+    "label": "Slide",
+    "text": "What is \nNormalisation\n?\nNormalisation\n is a systematic approach of decomposing tables to eliminate data redundancy (duplication) and undesirable characteristics like Insertion, Update and Deletion Anomalies.\nIt is a multi-step process that puts data into tabular form and removes duplicated data from the relation tables.\nNormalisation\n is used mainly for two purposes\nEliminating redundant data\nEnsuring data dependencies make sense, i.e. data is logically stored.\nNormalisation\n is essentially the successive decomposition of relations into ‘sub-relations’ that have certain ‘desirable properties’.\nThe decompositions \nmust be reversable\n, \ni.e. no information is lost."
+  },
+  "fd6e8d40b9391cc8-20": {
+    "image": "slides/fd6e8d40b9391cc8-20.webp",
+    "title": "Week_6_Normalisation",
+    "page": 20,
+    "label": "Slide",
+    "text": "Normalisation\n: Example\nIdeally, we would decompose it as follows:\nNo information is lost\nIf we join the two relations, we get our initial result.\nEMPNO\nENAME\nDEPTNO\n7839\nKING\n10\n7566\nJONES\n20\n7654\nMARTIN\n30\n7934\nMILLER\n10\nDEPTNO\nDEPTNAME\n10\nACCOUNTING\n20\nSALE\n30\nOPERATIONS"
+  },
+  "fd6e8d40b9391cc8-25": {
+    "image": "slides/fd6e8d40b9391cc8-25.webp",
+    "title": "Week_6_Normalisation",
+    "page": 25,
+    "label": "Slide",
+    "text": "First Normal Form (1NF)\nThe rules for First Normal Form are:\nEach table cell should contain a single value\nEach record needs to be unique"
+  },
+  "fd6e8d40b9391cc8-34": {
+    "image": "slides/fd6e8d40b9391cc8-34.webp",
+    "title": "Week_6_Normalisation",
+    "page": 34,
+    "label": "Slide",
+    "text": "Third Normal Form (3NF)\nThe rules for Third Normal Form are:\nIt must already be in Second Normal Form\nHas no transitive functional dependencies"
+  },
+  "fd6e8d40b9391cc8-40": {
+    "image": "slides/fd6e8d40b9391cc8-40.webp",
+    "title": "Week_6_Normalisation",
+    "page": 40,
+    "label": "Slide",
+    "text": "Third Normal Form (3NF)\nStudentDetail\nStudentId\nStudentName\nCity\nCounty\nCity determines the value of County but is not a key or part of a functional dependency.\nFD: \nStudentID\n \n→\n {\nStudentName\n, City, County}\nTD: \nStudentID\n \n→\n City \n→\n \n County\n \nThis is a \ntransitive dependency."
+  },
+  "fd6e8d40b9391cc8-46": {
+    "image": "slides/fd6e8d40b9391cc8-46.webp",
+    "title": "Week_6_Normalisation",
+    "page": 46,
+    "label": "Slide",
+    "text": "Normalisation\n Using Synthesis\nThe two steps:\nFunctional Dependencies with the same LHS, if any, are combined. Each FD becomes a relation with the determinant as the Primary Key.\nIf none of the resulting relations have a PK that’s the same as for the original relational relation, create a new ‘all key’ relation.\nNote: \nAn ‘all key’ relation is one that contains all attributes that form the candidate / primary keys."
   }
 }

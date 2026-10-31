@@ -42,5 +42,5 @@ test('source numbers, restored option provenance, original formats and isolated 
 test('the home and networking screens identify the corrected original mock',()=>{
  const app=fs.readFileSync(new URL('../docs/app.js',import.meta.url),'utf8'),index=fs.readFileSync(new URL('../docs/index.html',import.meta.url),'utf8');
  assert.equal((app.match(/href="networking-mock.html"/g)||[]).length,2);assert.match(app,/65 retained original questions/);assert.doesNotMatch(app,/Fresh 100-question mock|New 100-question networking mock/);
- assert.match(index,/app\.js\?v=20261029-studyroom/);
+ assert.match(index,/app\.js\?v=20261031-assessments/);
 });

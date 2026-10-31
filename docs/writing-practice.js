@@ -1,4 +1,4 @@
-import {workshopActivities,normaliseDraft} from './writing-activities.js?v=20261024-week5';
+import {workshopActivities,normaliseDraft} from './writing-activities.js?v=20261031-security';
 const requestedModule=new URLSearchParams(location.search).get('module');
 const moduleId=['networking','database'].includes(requestedModule)?requestedModule:'pps';
 const activities=workshopActivities(moduleId);

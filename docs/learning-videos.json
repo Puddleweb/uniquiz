@@ -1348,6 +1348,111 @@
       "end": 10392,
       "title": "Learn PostgreSQL Tutorial - Full Course for Beginners",
       "channel": "freeCodeCamp.org"
+    },
+    "networking-w5-security-001": {
+      "videoId": "K4ilFsm2GvA",
+      "start": 605,
+      "end": 686,
+      "title": "Firewall Fundamentals Explained | Network Security for Beginners",
+      "channel": "Antisyphon Training"
+    },
+    "networking-w5-security-002": {
+      "videoId": "K4ilFsm2GvA",
+      "start": 686,
+      "end": 788,
+      "title": "Firewall Fundamentals Explained | Network Security for Beginners",
+      "channel": "Antisyphon Training"
+    },
+    "networking-w5-security-003": {
+      "videoId": "K4ilFsm2GvA",
+      "start": 788,
+      "end": 876,
+      "title": "Firewall Fundamentals Explained | Network Security for Beginners",
+      "channel": "Antisyphon Training"
+    },
+    "networking-w5-security-004": {
+      "videoId": "K4ilFsm2GvA",
+      "start": 876,
+      "end": 967,
+      "title": "Firewall Fundamentals Explained | Network Security for Beginners",
+      "channel": "Antisyphon Training"
+    },
+    "networking-w5-security-005": {
+      "videoId": "K4ilFsm2GvA",
+      "start": 788,
+      "end": 876,
+      "title": "Firewall Fundamentals Explained | Network Security for Beginners",
+      "channel": "Antisyphon Training"
+    },
+    "database-w5-normalisation-001": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1524,
+      "end": 1836,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-002": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1524,
+      "end": 1836,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-003": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 577,
+      "end": 765,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-004": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 577,
+      "end": 765,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-005": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-006": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-007": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 2222,
+      "end": 2352,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-008": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 2611,
+      "end": 2824,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-009": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 2611,
+      "end": 2824,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
+    },
+    "database-w5-normalisation-010": {
+      "videoId": "kyGVhx5LwXw",
+      "start": 1836,
+      "end": 2222,
+      "title": "Database Lesson #2 of 8 - The Relational Model",
+      "channel": "Dr. Daniel Soper"
     }
   }
 }
